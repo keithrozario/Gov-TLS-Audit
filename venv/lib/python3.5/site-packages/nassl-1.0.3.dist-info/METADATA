@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: nassl
+Version: 1.0.3
+Summary: Experimental OpenSSL wrapper for Python 2.7 / 3.4+ and SSLyze.
+Home-page: https://github.com/nabla-c0d3/nassl
+Author: Alban Diquet
+Author-email: nabla.c0d3@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: enum34; python_version < "3.4"
+Requires-Dist: typing; python_version < "3.5"
+
+UNKNOWN
+
+

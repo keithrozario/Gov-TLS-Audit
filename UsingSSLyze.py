@@ -1,12 +1,15 @@
 import requests
 import logging
-from datetime import datetime
-from requests.packages.urllib3.exceptions import InsecureRequestWarning
+import socket
+import csv
+import json
 
+from datetime import datetime
+
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
 from sslyze.server_connectivity import ServerConnectivityInfo, ServerConnectivityError
 from sslyze.synchronous_scanner import SynchronousScanner
 from sslyze.plugins.certificate_info_plugin import CertificateInfoScanCommand
-from ssl import CertificateError
 
 
 # Requests headers
@@ -22,6 +25,11 @@ logging.basicConfig(filename='log.txt',
                     level=logging.DEBUG,
                     format='%(asctime)s %(message)s',
                     datefmt='%m/%d/%Y %I:%M:%S %p')
+
+# CSV File
+csv_file = 'urls.csv'
+csv_columns = ['url', 'Gov Dept.', 'Site Title']
+csv_delimiter = ","
 
 
 def get_hostname(site_url):
@@ -84,7 +92,7 @@ def format_response(result):
     return response
 
 
-def request_site(site_url, http_headers, timeout=2, verify=False):
+def request_site(site_url, http_headers, timeout=5, verify=False):
 
     try:
         result = requests.get(site_url, headers=http_headers, timeout=timeout, verify=verify)
@@ -93,11 +101,13 @@ def request_site(site_url, http_headers, timeout=2, verify=False):
         response = {"statusCode": -1, "statusMsg": "Connection Time Out"}
     except requests.exceptions.ConnectionError:
         response = {"statusCode": -1, "statusMsg": "Connection Error"}
+    except requests.exceptions.ReadTimeout:
+        response = {"statusCode": -1, "statusMsg": "Read Time Out"}
 
     return response
 
 
-def get_site(site_url, browser, timeout=2, verify=False):
+def get_site(site_url, browser, timeout=5, verify=False):
     user_agent = browser_UA[browser]
     headers = {'User-Agent': user_agent}
 
@@ -157,36 +167,56 @@ def format_cert(scan_result):
 
     cert_data["chainLength"] = len(scan_result.certificate_chain)
 
-    cert_data["issuerAttributes"] = dict()
+    cert_data["issuer"] = dict()
     for attribute in scan_result.certificate_chain[0].issuer._attributes:
         key_value = parse_attribute(str(attribute))
-        cert_data["issuerAttributes"][key_value[0]] = key_value[1]
+        cert_data["issuer"][key_value[0]] = key_value[1]
 
     # for extension in scan_result.certificate_chain[0].extensions._extensions:
     #    print(parse_attribute(str(extension)))
 
-    print("hello")
+    return cert_data
 
 
 def request_cert(site_json):
 
     hostname = get_hostname(site_json['hostname'])
 
-    server_info = ServerConnectivityInfo(hostname=hostname)
-    server_info.test_connectivity_to_server()
-    command = CertificateInfoScanCommand()
-    synchronous_scanner = SynchronousScanner()
+    try:
+        server_info = ServerConnectivityInfo(hostname=hostname)
+        server_info.test_connectivity_to_server()
+        command = CertificateInfoScanCommand()
+        synchronous_scanner = SynchronousScanner()
+    except ServerConnectivityError:
+        return None
 
     scan_result = synchronous_scanner.run_scan_command(server_info, command)
-    format_cert(scan_result)
+    return format_cert(scan_result)
 
-    print("hello")
+
+def dns_lookup(hostname):
+    try:
+        ip = socket.gethostbyname(hostname)
+    except socket.gaierror:
+        return None
+    return ip
+
+
+def get_urls(filename):
+    urls = []
+
+    with open(filename, 'r', newline='', errors='ignore', encoding="utf8") as csvfile:
+        readerDict = csv.DictReader(csvfile, fieldnames=csv_columns, delimiter=csv_delimiter)
+        for row in readerDict:
+            if row['url'] != 'URL':
+                urls.append(row['url'])
+
+    return urls
 
 
 ########################################################################################################################
 #     MAIN                                                                                                             #
 ########################################################################################################################
-
 
 if __name__ == "__main__":
 
@@ -195,44 +225,57 @@ if __name__ == "__main__":
     console.setLevel(logging.INFO)
     logger.addHandler(console)
 
-    urls = ['keithrozario.com',
-            'eplan.water.gov.my',
-            'sps1.moe.gov.my/indexsso.php',
-            '1.moe.gov.my',
-            'elesen.finas.gov.my',
-            'www.seriperdana.gov.my/Lawatan_KSP/apply/',
-            'epayment.skmm.gov.my',
-            'aduan.skmm.gov.my/Complaint/AddComplaint?NOSP=1']
-
+    urls = get_urls(csv_file)
     browser = 'fireFox'
+    site_datas = []
 
     for url in urls:
-        site_data = {'hostname': get_hostname(url)}
+        site_data = dict()
+        site_data['hostname'] = get_hostname(url)
+        site_data['url'] = url
+        site_data['ip'] = dns_lookup(site_data['hostname'])
+        logger.info("Hostname: " + site_data['hostname'])
+        logger.info("URL: " + site_data['url'])
 
-        http_url = append_http(url, False)
-        request_response = get_site(http_url, browser)
+        if site_data['ip']:
+            http_url = append_http(url, False)
+            logger.info("HTTP Request: " + http_url)
+            request_response = get_site(http_url, browser)
 
-        site_data['httpRequest'] = request_response['request']
-        site_data['httpResponse'] = request_response['response']
+            site_data['httpRequest'] = request_response['request']
+            site_data['httpResponse'] = request_response['response']
 
-        if 'redirectHttps' in site_data['httpResponse']:
-            if not site_data['httpResponse']['redirectHttps']:
+            if 'redirectHttps' in site_data['httpResponse']:
+                if not site_data['httpResponse']['redirectHttps']:
 
-                https_url = append_http(url, True)
-                request_response = get_site(https_url, browser)
+                    https_url = append_http(url, True)
+                    logger.info("No Https-Redirect\nHTTPS Request: " + https_url)
+                    request_response = get_site(https_url, browser)
 
-                site_data['httpsRequest'] = request_response['request']
-                site_data['httpsResponse'] = request_response['response']
+                    site_data['httpsRequest'] = request_response['request']
+                    site_data['httpsResponse'] = request_response['response']
 
-        TLS = False
-        if site_data['httpResponse']['statusCode'] in [200, 203]:
-            if site_data['httpResponse']['redirectHttps']:
-                TLS = True
-            elif site_data['httpsResponse']['statusCode'] in [200, 203]:
-                TLS = True
+                else:
+                    logger.info("HTTP Request redirected to: " + site_data["redirectUrl"])
 
-        if TLS:
-            request_cert(site_data)
-        else:
-            logger.info("Not Requesting Certificate")
-        # print(site_data)
+            TLS = False
+            if site_data['httpResponse']['statusCode'] in [200, 203]:
+                if site_data['httpResponse']['redirectHttps']:
+                    TLS = True
+                elif site_data['httpsResponse']['statusCode'] in [200, 203]:
+                    TLS = True
+            if TLS:
+                logger.info("HTTPs Detected. Checking Certs")
+                cert_data = request_cert(site_data)
+                if cert_data:
+                    site_data['certData'] = cert_data
+                    logger.info("Cert Data Saved")
+            else:
+                logger.info("HTTPs not detected. Bypassing Cert Checks")
+        logger.info("\n")
+        site_datas.append(site_data)
+
+    results = {'results': site_datas}
+    resultsJson = json.dumps(results)
+    parsed = json.loads(resultsJson)
+    print(json.dumps(parsed, indent=4, sort_keys=True))
