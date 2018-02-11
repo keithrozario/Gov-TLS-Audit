@@ -256,7 +256,7 @@ if __name__ == "__main__":
                     site_data['httpsResponse'] = request_response['response']
 
                 else:
-                    logger.info("HTTP Request redirected to: " + site_data["redirectUrl"])
+                    logger.info("HTTP Request redirected to: " + site_data['httpResponse']["redirectUrl"])
 
             TLS = False
             if site_data['httpResponse']['statusCode'] in [200, 203]:
