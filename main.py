@@ -3,6 +3,8 @@ import logging
 import socket
 import csv
 import json
+import ipwhois
+import whois
 
 from datetime import datetime
 
@@ -160,7 +162,7 @@ def format_cert(scan_result):
 
     cert_data["notValidAfter"] = scan_result.certificate_chain[0].not_valid_after
     cert_data["notValidBefore"] = scan_result.certificate_chain[0].not_valid_before
-    if scan_result.certificate_chain[0].not_valid_after > datetime.now():
+    if scan_result.certificate_chain[0].not_valid_after < datetime.now():
         cert_data["certExpired"] = True
     else:
         cert_data["certExpired"] = False
@@ -214,6 +216,28 @@ def get_urls(filename):
     return urls
 
 
+def get_domain_whois(hostname):
+    ''' Get WHOIS for domain name. MyNIC does not publish this for .my domains
+        Work in Progress.
+    '''
+    # try:
+    #     domain_result = whois.whois(domain)
+    #     domain_data = format_whois_domain(domain_result)
+    # except TypeError:
+    #     domain_data = None
+    #
+    # return domain_data
+    return None
+
+
+def get_ip_whois(ip_addr):
+    ''' Get WHOIS for IP Address '''
+
+    obj = ipwhois.IPWhois(ip_addr)
+    result = obj.lookup_rdap(depth=1)
+    return result
+
+
 ########################################################################################################################
 #     MAIN                                                                                                             #
 ########################################################################################################################
@@ -236,8 +260,12 @@ if __name__ == "__main__":
         site_data['ip'] = dns_lookup(site_data['hostname'])
         logger.info("Hostname: " + site_data['hostname'])
         logger.info("URL: " + site_data['url'])
+        logger.info("IP: " + site_data['ip'])
 
         if site_data['ip']:
+            logger.info("Getting WHOIS for IP: " + site_data['ip'])
+            site_data['ipWhois'] = get_ip_whois(site_data['ip'])
+
             http_url = append_http(url, False)
             logger.info("HTTP Request: " + http_url)
             request_response = get_site(http_url, browser)
@@ -273,9 +301,10 @@ if __name__ == "__main__":
             else:
                 logger.info("HTTPs not detected. Bypassing Cert Checks")
         logger.info("\n")
+        resultsJson = json.dumps(site_data, default=str)
+
+        parsed = json.loads(resultsJson)
+        print(json.dumps(parsed, indent=4, sort_keys=True))
         site_datas.append(site_data)
 
     results = {'results': site_datas}
-    resultsJson = json.dumps(results)
-    parsed = json.loads(resultsJson)
-    print(json.dumps(parsed, indent=4, sort_keys=True))
