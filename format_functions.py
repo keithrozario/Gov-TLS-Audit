@@ -1,3 +1,68 @@
+
+def copy_over(source_dict, destination_dict, source_field, destination_field, field_type='keyValue'):
+
+    if field_type == 'keyValue':
+        if source_field in source_dict:
+            destination_dict[destination_field] = source_dict[source_field]
+        else:
+            pass
+    elif field_type == 'attribute':
+        if hasattr(source_dict, source_field):
+            destination_dict[destination_field] = getattr(source_dict, source_field)
+        else:
+            pass
+    else:
+        pass
+
+    return destination_dict
+
+
+def format_site_data(site_data):
+    result = dict()
+
+    result = copy_over(site_data, result, 'hostname', 'hostname', 'keyValue')
+    result = copy_over(site_data, result, 'ip', 'ip', 'keyValue')
+    result = copy_over(site_data, result, 'url', 'url', 'keyValue')
+
+    request_dicts = ['httpRequest', 'httpsRequest']
+    response_dicts = ['httpResponse', 'httpsResponse']
+    certData_dict = 'certData'
+
+    for request_dict in request_dicts:
+        if request_dict in site_data:
+            result[request_dict] = dict()
+            result[request_dict] = copy_over(site_data[request_dict], result[request_dict],
+                                             'headers', 'headers', 'keyValue')
+            result[request_dict] = copy_over(site_data[request_dict], result[request_dict],
+                                             'requestTime', 'requestTime', 'keyValue')
+            result[request_dict] = copy_over(site_data[request_dict], result[request_dict],
+                                             'requestUrl', 'requestUrl', 'keyValue')
+
+    for response_dict in response_dicts:
+        if response_dict in site_data:
+            result[response_dict] = dict()
+            result[response_dict] = copy_over(site_data[response_dict], result[response_dict],
+                                              'status_code', 'statusCode', 'attribute')
+            result[response_dict] = copy_over(site_data[response_dict], result[response_dict],
+                                              'url', 'url', 'attribute')
+            result[response_dict] = copy_over(site_data[response_dict], result[response_dict],
+                                              'history', 'history', 'attribute')
+            result[response_dict] = copy_over(site_data[response_dict], result[response_dict],
+                                              'content', 'content', 'attribute')
+
+            if hasattr(site_data[response_dict], 'headers'):
+                if hasattr(site_data[response_dict].headers, '_store'):
+                    result[response_dict]['headers'] = {}
+                    for header_field in site_data['httpResponse'].headers._store.items():
+                        result[response_dict]['headers'][header_field[1][0]] = header_field[1][1]
+
+    if 'certData' in site_data:
+        result[certData_dict] = dict()
+        result[certData_dict] = copy_over(site_data[certData_dict], result[certData_dict],
+                                          'certificate_matches_hostname', 'certMatchesHostname', 'attribute')
+    return result
+
+
 def format_response(result):
     history_elapsed = 0
     response = dict()
@@ -8,24 +73,10 @@ def format_response(result):
         response["contentSize"] = len(result.content)
 
         if result.history:
-            response["redirectCount"] = len(result.history)
-            response["redirectUrl"] = result.url
-
-            if result.url[4] in ['S', 's']:
-                response["redirectHttps"] = True
-            else:
-                response["redirectHttps"] = False
-
             for history in result.history:
                 history_elapsed = history_elapsed + history.elapsed.microseconds
-
         else:
-            response["redirectHttps"] = False
-
-        response["responseTime"] = result.elapsed.microseconds + history_elapsed
-
-        for header_field in result.headers._store.items():
-            response[header_field[1][0]] = header_field[1][1]
+            response["responseTime"] = result.elapsed.microseconds + history_elapsed
 
     return response
 
@@ -54,13 +105,7 @@ def parse_attribute(attribute):
 
 
 def format_cert(scan_result):
-    cert_data = dict()
 
-    cert_data["tlsServerNameIndication"] = scan_result.server_info.tls_server_name_indication
-    cert_data["highestSslVersionSupported"] = str(scan_result.server_info.highest_ssl_version_supported)
-    cert_data["sslCipherSupported"] = scan_result.server_info.ssl_cipher_supported
-    cert_data["certificateMatchesHostname"] = scan_result.certificate_matches_hostname
-    cert_data["serialNumber"] = scan_result.certificate_chain[0].serial_number
 
     if not cert_data["certificateMatchesHostname"]:
         logger.info("Invalid Cert")

@@ -3,6 +3,7 @@ import json
 import custom_config
 
 from get_functions import get_cert, get_site, get_hostname, get_ip, get_ip_whois
+from format_functions import format_site_data
 
 
 def append_http(site_url, tls_flag=False):
@@ -31,13 +32,14 @@ if __name__ == "__main__":
     logger.addHandler(console)
 
     urls = ['eplan.water.gov.my',
-            'keithrozario.com',
             'sps1.moe.gov.my/indexsso.php',
             '1.moe.gov.my',
-            'elesen.finas.gov.my',
-            'www.seriperdana.gov.my/Lawatan_KSP/apply/',
-            'epayment.skmm.gov.my',
-            'aduan.skmm.gov.my/Complaint/AddComplaint?NOSP=1']
+            # 'elesen.finas.gov.my',
+            # 'www.seriperdana.gov.my/Lawatan_KSP/apply/',
+            # 'epayment.skmm.gov.my',
+            # 'aduan.skmm.gov.my/Complaint/AddComplaint?NOSP=1',
+            'keithrozario.com']
+
     browser = 'fireFox'
     site_datas = []
 
@@ -51,8 +53,8 @@ if __name__ == "__main__":
 
         if site_data['ip']:
             # IP Whois
-            # logger.info("Getting WHOIS for IP: " + site_data['ip'])
-            # site_data['ipWhois'] = get_ip_whois(site_data['ip'])
+            logger.info("Getting WHOIS for IP: " + site_data['ip'])
+            site_data['ipWhois'] = get_ip_whois(site_data['ip'])
 
             # Request HTTP Site
             http_url = append_http(url, False)
@@ -96,14 +98,22 @@ if __name__ == "__main__":
                 if cert_data:
                     site_data['certData'] = cert_data
                     logger.info("Cert Data Saved")
+                else:
+                    logger.info("Unable to get Certificate Data")
             else:
                 logger.info("HTTPs not detected. Bypassing Cert Checks")
-
-        logger.info("\n")
-        resultsJson = json.dumps(site_data, default=str)
-        parsed = json.loads(resultsJson)
-        print(json.dumps(parsed, indent=4, sort_keys=True))
+        else:
+            logger.info("Unable to Lookup IP, bypassing all checks")
 
         site_datas.append(site_data)
 
     results = {'results': site_datas}
+    resultsJson = json.dumps(results, default=str)
+    parsed = json.loads(resultsJson)
+
+    with open('output.txt', 'w') as outfile:
+        json.dump(parsed, outfile, indent=4, sort_keys=True)
+
+    for site_data in site_datas:
+        site_data_output = format_site_data(site_data)
+        print(site_data_output)
