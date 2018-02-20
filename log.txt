@@ -1410,3 +1410,60 @@
 02/13/2018 12:55:36 PM HTTP redirected to HTTPS: https://www.keithrozario.com/
 02/13/2018 12:55:36 PM HTTPs Detected. Checking Certs
 02/13/2018 12:55:37 PM Cert Data Saved
+02/20/2018 09:00:43 PM Hostname: eplan.water.gov.my
+02/20/2018 09:00:43 PM Getting WHOIS for IP: 202.60.56.174
+02/20/2018 09:00:43 PM ASN lookup for 202.60.56.174
+02/20/2018 09:00:43 PM ASN query for 174.56.60.202.origin.asn.cymru.com
+02/20/2018 09:00:44 PM ASN verbose query for AS38044.asn.cymru.com
+02/20/2018 09:00:44 PM RDAP lookup for 202.60.56.174
+02/20/2018 09:00:44 PM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/202.60.56.174
+02/20/2018 09:00:44 PM HTTP query for 202.60.56.174 at http://rdap.apnic.net/ip/202.60.56.174
+02/20/2018 09:00:45 PM Parsing RDAP network object
+02/20/2018 09:00:45 PM Parsing RDAP root level entities
+02/20/2018 09:00:45 PM Parsing RDAP sub-entities to depth: 1
+02/20/2018 09:00:45 PM HTTP Request: http://eplan.water.gov.my
+02/20/2018 09:00:45 PM Starting new HTTP connection (1): eplan.water.gov.my
+02/20/2018 09:00:46 PM http://eplan.water.gov.my:80 "GET / HTTP/1.1" 200 6817
+02/20/2018 09:00:46 PM No Https-Redirect, making explicit https request: https://eplan.water.gov.my
+02/20/2018 09:00:46 PM Starting new HTTPS connection (1): eplan.water.gov.my
+02/20/2018 09:00:51 PM HTTPs not detected. Bypassing Cert Checks
+02/20/2018 09:00:53 PM Hostname: sps1.moe.gov.my
+02/20/2018 09:00:53 PM Getting WHOIS for IP: 1.9.210.13
+02/20/2018 09:00:53 PM ASN lookup for 1.9.210.13
+02/20/2018 09:00:53 PM ASN query for 13.210.9.1.origin.asn.cymru.com
+02/20/2018 09:00:53 PM ASN verbose query for AS4788.asn.cymru.com
+02/20/2018 09:00:53 PM RDAP lookup for 1.9.210.13
+02/20/2018 09:00:53 PM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/1.9.210.13
+02/20/2018 09:00:53 PM HTTP query for 1.9.210.13 at http://rdap.apnic.net/ip/1.9.210.13
+02/20/2018 09:00:54 PM Parsing RDAP network object
+02/20/2018 09:00:54 PM Parsing RDAP root level entities
+02/20/2018 09:00:54 PM Parsing RDAP sub-entities to depth: 1
+02/20/2018 09:00:54 PM HTTP Request: http://sps1.moe.gov.my/indexsso.php
+02/20/2018 09:00:54 PM Starting new HTTP connection (1): sps1.moe.gov.my
+02/20/2018 09:00:54 PM http://sps1.moe.gov.my:80 "GET /indexsso.php HTTP/1.1" 302 0
+02/20/2018 09:00:54 PM Starting new HTTPS connection (1): sps1.moe.gov.my
+02/20/2018 09:00:54 PM https://sps1.moe.gov.my:443 "GET /indexsso.php HTTP/1.1" 200 None
+02/20/2018 09:00:54 PM HTTP redirected to HTTPS: https://sps1.moe.gov.my/indexsso.php
+02/20/2018 09:00:54 PM HTTPs Detected. Checking Certs
+02/20/2018 09:00:55 PM Cert Data Saved
+02/20/2018 09:00:55 PM Hostname: 1.moe.gov.my
+02/20/2018 09:00:55 PM Unable to Lookup IP, bypassing all checks
+02/20/2018 09:00:55 PM Hostname: keithrozario.com
+02/20/2018 09:00:55 PM Getting WHOIS for IP: 104.28.9.72
+02/20/2018 09:00:55 PM ASN lookup for 104.28.9.72
+02/20/2018 09:00:55 PM ASN query for 72.9.28.104.origin.asn.cymru.com
+02/20/2018 09:00:55 PM ASN verbose query for AS13335.asn.cymru.com
+02/20/2018 09:00:56 PM RDAP lookup for 104.28.9.72
+02/20/2018 09:00:56 PM Response not given, perform RDAP lookup for http://rdap.arin.net/registry/ip/104.28.9.72
+02/20/2018 09:00:56 PM HTTP query for 104.28.9.72 at http://rdap.arin.net/registry/ip/104.28.9.72
+02/20/2018 09:00:56 PM Parsing RDAP network object
+02/20/2018 09:00:56 PM Parsing RDAP root level entities
+02/20/2018 09:00:56 PM Parsing RDAP sub-entities to depth: 1
+02/20/2018 09:00:56 PM HTTP Request: http://keithrozario.com
+02/20/2018 09:00:56 PM Starting new HTTP connection (1): keithrozario.com
+02/20/2018 09:00:56 PM http://keithrozario.com:80 "GET / HTTP/1.1" 301 None
+02/20/2018 09:00:56 PM Starting new HTTPS connection (1): www.keithrozario.com
+02/20/2018 09:00:57 PM https://www.keithrozario.com:443 "GET / HTTP/1.1" 200 None
+02/20/2018 09:00:57 PM HTTP redirected to HTTPS: https://www.keithrozario.com/
+02/20/2018 09:00:57 PM HTTPs Detected. Checking Certs
+02/20/2018 09:00:57 PM Cert Data Saved

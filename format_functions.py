@@ -105,7 +105,7 @@ def parse_attribute(attribute):
 
 
 def format_cert(scan_result):
-
+    cert_data = {}
 
     if not cert_data["certificateMatchesHostname"]:
         logger.info("Invalid Cert")
