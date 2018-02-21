@@ -1,8 +1,10 @@
 import logging
-import json
 import custom_config
+import json
+import csv
+from datetime import datetime
 
-from get_functions import get_cert, get_site, get_hostname, get_ip, get_ip_whois
+from get_functions import get_cert, get_site, get_hostname, get_ip, get_ip_whois, get_certificate_status
 from format_functions import format_site_data
 
 
@@ -13,9 +15,13 @@ def append_http(site_url, tls_flag=False):
         return "http://" + site_url
 
 
-########################################################################################################################
-#     MAIN                                                                                                             #
-########################################################################################################################
+class DateTimeEncoder(json.JSONEncoder):
+    def default(self, o):
+        if isinstance(o, datetime):
+            return o.isoformat()
+
+        return json.JSONEncoder.default(self, o)
+
 
 if __name__ == "__main__":
 
@@ -31,25 +37,42 @@ if __name__ == "__main__":
     console.setLevel(logging.INFO)
     logger.addHandler(console)
 
-    urls = ['eplan.water.gov.my',
-            'sps1.moe.gov.my/indexsso.php',
-            '1.moe.gov.my',
-            # 'elesen.finas.gov.my',
-            # 'www.seriperdana.gov.my/Lawatan_KSP/apply/',
-            # 'epayment.skmm.gov.my',
-            # 'aduan.skmm.gov.my/Complaint/AddComplaint?NOSP=1',
-            'keithrozario.com']
+    hostnames = ['1.moe.gov.my',
+                 'keithrozario.com',
+                 'eplan.water.gov.my',
+                 'sps1.moe.gov.my',
+                 'elesen.finas.gov.my',
+                 'www.seriperdana.gov.my',
+                 'epayment.skmm.gov.my',
+                 'aduan.skmm.gov.my']
+
+    csv_data = ['hostname', 'ip', 'TLSRedirect',\
+                'TLSSiteExist']
+    csv_cert_data = ['serialNumber', 'notValidAfter', 'signatureHashAlgorithm',\
+                     'statusCode', 'statusMessage']
 
     browser = 'fireFox'
     site_datas = []
+    site_datas_formatted = []
 
-    for url in urls:
+    with open('output.json', 'w') as outfile:
+        pass
+
+    with open('output.csv', 'a', newline='') as csvfile:
+        pass
+
+    with open('hostnames.txt') as f:
+        hostnames = f.readlines()
+
+    hostnames = [x.strip() for x in hostnames]
+
+    for hostname in hostnames:
+
+        logger.info("Hostname: " + hostname)
 
         site_data = dict()
-        site_data['hostname'] = get_hostname(url)
-        site_data['url'] = url
+        site_data['hostname'] = get_hostname(hostname)
         site_data['ip'] = get_ip(site_data['hostname'])
-        logger.info("Hostname: " + site_data['hostname'])
 
         if site_data['ip']:
             # IP Whois
@@ -57,7 +80,7 @@ if __name__ == "__main__":
             site_data['ipWhois'] = get_ip_whois(site_data['ip'])
 
             # Request HTTP Site
-            http_url = append_http(url, False)
+            http_url = append_http(hostname, False)
             logger.info("HTTP Request: " + http_url)
             request_response = get_site(http_url, browser)
             site_data['httpRequest'] = request_response['request']
@@ -81,8 +104,8 @@ if __name__ == "__main__":
             # No TLS Redirection, try direct https://
             if not TLS_redirect:
                 # Request HTTPS Site
-                https_url = append_http(url, True)
-                logger.info("No Https-Redirect, making explicit https request: " + https_url)
+                https_url = append_http(hostname, True)
+                logger.info("No HTTPs-Redirect, making explicit HTTPs request: " + https_url)
                 request_response = get_site(https_url, browser)
                 site_data['httpsRequest'] = request_response['request']
                 site_data['httpsResponse'] = request_response['response']
@@ -97,23 +120,40 @@ if __name__ == "__main__":
                 cert_data = get_cert(site_data)
                 if cert_data:
                     site_data['certData'] = cert_data
+                    site_data['certStatus'] = dict()
+                    site_data['certStatus'] = get_certificate_status(cert_data)
                     logger.info("Cert Data Saved")
                 else:
                     logger.info("Unable to get Certificate Data")
             else:
                 logger.info("HTTPs not detected. Bypassing Cert Checks")
+            site_data['TLSRedirect'] = TLS_redirect
+            site_data['TLSSiteExist'] = TLS_site_exist
+
         else:
             logger.info("Unable to Lookup IP, bypassing all checks")
 
-        site_datas.append(site_data)
+        site_data_formatted = format_site_data(site_data)
+        site_datas_formatted.append(site_data_formatted)
+        csv_list = []
 
-    results = {'results': site_datas}
-    resultsJson = json.dumps(results, default=str)
-    parsed = json.loads(resultsJson)
+        if site_data['ip'] is None:
+            csv_list.append(hostname)
+            csv_list.append("Fail")
+        else:
+            for data in csv_data:
+                csv_list.append(site_data_formatted[data])
 
-    with open('output.txt', 'w') as outfile:
-        json.dump(parsed, outfile, indent=4, sort_keys=True)
+            if 'certData' in site_data_formatted:
+                for data in csv_cert_data:
+                    csv_list.append(site_data_formatted['certData'][data])
 
-    for site_data in site_datas:
-        site_data_output = format_site_data(site_data)
-        print(site_data_output)
+        with open('output.json', 'a') as outfile:
+            json.dump(site_data_formatted, outfile, cls=DateTimeEncoder)
+            outfile.write("\n")
+
+        with open('output.csv', 'a', newline='') as csvfile:
+            csvwriter = csv.writer(csvfile, delimiter=',')
+            csvwriter.writerow(csv_list)
+
+    print(site_data_formatted)

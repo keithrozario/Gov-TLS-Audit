@@ -1,5 +1,11 @@
 
 def copy_over(source_dict, destination_dict, source_field, destination_field, field_type='keyValue'):
+    """
+    appends a value from source_dict to destination_dict
+    checks for existence of field/attribute before copying
+    returns full destination_dict with appended field (if exist)
+    returns full destination_dict without appended field (if does not exist)
+    """
 
     if field_type == 'keyValue':
         if source_field in source_dict:
@@ -17,72 +23,9 @@ def copy_over(source_dict, destination_dict, source_field, destination_field, fi
     return destination_dict
 
 
-def format_site_data(site_data):
-    result = dict()
-
-    result = copy_over(site_data, result, 'hostname', 'hostname', 'keyValue')
-    result = copy_over(site_data, result, 'ip', 'ip', 'keyValue')
-    result = copy_over(site_data, result, 'url', 'url', 'keyValue')
-
-    request_dicts = ['httpRequest', 'httpsRequest']
-    response_dicts = ['httpResponse', 'httpsResponse']
-    certData_dict = 'certData'
-
-    for request_dict in request_dicts:
-        if request_dict in site_data:
-            result[request_dict] = dict()
-            result[request_dict] = copy_over(site_data[request_dict], result[request_dict],
-                                             'headers', 'headers', 'keyValue')
-            result[request_dict] = copy_over(site_data[request_dict], result[request_dict],
-                                             'requestTime', 'requestTime', 'keyValue')
-            result[request_dict] = copy_over(site_data[request_dict], result[request_dict],
-                                             'requestUrl', 'requestUrl', 'keyValue')
-
-    for response_dict in response_dicts:
-        if response_dict in site_data:
-            result[response_dict] = dict()
-            result[response_dict] = copy_over(site_data[response_dict], result[response_dict],
-                                              'status_code', 'statusCode', 'attribute')
-            result[response_dict] = copy_over(site_data[response_dict], result[response_dict],
-                                              'url', 'url', 'attribute')
-            result[response_dict] = copy_over(site_data[response_dict], result[response_dict],
-                                              'history', 'history', 'attribute')
-            result[response_dict] = copy_over(site_data[response_dict], result[response_dict],
-                                              'content', 'content', 'attribute')
-
-            if hasattr(site_data[response_dict], 'headers'):
-                if hasattr(site_data[response_dict].headers, '_store'):
-                    result[response_dict]['headers'] = {}
-                    for header_field in site_data['httpResponse'].headers._store.items():
-                        result[response_dict]['headers'][header_field[1][0]] = header_field[1][1]
-
-    if 'certData' in site_data:
-        result[certData_dict] = dict()
-        result[certData_dict] = copy_over(site_data[certData_dict], result[certData_dict],
-                                          'certificate_matches_hostname', 'certMatchesHostname', 'attribute')
-    return result
-
-
-def format_response(result):
-    history_elapsed = 0
-    response = dict()
-
-    response["statusCode"] = result.status_code
-
-    if result.status_code in [200, 203]:
-        response["contentSize"] = len(result.content)
-
-        if result.history:
-            for history in result.history:
-                history_elapsed = history_elapsed + history.elapsed.microseconds
-        else:
-            response["responseTime"] = result.elapsed.microseconds + history_elapsed
-
-    return response
-
-
 def get_substring(full_string, begin, end):
-
+    """ Used in parse_attribute
+    """
     substring_start = full_string.find(begin) + len(begin)
     substring_end = full_string[substring_start:].find(end)
     substring = full_string[substring_start:substring_start+substring_end]
@@ -91,7 +34,9 @@ def get_substring(full_string, begin, end):
 
 
 def parse_attribute(attribute):
-
+    """
+    parses attributes in issuer, extensions and subject fields
+    """
     result = []
     name_begin = "name="
     name_end = ")"
@@ -104,33 +49,133 @@ def parse_attribute(attribute):
     return result
 
 
-def format_cert(scan_result):
-    cert_data = {}
+def format_site_data(site_data):
 
-    if not cert_data["certificateMatchesHostname"]:
-        logger.info("Invalid Cert")
+    result = dict()
+    request_dicts = ['httpRequest', 'httpsRequest']
+    response_dicts = ['httpResponse', 'httpsResponse']
+    certData_dict = 'certData'
+    certStatus_dict = 'certStatus'
+    tls_server_info_dict = 'TLSServerInfo'
+    ipWhois_dict = 'ipWhois'
 
-    if scan_result.successful_trust_store:
-        cert_data["successfulValidation"] = True
-        cert_data["trustStoreName"] = scan_result.successful_trust_store.name
-    else:
-        cert_data["successfulValidation"] = False
+    # mapping from site_data
+    mapping = [['hostname', 'hostname', 'keyValue'],
+               ['ip', 'ip', 'keyValue'],
+               ['url', 'url', 'keyValue'],
+               ['TLSRedirect', 'TLSRedirect', 'keyValue'],
+               ['TLSSiteExist', 'TLSSiteExist', 'keyValue']]
 
-    cert_data["notValidAfter"] = scan_result.certificate_chain[0].not_valid_after
-    cert_data["notValidBefore"] = scan_result.certificate_chain[0].not_valid_before
-    if scan_result.certificate_chain[0].not_valid_after < datetime.now():
-        cert_data["certExpired"] = True
-    else:
-        cert_data["certExpired"] = False
+    # mapping from request (http & https)
+    mapping_request = [['headers','headers','keyValue'],
+                       ['requestTime', 'requestTime', 'keyValue'],
+                       ['requestUrl', 'requestUrl', 'keyValue']]
 
-    cert_data["chainLength"] = len(scan_result.certificate_chain)
+    # mapping from response (http & https)
+    mapping_response = [['status_code', 'statusCode', 'attribute'],
+                        ['url', 'url', 'attribute']]
 
-    cert_data["issuer"] = dict()
-    for attribute in scan_result.certificate_chain[0].issuer._attributes:
-        key_value = parse_attribute(str(attribute))
-        cert_data["issuer"][key_value[0]] = key_value[1]
+    # mapping from certData
+    mapping_cert_data = [['certificate_matches_hostname', 'certMatchesHostname', 'attribute']]
 
-    # for extension in scan_result.certificate_chain[0].extensions._extensions:
-    #    print(parse_attribute(str(extension)))
+    # mapping from certStatus
+    mapping_cert_status = [['statusCode', 'statusCode', 'keyValue'],
+                           ['statusMessage', 'statusMessage', 'keyValue']]
 
-    return cert_data
+    # mapping from certData['certificate_chain[0]
+    mapping_cert_0 = [['not_valid_after', 'notValidAfter', 'attribute'],
+                      ['not_valid_before', 'notValidBefore', 'attribute'],
+                      ['serial_number', 'serialNumber', 'attribute']]
+
+    # mapping from certData['server_info']
+    mapping_server_info = [['highest_ssl_version_supported', 'highestTLSVersionSupported', 'attribute'],
+                           ['ssl_cipher_supported', 'TLSCipherSupported', 'attribute'],
+                           ['hostname', 'hostname', 'attribute'],
+                           ['tls_server_name_indication', 'TLSServerNameIndication', 'attribute']]
+
+    # mapping from ipWhois
+    mapping_ip_whois = [['asn', 'asn', 'keyValue'],
+                        ['asn_country_code', 'asnCountryCode', 'keyValue'],
+                        ['asn_description', 'asnDescription', 'keyValue'],
+                        ['asn_cidr', 'asnCidr', 'keyValue']]
+
+    # implement mapping for site_data
+    for map_rule in mapping:
+        result = copy_over(site_data, result, map_rule[0], map_rule[1], map_rule[2])
+
+    # mapping from request
+    for request_dict in request_dicts:
+        if request_dict in site_data:
+            result[request_dict] = dict()
+            for map_rule in mapping_request:
+                result[request_dict] = copy_over(site_data[request_dict], result[request_dict],
+                                                 map_rule[0], map_rule[1], map_rule[2])
+    # mapping from response
+    for response_dict in response_dicts:
+        if response_dict in site_data:
+            result[response_dict] = dict()
+            for map_rule in mapping_response:
+                result[response_dict] = copy_over(site_data[response_dict], result[response_dict],
+                                                 map_rule[0], map_rule[1], map_rule[2])
+
+            if hasattr(site_data[response_dict], 'headers'):
+                if hasattr(site_data[response_dict].headers, '_store'):
+                    result[response_dict]['headers'] = {}
+                    for header_field in site_data[response_dict].headers._store.items():
+                        result[response_dict]['headers'][header_field[1][0]] = header_field[1][1]
+
+    if 'certData' in site_data:
+        result[certData_dict] = dict()
+
+        for map_rule in mapping_cert_data:
+            result[certData_dict] = copy_over(site_data[certData_dict], result[certData_dict],
+                                              map_rule[0], map_rule[1], map_rule[2])
+
+        for map_rule in mapping_cert_status:
+            result[certData_dict] = copy_over(site_data[certStatus_dict], result[certData_dict],
+                                              map_rule[0], map_rule[1], map_rule[2])
+
+        # certificate_chain[0]
+        if hasattr(site_data['certData'], 'certificate_chain'):
+            cert_chain = getattr(site_data[certData_dict], 'certificate_chain')
+            for map_rule in mapping_cert_0:
+                result[certData_dict] = copy_over(cert_chain[0], result[certData_dict],
+                                                  map_rule[0], map_rule[1], map_rule[2])
+
+            # signature hash algorithm
+            if hasattr(cert_chain[0], 'signature_hash_algorithm'):
+                result[certData_dict] = copy_over(cert_chain[0].signature_hash_algorithm, result[certData_dict],
+                                                  'name','signatureHashAlgorithm', 'attribute')
+            # issuer
+            if hasattr(cert_chain[0], 'issuer'):
+                result[certData_dict]['issuer'] = dict()
+                for attribute in site_data['certData'].certificate_chain[0].issuer._attributes:
+                    key_value = parse_attribute(str(attribute))
+                    result[certData_dict]['issuer'][key_value[0]] = key_value[1]
+
+            # subject
+            if hasattr(cert_chain[0], 'subject'):
+                result[certData_dict]['subject'] = dict()
+                for attribute in site_data['certData'].certificate_chain[0].subject._attributes:
+                    key_value = parse_attribute(str(attribute))
+                    result[certData_dict]['subject'][key_value[0]] = key_value[1]
+
+        # server_info
+        if hasattr(site_data['certData'], 'server_info'):
+            result[tls_server_info_dict] = dict()
+            server_info = getattr(site_data[certData_dict], 'server_info')
+            for map_rule in mapping_server_info:
+                result[tls_server_info_dict] = copy_over(server_info, result[tls_server_info_dict],
+                                                  map_rule[0], map_rule[1], map_rule[2])
+
+    if 'ipWhois' in site_data:
+        result[ipWhois_dict] = dict()
+        for map_rule in mapping_ip_whois:
+            result[ipWhois_dict] = copy_over(site_data['ipWhois'], result[ipWhois_dict],
+                                              map_rule[0], map_rule[1], map_rule[2])
+
+    return result
+
+
+
+

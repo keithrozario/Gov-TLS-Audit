@@ -43,14 +43,14 @@ def get_ip(hostname):
     return ip
 
 
-def get_site(site_url, browser, timeout=5, verify=False):
+def get_site(site_url, browser, timeout=custom_config.timeout, verify=False):
     user_agent = custom_config.browser_UA[browser]
     headers = {'User-Agent': user_agent}
     requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
     request = {"requestUrl": site_url,
                "headers": headers,
-               "requestTime": str(datetime.now())}
+               "requestTime": datetime.now()}
 
     try:
         result = requests.get(site_url, headers=headers, timeout=timeout, verify=verify)
@@ -90,9 +90,9 @@ def get_ip_whois(ip_addr):
 
 
 def get_domain_whois(hostname):
-    ''' Get WHOIS for domain name. MyNIC does not publish this for .my domains
+    """ Get WHOIS for domain name. MyNIC does not publish this for .my domains
         Work in Progress.
-    '''
+    """
     # try:
     #     domain_result = whois.whois(domain)
     #     domain_data = format_whois_domain(domain_result)
@@ -115,3 +115,34 @@ def get_urls(filename):
                 urls.append(row['url'])
 
     return urls
+
+
+def get_certificate_status(cert_data):
+    """Get Certificate status
+    Checks the following:
+    1. Certificate Matches Hostname
+    2. Certificate has valid date (not_valid_before < today && not_valid_after > today)
+    3. Certificate has TrustStore
+    """
+    cert_mismatch = {'statusCode': '-1', 'statusMessage': 'Certificate & Hostname mismatch'}
+    cert_expired = {'statusCode': '-1', 'statusMessage': 'Certificate expired'}
+    cert_future = {'statusCode': '-1', 'statusMessage': 'Certificate is future dated'}
+    cert_no_intermediate = {'statusCode': '0',\
+                            'statusMessage': 'Host did not provide intermediate certs, unable to build trust chain'}
+    cert_success = {'statusCode': '1', 'statusMessage': 'Pass'}
+
+    if getattr(cert_data, 'certificate_matches_hostname'):
+        site_cert = getattr(cert_data,'certificate_chain')
+        not_valid_before = getattr(site_cert[0],'not_valid_before')
+        not_valid_after = getattr(site_cert[0], 'not_valid_after')
+
+        if not_valid_after < datetime.now():
+            return cert_expired
+        elif not_valid_before > datetime.now():
+            return cert_future
+        elif getattr(cert_data, 'successful_trust_store') is None:
+            return cert_no_intermediate
+        else:
+            return cert_success
+    else:
+        return cert_mismatch
