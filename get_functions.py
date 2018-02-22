@@ -62,6 +62,8 @@ def get_site(site_url, browser, timeout=custom_config.timeout, verify=False):
         response = CustomResponse(-2, 'Connection Error')
     except requests.exceptions.ReadTimeout:
         response = CustomResponse(-3, 'Read Time Out')
+    except requests.exceptions.TooManyRedirects:
+        response = CustomResponse(-4, 'Too Many Redirects')
 
     return {'request': request, 'response': response}
 

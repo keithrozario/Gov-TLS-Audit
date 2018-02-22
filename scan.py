@@ -3,9 +3,10 @@ import custom_config
 import json
 import csv
 from datetime import datetime
+from custom_config import csv_file, json_file, full_json_file
 
 from get_functions import get_cert, get_site, get_hostname, get_ip, get_ip_whois, get_certificate_status
-from format_functions import format_site_data
+from format_functions import format_json_data, format_csv_data
 
 
 def append_http(site_url, tls_flag=False):
@@ -37,28 +38,17 @@ if __name__ == "__main__":
     console.setLevel(logging.INFO)
     logger.addHandler(console)
 
-    hostnames = ['1.moe.gov.my',
-                 'keithrozario.com',
-                 'eplan.water.gov.my',
-                 'sps1.moe.gov.my',
-                 'elesen.finas.gov.my',
-                 'www.seriperdana.gov.my',
-                 'epayment.skmm.gov.my',
-                 'aduan.skmm.gov.my']
-
-    csv_data = ['hostname', 'ip', 'TLSRedirect',\
-                'TLSSiteExist']
-    csv_cert_data = ['serialNumber', 'notValidAfter', 'signatureHashAlgorithm',\
-                     'statusCode', 'statusMessage']
-
     browser = 'fireFox'
-    site_datas = []
-    site_datas_formatted = []
+    site_data_json = []
+    site_jsons = []
 
-    with open('output.json', 'w') as outfile:
+    with open(json_file, 'w') as dumb_file:
         pass
 
-    with open('output.csv', 'a', newline='') as csvfile:
+    with open(full_json_file, 'w') as dumb_file:
+        pass
+
+    with open(csv_file, 'w') as dumb_file:
         pass
 
     with open('hostnames.txt') as f:
@@ -95,7 +85,7 @@ if __name__ == "__main__":
                         TLS_redirect = True
                         TLS_site_exist = True
                     else:
-                        TLS_redirect = False
+                        TLS_redirect =False
                 else:
                     TLS_redirect = False
             else:
@@ -133,27 +123,20 @@ if __name__ == "__main__":
         else:
             logger.info("Unable to Lookup IP, bypassing all checks")
 
-        site_data_formatted = format_site_data(site_data)
-        site_datas_formatted.append(site_data_formatted)
-        csv_list = []
+        site_data_json = format_json_data(site_data)
+        site_jsons.append(site_data_json)
+        csv_list = format_csv_data(site_data_json)
 
-        if site_data['ip'] is None:
-            csv_list.append(hostname)
-            csv_list.append("Fail")
-        else:
-            for data in csv_data:
-                csv_list.append(site_data_formatted[data])
+        with open(csv_file, 'a', newline='') as csvfile:
+            csv_writer = csv.writer(csvfile, delimiter=',')
+            csv_writer.writerow(csv_list)
 
-            if 'certData' in site_data_formatted:
-                for data in csv_cert_data:
-                    csv_list.append(site_data_formatted['certData'][data])
-
-        with open('output.json', 'a') as outfile:
-            json.dump(site_data_formatted, outfile, cls=DateTimeEncoder)
+        with open(json_file, 'a') as outfile:
+            json.dump(site_data_json, outfile, cls=DateTimeEncoder)
             outfile.write("\n")
 
-        with open('output.csv', 'a', newline='') as csvfile:
-            csvwriter = csv.writer(csvfile, delimiter=',')
-            csvwriter.writerow(csv_list)
+    full_json = {'results': site_jsons}
 
-    print(site_data_formatted)
+    with open(full_json_file, 'a') as outfile:
+        json.dump(full_json, outfile, cls=DateTimeEncoder)
+        outfile.write("\n")

@@ -38,18 +38,21 @@ def parse_attribute(attribute):
     parses attributes in issuer, extensions and subject fields
     """
     result = []
+
     name_begin = "name="
     name_end = ")"
-    value_begin = "value='"
-    value_end = "'"
-
     result.append(get_substring(attribute, name_begin, name_end))
-    result.append(get_substring(attribute, value_begin, value_end))
+
+    # can be value=' or value=" , especially for let's encrypt cert
+    value_begin = "value="
+    value_end = ")"
+    # remove the first and last character of string which will be ' or "
+    result.append(get_substring(attribute, value_begin, value_end)[1:-1])
 
     return result
 
 
-def format_site_data(site_data):
+def format_json_data(site_data):
 
     result = dict()
     request_dicts = ['httpRequest', 'httpsRequest']
@@ -177,5 +180,51 @@ def format_site_data(site_data):
     return result
 
 
+def format_csv_data(site_data_json):
 
+    csv_data = ['hostname', 'ip', 'TLSRedirect',\
+                'TLSSiteExist']
+    csv_cert_data = ['serialNumber', 'notValidAfter', 'signatureHashAlgorithm',\
+                     'statusCode', 'statusMessage']
+    csv_cert_issuer = ['commonName']
+    headers = ['Server', 'X-Powered-By']
 
+    result = []
+
+    if site_data_json['ip'] is None:
+        result.append(site_data_json['hostname'])
+        result.append('Fail')
+    else:
+        for data in csv_data:
+            result.append(site_data_json[data])
+
+        if 'certData' in site_data_json:
+            for data in csv_cert_data:
+                result.append(site_data_json['certData'][data])
+
+            if 'issuer' in site_data_json['certData']:
+                for data in csv_cert_issuer:
+                    result.append(site_data_json['certData']['issuer'][data])
+            else:
+                for c in range(len(csv_cert_issuer)):
+                    result.append('')
+        else:
+            for c in range(len(csv_cert_data)):
+                result.append('')
+
+    if 'httpResponse' in site_data_json:
+        if 'headers' in site_data_json['httpResponse']:
+
+            for header in headers:
+                if header in site_data_json['httpResponse']['headers']:
+                    result.append(site_data_json['httpResponse']['headers'][header])
+                else:
+                    result.append('n/a')
+        else:
+            for c in range(len(headers)):
+                result.append('')
+    else:
+        for c in range(len(headers)):
+            result.append('')
+
+    return result
