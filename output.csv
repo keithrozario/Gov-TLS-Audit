@@ -1,0 +1,2 @@
+hostname,ip,TLSRedirect,TLSSiteExist,serialNumber,notValidAfter,signatureHashAlgorithm,statusCode,statusMessage,commonName,Server,X-Powered-By,asn,asnCountryCode,asnDescription
+keithrozario.com,104.28.8.72,True,True,122582963675712514527592477512578148180,2018-08-12 23:59:59,sha256,1,Pass,COMODO ECC Domain Validation Secure Server CA 2,cloudflare,n/a,13335,US,"CLOUDFLARENET - Cloudflare, Inc., US"
