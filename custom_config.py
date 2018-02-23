@@ -13,5 +13,21 @@ http_success = [200, 203]
 csv_file = 'output.csv'
 
 # output json file
-json_file = 'output.json'
+json_file = 'output.jsonl'
 full_json_file = 'full_output.json'
+
+# csv output
+csv_data = ['hostname', 'ip', 'TLSRedirect','TLSSiteExist']
+csv_cert_data = ['serialNumber', 'notValidAfter', 'signatureHashAlgorithm',\
+                 'statusCode', 'statusMessage']
+csv_cert_issuer = ['commonName']
+csv_http_headers = ['Server', 'X-Powered-By']
+csv_ip_whois = ['asn', 'asnCountryCode', 'asnDescription']
+
+csv_header = []
+csv_header.extend(csv_data)
+csv_header.extend(csv_cert_data)
+csv_header.extend(csv_cert_issuer)
+csv_header.extend(csv_http_headers)
+csv_header.extend(csv_ip_whois)
+

@@ -3,7 +3,7 @@ import custom_config
 import json
 import csv
 from datetime import datetime
-from custom_config import csv_file, json_file, full_json_file
+from custom_config import csv_file, json_file, full_json_file, csv_header
 
 from get_functions import get_cert, get_site, get_hostname, get_ip, get_ip_whois, get_certificate_status
 from format_functions import format_json_data, format_csv_data
@@ -48,14 +48,15 @@ if __name__ == "__main__":
     with open(full_json_file, 'w') as dumb_file:
         pass
 
-    with open(csv_file, 'w') as dumb_file:
-        pass
+    with open(csv_file, 'w', newline='') as csvfile:
+        csv_writer = csv.writer(csvfile, delimiter=',')
+        csv_writer.writerow(csv_header)
 
     with open('hostnames.txt') as f:
         hostnames = f.readlines()
 
     hostnames = [x.strip() for x in hostnames]
-
+    hostnames = ['keithrozario.com']
     for hostname in hostnames:
 
         logger.info("Hostname: " + hostname)

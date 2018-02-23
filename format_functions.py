@@ -1,3 +1,5 @@
+from custom_config import csv_data, csv_cert_data, csv_cert_issuer, csv_http_headers, csv_ip_whois
+
 
 def copy_over(source_dict, destination_dict, source_field, destination_field, field_type='keyValue'):
     """
@@ -182,12 +184,6 @@ def format_json_data(site_data):
 
 def format_csv_data(site_data_json):
 
-    csv_data = ['hostname', 'ip', 'TLSRedirect',\
-                'TLSSiteExist']
-    csv_cert_data = ['serialNumber', 'notValidAfter', 'signatureHashAlgorithm',\
-                     'statusCode', 'statusMessage']
-    csv_cert_issuer = ['commonName']
-    headers = ['Server', 'X-Powered-By']
 
     result = []
 
@@ -215,16 +211,23 @@ def format_csv_data(site_data_json):
     if 'httpResponse' in site_data_json:
         if 'headers' in site_data_json['httpResponse']:
 
-            for header in headers:
+            for header in csv_http_headers:
                 if header in site_data_json['httpResponse']['headers']:
                     result.append(site_data_json['httpResponse']['headers'][header])
                 else:
                     result.append('n/a')
         else:
-            for c in range(len(headers)):
+            for c in range(len(csv_http_headers)):
                 result.append('')
     else:
-        for c in range(len(headers)):
+        for c in range(len(csv_http_headers)):
+            result.append('')
+
+    if 'ipWhois' in site_data_json:
+        for data in csv_ip_whois:
+            result.append(site_data_json['ipWhois'][data])
+    else:
+        for c in range(len(csv_ip_whois)):
             result.append('')
 
     return result
