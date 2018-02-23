@@ -20069,3 +20069,1847 @@
 02/24/2018 12:16:54 AM http://etesis.dbp.gov.my:80 "GET / HTTP/1.1" 200 12659
 02/24/2018 12:16:54 AM No HTTPs-Redirect, making explicit HTTPs request: https://etesis.dbp.gov.my
 02/24/2018 12:16:54 AM Starting new HTTPS connection (1): etesis.dbp.gov.my
+02/24/2018 12:16:59 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:16:59 AM Hostname: etmr.mardi.gov.my
+02/24/2018 12:16:59 AM Getting WHOIS for IP: 1.9.139.249
+02/24/2018 12:16:59 AM ASN lookup for 1.9.139.249
+02/24/2018 12:16:59 AM ASN query for 249.139.9.1.origin.asn.cymru.com
+02/24/2018 12:16:59 AM ASN verbose query for AS4788.asn.cymru.com
+02/24/2018 12:16:59 AM RDAP lookup for 1.9.139.249
+02/24/2018 12:16:59 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/1.9.139.249
+02/24/2018 12:16:59 AM HTTP query for 1.9.139.249 at http://rdap.apnic.net/ip/1.9.139.249
+02/24/2018 12:17:00 AM Parsing RDAP network object
+02/24/2018 12:17:00 AM Parsing RDAP root level entities
+02/24/2018 12:17:00 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:17:00 AM HTTP Request: http://etmr.mardi.gov.my
+02/24/2018 12:17:00 AM Starting new HTTP connection (1): etmr.mardi.gov.my
+02/24/2018 12:17:00 AM http://etmr.mardi.gov.my:80 "GET / HTTP/1.1" 200 None
+02/24/2018 12:17:00 AM No HTTPs-Redirect, making explicit HTTPs request: https://etmr.mardi.gov.my
+02/24/2018 12:17:00 AM Starting new HTTPS connection (1): etmr.mardi.gov.my
+02/24/2018 12:17:05 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:17:05 AM Hostname: etp.pemandu.gov.my
+02/24/2018 12:17:05 AM Getting WHOIS for IP: 202.9.103.179
+02/24/2018 12:17:05 AM ASN lookup for 202.9.103.179
+02/24/2018 12:17:05 AM ASN query for 179.103.9.202.origin.asn.cymru.com
+02/24/2018 12:17:05 AM ASN verbose query for AS17666.asn.cymru.com
+02/24/2018 12:17:05 AM RDAP lookup for 202.9.103.179
+02/24/2018 12:17:05 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/202.9.103.179
+02/24/2018 12:17:05 AM HTTP query for 202.9.103.179 at http://rdap.apnic.net/ip/202.9.103.179
+02/24/2018 12:17:06 AM Parsing RDAP network object
+02/24/2018 12:17:06 AM Parsing RDAP root level entities
+02/24/2018 12:17:06 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:17:06 AM HTTP Request: http://etp.pemandu.gov.my
+02/24/2018 12:17:06 AM Starting new HTTP connection (1): etp.pemandu.gov.my
+02/24/2018 12:17:07 AM http://etp.pemandu.gov.my:80 "GET / HTTP/1.1" 200 93477
+02/24/2018 12:17:07 AM No HTTPs-Redirect, making explicit HTTPs request: https://etp.pemandu.gov.my
+02/24/2018 12:17:07 AM Starting new HTTPS connection (1): etp.pemandu.gov.my
+02/24/2018 12:17:07 AM https://etp.pemandu.gov.my:443 "GET / HTTP/1.1" 404 315
+02/24/2018 12:17:07 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:17:07 AM Hostname: etribunal.jpn.gov.my
+02/24/2018 12:17:07 AM Getting WHOIS for IP: 1.9.138.149
+02/24/2018 12:17:07 AM ASN lookup for 1.9.138.149
+02/24/2018 12:17:07 AM ASN query for 149.138.9.1.origin.asn.cymru.com
+02/24/2018 12:17:07 AM ASN verbose query for AS4788.asn.cymru.com
+02/24/2018 12:17:07 AM RDAP lookup for 1.9.138.149
+02/24/2018 12:17:07 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/1.9.138.149
+02/24/2018 12:17:07 AM HTTP query for 1.9.138.149 at http://rdap.apnic.net/ip/1.9.138.149
+02/24/2018 12:17:08 AM Parsing RDAP network object
+02/24/2018 12:17:08 AM Parsing RDAP root level entities
+02/24/2018 12:17:08 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:17:08 AM HTTP Request: http://etribunal.jpn.gov.my
+02/24/2018 12:17:08 AM Starting new HTTP connection (1): etribunal.jpn.gov.my
+02/24/2018 12:17:08 AM http://etribunal.jpn.gov.my:80 "GET / HTTP/1.1" 200 192
+02/24/2018 12:17:08 AM No HTTPs-Redirect, making explicit HTTPs request: https://etribunal.jpn.gov.my
+02/24/2018 12:17:08 AM Starting new HTTPS connection (1): etribunal.jpn.gov.my
+02/24/2018 12:17:13 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:17:13 AM Hostname: eu.lkim.gov.my
+02/24/2018 12:17:13 AM Getting WHOIS for IP: 1.9.139.57
+02/24/2018 12:17:13 AM ASN lookup for 1.9.139.57
+02/24/2018 12:17:13 AM ASN query for 57.139.9.1.origin.asn.cymru.com
+02/24/2018 12:17:13 AM ASN verbose query for AS4788.asn.cymru.com
+02/24/2018 12:17:13 AM RDAP lookup for 1.9.139.57
+02/24/2018 12:17:13 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/1.9.139.57
+02/24/2018 12:17:13 AM HTTP query for 1.9.139.57 at http://rdap.apnic.net/ip/1.9.139.57
+02/24/2018 12:17:14 AM Parsing RDAP network object
+02/24/2018 12:17:14 AM Parsing RDAP root level entities
+02/24/2018 12:17:14 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:17:14 AM HTTP Request: http://eu.lkim.gov.my
+02/24/2018 12:17:14 AM Starting new HTTP connection (1): eu.lkim.gov.my
+02/24/2018 12:17:16 AM http://eu.lkim.gov.my:80 "GET / HTTP/1.1" 200 24270
+02/24/2018 12:17:16 AM No HTTPs-Redirect, making explicit HTTPs request: https://eu.lkim.gov.my
+02/24/2018 12:17:16 AM Starting new HTTPS connection (1): eu.lkim.gov.my
+02/24/2018 12:17:16 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:17:16 AM Hostname: eusahawan.kejora.gov.my
+02/24/2018 12:17:16 AM Getting WHOIS for IP: 60.48.138.81
+02/24/2018 12:17:16 AM ASN lookup for 60.48.138.81
+02/24/2018 12:17:16 AM ASN query for 81.138.48.60.origin.asn.cymru.com
+02/24/2018 12:17:16 AM ASN verbose query for AS4788.asn.cymru.com
+02/24/2018 12:17:16 AM RDAP lookup for 60.48.138.81
+02/24/2018 12:17:16 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/60.48.138.81
+02/24/2018 12:17:16 AM HTTP query for 60.48.138.81 at http://rdap.apnic.net/ip/60.48.138.81
+02/24/2018 12:17:16 AM Parsing RDAP network object
+02/24/2018 12:17:16 AM Parsing RDAP root level entities
+02/24/2018 12:17:16 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:17:16 AM HTTP Request: http://eusahawan.kejora.gov.my
+02/24/2018 12:17:16 AM Starting new HTTP connection (1): eusahawan.kejora.gov.my
+02/24/2018 12:17:16 AM http://eusahawan.kejora.gov.my:80 "GET / HTTP/1.1" 301 288
+02/24/2018 12:17:16 AM http://eusahawan.kejora.gov.my:80 "GET /eusahawan2.0/index.php HTTP/1.1" 302 20
+02/24/2018 12:17:16 AM http://eusahawan.kejora.gov.my:80 "GET /eusahawan2.0/module/index.php HTTP/1.1" 200 None
+02/24/2018 12:17:17 AM No HTTPs-Redirect, making explicit HTTPs request: https://eusahawan.kejora.gov.my
+02/24/2018 12:17:17 AM Starting new HTTPS connection (1): eusahawan.kejora.gov.my
+02/24/2018 12:17:17 AM https://eusahawan.kejora.gov.my:443 "GET / HTTP/1.1" 200 119292
+02/24/2018 12:17:18 AM HTTPs Detected. Checking Certs
+02/24/2018 12:17:19 AM Cert Data Saved
+02/24/2018 12:17:19 AM Hostname: ev.rurallink.gov.my
+02/24/2018 12:17:19 AM Unable to Lookup IP, bypassing all checks
+02/24/2018 12:17:19 AM Hostname: evendor.kkr.gov.my
+02/24/2018 12:17:19 AM Getting WHOIS for IP: 202.60.56.78
+02/24/2018 12:17:19 AM ASN lookup for 202.60.56.78
+02/24/2018 12:17:19 AM ASN query for 78.56.60.202.origin.asn.cymru.com
+02/24/2018 12:17:20 AM ASN verbose query for AS38044.asn.cymru.com
+02/24/2018 12:17:20 AM RDAP lookup for 202.60.56.78
+02/24/2018 12:17:20 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/202.60.56.78
+02/24/2018 12:17:20 AM HTTP query for 202.60.56.78 at http://rdap.apnic.net/ip/202.60.56.78
+02/24/2018 12:17:20 AM Parsing RDAP network object
+02/24/2018 12:17:20 AM Parsing RDAP root level entities
+02/24/2018 12:17:20 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:17:20 AM HTTP Request: http://evendor.kkr.gov.my
+02/24/2018 12:17:20 AM Starting new HTTP connection (1): evendor.kkr.gov.my
+02/24/2018 12:17:20 AM http://evendor.kkr.gov.my:80 "GET / HTTP/1.1" 200 272
+02/24/2018 12:17:20 AM No HTTPs-Redirect, making explicit HTTPs request: https://evendor.kkr.gov.my
+02/24/2018 12:17:20 AM Starting new HTTPS connection (1): evendor.kkr.gov.my
+02/24/2018 12:17:25 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:17:25 AM Hostname: evetting.cgso.gov.my
+02/24/2018 12:17:25 AM Getting WHOIS for IP: 103.8.162.5
+02/24/2018 12:17:25 AM ASN lookup for 103.8.162.5
+02/24/2018 12:17:25 AM ASN query for 5.162.8.103.origin.asn.cymru.com
+02/24/2018 12:17:25 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:17:25 AM RDAP lookup for 103.8.162.5
+02/24/2018 12:17:25 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.162.5
+02/24/2018 12:17:25 AM HTTP query for 103.8.162.5 at http://rdap.apnic.net/ip/103.8.162.5
+02/24/2018 12:17:26 AM Parsing RDAP network object
+02/24/2018 12:17:26 AM Parsing RDAP root level entities
+02/24/2018 12:17:26 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:17:26 AM HTTP Request: http://evetting.cgso.gov.my
+02/24/2018 12:17:26 AM Starting new HTTP connection (1): evetting.cgso.gov.my
+02/24/2018 12:17:26 AM http://evetting.cgso.gov.my:80 "GET / HTTP/1.1" 302 213
+02/24/2018 12:17:26 AM Starting new HTTPS connection (1): evetting.cgso.gov.my
+02/24/2018 12:17:26 AM https://evetting.cgso.gov.my:443 "GET / HTTP/1.1" 200 420
+02/24/2018 12:17:26 AM HTTP redirected to HTTPS: https://evetting.cgso.gov.my/
+02/24/2018 12:17:26 AM HTTPs Detected. Checking Certs
+02/24/2018 12:17:26 AM Cert Data Saved
+02/24/2018 12:17:26 AM Hostname: ewarta.mara.gov.my
+02/24/2018 12:17:26 AM Getting WHOIS for IP: 192.0.78.13
+02/24/2018 12:17:26 AM ASN lookup for 192.0.78.13
+02/24/2018 12:17:26 AM ASN query for 13.78.0.192.origin.asn.cymru.com
+02/24/2018 12:17:26 AM ASN verbose query for AS2635.asn.cymru.com
+02/24/2018 12:17:26 AM RDAP lookup for 192.0.78.13
+02/24/2018 12:17:26 AM Response not given, perform RDAP lookup for http://rdap.arin.net/registry/ip/192.0.78.13
+02/24/2018 12:17:26 AM HTTP query for 192.0.78.13 at http://rdap.arin.net/registry/ip/192.0.78.13
+02/24/2018 12:17:27 AM Parsing RDAP network object
+02/24/2018 12:17:27 AM Parsing RDAP root level entities
+02/24/2018 12:17:27 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:17:27 AM HTTP query for 192.0.78.13 at http://rdap.arin.net/registry/entity/NOC12276-ARIN
+02/24/2018 12:17:27 AM HTTP query for 192.0.78.13 at http://rdap.arin.net/registry/entity/ABUSE3970-ARIN
+02/24/2018 12:17:28 AM HTTP Request: http://ewarta.mara.gov.my
+02/24/2018 12:17:28 AM Starting new HTTP connection (1): ewarta.mara.gov.my
+02/24/2018 12:17:28 AM http://ewarta.mara.gov.my:80 "GET / HTTP/1.1" 301 178
+02/24/2018 12:17:28 AM Starting new HTTPS connection (1): ewarta.mara.gov.my
+02/24/2018 12:17:28 AM https://ewarta.mara.gov.my:443 "GET / HTTP/1.1" 200 None
+02/24/2018 12:17:28 AM HTTP redirected to HTTPS: https://ewarta.mara.gov.my/
+02/24/2018 12:17:28 AM HTTPs Detected. Checking Certs
+02/24/2018 12:17:29 AM Cert Data Saved
+02/24/2018 12:17:29 AM Hostname: exam.jkr.gov.my
+02/24/2018 12:17:29 AM Getting WHOIS for IP: 43.252.232.157
+02/24/2018 12:17:29 AM ASN lookup for 43.252.232.157
+02/24/2018 12:17:29 AM ASN query for 157.232.252.43.origin.asn.cymru.com
+02/24/2018 12:17:29 AM ASN verbose query for AS38044.asn.cymru.com
+02/24/2018 12:17:29 AM RDAP lookup for 43.252.232.157
+02/24/2018 12:17:29 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/43.252.232.157
+02/24/2018 12:17:29 AM HTTP query for 43.252.232.157 at http://rdap.apnic.net/ip/43.252.232.157
+02/24/2018 12:17:29 AM Parsing RDAP network object
+02/24/2018 12:17:29 AM Parsing RDAP root level entities
+02/24/2018 12:17:29 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:17:29 AM HTTP Request: http://exam.jkr.gov.my
+02/24/2018 12:17:29 AM Starting new HTTP connection (1): exam.jkr.gov.my
+02/24/2018 12:17:29 AM http://exam.jkr.gov.my:80 "GET / HTTP/1.1" 302 None
+02/24/2018 12:17:29 AM Starting new HTTPS connection (1): exam.jkr.gov.my
+02/24/2018 12:17:29 AM https://exam.jkr.gov.my:443 "GET / HTTP/1.1" 200 None
+02/24/2018 12:17:29 AM HTTP redirected to HTTPS: https://exam.jkr.gov.my/
+02/24/2018 12:17:30 AM HTTPs Detected. Checking Certs
+02/24/2018 12:17:30 AM Cert Data Saved
+02/24/2018 12:17:30 AM Hostname: extranet.fama.gov.my
+02/24/2018 12:17:30 AM Getting WHOIS for IP: 1.9.138.76
+02/24/2018 12:17:30 AM ASN lookup for 1.9.138.76
+02/24/2018 12:17:30 AM ASN query for 76.138.9.1.origin.asn.cymru.com
+02/24/2018 12:17:30 AM ASN verbose query for AS4788.asn.cymru.com
+02/24/2018 12:17:30 AM RDAP lookup for 1.9.138.76
+02/24/2018 12:17:30 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/1.9.138.76
+02/24/2018 12:17:30 AM HTTP query for 1.9.138.76 at http://rdap.apnic.net/ip/1.9.138.76
+02/24/2018 12:17:31 AM Parsing RDAP network object
+02/24/2018 12:17:31 AM Parsing RDAP root level entities
+02/24/2018 12:17:31 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:17:31 AM HTTP Request: http://extranet.fama.gov.my
+02/24/2018 12:17:31 AM Starting new HTTP connection (1): extranet.fama.gov.my
+02/24/2018 12:17:31 AM http://extranet.fama.gov.my:80 "GET / HTTP/1.1" 404 0
+02/24/2018 12:17:31 AM No HTTPs-Redirect, making explicit HTTPs request: https://extranet.fama.gov.my
+02/24/2018 12:17:31 AM Starting new HTTPS connection (1): extranet.fama.gov.my
+02/24/2018 12:17:31 AM https://extranet.fama.gov.my:443 "GET / HTTP/1.1" 404 0
+02/24/2018 12:17:31 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:17:31 AM Hostname: ez.hasil.gov.my
+02/24/2018 12:17:31 AM Getting WHOIS for IP: 113.11.237.66
+02/24/2018 12:17:31 AM ASN lookup for 113.11.237.66
+02/24/2018 12:17:31 AM ASN query for 66.237.11.113.origin.asn.cymru.com
+02/24/2018 12:17:32 AM ASN verbose query for AS55951.asn.cymru.com
+02/24/2018 12:17:32 AM RDAP lookup for 113.11.237.66
+02/24/2018 12:17:32 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/113.11.237.66
+02/24/2018 12:17:32 AM HTTP query for 113.11.237.66 at http://rdap.apnic.net/ip/113.11.237.66
+02/24/2018 12:17:32 AM Parsing RDAP network object
+02/24/2018 12:17:32 AM Parsing RDAP root level entities
+02/24/2018 12:17:32 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:17:32 AM HTTP Request: http://ez.hasil.gov.my
+02/24/2018 12:17:32 AM Starting new HTTP connection (1): ez.hasil.gov.my
+02/24/2018 12:17:37 AM No HTTPs-Redirect, making explicit HTTPs request: https://ez.hasil.gov.my
+02/24/2018 12:17:37 AM Starting new HTTPS connection (1): ez.hasil.gov.my
+02/24/2018 12:17:37 AM https://ez.hasil.gov.my:443 "GET / HTTP/1.1" 302 143
+02/24/2018 12:17:37 AM https://ez.hasil.gov.my:443 "GET /CI HTTP/1.1" 301 150
+02/24/2018 12:17:37 AM https://ez.hasil.gov.my:443 "GET /CI/ HTTP/1.1" 200 62803
+02/24/2018 12:17:37 AM HTTPs Detected. Checking Certs
+02/24/2018 12:17:37 AM Cert Data Saved
+02/24/2018 12:17:37 AM Hostname: ezsinar.arkib.gov.my
+02/24/2018 12:17:37 AM Getting WHOIS for IP: 175.28.13.3
+02/24/2018 12:17:37 AM ASN lookup for 175.28.13.3
+02/24/2018 12:17:37 AM ASN query for 3.13.28.175.origin.asn.cymru.com
+02/24/2018 12:17:38 AM ASN verbose query for AS38044.asn.cymru.com
+02/24/2018 12:17:38 AM RDAP lookup for 175.28.13.3
+02/24/2018 12:17:38 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/175.28.13.3
+02/24/2018 12:17:38 AM HTTP query for 175.28.13.3 at http://rdap.apnic.net/ip/175.28.13.3
+02/24/2018 12:17:38 AM Parsing RDAP network object
+02/24/2018 12:17:38 AM Parsing RDAP root level entities
+02/24/2018 12:17:38 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:17:38 AM HTTP Request: http://ezsinar.arkib.gov.my
+02/24/2018 12:17:38 AM Starting new HTTP connection (1): ezsinar.arkib.gov.my
+02/24/2018 12:17:38 AM No HTTPs-Redirect, making explicit HTTPs request: https://ezsinar.arkib.gov.my
+02/24/2018 12:17:38 AM Starting new HTTPS connection (1): ezsinar.arkib.gov.my
+02/24/2018 12:17:43 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:17:43 AM Hostname: ezsnap.jpm.gov.my
+02/24/2018 12:17:43 AM Getting WHOIS for IP: 150.242.180.44
+02/24/2018 12:17:43 AM ASN lookup for 150.242.180.44
+02/24/2018 12:17:43 AM ASN query for 44.180.242.150.origin.asn.cymru.com
+02/24/2018 12:17:43 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:17:43 AM RDAP lookup for 150.242.180.44
+02/24/2018 12:17:43 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/150.242.180.44
+02/24/2018 12:17:43 AM HTTP query for 150.242.180.44 at http://rdap.apnic.net/ip/150.242.180.44
+02/24/2018 12:17:43 AM Parsing RDAP network object
+02/24/2018 12:17:43 AM Parsing RDAP root level entities
+02/24/2018 12:17:43 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:17:43 AM HTTP Request: http://ezsnap.jpm.gov.my
+02/24/2018 12:17:43 AM Starting new HTTP connection (1): ezsnap.jpm.gov.my
+02/24/2018 12:17:43 AM http://ezsnap.jpm.gov.my:80 "GET / HTTP/1.1" 200 None
+02/24/2018 12:17:43 AM No HTTPs-Redirect, making explicit HTTPs request: https://ezsnap.jpm.gov.my
+02/24/2018 12:17:43 AM Starting new HTTPS connection (1): ezsnap.jpm.gov.my
+02/24/2018 12:17:44 AM https://ezsnap.jpm.gov.my:443 "GET / HTTP/1.1" 403 None
+02/24/2018 12:17:44 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:17:44 AM Hostname: failmeja.jpm.gov.my
+02/24/2018 12:17:44 AM Unable to Lookup IP, bypassing all checks
+02/24/2018 12:17:44 AM Hostname: fast.bnm.gov.my
+02/24/2018 12:17:44 AM Getting WHOIS for IP: 211.25.63.38
+02/24/2018 12:17:44 AM ASN lookup for 211.25.63.38
+02/24/2018 12:17:44 AM ASN query for 38.63.25.211.origin.asn.cymru.com
+02/24/2018 12:17:44 AM ASN verbose query for AS9930.asn.cymru.com
+02/24/2018 12:17:44 AM RDAP lookup for 211.25.63.38
+02/24/2018 12:17:44 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/211.25.63.38
+02/24/2018 12:17:44 AM HTTP query for 211.25.63.38 at http://rdap.apnic.net/ip/211.25.63.38
+02/24/2018 12:17:44 AM Parsing RDAP network object
+02/24/2018 12:17:44 AM Parsing RDAP root level entities
+02/24/2018 12:17:44 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:17:44 AM HTTP Request: http://fast.bnm.gov.my
+02/24/2018 12:17:44 AM Starting new HTTP connection (1): fast.bnm.gov.my
+02/24/2018 12:17:49 AM No HTTPs-Redirect, making explicit HTTPs request: https://fast.bnm.gov.my
+02/24/2018 12:17:49 AM Starting new HTTPS connection (1): fast.bnm.gov.my
+02/24/2018 12:17:49 AM https://fast.bnm.gov.my:443 "GET / HTTP/1.1" 302 216
+02/24/2018 12:17:49 AM https://fast.bnm.gov.my:443 "GET /fastweb/ HTTP/1.1" 200 729
+02/24/2018 12:17:49 AM HTTPs Detected. Checking Certs
+02/24/2018 12:17:50 AM Cert Data Saved
+02/24/2018 12:17:50 AM Hostname: fh.moh.gov.my
+02/24/2018 12:17:50 AM Getting WHOIS for IP: 103.8.146.71
+02/24/2018 12:17:50 AM ASN lookup for 103.8.146.71
+02/24/2018 12:17:50 AM ASN query for 71.146.8.103.origin.asn.cymru.com
+02/24/2018 12:17:50 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:17:50 AM RDAP lookup for 103.8.146.71
+02/24/2018 12:17:50 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.146.71
+02/24/2018 12:17:50 AM HTTP query for 103.8.146.71 at http://rdap.apnic.net/ip/103.8.146.71
+02/24/2018 12:17:50 AM Parsing RDAP network object
+02/24/2018 12:17:50 AM Parsing RDAP root level entities
+02/24/2018 12:17:50 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:17:50 AM HTTP Request: http://fh.moh.gov.my
+02/24/2018 12:17:50 AM Starting new HTTP connection (1): fh.moh.gov.my
+02/24/2018 12:17:50 AM http://fh.moh.gov.my:80 "GET / HTTP/1.1" 302 208
+02/24/2018 12:17:51 AM http://fh.moh.gov.my:80 "GET /v3/ HTTP/1.1" 200 56186
+02/24/2018 12:17:51 AM No HTTPs-Redirect, making explicit HTTPs request: https://fh.moh.gov.my
+02/24/2018 12:17:51 AM Starting new HTTPS connection (1): fh.moh.gov.my
+02/24/2018 12:17:51 AM https://fh.moh.gov.my:443 "GET / HTTP/1.1" 200 None
+02/24/2018 12:17:51 AM HTTPs Detected. Checking Certs
+02/24/2018 12:17:51 AM Cert Data Saved
+02/24/2018 12:17:51 AM Hostname: fmrs.remotesensing.gov.my
+02/24/2018 12:17:51 AM Getting WHOIS for IP: 202.60.59.145
+02/24/2018 12:17:51 AM ASN lookup for 202.60.59.145
+02/24/2018 12:17:51 AM ASN query for 145.59.60.202.origin.asn.cymru.com
+02/24/2018 12:17:51 AM ASN verbose query for AS38044.asn.cymru.com
+02/24/2018 12:17:51 AM RDAP lookup for 202.60.59.145
+02/24/2018 12:17:51 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/202.60.59.145
+02/24/2018 12:17:51 AM HTTP query for 202.60.59.145 at http://rdap.apnic.net/ip/202.60.59.145
+02/24/2018 12:17:52 AM Parsing RDAP network object
+02/24/2018 12:17:52 AM Parsing RDAP root level entities
+02/24/2018 12:17:52 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:17:52 AM HTTP Request: http://fmrs.remotesensing.gov.my
+02/24/2018 12:17:52 AM Starting new HTTP connection (1): fmrs.remotesensing.gov.my
+02/24/2018 12:17:52 AM http://fmrs.remotesensing.gov.my:80 "GET / HTTP/1.1" 200 689
+02/24/2018 12:17:52 AM No HTTPs-Redirect, making explicit HTTPs request: https://fmrs.remotesensing.gov.my
+02/24/2018 12:17:52 AM Starting new HTTPS connection (1): fmrs.remotesensing.gov.my
+02/24/2018 12:17:57 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:17:57 AM Hostname: fms.lkim.gov.my
+02/24/2018 12:17:57 AM Getting WHOIS for IP: 103.8.160.254
+02/24/2018 12:17:57 AM ASN lookup for 103.8.160.254
+02/24/2018 12:17:57 AM ASN query for 254.160.8.103.origin.asn.cymru.com
+02/24/2018 12:17:57 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:17:57 AM RDAP lookup for 103.8.160.254
+02/24/2018 12:17:57 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.160.254
+02/24/2018 12:17:57 AM HTTP query for 103.8.160.254 at http://rdap.apnic.net/ip/103.8.160.254
+02/24/2018 12:17:57 AM Parsing RDAP network object
+02/24/2018 12:17:57 AM Parsing RDAP root level entities
+02/24/2018 12:17:57 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:17:57 AM HTTP Request: http://fms.lkim.gov.my
+02/24/2018 12:17:57 AM Starting new HTTP connection (1): fms.lkim.gov.my
+02/24/2018 12:17:57 AM http://fms.lkim.gov.my:80 "GET / HTTP/1.1" 200 4641
+02/24/2018 12:17:57 AM No HTTPs-Redirect, making explicit HTTPs request: https://fms.lkim.gov.my
+02/24/2018 12:17:57 AM Starting new HTTPS connection (1): fms.lkim.gov.my
+02/24/2018 12:17:57 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:17:57 AM Hostname: fms.mardi.gov.my
+02/24/2018 12:17:57 AM Getting WHOIS for IP: 103.8.160.254
+02/24/2018 12:17:57 AM ASN lookup for 103.8.160.254
+02/24/2018 12:17:57 AM ASN query for 254.160.8.103.origin.asn.cymru.com
+02/24/2018 12:17:57 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:17:57 AM RDAP lookup for 103.8.160.254
+02/24/2018 12:17:57 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.160.254
+02/24/2018 12:17:57 AM HTTP query for 103.8.160.254 at http://rdap.apnic.net/ip/103.8.160.254
+02/24/2018 12:17:58 AM Parsing RDAP network object
+02/24/2018 12:17:58 AM Parsing RDAP root level entities
+02/24/2018 12:17:58 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:17:58 AM HTTP Request: http://fms.mardi.gov.my
+02/24/2018 12:17:58 AM Starting new HTTP connection (1): fms.mardi.gov.my
+02/24/2018 12:17:58 AM http://fms.mardi.gov.my:80 "GET / HTTP/1.1" 200 5815
+02/24/2018 12:17:58 AM No HTTPs-Redirect, making explicit HTTPs request: https://fms.mardi.gov.my
+02/24/2018 12:17:58 AM Starting new HTTPS connection (1): fms.mardi.gov.my
+02/24/2018 12:17:58 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:17:58 AM Hostname: fms.pl.gov.my
+02/24/2018 12:17:58 AM Getting WHOIS for IP: 104.27.166.142
+02/24/2018 12:17:58 AM ASN lookup for 104.27.166.142
+02/24/2018 12:17:58 AM ASN query for 142.166.27.104.origin.asn.cymru.com
+02/24/2018 12:17:58 AM ASN verbose query for AS13335.asn.cymru.com
+02/24/2018 12:17:58 AM RDAP lookup for 104.27.166.142
+02/24/2018 12:17:58 AM Response not given, perform RDAP lookup for http://rdap.arin.net/registry/ip/104.27.166.142
+02/24/2018 12:17:58 AM HTTP query for 104.27.166.142 at http://rdap.arin.net/registry/ip/104.27.166.142
+02/24/2018 12:17:59 AM Parsing RDAP network object
+02/24/2018 12:17:59 AM Parsing RDAP root level entities
+02/24/2018 12:17:59 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:17:59 AM HTTP Request: http://fms.pl.gov.my
+02/24/2018 12:17:59 AM Starting new HTTP connection (1): fms.pl.gov.my
+02/24/2018 12:17:59 AM http://fms.pl.gov.my:80 "GET / HTTP/1.1" 521 None
+02/24/2018 12:17:59 AM No HTTPs-Redirect, making explicit HTTPs request: https://fms.pl.gov.my
+02/24/2018 12:17:59 AM Starting new HTTPS connection (1): fms.pl.gov.my
+02/24/2018 12:17:59 AM https://fms.pl.gov.my:443 "GET / HTTP/1.1" 521 None
+02/24/2018 12:17:59 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:17:59 AM Hostname: fms.skm.gov.my
+02/24/2018 12:17:59 AM Getting WHOIS for IP: 203.12.220.248
+02/24/2018 12:17:59 AM ASN lookup for 203.12.220.248
+02/24/2018 12:17:59 AM ASN query for 248.220.12.203.origin.asn.cymru.com
+02/24/2018 12:17:59 AM ASN verbose query for AS38044.asn.cymru.com
+02/24/2018 12:17:59 AM RDAP lookup for 203.12.220.248
+02/24/2018 12:17:59 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/203.12.220.248
+02/24/2018 12:17:59 AM HTTP query for 203.12.220.248 at http://rdap.apnic.net/ip/203.12.220.248
+02/24/2018 12:17:59 AM Parsing RDAP network object
+02/24/2018 12:17:59 AM Parsing RDAP root level entities
+02/24/2018 12:17:59 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:17:59 AM HTTP Request: http://fms.skm.gov.my
+02/24/2018 12:17:59 AM Starting new HTTP connection (1): fms.skm.gov.my
+02/24/2018 12:18:00 AM http://fms.skm.gov.my:80 "GET / HTTP/1.1" 302 0
+02/24/2018 12:18:00 AM http://fms.skm.gov.my:80 "GET /fms_mec_skm/ HTTP/1.1" 200 None
+02/24/2018 12:18:00 AM No HTTPs-Redirect, making explicit HTTPs request: https://fms.skm.gov.my
+02/24/2018 12:18:00 AM Starting new HTTPS connection (1): fms.skm.gov.my
+02/24/2018 12:18:01 AM https://fms.skm.gov.my:443 "GET / HTTP/1.1" 302 0
+02/24/2018 12:18:01 AM https://fms.skm.gov.my:443 "GET /fms_mec_skm/ HTTP/1.1" 200 None
+02/24/2018 12:18:01 AM HTTPs Detected. Checking Certs
+02/24/2018 12:18:02 AM Cert Data Saved
+02/24/2018 12:18:02 AM Hostname: fms.tbnsa.gov.my
+02/24/2018 12:18:02 AM Getting WHOIS for IP: 103.8.160.254
+02/24/2018 12:18:02 AM ASN lookup for 103.8.160.254
+02/24/2018 12:18:02 AM ASN query for 254.160.8.103.origin.asn.cymru.com
+02/24/2018 12:18:02 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:18:02 AM RDAP lookup for 103.8.160.254
+02/24/2018 12:18:02 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.160.254
+02/24/2018 12:18:02 AM HTTP query for 103.8.160.254 at http://rdap.apnic.net/ip/103.8.160.254
+02/24/2018 12:18:02 AM Parsing RDAP network object
+02/24/2018 12:18:02 AM Parsing RDAP root level entities
+02/24/2018 12:18:02 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:18:02 AM HTTP Request: http://fms.tbnsa.gov.my
+02/24/2018 12:18:02 AM Starting new HTTP connection (1): fms.tbnsa.gov.my
+02/24/2018 12:18:02 AM http://fms.tbnsa.gov.my:80 "GET / HTTP/1.1" 200 5649
+02/24/2018 12:18:02 AM No HTTPs-Redirect, making explicit HTTPs request: https://fms.tbnsa.gov.my
+02/24/2018 12:18:02 AM Starting new HTTPS connection (1): fms.tbnsa.gov.my
+02/24/2018 12:18:02 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:18:02 AM Hostname: fram.bomba.gov.my
+02/24/2018 12:18:02 AM Getting WHOIS for IP: 210.48.154.23
+02/24/2018 12:18:02 AM ASN lookup for 210.48.154.23
+02/24/2018 12:18:02 AM ASN query for 23.154.48.210.origin.asn.cymru.com
+02/24/2018 12:18:03 AM ASN verbose query for AS17971.asn.cymru.com
+02/24/2018 12:18:03 AM RDAP lookup for 210.48.154.23
+02/24/2018 12:18:03 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/210.48.154.23
+02/24/2018 12:18:03 AM HTTP query for 210.48.154.23 at http://rdap.apnic.net/ip/210.48.154.23
+02/24/2018 12:18:03 AM Parsing RDAP network object
+02/24/2018 12:18:03 AM Parsing RDAP root level entities
+02/24/2018 12:18:03 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:18:03 AM HTTP Request: http://fram.bomba.gov.my
+02/24/2018 12:18:03 AM Starting new HTTP connection (1): fram.bomba.gov.my
+02/24/2018 12:18:08 AM No HTTPs-Redirect, making explicit HTTPs request: https://fram.bomba.gov.my
+02/24/2018 12:18:08 AM Starting new HTTPS connection (1): fram.bomba.gov.my
+02/24/2018 12:18:13 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:18:13 AM Hostname: fri.dof.gov.my
+02/24/2018 12:18:13 AM Getting WHOIS for IP: 103.8.145.61
+02/24/2018 12:18:13 AM ASN lookup for 103.8.145.61
+02/24/2018 12:18:13 AM ASN query for 61.145.8.103.origin.asn.cymru.com
+02/24/2018 12:18:13 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:18:13 AM RDAP lookup for 103.8.145.61
+02/24/2018 12:18:13 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.145.61
+02/24/2018 12:18:13 AM HTTP query for 103.8.145.61 at http://rdap.apnic.net/ip/103.8.145.61
+02/24/2018 12:18:13 AM Parsing RDAP network object
+02/24/2018 12:18:13 AM Parsing RDAP root level entities
+02/24/2018 12:18:13 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:18:13 AM HTTP Request: http://fri.dof.gov.my
+02/24/2018 12:18:13 AM Starting new HTTP connection (1): fri.dof.gov.my
+02/24/2018 12:18:13 AM http://fri.dof.gov.my:80 "GET / HTTP/1.1" 302 206
+02/24/2018 12:18:13 AM Starting new HTTPS connection (1): fri.dof.gov.my
+02/24/2018 12:18:14 AM https://fri.dof.gov.my:443 "GET / HTTP/1.1" 200 8578
+02/24/2018 12:18:14 AM HTTP redirected to HTTPS: https://fri.dof.gov.my
+02/24/2018 12:18:14 AM HTTPs Detected. Checking Certs
+02/24/2018 12:18:14 AM Cert Data Saved
+02/24/2018 12:18:14 AM Hostname: fta.miti.gov.my
+02/24/2018 12:18:14 AM Getting WHOIS for IP: 103.8.161.245
+02/24/2018 12:18:14 AM ASN lookup for 103.8.161.245
+02/24/2018 12:18:14 AM ASN query for 245.161.8.103.origin.asn.cymru.com
+02/24/2018 12:18:14 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:18:14 AM RDAP lookup for 103.8.161.245
+02/24/2018 12:18:14 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.161.245
+02/24/2018 12:18:14 AM HTTP query for 103.8.161.245 at http://rdap.apnic.net/ip/103.8.161.245
+02/24/2018 12:18:14 AM Parsing RDAP network object
+02/24/2018 12:18:14 AM Parsing RDAP root level entities
+02/24/2018 12:18:14 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:18:14 AM HTTP Request: http://fta.miti.gov.my
+02/24/2018 12:18:14 AM Starting new HTTP connection (1): fta.miti.gov.my
+02/24/2018 12:18:15 AM http://fta.miti.gov.my:80 "GET / HTTP/1.1" 200 None
+02/24/2018 12:18:15 AM No HTTPs-Redirect, making explicit HTTPs request: https://fta.miti.gov.my
+02/24/2018 12:18:15 AM Starting new HTTPS connection (1): fta.miti.gov.my
+02/24/2018 12:18:20 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:18:20 AM Hostname: gaji2u.lkim.gov.my
+02/24/2018 12:18:20 AM Getting WHOIS for IP: 1.9.139.51
+02/24/2018 12:18:20 AM ASN lookup for 1.9.139.51
+02/24/2018 12:18:20 AM ASN query for 51.139.9.1.origin.asn.cymru.com
+02/24/2018 12:18:20 AM ASN verbose query for AS4788.asn.cymru.com
+02/24/2018 12:18:20 AM RDAP lookup for 1.9.139.51
+02/24/2018 12:18:20 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/1.9.139.51
+02/24/2018 12:18:20 AM HTTP query for 1.9.139.51 at http://rdap.apnic.net/ip/1.9.139.51
+02/24/2018 12:18:21 AM Parsing RDAP network object
+02/24/2018 12:18:21 AM Parsing RDAP root level entities
+02/24/2018 12:18:21 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:18:21 AM HTTP Request: http://gaji2u.lkim.gov.my
+02/24/2018 12:18:21 AM Starting new HTTP connection (1): gaji2u.lkim.gov.my
+02/24/2018 12:18:21 AM No HTTPs-Redirect, making explicit HTTPs request: https://gaji2u.lkim.gov.my
+02/24/2018 12:18:21 AM Starting new HTTPS connection (1): gaji2u.lkim.gov.my
+02/24/2018 12:18:26 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:18:26 AM Hostname: galeria.mara.gov.my
+02/24/2018 12:18:26 AM Getting WHOIS for IP: 1.9.138.212
+02/24/2018 12:18:26 AM ASN lookup for 1.9.138.212
+02/24/2018 12:18:26 AM ASN query for 212.138.9.1.origin.asn.cymru.com
+02/24/2018 12:18:26 AM ASN verbose query for AS4788.asn.cymru.com
+02/24/2018 12:18:26 AM RDAP lookup for 1.9.138.212
+02/24/2018 12:18:26 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/1.9.138.212
+02/24/2018 12:18:26 AM HTTP query for 1.9.138.212 at http://rdap.apnic.net/ip/1.9.138.212
+02/24/2018 12:18:26 AM Parsing RDAP network object
+02/24/2018 12:18:26 AM Parsing RDAP root level entities
+02/24/2018 12:18:26 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:18:26 AM HTTP Request: http://galeria.mara.gov.my
+02/24/2018 12:18:26 AM Starting new HTTP connection (1): galeria.mara.gov.my
+02/24/2018 12:18:29 AM No HTTPs-Redirect, making explicit HTTPs request: https://galeria.mara.gov.my
+02/24/2018 12:18:29 AM Starting new HTTPS connection (1): galeria.mara.gov.my
+02/24/2018 12:18:34 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:18:34 AM Hostname: galerifoto.arkib.gov.my
+02/24/2018 12:18:34 AM Getting WHOIS for IP: 202.60.59.45
+02/24/2018 12:18:34 AM ASN lookup for 202.60.59.45
+02/24/2018 12:18:34 AM ASN query for 45.59.60.202.origin.asn.cymru.com
+02/24/2018 12:18:35 AM ASN verbose query for AS38044.asn.cymru.com
+02/24/2018 12:18:35 AM RDAP lookup for 202.60.59.45
+02/24/2018 12:18:35 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/202.60.59.45
+02/24/2018 12:18:35 AM HTTP query for 202.60.59.45 at http://rdap.apnic.net/ip/202.60.59.45
+02/24/2018 12:18:35 AM Parsing RDAP network object
+02/24/2018 12:18:35 AM Parsing RDAP root level entities
+02/24/2018 12:18:35 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:18:35 AM HTTP Request: http://galerifoto.arkib.gov.my
+02/24/2018 12:18:35 AM Starting new HTTP connection (1): galerifoto.arkib.gov.my
+02/24/2018 12:18:35 AM http://galerifoto.arkib.gov.my:80 "GET / HTTP/1.1" 200 None
+02/24/2018 12:18:36 AM No HTTPs-Redirect, making explicit HTTPs request: https://galerifoto.arkib.gov.my
+02/24/2018 12:18:36 AM Starting new HTTPS connection (1): galerifoto.arkib.gov.my
+02/24/2018 12:18:41 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:18:41 AM Hostname: gamma.malaysia.gov.my
+02/24/2018 12:18:41 AM Getting WHOIS for IP: 103.8.160.3
+02/24/2018 12:18:41 AM ASN lookup for 103.8.160.3
+02/24/2018 12:18:41 AM ASN query for 3.160.8.103.origin.asn.cymru.com
+02/24/2018 12:18:41 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:18:41 AM RDAP lookup for 103.8.160.3
+02/24/2018 12:18:41 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.160.3
+02/24/2018 12:18:41 AM HTTP query for 103.8.160.3 at http://rdap.apnic.net/ip/103.8.160.3
+02/24/2018 12:18:41 AM Parsing RDAP network object
+02/24/2018 12:18:41 AM Parsing RDAP root level entities
+02/24/2018 12:18:41 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:18:41 AM HTTP Request: http://gamma.malaysia.gov.my
+02/24/2018 12:18:41 AM Starting new HTTP connection (1): gamma.malaysia.gov.my
+02/24/2018 12:18:41 AM http://gamma.malaysia.gov.my:80 "GET / HTTP/1.1" 200 None
+02/24/2018 12:18:41 AM No HTTPs-Redirect, making explicit HTTPs request: https://gamma.malaysia.gov.my
+02/24/2018 12:18:41 AM Starting new HTTPS connection (1): gamma.malaysia.gov.my
+02/24/2018 12:18:41 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:18:41 AM Hostname: gcert.mampu.gov.my
+02/24/2018 12:18:41 AM Getting WHOIS for IP: 202.75.7.73
+02/24/2018 12:18:41 AM ASN lookup for 202.75.7.73
+02/24/2018 12:18:41 AM ASN query for 73.7.75.202.origin.asn.cymru.com
+02/24/2018 12:18:41 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:18:42 AM RDAP lookup for 202.75.7.73
+02/24/2018 12:18:42 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/202.75.7.73
+02/24/2018 12:18:42 AM HTTP query for 202.75.7.73 at http://rdap.apnic.net/ip/202.75.7.73
+02/24/2018 12:18:42 AM Parsing RDAP network object
+02/24/2018 12:18:42 AM Parsing RDAP root level entities
+02/24/2018 12:18:42 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:18:42 AM HTTP Request: http://gcert.mampu.gov.my
+02/24/2018 12:18:42 AM Starting new HTTP connection (1): gcert.mampu.gov.my
+02/24/2018 12:18:42 AM http://gcert.mampu.gov.my:80 "GET / HTTP/1.1" 200 3381
+02/24/2018 12:18:42 AM No HTTPs-Redirect, making explicit HTTPs request: https://gcert.mampu.gov.my
+02/24/2018 12:18:42 AM Starting new HTTPS connection (1): gcert.mampu.gov.my
+02/24/2018 12:18:42 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:18:42 AM Hostname: gedung1nahrim.nahrim.gov.my
+02/24/2018 12:18:42 AM Getting WHOIS for IP: 175.28.15.99
+02/24/2018 12:18:42 AM ASN lookup for 175.28.15.99
+02/24/2018 12:18:42 AM ASN query for 99.15.28.175.origin.asn.cymru.com
+02/24/2018 12:18:42 AM ASN verbose query for AS38044.asn.cymru.com
+02/24/2018 12:18:42 AM RDAP lookup for 175.28.15.99
+02/24/2018 12:18:42 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/175.28.15.99
+02/24/2018 12:18:42 AM HTTP query for 175.28.15.99 at http://rdap.apnic.net/ip/175.28.15.99
+02/24/2018 12:18:42 AM Parsing RDAP network object
+02/24/2018 12:18:42 AM Parsing RDAP root level entities
+02/24/2018 12:18:42 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:18:42 AM HTTP Request: http://gedung1nahrim.nahrim.gov.my
+02/24/2018 12:18:42 AM Starting new HTTP connection (1): gedung1nahrim.nahrim.gov.my
+02/24/2018 12:18:42 AM http://gedung1nahrim.nahrim.gov.my:80 "GET / HTTP/1.1" 302 176
+02/24/2018 12:18:43 AM http://gedung1nahrim.nahrim.gov.my:80 "GET /WebPages/Home.aspx HTTP/1.1" 200 17769
+02/24/2018 12:18:43 AM No HTTPs-Redirect, making explicit HTTPs request: https://gedung1nahrim.nahrim.gov.my
+02/24/2018 12:18:43 AM Starting new HTTPS connection (1): gedung1nahrim.nahrim.gov.my
+02/24/2018 12:18:44 AM https://gedung1nahrim.nahrim.gov.my:443 "GET / HTTP/1.1" 302 176
+02/24/2018 12:18:44 AM Starting new HTTP connection (1): gedung1nahrim.nahrim.gov.my
+02/24/2018 12:18:44 AM http://gedung1nahrim.nahrim.gov.my:80 "GET /WebPages/Home.aspx HTTP/1.1" 200 17771
+02/24/2018 12:18:44 AM HTTPs Detected. Checking Certs
+02/24/2018 12:18:45 AM Cert Data Saved
+02/24/2018 12:18:45 AM Hostname: gems.mara.gov.my
+02/24/2018 12:18:45 AM Getting WHOIS for IP: 1.9.138.202
+02/24/2018 12:18:45 AM ASN lookup for 1.9.138.202
+02/24/2018 12:18:45 AM ASN query for 202.138.9.1.origin.asn.cymru.com
+02/24/2018 12:18:45 AM ASN verbose query for AS4788.asn.cymru.com
+02/24/2018 12:18:45 AM RDAP lookup for 1.9.138.202
+02/24/2018 12:18:45 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/1.9.138.202
+02/24/2018 12:18:45 AM HTTP query for 1.9.138.202 at http://rdap.apnic.net/ip/1.9.138.202
+02/24/2018 12:18:45 AM Parsing RDAP network object
+02/24/2018 12:18:45 AM Parsing RDAP root level entities
+02/24/2018 12:18:45 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:18:45 AM HTTP Request: http://gems.mara.gov.my
+02/24/2018 12:18:45 AM Starting new HTTP connection (1): gems.mara.gov.my
+02/24/2018 12:18:48 AM http://gems.mara.gov.my:80 "GET / HTTP/1.1" 200 14468
+02/24/2018 12:18:48 AM No HTTPs-Redirect, making explicit HTTPs request: https://gems.mara.gov.my
+02/24/2018 12:18:48 AM Starting new HTTPS connection (1): gems.mara.gov.my
+02/24/2018 12:18:53 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:18:53 AM Hostname: geoportal.johor.gov.my
+02/24/2018 12:18:53 AM Getting WHOIS for IP: 210.19.13.213
+02/24/2018 12:18:53 AM ASN lookup for 210.19.13.213
+02/24/2018 12:18:53 AM ASN query for 213.13.19.210.origin.asn.cymru.com
+02/24/2018 12:18:53 AM ASN verbose query for AS9930.asn.cymru.com
+02/24/2018 12:18:53 AM RDAP lookup for 210.19.13.213
+02/24/2018 12:18:53 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/210.19.13.213
+02/24/2018 12:18:53 AM HTTP query for 210.19.13.213 at http://rdap.apnic.net/ip/210.19.13.213
+02/24/2018 12:18:53 AM Parsing RDAP network object
+02/24/2018 12:18:53 AM Parsing RDAP root level entities
+02/24/2018 12:18:53 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:18:53 AM HTTP Request: http://geoportal.johor.gov.my
+02/24/2018 12:18:53 AM Starting new HTTP connection (1): geoportal.johor.gov.my
+02/24/2018 12:18:54 AM http://geoportal.johor.gov.my:80 "GET / HTTP/1.1" 200 4929
+02/24/2018 12:18:54 AM No HTTPs-Redirect, making explicit HTTPs request: https://geoportal.johor.gov.my
+02/24/2018 12:18:54 AM Starting new HTTPS connection (1): geoportal.johor.gov.my
+02/24/2018 12:18:54 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:18:54 AM Hostname: gids.mohe.gov.my
+02/24/2018 12:18:54 AM Getting WHOIS for IP: 103.8.145.246
+02/24/2018 12:18:54 AM ASN lookup for 103.8.145.246
+02/24/2018 12:18:54 AM ASN query for 246.145.8.103.origin.asn.cymru.com
+02/24/2018 12:18:54 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:18:54 AM RDAP lookup for 103.8.145.246
+02/24/2018 12:18:54 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.145.246
+02/24/2018 12:18:54 AM HTTP query for 103.8.145.246 at http://rdap.apnic.net/ip/103.8.145.246
+02/24/2018 12:18:54 AM Parsing RDAP network object
+02/24/2018 12:18:54 AM Parsing RDAP root level entities
+02/24/2018 12:18:54 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:18:54 AM HTTP Request: http://gids.mohe.gov.my
+02/24/2018 12:18:54 AM Starting new HTTP connection (1): gids.mohe.gov.my
+02/24/2018 12:18:54 AM http://gids.mohe.gov.my:80 "GET / HTTP/1.1" 200 2153
+02/24/2018 12:18:54 AM No HTTPs-Redirect, making explicit HTTPs request: https://gids.mohe.gov.my
+02/24/2018 12:18:54 AM Starting new HTTPS connection (1): gids.mohe.gov.my
+02/24/2018 12:18:59 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:18:59 AM Hostname: gis9.ns.gov.my
+02/24/2018 12:18:59 AM Getting WHOIS for IP: 103.21.45.125
+02/24/2018 12:18:59 AM ASN lookup for 103.21.45.125
+02/24/2018 12:18:59 AM ASN query for 125.45.21.103.origin.asn.cymru.com
+02/24/2018 12:18:59 AM ASN verbose query for AS132435.asn.cymru.com
+02/24/2018 12:19:00 AM RDAP lookup for 103.21.45.125
+02/24/2018 12:19:00 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.21.45.125
+02/24/2018 12:19:00 AM HTTP query for 103.21.45.125 at http://rdap.apnic.net/ip/103.21.45.125
+02/24/2018 12:19:00 AM Parsing RDAP network object
+02/24/2018 12:19:00 AM Parsing RDAP root level entities
+02/24/2018 12:19:00 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:19:00 AM HTTP Request: http://gis9.ns.gov.my
+02/24/2018 12:19:00 AM Starting new HTTP connection (1): gis9.ns.gov.my
+02/24/2018 12:19:05 AM No HTTPs-Redirect, making explicit HTTPs request: https://gis9.ns.gov.my
+02/24/2018 12:19:05 AM Starting new HTTPS connection (1): gis9.ns.gov.my
+02/24/2018 12:19:10 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:19:10 AM Hostname: gmbo.skmm.gov.my
+02/24/2018 12:19:10 AM Unable to Lookup IP, bypassing all checks
+02/24/2018 12:19:10 AM Hostname: gosgstg.malaysia.gov.my
+02/24/2018 12:19:10 AM Getting WHOIS for IP: 103.8.146.254
+02/24/2018 12:19:10 AM ASN lookup for 103.8.146.254
+02/24/2018 12:19:10 AM ASN query for 254.146.8.103.origin.asn.cymru.com
+02/24/2018 12:19:10 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:19:10 AM RDAP lookup for 103.8.146.254
+02/24/2018 12:19:10 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.146.254
+02/24/2018 12:19:10 AM HTTP query for 103.8.146.254 at http://rdap.apnic.net/ip/103.8.146.254
+02/24/2018 12:19:11 AM Parsing RDAP network object
+02/24/2018 12:19:11 AM Parsing RDAP root level entities
+02/24/2018 12:19:11 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:19:11 AM HTTP Request: http://gosgstg.malaysia.gov.my
+02/24/2018 12:19:11 AM Starting new HTTP connection (1): gosgstg.malaysia.gov.my
+02/24/2018 12:19:16 AM No HTTPs-Redirect, making explicit HTTPs request: https://gosgstg.malaysia.gov.my
+02/24/2018 12:19:16 AM Starting new HTTPS connection (1): gosgstg.malaysia.gov.my
+02/24/2018 12:19:21 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:19:21 AM Hostname: gpis.treasury.gov.my
+02/24/2018 12:19:21 AM Getting WHOIS for IP: 203.217.177.140
+02/24/2018 12:19:21 AM ASN lookup for 203.217.177.140
+02/24/2018 12:19:21 AM ASN query for 140.177.217.203.origin.asn.cymru.com
+02/24/2018 12:19:21 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:19:21 AM RDAP lookup for 203.217.177.140
+02/24/2018 12:19:21 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/203.217.177.140
+02/24/2018 12:19:21 AM HTTP query for 203.217.177.140 at http://rdap.apnic.net/ip/203.217.177.140
+02/24/2018 12:19:21 AM Parsing RDAP network object
+02/24/2018 12:19:21 AM Parsing RDAP root level entities
+02/24/2018 12:19:21 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:19:21 AM HTTP Request: http://gpis.treasury.gov.my
+02/24/2018 12:19:21 AM Starting new HTTP connection (1): gpis.treasury.gov.my
+02/24/2018 12:19:26 AM No HTTPs-Redirect, making explicit HTTPs request: https://gpis.treasury.gov.my
+02/24/2018 12:19:26 AM Starting new HTTPS connection (1): gpis.treasury.gov.my
+02/24/2018 12:19:31 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:19:31 AM Hostname: gpki.mampu.gov.my
+02/24/2018 12:19:31 AM Getting WHOIS for IP: 203.217.178.58
+02/24/2018 12:19:31 AM ASN lookup for 203.217.178.58
+02/24/2018 12:19:31 AM ASN query for 58.178.217.203.origin.asn.cymru.com
+02/24/2018 12:19:32 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:19:32 AM RDAP lookup for 203.217.178.58
+02/24/2018 12:19:32 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/203.217.178.58
+02/24/2018 12:19:32 AM HTTP query for 203.217.178.58 at http://rdap.apnic.net/ip/203.217.178.58
+02/24/2018 12:19:32 AM Parsing RDAP network object
+02/24/2018 12:19:32 AM Parsing RDAP root level entities
+02/24/2018 12:19:32 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:19:32 AM HTTP Request: http://gpki.mampu.gov.my
+02/24/2018 12:19:32 AM Starting new HTTP connection (1): gpki.mampu.gov.my
+02/24/2018 12:19:32 AM http://gpki.mampu.gov.my:80 "GET / HTTP/1.1" 301 185
+02/24/2018 12:19:32 AM Starting new HTTPS connection (1): gpki.mampu.gov.my
+02/24/2018 12:19:32 AM https://gpki.mampu.gov.my:443 "GET //gpki_portal HTTP/1.1" 302 None
+02/24/2018 12:19:33 AM https://gpki.mampu.gov.my:443 "GET /gpki_portal/ HTTP/1.1" 200 26454
+02/24/2018 12:19:33 AM HTTP redirected to HTTPS: https://gpki.mampu.gov.my/gpki_portal/
+02/24/2018 12:19:33 AM HTTPs Detected. Checking Certs
+02/24/2018 12:19:33 AM Cert Data Saved
+02/24/2018 12:19:33 AM Hostname: graduan.mohe.gov.my
+02/24/2018 12:19:33 AM Getting WHOIS for IP: 103.8.160.240
+02/24/2018 12:19:33 AM ASN lookup for 103.8.160.240
+02/24/2018 12:19:33 AM ASN query for 240.160.8.103.origin.asn.cymru.com
+02/24/2018 12:19:33 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:19:33 AM RDAP lookup for 103.8.160.240
+02/24/2018 12:19:33 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.160.240
+02/24/2018 12:19:33 AM HTTP query for 103.8.160.240 at http://rdap.apnic.net/ip/103.8.160.240
+02/24/2018 12:19:33 AM Parsing RDAP network object
+02/24/2018 12:19:33 AM Parsing RDAP root level entities
+02/24/2018 12:19:33 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:19:33 AM HTTP Request: http://graduan.mohe.gov.my
+02/24/2018 12:19:33 AM Starting new HTTP connection (1): graduan.mohe.gov.my
+02/24/2018 12:19:33 AM http://graduan.mohe.gov.my:80 "GET / HTTP/1.1" 200 390
+02/24/2018 12:19:33 AM No HTTPs-Redirect, making explicit HTTPs request: https://graduan.mohe.gov.my
+02/24/2018 12:19:33 AM Starting new HTTPS connection (1): graduan.mohe.gov.my
+02/24/2018 12:19:33 AM https://graduan.mohe.gov.my:443 "GET / HTTP/1.1" 200 390
+02/24/2018 12:19:33 AM HTTPs Detected. Checking Certs
+02/24/2018 12:19:34 AM Cert Data Saved
+02/24/2018 12:19:34 AM Hostname: grp.miti.gov.my
+02/24/2018 12:19:34 AM Getting WHOIS for IP: 103.8.161.245
+02/24/2018 12:19:34 AM ASN lookup for 103.8.161.245
+02/24/2018 12:19:34 AM ASN query for 245.161.8.103.origin.asn.cymru.com
+02/24/2018 12:19:34 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:19:34 AM RDAP lookup for 103.8.161.245
+02/24/2018 12:19:34 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.161.245
+02/24/2018 12:19:34 AM HTTP query for 103.8.161.245 at http://rdap.apnic.net/ip/103.8.161.245
+02/24/2018 12:19:34 AM Parsing RDAP network object
+02/24/2018 12:19:34 AM Parsing RDAP root level entities
+02/24/2018 12:19:34 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:19:34 AM HTTP Request: http://grp.miti.gov.my
+02/24/2018 12:19:34 AM Starting new HTTP connection (1): grp.miti.gov.my
+02/24/2018 12:19:34 AM http://grp.miti.gov.my:80 "GET / HTTP/1.1" 200 None
+02/24/2018 12:19:34 AM No HTTPs-Redirect, making explicit HTTPs request: https://grp.miti.gov.my
+02/24/2018 12:19:34 AM Starting new HTTPS connection (1): grp.miti.gov.my
+02/24/2018 12:19:39 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:19:39 AM Hostname: grp.mpc.gov.my
+02/24/2018 12:19:39 AM Getting WHOIS for IP: 202.60.59.78
+02/24/2018 12:19:39 AM ASN lookup for 202.60.59.78
+02/24/2018 12:19:39 AM ASN query for 78.59.60.202.origin.asn.cymru.com
+02/24/2018 12:19:39 AM ASN verbose query for AS38044.asn.cymru.com
+02/24/2018 12:19:39 AM RDAP lookup for 202.60.59.78
+02/24/2018 12:19:39 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/202.60.59.78
+02/24/2018 12:19:39 AM HTTP query for 202.60.59.78 at http://rdap.apnic.net/ip/202.60.59.78
+02/24/2018 12:19:40 AM Parsing RDAP network object
+02/24/2018 12:19:40 AM Parsing RDAP root level entities
+02/24/2018 12:19:40 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:19:40 AM HTTP Request: http://grp.mpc.gov.my
+02/24/2018 12:19:40 AM Starting new HTTP connection (1): grp.mpc.gov.my
+02/24/2018 12:19:40 AM http://grp.mpc.gov.my:80 "GET / HTTP/1.1" 200 None
+02/24/2018 12:19:40 AM No HTTPs-Redirect, making explicit HTTPs request: https://grp.mpc.gov.my
+02/24/2018 12:19:40 AM Starting new HTTPS connection (1): grp.mpc.gov.my
+02/24/2018 12:19:40 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:19:40 AM Hostname: gsoil.jkr.gov.my
+02/24/2018 12:19:40 AM Getting WHOIS for IP: 43.252.232.157
+02/24/2018 12:19:40 AM ASN lookup for 43.252.232.157
+02/24/2018 12:19:40 AM ASN query for 157.232.252.43.origin.asn.cymru.com
+02/24/2018 12:19:40 AM ASN verbose query for AS38044.asn.cymru.com
+02/24/2018 12:19:40 AM RDAP lookup for 43.252.232.157
+02/24/2018 12:19:40 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/43.252.232.157
+02/24/2018 12:19:40 AM HTTP query for 43.252.232.157 at http://rdap.apnic.net/ip/43.252.232.157
+02/24/2018 12:19:40 AM Parsing RDAP network object
+02/24/2018 12:19:40 AM Parsing RDAP root level entities
+02/24/2018 12:19:40 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:19:40 AM HTTP Request: http://gsoil.jkr.gov.my
+02/24/2018 12:19:40 AM Starting new HTTP connection (1): gsoil.jkr.gov.my
+02/24/2018 12:19:40 AM http://gsoil.jkr.gov.my:80 "GET / HTTP/1.1" 302 None
+02/24/2018 12:19:40 AM Starting new HTTPS connection (1): gsoil.jkr.gov.my
+02/24/2018 12:19:41 AM https://gsoil.jkr.gov.my:443 "GET / HTTP/1.1" 200 None
+02/24/2018 12:19:41 AM HTTP redirected to HTTPS: https://gsoil.jkr.gov.my/
+02/24/2018 12:19:41 AM HTTPs Detected. Checking Certs
+02/24/2018 12:19:41 AM Cert Data Saved
+02/24/2018 12:19:41 AM Hostname: gst.customs.gov.my
+02/24/2018 12:19:42 AM Getting WHOIS for IP: 218.208.33.99
+02/24/2018 12:19:42 AM ASN lookup for 218.208.33.99
+02/24/2018 12:19:42 AM ASN query for 99.33.208.218.origin.asn.cymru.com
+02/24/2018 12:19:42 AM ASN verbose query for AS4788.asn.cymru.com
+02/24/2018 12:19:42 AM RDAP lookup for 218.208.33.99
+02/24/2018 12:19:42 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/218.208.33.99
+02/24/2018 12:19:42 AM HTTP query for 218.208.33.99 at http://rdap.apnic.net/ip/218.208.33.99
+02/24/2018 12:19:42 AM Parsing RDAP network object
+02/24/2018 12:19:42 AM Parsing RDAP root level entities
+02/24/2018 12:19:42 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:19:42 AM HTTP Request: http://gst.customs.gov.my
+02/24/2018 12:19:42 AM Starting new HTTP connection (1): gst.customs.gov.my
+02/24/2018 12:19:42 AM http://gst.customs.gov.my:80 "GET / HTTP/1.1" 302 None
+02/24/2018 12:19:42 AM http://gst.customs.gov.my:80 "GET /Pages/redirect.aspx HTTP/1.1" 200 404
+02/24/2018 12:19:42 AM No HTTPs-Redirect, making explicit HTTPs request: https://gst.customs.gov.my
+02/24/2018 12:19:42 AM Starting new HTTPS connection (1): gst.customs.gov.my
+02/24/2018 12:19:42 AM https://gst.customs.gov.my:443 "GET / HTTP/1.1" 404 315
+02/24/2018 12:19:42 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:19:42 AM Hostname: gtp.pemandu.gov.my
+02/24/2018 12:19:42 AM Getting WHOIS for IP: 202.9.103.179
+02/24/2018 12:19:42 AM ASN lookup for 202.9.103.179
+02/24/2018 12:19:42 AM ASN query for 179.103.9.202.origin.asn.cymru.com
+02/24/2018 12:19:42 AM ASN verbose query for AS17666.asn.cymru.com
+02/24/2018 12:19:42 AM RDAP lookup for 202.9.103.179
+02/24/2018 12:19:42 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/202.9.103.179
+02/24/2018 12:19:42 AM HTTP query for 202.9.103.179 at http://rdap.apnic.net/ip/202.9.103.179
+02/24/2018 12:19:43 AM Parsing RDAP network object
+02/24/2018 12:19:43 AM Parsing RDAP root level entities
+02/24/2018 12:19:43 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:19:43 AM HTTP Request: http://gtp.pemandu.gov.my
+02/24/2018 12:19:43 AM Starting new HTTP connection (1): gtp.pemandu.gov.my
+02/24/2018 12:19:43 AM http://gtp.pemandu.gov.my:80 "GET / HTTP/1.1" 301 153
+02/24/2018 12:19:43 AM http://gtp.pemandu.gov.my:80 "GET /gtp/ HTTP/1.1" 200 75831
+02/24/2018 12:19:43 AM No HTTPs-Redirect, making explicit HTTPs request: https://gtp.pemandu.gov.my
+02/24/2018 12:19:43 AM Starting new HTTPS connection (1): gtp.pemandu.gov.my
+02/24/2018 12:19:43 AM https://gtp.pemandu.gov.my:443 "GET / HTTP/1.1" 404 315
+02/24/2018 12:19:43 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:19:43 AM Hostname: h1n1.moh.gov.my
+02/24/2018 12:19:43 AM Getting WHOIS for IP: 103.8.162.239
+02/24/2018 12:19:43 AM ASN lookup for 103.8.162.239
+02/24/2018 12:19:43 AM ASN query for 239.162.8.103.origin.asn.cymru.com
+02/24/2018 12:19:43 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:19:43 AM RDAP lookup for 103.8.162.239
+02/24/2018 12:19:43 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.162.239
+02/24/2018 12:19:43 AM HTTP query for 103.8.162.239 at http://rdap.apnic.net/ip/103.8.162.239
+02/24/2018 12:19:44 AM Parsing RDAP network object
+02/24/2018 12:19:44 AM Parsing RDAP root level entities
+02/24/2018 12:19:44 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:19:44 AM HTTP Request: http://h1n1.moh.gov.my
+02/24/2018 12:19:44 AM Starting new HTTP connection (1): h1n1.moh.gov.my
+02/24/2018 12:19:44 AM No HTTPs-Redirect, making explicit HTTPs request: https://h1n1.moh.gov.my
+02/24/2018 12:19:44 AM Starting new HTTPS connection (1): h1n1.moh.gov.my
+02/24/2018 12:19:44 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:19:44 AM Hostname: habinovasi.mampu.gov.my
+02/24/2018 12:19:44 AM Getting WHOIS for IP: 203.217.178.192
+02/24/2018 12:19:44 AM ASN lookup for 203.217.178.192
+02/24/2018 12:19:44 AM ASN query for 192.178.217.203.origin.asn.cymru.com
+02/24/2018 12:19:44 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:19:44 AM RDAP lookup for 203.217.178.192
+02/24/2018 12:19:44 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/203.217.178.192
+02/24/2018 12:19:44 AM HTTP query for 203.217.178.192 at http://rdap.apnic.net/ip/203.217.178.192
+02/24/2018 12:19:44 AM Parsing RDAP network object
+02/24/2018 12:19:44 AM Parsing RDAP root level entities
+02/24/2018 12:19:44 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:19:44 AM HTTP Request: http://habinovasi.mampu.gov.my
+02/24/2018 12:19:44 AM Starting new HTTP connection (1): habinovasi.mampu.gov.my
+02/24/2018 12:19:44 AM http://habinovasi.mampu.gov.my:80 "GET / HTTP/1.1" 200 None
+02/24/2018 12:19:49 AM No HTTPs-Redirect, making explicit HTTPs request: https://habinovasi.mampu.gov.my
+02/24/2018 12:19:49 AM Starting new HTTPS connection (1): habinovasi.mampu.gov.my
+02/24/2018 12:19:54 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:19:54 AM Hostname: hbeaufort.moh.gov.my
+02/24/2018 12:19:54 AM Getting WHOIS for IP: 103.8.162.243
+02/24/2018 12:19:54 AM ASN lookup for 103.8.162.243
+02/24/2018 12:19:54 AM ASN query for 243.162.8.103.origin.asn.cymru.com
+02/24/2018 12:19:54 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:19:54 AM RDAP lookup for 103.8.162.243
+02/24/2018 12:19:54 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:19:54 AM HTTP query for 103.8.162.243 at http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:19:55 AM Parsing RDAP network object
+02/24/2018 12:19:55 AM Parsing RDAP root level entities
+02/24/2018 12:19:55 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:19:55 AM HTTP Request: http://hbeaufort.moh.gov.my
+02/24/2018 12:19:55 AM Starting new HTTP connection (1): hbeaufort.moh.gov.my
+02/24/2018 12:19:55 AM http://hbeaufort.moh.gov.my:80 "GET / HTTP/1.1" 200 52278
+02/24/2018 12:19:55 AM No HTTPs-Redirect, making explicit HTTPs request: https://hbeaufort.moh.gov.my
+02/24/2018 12:19:55 AM Starting new HTTPS connection (1): hbeaufort.moh.gov.my
+02/24/2018 12:19:55 AM https://hbeaufort.moh.gov.my:443 "GET / HTTP/1.1" 200 None
+02/24/2018 12:19:55 AM HTTPs Detected. Checking Certs
+02/24/2018 12:19:56 AM Cert Data Saved
+02/24/2018 12:19:56 AM Hostname: hdok.moh.gov.my
+02/24/2018 12:19:56 AM Getting WHOIS for IP: 103.8.162.243
+02/24/2018 12:19:56 AM ASN lookup for 103.8.162.243
+02/24/2018 12:19:56 AM ASN query for 243.162.8.103.origin.asn.cymru.com
+02/24/2018 12:19:56 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:19:56 AM RDAP lookup for 103.8.162.243
+02/24/2018 12:19:56 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:19:56 AM HTTP query for 103.8.162.243 at http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:19:56 AM Parsing RDAP network object
+02/24/2018 12:19:56 AM Parsing RDAP root level entities
+02/24/2018 12:19:56 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:19:56 AM HTTP Request: http://hdok.moh.gov.my
+02/24/2018 12:19:56 AM Starting new HTTP connection (1): hdok.moh.gov.my
+02/24/2018 12:19:56 AM http://hdok.moh.gov.my:80 "GET / HTTP/1.1" 302 None
+02/24/2018 12:19:57 AM http://hdok.moh.gov.my:80 "GET /v8/index.php HTTP/1.1" 200 18556
+02/24/2018 12:19:57 AM No HTTPs-Redirect, making explicit HTTPs request: https://hdok.moh.gov.my
+02/24/2018 12:19:57 AM Starting new HTTPS connection (1): hdok.moh.gov.my
+02/24/2018 12:19:57 AM https://hdok.moh.gov.my:443 "GET / HTTP/1.1" 302 None
+02/24/2018 12:19:57 AM https://hdok.moh.gov.my:443 "GET /v8/index.php HTTP/1.1" 200 None
+02/24/2018 12:19:57 AM HTTPs Detected. Checking Certs
+02/24/2018 12:19:58 AM Cert Data Saved
+02/24/2018 12:19:58 AM Hostname: helpdesk.ketengah.gov.my
+02/24/2018 12:19:58 AM Unable to Lookup IP, bypassing all checks
+02/24/2018 12:19:58 AM Hostname: hkbtgn.moh.gov.my
+02/24/2018 12:19:58 AM Getting WHOIS for IP: 103.8.162.243
+02/24/2018 12:19:58 AM ASN lookup for 103.8.162.243
+02/24/2018 12:19:58 AM ASN query for 243.162.8.103.origin.asn.cymru.com
+02/24/2018 12:19:58 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:19:58 AM RDAP lookup for 103.8.162.243
+02/24/2018 12:19:58 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:19:58 AM HTTP query for 103.8.162.243 at http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:19:58 AM Parsing RDAP network object
+02/24/2018 12:19:58 AM Parsing RDAP root level entities
+02/24/2018 12:19:58 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:19:58 AM HTTP Request: http://hkbtgn.moh.gov.my
+02/24/2018 12:19:58 AM Starting new HTTP connection (1): hkbtgn.moh.gov.my
+02/24/2018 12:19:58 AM http://hkbtgn.moh.gov.my:80 "GET / HTTP/1.1" 200 111
+02/24/2018 12:19:58 AM No HTTPs-Redirect, making explicit HTTPs request: https://hkbtgn.moh.gov.my
+02/24/2018 12:19:58 AM Starting new HTTPS connection (1): hkbtgn.moh.gov.my
+02/24/2018 12:19:59 AM https://hkbtgn.moh.gov.my:443 "GET / HTTP/1.1" 301 231
+02/24/2018 12:19:59 AM Starting new HTTP connection (1): hag.moh.gov.my
+02/24/2018 12:19:59 AM http://hag.moh.gov.my:80 "GET /2 HTTP/1.1" 301 232
+02/24/2018 12:19:59 AM http://hag.moh.gov.my:80 "GET /2/ HTTP/1.1" 200 7501
+02/24/2018 12:19:59 AM HTTPs Detected. Checking Certs
+02/24/2018 12:19:59 AM Cert Data Saved
+02/24/2018 12:19:59 AM Hostname: hkgu.moh.gov.my
+02/24/2018 12:19:59 AM Getting WHOIS for IP: 103.8.162.243
+02/24/2018 12:19:59 AM ASN lookup for 103.8.162.243
+02/24/2018 12:19:59 AM ASN query for 243.162.8.103.origin.asn.cymru.com
+02/24/2018 12:19:59 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:19:59 AM RDAP lookup for 103.8.162.243
+02/24/2018 12:19:59 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:19:59 AM HTTP query for 103.8.162.243 at http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:00 AM Parsing RDAP network object
+02/24/2018 12:20:00 AM Parsing RDAP root level entities
+02/24/2018 12:20:00 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:00 AM HTTP Request: http://hkgu.moh.gov.my
+02/24/2018 12:20:00 AM Starting new HTTP connection (1): hkgu.moh.gov.my
+02/24/2018 12:20:00 AM http://hkgu.moh.gov.my:80 "GET / HTTP/1.1" 200 None
+02/24/2018 12:20:00 AM No HTTPs-Redirect, making explicit HTTPs request: https://hkgu.moh.gov.my
+02/24/2018 12:20:00 AM Starting new HTTPS connection (1): hkgu.moh.gov.my
+02/24/2018 12:20:00 AM https://hkgu.moh.gov.my:443 "GET / HTTP/1.1" 200 None
+02/24/2018 12:20:00 AM HTTPs Detected. Checking Certs
+02/24/2018 12:20:01 AM Cert Data Saved
+02/24/2018 12:20:01 AM Hostname: hkm.moh.gov.my
+02/24/2018 12:20:01 AM Getting WHOIS for IP: 103.8.162.243
+02/24/2018 12:20:01 AM ASN lookup for 103.8.162.243
+02/24/2018 12:20:01 AM ASN query for 243.162.8.103.origin.asn.cymru.com
+02/24/2018 12:20:01 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:20:01 AM RDAP lookup for 103.8.162.243
+02/24/2018 12:20:01 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:01 AM HTTP query for 103.8.162.243 at http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:01 AM Parsing RDAP network object
+02/24/2018 12:20:01 AM Parsing RDAP root level entities
+02/24/2018 12:20:01 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:01 AM HTTP Request: http://hkm.moh.gov.my
+02/24/2018 12:20:01 AM Starting new HTTP connection (1): hkm.moh.gov.my
+02/24/2018 12:20:01 AM http://hkm.moh.gov.my:80 "GET / HTTP/1.1" 302 231
+02/24/2018 12:20:01 AM http://hkm.moh.gov.my:80 "GET /cgi-sys/suspendedpage.cgi HTTP/1.1" 200 7314
+02/24/2018 12:20:01 AM No HTTPs-Redirect, making explicit HTTPs request: https://hkm.moh.gov.my
+02/24/2018 12:20:01 AM Starting new HTTPS connection (1): hkm.moh.gov.my
+02/24/2018 12:20:01 AM https://hkm.moh.gov.my:443 "GET / HTTP/1.1" 302 232
+02/24/2018 12:20:01 AM https://hkm.moh.gov.my:443 "GET /cgi-sys/suspendedpage.cgi HTTP/1.1" 200 None
+02/24/2018 12:20:01 AM HTTPs Detected. Checking Certs
+02/24/2018 12:20:02 AM Cert Data Saved
+02/24/2018 12:20:02 AM Hostname: hknk.moh.gov.my
+02/24/2018 12:20:02 AM Unable to Lookup IP, bypassing all checks
+02/24/2018 12:20:02 AM Hostname: hkotabelud.moh.gov.my
+02/24/2018 12:20:02 AM Getting WHOIS for IP: 103.8.162.243
+02/24/2018 12:20:02 AM ASN lookup for 103.8.162.243
+02/24/2018 12:20:02 AM ASN query for 243.162.8.103.origin.asn.cymru.com
+02/24/2018 12:20:02 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:20:02 AM RDAP lookup for 103.8.162.243
+02/24/2018 12:20:02 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:02 AM HTTP query for 103.8.162.243 at http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:02 AM Parsing RDAP network object
+02/24/2018 12:20:02 AM Parsing RDAP root level entities
+02/24/2018 12:20:02 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:02 AM HTTP Request: http://hkotabelud.moh.gov.my
+02/24/2018 12:20:02 AM Starting new HTTP connection (1): hkotabelud.moh.gov.my
+02/24/2018 12:20:02 AM http://hkotabelud.moh.gov.my:80 "GET / HTTP/1.1" 200 46522
+02/24/2018 12:20:02 AM No HTTPs-Redirect, making explicit HTTPs request: https://hkotabelud.moh.gov.my
+02/24/2018 12:20:02 AM Starting new HTTPS connection (1): hkotabelud.moh.gov.my
+02/24/2018 12:20:03 AM https://hkotabelud.moh.gov.my:443 "GET / HTTP/1.1" 200 None
+02/24/2018 12:20:03 AM HTTPs Detected. Checking Certs
+02/24/2018 12:20:03 AM Cert Data Saved
+02/24/2018 12:20:03 AM Hostname: hldu.moh.gov.my
+02/24/2018 12:20:03 AM Getting WHOIS for IP: 103.8.162.243
+02/24/2018 12:20:03 AM ASN lookup for 103.8.162.243
+02/24/2018 12:20:03 AM ASN query for 243.162.8.103.origin.asn.cymru.com
+02/24/2018 12:20:03 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:20:03 AM RDAP lookup for 103.8.162.243
+02/24/2018 12:20:03 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:03 AM HTTP query for 103.8.162.243 at http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:04 AM Parsing RDAP network object
+02/24/2018 12:20:04 AM Parsing RDAP root level entities
+02/24/2018 12:20:04 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:04 AM HTTP Request: http://hldu.moh.gov.my
+02/24/2018 12:20:04 AM Starting new HTTP connection (1): hldu.moh.gov.my
+02/24/2018 12:20:04 AM http://hldu.moh.gov.my:80 "GET / HTTP/1.1" 301 233
+02/24/2018 12:20:04 AM http://hldu.moh.gov.my:80 "GET /v5 HTTP/1.1" 301 234
+02/24/2018 12:20:04 AM http://hldu.moh.gov.my:80 "GET /v5/ HTTP/1.1" 200 None
+02/24/2018 12:20:04 AM No HTTPs-Redirect, making explicit HTTPs request: https://hldu.moh.gov.my
+02/24/2018 12:20:04 AM Starting new HTTPS connection (1): hldu.moh.gov.my
+02/24/2018 12:20:04 AM https://hldu.moh.gov.my:443 "GET / HTTP/1.1" 301 233
+02/24/2018 12:20:04 AM Starting new HTTP connection (1): hldu.moh.gov.my
+02/24/2018 12:20:04 AM http://hldu.moh.gov.my:80 "GET /v5 HTTP/1.1" 301 234
+02/24/2018 12:20:05 AM http://hldu.moh.gov.my:80 "GET /v5/ HTTP/1.1" 200 None
+02/24/2018 12:20:05 AM HTTPs Detected. Checking Certs
+02/24/2018 12:20:05 AM Cert Data Saved
+02/24/2018 12:20:05 AM Hostname: hmbp.moh.gov.my
+02/24/2018 12:20:05 AM Getting WHOIS for IP: 103.8.162.243
+02/24/2018 12:20:05 AM ASN lookup for 103.8.162.243
+02/24/2018 12:20:05 AM ASN query for 243.162.8.103.origin.asn.cymru.com
+02/24/2018 12:20:05 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:20:05 AM RDAP lookup for 103.8.162.243
+02/24/2018 12:20:05 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:05 AM HTTP query for 103.8.162.243 at http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:06 AM Parsing RDAP network object
+02/24/2018 12:20:06 AM Parsing RDAP root level entities
+02/24/2018 12:20:06 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:06 AM HTTP Request: http://hmbp.moh.gov.my
+02/24/2018 12:20:06 AM Starting new HTTP connection (1): hmbp.moh.gov.my
+02/24/2018 12:20:06 AM http://hmbp.moh.gov.my:80 "GET / HTTP/1.1" 200 1306
+02/24/2018 12:20:06 AM No HTTPs-Redirect, making explicit HTTPs request: https://hmbp.moh.gov.my
+02/24/2018 12:20:06 AM Starting new HTTPS connection (1): hmbp.moh.gov.my
+02/24/2018 12:20:06 AM https://hmbp.moh.gov.my:443 "GET / HTTP/1.1" 200 1306
+02/24/2018 12:20:06 AM HTTPs Detected. Checking Certs
+02/24/2018 12:20:07 AM Cert Data Saved
+02/24/2018 12:20:07 AM Hostname: home.eperolehan.gov.my
+02/24/2018 12:20:07 AM Getting WHOIS for IP: 107.154.131.21
+02/24/2018 12:20:07 AM ASN lookup for 107.154.131.21
+02/24/2018 12:20:07 AM ASN query for 21.131.154.107.origin.asn.cymru.com
+02/24/2018 12:20:07 AM ASN verbose query for AS19551.asn.cymru.com
+02/24/2018 12:20:07 AM RDAP lookup for 107.154.131.21
+02/24/2018 12:20:07 AM Response not given, perform RDAP lookup for http://rdap.arin.net/registry/ip/107.154.131.21
+02/24/2018 12:20:07 AM HTTP query for 107.154.131.21 at http://rdap.arin.net/registry/ip/107.154.131.21
+02/24/2018 12:20:08 AM Parsing RDAP network object
+02/24/2018 12:20:08 AM Parsing RDAP root level entities
+02/24/2018 12:20:08 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:08 AM HTTP query for 107.154.131.21 at http://rdap.arin.net/registry/entity/INCAP2-ARIN
+02/24/2018 12:20:08 AM HTTP query for 107.154.131.21 at http://rdap.arin.net/registry/entity/BRONS9-ARIN
+02/24/2018 12:20:09 AM HTTP query for 107.154.131.21 at http://rdap.arin.net/registry/entity/INCAP1-ARIN
+02/24/2018 12:20:09 AM HTTP Request: http://home.eperolehan.gov.my
+02/24/2018 12:20:09 AM Starting new HTTP connection (1): home.eperolehan.gov.my
+02/24/2018 12:20:09 AM http://home.eperolehan.gov.my:80 "GET / HTTP/1.1" 200 None
+02/24/2018 12:20:09 AM No HTTPs-Redirect, making explicit HTTPs request: https://home.eperolehan.gov.my
+02/24/2018 12:20:09 AM Starting new HTTPS connection (1): home.eperolehan.gov.my
+02/24/2018 12:20:09 AM https://home.eperolehan.gov.my:443 "GET / HTTP/1.1" 503 803
+02/24/2018 12:20:09 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:20:09 AM Hostname: hpapar.moh.gov.my
+02/24/2018 12:20:09 AM Getting WHOIS for IP: 103.8.162.243
+02/24/2018 12:20:09 AM ASN lookup for 103.8.162.243
+02/24/2018 12:20:09 AM ASN query for 243.162.8.103.origin.asn.cymru.com
+02/24/2018 12:20:09 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:20:09 AM RDAP lookup for 103.8.162.243
+02/24/2018 12:20:09 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:09 AM HTTP query for 103.8.162.243 at http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:09 AM Parsing RDAP network object
+02/24/2018 12:20:09 AM Parsing RDAP root level entities
+02/24/2018 12:20:09 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:09 AM HTTP Request: http://hpapar.moh.gov.my
+02/24/2018 12:20:09 AM Starting new HTTP connection (1): hpapar.moh.gov.my
+02/24/2018 12:20:09 AM http://hpapar.moh.gov.my:80 "GET / HTTP/1.1" 200 111
+02/24/2018 12:20:09 AM No HTTPs-Redirect, making explicit HTTPs request: https://hpapar.moh.gov.my
+02/24/2018 12:20:09 AM Starting new HTTPS connection (1): hpapar.moh.gov.my
+02/24/2018 12:20:10 AM https://hpapar.moh.gov.my:443 "GET / HTTP/1.1" 301 231
+02/24/2018 12:20:10 AM Starting new HTTP connection (1): hag.moh.gov.my
+02/24/2018 12:20:10 AM http://hag.moh.gov.my:80 "GET /2 HTTP/1.1" 301 232
+02/24/2018 12:20:10 AM http://hag.moh.gov.my:80 "GET /2/ HTTP/1.1" 200 7501
+02/24/2018 12:20:10 AM HTTPs Detected. Checking Certs
+02/24/2018 12:20:10 AM Cert Data Saved
+02/24/2018 12:20:10 AM Hostname: hpitas.moh.gov.my
+02/24/2018 12:20:10 AM Getting WHOIS for IP: 103.8.162.243
+02/24/2018 12:20:10 AM ASN lookup for 103.8.162.243
+02/24/2018 12:20:10 AM ASN query for 243.162.8.103.origin.asn.cymru.com
+02/24/2018 12:20:10 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:20:10 AM RDAP lookup for 103.8.162.243
+02/24/2018 12:20:10 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:10 AM HTTP query for 103.8.162.243 at http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:10 AM Parsing RDAP network object
+02/24/2018 12:20:10 AM Parsing RDAP root level entities
+02/24/2018 12:20:10 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:10 AM HTTP Request: http://hpitas.moh.gov.my
+02/24/2018 12:20:10 AM Starting new HTTP connection (1): hpitas.moh.gov.my
+02/24/2018 12:20:10 AM http://hpitas.moh.gov.my:80 "GET / HTTP/1.1" 302 None
+02/24/2018 12:20:11 AM http://hpitas.moh.gov.my:80 "GET /v2/ HTTP/1.1" 200 50954
+02/24/2018 12:20:11 AM No HTTPs-Redirect, making explicit HTTPs request: https://hpitas.moh.gov.my
+02/24/2018 12:20:11 AM Starting new HTTPS connection (1): hpitas.moh.gov.my
+02/24/2018 12:20:11 AM https://hpitas.moh.gov.my:443 "GET / HTTP/1.1" 302 None
+02/24/2018 12:20:11 AM Starting new HTTP connection (1): hpitas.moh.gov.my
+02/24/2018 12:20:11 AM http://hpitas.moh.gov.my:80 "GET /v2/ HTTP/1.1" 200 50954
+02/24/2018 12:20:11 AM HTTPs Detected. Checking Certs
+02/24/2018 12:20:12 AM Cert Data Saved
+02/24/2018 12:20:12 AM Hostname: hqe2.moh.gov.my
+02/24/2018 12:20:12 AM Getting WHOIS for IP: 103.8.162.243
+02/24/2018 12:20:12 AM ASN lookup for 103.8.162.243
+02/24/2018 12:20:12 AM ASN query for 243.162.8.103.origin.asn.cymru.com
+02/24/2018 12:20:12 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:20:12 AM RDAP lookup for 103.8.162.243
+02/24/2018 12:20:12 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:12 AM HTTP query for 103.8.162.243 at http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:12 AM Parsing RDAP network object
+02/24/2018 12:20:12 AM Parsing RDAP root level entities
+02/24/2018 12:20:12 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:12 AM HTTP Request: http://hqe2.moh.gov.my
+02/24/2018 12:20:12 AM Starting new HTTP connection (1): hqe2.moh.gov.my
+02/24/2018 12:20:13 AM http://hqe2.moh.gov.my:80 "GET / HTTP/1.1" 200 None
+02/24/2018 12:20:13 AM No HTTPs-Redirect, making explicit HTTPs request: https://hqe2.moh.gov.my
+02/24/2018 12:20:13 AM Starting new HTTPS connection (1): hqe2.moh.gov.my
+02/24/2018 12:20:13 AM https://hqe2.moh.gov.my:443 "GET / HTTP/1.1" 200 None
+02/24/2018 12:20:13 AM HTTPs Detected. Checking Certs
+02/24/2018 12:20:14 AM Cert Data Saved
+02/24/2018 12:20:14 AM Hostname: hranau.moh.gov.my
+02/24/2018 12:20:14 AM Getting WHOIS for IP: 103.8.162.243
+02/24/2018 12:20:14 AM ASN lookup for 103.8.162.243
+02/24/2018 12:20:14 AM ASN query for 243.162.8.103.origin.asn.cymru.com
+02/24/2018 12:20:14 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:20:14 AM RDAP lookup for 103.8.162.243
+02/24/2018 12:20:14 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:14 AM HTTP query for 103.8.162.243 at http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:14 AM Parsing RDAP network object
+02/24/2018 12:20:14 AM Parsing RDAP root level entities
+02/24/2018 12:20:14 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:14 AM HTTP Request: http://hranau.moh.gov.my
+02/24/2018 12:20:14 AM Starting new HTTP connection (1): hranau.moh.gov.my
+02/24/2018 12:20:14 AM http://hranau.moh.gov.my:80 "GET / HTTP/1.1" 200 111
+02/24/2018 12:20:14 AM No HTTPs-Redirect, making explicit HTTPs request: https://hranau.moh.gov.my
+02/24/2018 12:20:14 AM Starting new HTTPS connection (1): hranau.moh.gov.my
+02/24/2018 12:20:14 AM https://hranau.moh.gov.my:443 "GET / HTTP/1.1" 301 231
+02/24/2018 12:20:14 AM Starting new HTTP connection (1): hag.moh.gov.my
+02/24/2018 12:20:14 AM http://hag.moh.gov.my:80 "GET /2 HTTP/1.1" 301 232
+02/24/2018 12:20:15 AM http://hag.moh.gov.my:80 "GET /2/ HTTP/1.1" 200 7501
+02/24/2018 12:20:15 AM HTTPs Detected. Checking Certs
+02/24/2018 12:20:15 AM Cert Data Saved
+02/24/2018 12:20:15 AM Hostname: hrd.water.gov.my
+02/24/2018 12:20:15 AM Getting WHOIS for IP: 203.62.1.143
+02/24/2018 12:20:15 AM ASN lookup for 203.62.1.143
+02/24/2018 12:20:15 AM ASN query for 143.1.62.203.origin.asn.cymru.com
+02/24/2018 12:20:15 AM ASN verbose query for AS38044.asn.cymru.com
+02/24/2018 12:20:15 AM RDAP lookup for 203.62.1.143
+02/24/2018 12:20:15 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/203.62.1.143
+02/24/2018 12:20:15 AM HTTP query for 203.62.1.143 at http://rdap.apnic.net/ip/203.62.1.143
+02/24/2018 12:20:15 AM Parsing RDAP network object
+02/24/2018 12:20:15 AM Parsing RDAP root level entities
+02/24/2018 12:20:15 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:15 AM HTTP Request: http://hrd.water.gov.my
+02/24/2018 12:20:15 AM Starting new HTTP connection (1): hrd.water.gov.my
+02/24/2018 12:20:16 AM http://hrd.water.gov.my:80 "GET / HTTP/1.1" 403 218
+02/24/2018 12:20:16 AM No HTTPs-Redirect, making explicit HTTPs request: https://hrd.water.gov.my
+02/24/2018 12:20:16 AM Starting new HTTPS connection (1): hrd.water.gov.my
+02/24/2018 12:20:21 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:20:21 AM Hostname: hrmis.eghrmis.gov.my
+02/24/2018 12:20:21 AM Unable to Lookup IP, bypassing all checks
+02/24/2018 12:20:21 AM Hostname: hrmis2.eghrmis.gov.my
+02/24/2018 12:20:21 AM Getting WHOIS for IP: 203.217.177.203
+02/24/2018 12:20:21 AM ASN lookup for 203.217.177.203
+02/24/2018 12:20:21 AM ASN query for 203.177.217.203.origin.asn.cymru.com
+02/24/2018 12:20:21 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:20:21 AM RDAP lookup for 203.217.177.203
+02/24/2018 12:20:21 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/203.217.177.203
+02/24/2018 12:20:21 AM HTTP query for 203.217.177.203 at http://rdap.apnic.net/ip/203.217.177.203
+02/24/2018 12:20:21 AM Parsing RDAP network object
+02/24/2018 12:20:21 AM Parsing RDAP root level entities
+02/24/2018 12:20:21 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:21 AM HTTP Request: http://hrmis2.eghrmis.gov.my
+02/24/2018 12:20:21 AM Starting new HTTP connection (1): hrmis2.eghrmis.gov.my
+02/24/2018 12:20:21 AM http://hrmis2.eghrmis.gov.my:80 "GET / HTTP/1.1" 302 0
+02/24/2018 12:20:21 AM Starting new HTTPS connection (1): hrmis2.eghrmis.gov.my
+02/24/2018 12:20:21 AM https://hrmis2.eghrmis.gov.my:443 "GET / HTTP/1.1" 302 153
+02/24/2018 12:20:21 AM https://hrmis2.eghrmis.gov.my:443 "GET /HRMISNET/Common/Main/Login.aspx HTTP/1.1" 200 19362
+02/24/2018 12:20:21 AM HTTP redirected to HTTPS: https://hrmis2.eghrmis.gov.my/HRMISNET/Common/Main/Login.aspx
+02/24/2018 12:20:21 AM HTTPs Detected. Checking Certs
+02/24/2018 12:20:22 AM Cert Data Saved
+02/24/2018 12:20:22 AM Hostname: hrmisone.eghrmis.gov.my
+02/24/2018 12:20:22 AM Getting WHOIS for IP: 203.217.177.204
+02/24/2018 12:20:22 AM ASN lookup for 203.217.177.204
+02/24/2018 12:20:22 AM ASN query for 204.177.217.203.origin.asn.cymru.com
+02/24/2018 12:20:22 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:20:22 AM RDAP lookup for 203.217.177.204
+02/24/2018 12:20:22 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/203.217.177.204
+02/24/2018 12:20:22 AM HTTP query for 203.217.177.204 at http://rdap.apnic.net/ip/203.217.177.204
+02/24/2018 12:20:22 AM Parsing RDAP network object
+02/24/2018 12:20:22 AM Parsing RDAP root level entities
+02/24/2018 12:20:22 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:22 AM HTTP Request: http://hrmisone.eghrmis.gov.my
+02/24/2018 12:20:22 AM Starting new HTTP connection (1): hrmisone.eghrmis.gov.my
+02/24/2018 12:20:22 AM http://hrmisone.eghrmis.gov.my:80 "GET / HTTP/1.1" 302 0
+02/24/2018 12:20:22 AM Starting new HTTPS connection (1): hrmisone.eghrmis.gov.my
+02/24/2018 12:20:22 AM https://hrmisone.eghrmis.gov.my:443 "GET / HTTP/1.1" 200 10099
+02/24/2018 12:20:22 AM HTTP redirected to HTTPS: https://hrmisone.eghrmis.gov.my/
+02/24/2018 12:20:22 AM HTTPs Detected. Checking Certs
+02/24/2018 12:20:23 AM Cert Data Saved
+02/24/2018 12:20:23 AM Hostname: hsipitang.moh.gov.my
+02/24/2018 12:20:23 AM Getting WHOIS for IP: 103.8.162.243
+02/24/2018 12:20:23 AM ASN lookup for 103.8.162.243
+02/24/2018 12:20:23 AM ASN query for 243.162.8.103.origin.asn.cymru.com
+02/24/2018 12:20:23 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:20:23 AM RDAP lookup for 103.8.162.243
+02/24/2018 12:20:23 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:23 AM HTTP query for 103.8.162.243 at http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:23 AM Parsing RDAP network object
+02/24/2018 12:20:23 AM Parsing RDAP root level entities
+02/24/2018 12:20:23 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:23 AM HTTP Request: http://hsipitang.moh.gov.my
+02/24/2018 12:20:23 AM Starting new HTTP connection (1): hsipitang.moh.gov.my
+02/24/2018 12:20:23 AM http://hsipitang.moh.gov.my:80 "GET / HTTP/1.1" 200 111
+02/24/2018 12:20:23 AM No HTTPs-Redirect, making explicit HTTPs request: https://hsipitang.moh.gov.my
+02/24/2018 12:20:23 AM Starting new HTTPS connection (1): hsipitang.moh.gov.my
+02/24/2018 12:20:23 AM https://hsipitang.moh.gov.my:443 "GET / HTTP/1.1" 301 231
+02/24/2018 12:20:23 AM Starting new HTTP connection (1): hag.moh.gov.my
+02/24/2018 12:20:23 AM http://hag.moh.gov.my:80 "GET /2 HTTP/1.1" 301 232
+02/24/2018 12:20:23 AM http://hag.moh.gov.my:80 "GET /2/ HTTP/1.1" 200 7501
+02/24/2018 12:20:23 AM HTTPs Detected. Checking Certs
+02/24/2018 12:20:23 AM Cert Data Saved
+02/24/2018 12:20:23 AM Hostname: hspkpyu.moh.gov.my
+02/24/2018 12:20:23 AM Getting WHOIS for IP: 103.8.162.243
+02/24/2018 12:20:23 AM ASN lookup for 103.8.162.243
+02/24/2018 12:20:23 AM ASN query for 243.162.8.103.origin.asn.cymru.com
+02/24/2018 12:20:23 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:20:23 AM RDAP lookup for 103.8.162.243
+02/24/2018 12:20:23 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:23 AM HTTP query for 103.8.162.243 at http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:24 AM Parsing RDAP network object
+02/24/2018 12:20:24 AM Parsing RDAP root level entities
+02/24/2018 12:20:24 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:24 AM HTTP Request: http://hspkpyu.moh.gov.my
+02/24/2018 12:20:24 AM Starting new HTTP connection (1): hspkpyu.moh.gov.my
+02/24/2018 12:20:24 AM http://hspkpyu.moh.gov.my:80 "GET / HTTP/1.1" 200 16682
+02/24/2018 12:20:24 AM No HTTPs-Redirect, making explicit HTTPs request: https://hspkpyu.moh.gov.my
+02/24/2018 12:20:24 AM Starting new HTTPS connection (1): hspkpyu.moh.gov.my
+02/24/2018 12:20:25 AM https://hspkpyu.moh.gov.my:443 "GET / HTTP/1.1" 200 None
+02/24/2018 12:20:25 AM HTTPs Detected. Checking Certs
+02/24/2018 12:20:25 AM Cert Data Saved
+02/24/2018 12:20:25 AM Hostname: hspn.moh.gov.my
+02/24/2018 12:20:25 AM Getting WHOIS for IP: 103.8.162.243
+02/24/2018 12:20:25 AM ASN lookup for 103.8.162.243
+02/24/2018 12:20:25 AM ASN query for 243.162.8.103.origin.asn.cymru.com
+02/24/2018 12:20:25 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:20:25 AM RDAP lookup for 103.8.162.243
+02/24/2018 12:20:25 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:25 AM HTTP query for 103.8.162.243 at http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:26 AM Parsing RDAP network object
+02/24/2018 12:20:26 AM Parsing RDAP root level entities
+02/24/2018 12:20:26 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:26 AM HTTP Request: http://hspn.moh.gov.my
+02/24/2018 12:20:26 AM Starting new HTTP connection (1): hspn.moh.gov.my
+02/24/2018 12:20:26 AM http://hspn.moh.gov.my:80 "GET / HTTP/1.1" 200 111
+02/24/2018 12:20:26 AM No HTTPs-Redirect, making explicit HTTPs request: https://hspn.moh.gov.my
+02/24/2018 12:20:26 AM Starting new HTTPS connection (1): hspn.moh.gov.my
+02/24/2018 12:20:26 AM https://hspn.moh.gov.my:443 "GET / HTTP/1.1" 301 231
+02/24/2018 12:20:26 AM Starting new HTTP connection (1): hag.moh.gov.my
+02/24/2018 12:20:26 AM http://hag.moh.gov.my:80 "GET /2 HTTP/1.1" 301 232
+02/24/2018 12:20:26 AM http://hag.moh.gov.my:80 "GET /2/ HTTP/1.1" 200 7501
+02/24/2018 12:20:26 AM HTTPs Detected. Checking Certs
+02/24/2018 12:20:26 AM Cert Data Saved
+02/24/2018 12:20:26 AM Hostname: htbn.moh.gov.my
+02/24/2018 12:20:26 AM Getting WHOIS for IP: 103.8.162.243
+02/24/2018 12:20:26 AM ASN lookup for 103.8.162.243
+02/24/2018 12:20:26 AM ASN query for 243.162.8.103.origin.asn.cymru.com
+02/24/2018 12:20:26 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:20:26 AM RDAP lookup for 103.8.162.243
+02/24/2018 12:20:26 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:26 AM HTTP query for 103.8.162.243 at http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:26 AM Parsing RDAP network object
+02/24/2018 12:20:26 AM Parsing RDAP root level entities
+02/24/2018 12:20:26 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:26 AM HTTP Request: http://htbn.moh.gov.my
+02/24/2018 12:20:26 AM Starting new HTTP connection (1): htbn.moh.gov.my
+02/24/2018 12:20:26 AM http://htbn.moh.gov.my:80 "GET / HTTP/1.1" 200 111
+02/24/2018 12:20:26 AM No HTTPs-Redirect, making explicit HTTPs request: https://htbn.moh.gov.my
+02/24/2018 12:20:26 AM Starting new HTTPS connection (1): htbn.moh.gov.my
+02/24/2018 12:20:27 AM https://htbn.moh.gov.my:443 "GET / HTTP/1.1" 301 231
+02/24/2018 12:20:27 AM Starting new HTTP connection (1): hag.moh.gov.my
+02/24/2018 12:20:27 AM http://hag.moh.gov.my:80 "GET /2 HTTP/1.1" 301 232
+02/24/2018 12:20:27 AM http://hag.moh.gov.my:80 "GET /2/ HTTP/1.1" 200 7501
+02/24/2018 12:20:27 AM HTTPs Detected. Checking Certs
+02/24/2018 12:20:27 AM Cert Data Saved
+02/24/2018 12:20:27 AM Hostname: htenom.moh.gov.my
+02/24/2018 12:20:27 AM Getting WHOIS for IP: 103.8.162.243
+02/24/2018 12:20:27 AM ASN lookup for 103.8.162.243
+02/24/2018 12:20:27 AM ASN query for 243.162.8.103.origin.asn.cymru.com
+02/24/2018 12:20:27 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:20:27 AM RDAP lookup for 103.8.162.243
+02/24/2018 12:20:27 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:27 AM HTTP query for 103.8.162.243 at http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:27 AM Parsing RDAP network object
+02/24/2018 12:20:27 AM Parsing RDAP root level entities
+02/24/2018 12:20:27 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:27 AM HTTP Request: http://htenom.moh.gov.my
+02/24/2018 12:20:27 AM Starting new HTTP connection (1): htenom.moh.gov.my
+02/24/2018 12:20:27 AM http://htenom.moh.gov.my:80 "GET / HTTP/1.1" 200 111
+02/24/2018 12:20:27 AM No HTTPs-Redirect, making explicit HTTPs request: https://htenom.moh.gov.my
+02/24/2018 12:20:27 AM Starting new HTTPS connection (1): htenom.moh.gov.my
+02/24/2018 12:20:27 AM https://htenom.moh.gov.my:443 "GET / HTTP/1.1" 301 231
+02/24/2018 12:20:27 AM Starting new HTTP connection (1): hag.moh.gov.my
+02/24/2018 12:20:27 AM http://hag.moh.gov.my:80 "GET /2 HTTP/1.1" 301 232
+02/24/2018 12:20:28 AM http://hag.moh.gov.my:80 "GET /2/ HTTP/1.1" 200 7501
+02/24/2018 12:20:28 AM HTTPs Detected. Checking Certs
+02/24/2018 12:20:28 AM Cert Data Saved
+02/24/2018 12:20:28 AM Hostname: htuaran.moh.gov.my
+02/24/2018 12:20:28 AM Getting WHOIS for IP: 103.8.162.243
+02/24/2018 12:20:28 AM ASN lookup for 103.8.162.243
+02/24/2018 12:20:28 AM ASN query for 243.162.8.103.origin.asn.cymru.com
+02/24/2018 12:20:28 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:20:28 AM RDAP lookup for 103.8.162.243
+02/24/2018 12:20:28 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:28 AM HTTP query for 103.8.162.243 at http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:28 AM Parsing RDAP network object
+02/24/2018 12:20:28 AM Parsing RDAP root level entities
+02/24/2018 12:20:28 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:28 AM HTTP Request: http://htuaran.moh.gov.my
+02/24/2018 12:20:28 AM Starting new HTTP connection (1): htuaran.moh.gov.my
+02/24/2018 12:20:29 AM http://htuaran.moh.gov.my:80 "GET / HTTP/1.1" 200 60652
+02/24/2018 12:20:29 AM No HTTPs-Redirect, making explicit HTTPs request: https://htuaran.moh.gov.my
+02/24/2018 12:20:29 AM Starting new HTTPS connection (1): htuaran.moh.gov.my
+02/24/2018 12:20:29 AM https://htuaran.moh.gov.my:443 "GET / HTTP/1.1" 200 None
+02/24/2018 12:20:29 AM HTTPs Detected. Checking Certs
+02/24/2018 12:20:30 AM Cert Data Saved
+02/24/2018 12:20:30 AM Hostname: htwu.moh.gov.my
+02/24/2018 12:20:30 AM Getting WHOIS for IP: 103.8.162.243
+02/24/2018 12:20:30 AM ASN lookup for 103.8.162.243
+02/24/2018 12:20:30 AM ASN query for 243.162.8.103.origin.asn.cymru.com
+02/24/2018 12:20:30 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:20:30 AM RDAP lookup for 103.8.162.243
+02/24/2018 12:20:30 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:30 AM HTTP query for 103.8.162.243 at http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:30 AM Parsing RDAP network object
+02/24/2018 12:20:30 AM Parsing RDAP root level entities
+02/24/2018 12:20:30 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:30 AM HTTP Request: http://htwu.moh.gov.my
+02/24/2018 12:20:30 AM Starting new HTTP connection (1): htwu.moh.gov.my
+02/24/2018 12:20:30 AM http://htwu.moh.gov.my:80 "GET / HTTP/1.1" 302 None
+02/24/2018 12:20:30 AM http://htwu.moh.gov.my:80 "GET /v3 HTTP/1.1" 301 234
+02/24/2018 12:20:31 AM http://htwu.moh.gov.my:80 "GET /v3/ HTTP/1.1" 200 43758
+02/24/2018 12:20:31 AM No HTTPs-Redirect, making explicit HTTPs request: https://htwu.moh.gov.my
+02/24/2018 12:20:31 AM Starting new HTTPS connection (1): htwu.moh.gov.my
+02/24/2018 12:20:31 AM https://htwu.moh.gov.my:443 "GET / HTTP/1.1" 302 None
+02/24/2018 12:20:31 AM Starting new HTTP connection (1): htwu.moh.gov.my
+02/24/2018 12:20:31 AM http://htwu.moh.gov.my:80 "GET /v3 HTTP/1.1" 301 234
+02/24/2018 12:20:31 AM http://htwu.moh.gov.my:80 "GET /v3/ HTTP/1.1" 200 43758
+02/24/2018 12:20:31 AM HTTPs Detected. Checking Certs
+02/24/2018 12:20:32 AM Cert Data Saved
+02/24/2018 12:20:32 AM Hostname: hutan.remotesensing.gov.my
+02/24/2018 12:20:32 AM Getting WHOIS for IP: 202.60.59.143
+02/24/2018 12:20:32 AM ASN lookup for 202.60.59.143
+02/24/2018 12:20:32 AM ASN query for 143.59.60.202.origin.asn.cymru.com
+02/24/2018 12:20:32 AM ASN verbose query for AS38044.asn.cymru.com
+02/24/2018 12:20:32 AM RDAP lookup for 202.60.59.143
+02/24/2018 12:20:32 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/202.60.59.143
+02/24/2018 12:20:32 AM HTTP query for 202.60.59.143 at http://rdap.apnic.net/ip/202.60.59.143
+02/24/2018 12:20:33 AM Parsing RDAP network object
+02/24/2018 12:20:33 AM Parsing RDAP root level entities
+02/24/2018 12:20:33 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:33 AM HTTP Request: http://hutan.remotesensing.gov.my
+02/24/2018 12:20:33 AM Starting new HTTP connection (1): hutan.remotesensing.gov.my
+02/24/2018 12:20:33 AM http://hutan.remotesensing.gov.my:80 "GET / HTTP/1.1" 302 172
+02/24/2018 12:20:33 AM http://hutan.remotesensing.gov.my:80 "GET /fmrs/index.html HTTP/1.1" 200 4153
+02/24/2018 12:20:33 AM No HTTPs-Redirect, making explicit HTTPs request: https://hutan.remotesensing.gov.my
+02/24/2018 12:20:33 AM Starting new HTTPS connection (1): hutan.remotesensing.gov.my
+02/24/2018 12:20:38 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:20:38 AM Hostname: hwkks.moh.gov.my
+02/24/2018 12:20:38 AM Getting WHOIS for IP: 103.8.162.243
+02/24/2018 12:20:38 AM ASN lookup for 103.8.162.243
+02/24/2018 12:20:38 AM ASN query for 243.162.8.103.origin.asn.cymru.com
+02/24/2018 12:20:38 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:20:38 AM RDAP lookup for 103.8.162.243
+02/24/2018 12:20:38 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:38 AM HTTP query for 103.8.162.243 at http://rdap.apnic.net/ip/103.8.162.243
+02/24/2018 12:20:38 AM Parsing RDAP network object
+02/24/2018 12:20:38 AM Parsing RDAP root level entities
+02/24/2018 12:20:38 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:38 AM HTTP Request: http://hwkks.moh.gov.my
+02/24/2018 12:20:38 AM Starting new HTTP connection (1): hwkks.moh.gov.my
+02/24/2018 12:20:39 AM http://hwkks.moh.gov.my:80 "GET / HTTP/1.1" 200 59572
+02/24/2018 12:20:39 AM No HTTPs-Redirect, making explicit HTTPs request: https://hwkks.moh.gov.my
+02/24/2018 12:20:39 AM Starting new HTTPS connection (1): hwkks.moh.gov.my
+02/24/2018 12:20:39 AM https://hwkks.moh.gov.my:443 "GET / HTTP/1.1" 200 None
+02/24/2018 12:20:39 AM HTTPs Detected. Checking Certs
+02/24/2018 12:20:40 AM Cert Data Saved
+02/24/2018 12:20:40 AM Hostname: hydro.gov.my
+02/24/2018 12:20:40 AM Getting WHOIS for IP: 218.208.35.220
+02/24/2018 12:20:40 AM ASN lookup for 218.208.35.220
+02/24/2018 12:20:40 AM ASN query for 220.35.208.218.origin.asn.cymru.com
+02/24/2018 12:20:40 AM ASN verbose query for AS4788.asn.cymru.com
+02/24/2018 12:20:40 AM RDAP lookup for 218.208.35.220
+02/24/2018 12:20:40 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/218.208.35.220
+02/24/2018 12:20:40 AM HTTP query for 218.208.35.220 at http://rdap.apnic.net/ip/218.208.35.220
+02/24/2018 12:20:40 AM Parsing RDAP network object
+02/24/2018 12:20:40 AM Parsing RDAP root level entities
+02/24/2018 12:20:40 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:40 AM HTTP Request: http://hydro.gov.my
+02/24/2018 12:20:40 AM Starting new HTTP connection (1): hydro.gov.my
+02/24/2018 12:20:45 AM No HTTPs-Redirect, making explicit HTTPs request: https://hydro.gov.my
+02/24/2018 12:20:45 AM Starting new HTTPS connection (1): hydro.gov.my
+02/24/2018 12:20:46 AM https://hydro.gov.my:443 "GET / HTTP/1.1" 301 0
+02/24/2018 12:20:48 AM https://hydro.gov.my:443 "GET /index.php/en/ HTTP/1.1" 200 None
+02/24/2018 12:20:48 AM HTTPs Detected. Checking Certs
+02/24/2018 12:20:48 AM Cert Data Saved
+02/24/2018 12:20:48 AM Hostname: icare.ptptn.gov.my
+02/24/2018 12:20:48 AM Getting WHOIS for IP: 211.24.235.210
+02/24/2018 12:20:48 AM ASN lookup for 211.24.235.210
+02/24/2018 12:20:48 AM ASN query for 210.235.24.211.origin.asn.cymru.com
+02/24/2018 12:20:48 AM ASN verbose query for AS9930.asn.cymru.com
+02/24/2018 12:20:48 AM RDAP lookup for 211.24.235.210
+02/24/2018 12:20:48 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/211.24.235.210
+02/24/2018 12:20:48 AM HTTP query for 211.24.235.210 at http://rdap.apnic.net/ip/211.24.235.210
+02/24/2018 12:20:49 AM Parsing RDAP network object
+02/24/2018 12:20:49 AM Parsing RDAP root level entities
+02/24/2018 12:20:49 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:49 AM HTTP Request: http://icare.ptptn.gov.my
+02/24/2018 12:20:49 AM Starting new HTTP connection (1): icare.ptptn.gov.my
+02/24/2018 12:20:49 AM http://icare.ptptn.gov.my:80 "GET / HTTP/1.1" 200 256
+02/24/2018 12:20:49 AM No HTTPs-Redirect, making explicit HTTPs request: https://icare.ptptn.gov.my
+02/24/2018 12:20:49 AM Starting new HTTPS connection (1): icare.ptptn.gov.my
+02/24/2018 12:20:49 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:20:49 AM Hostname: ict.jkkn.gov.my
+02/24/2018 12:20:49 AM Unable to Lookup IP, bypassing all checks
+02/24/2018 12:20:49 AM Hostname: idb.dbkl.gov.my
+02/24/2018 12:20:49 AM Getting WHOIS for IP: 58.26.53.56
+02/24/2018 12:20:49 AM ASN lookup for 58.26.53.56
+02/24/2018 12:20:49 AM ASN query for 56.53.26.58.origin.asn.cymru.com
+02/24/2018 12:20:49 AM ASN verbose query for AS4788.asn.cymru.com
+02/24/2018 12:20:49 AM RDAP lookup for 58.26.53.56
+02/24/2018 12:20:49 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/58.26.53.56
+02/24/2018 12:20:49 AM HTTP query for 58.26.53.56 at http://rdap.apnic.net/ip/58.26.53.56
+02/24/2018 12:20:49 AM Parsing RDAP network object
+02/24/2018 12:20:49 AM Parsing RDAP root level entities
+02/24/2018 12:20:49 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:49 AM HTTP Request: http://idb.dbkl.gov.my
+02/24/2018 12:20:49 AM Starting new HTTP connection (1): idb.dbkl.gov.my
+02/24/2018 12:20:49 AM http://idb.dbkl.gov.my:80 "GET / HTTP/1.1" 302 0
+02/24/2018 12:20:49 AM http://idb.dbkl.gov.my:80 "GET /v4 HTTP/1.1" 301 234
+02/24/2018 12:20:51 AM http://idb.dbkl.gov.my:80 "GET /v4/ HTTP/1.1" 200 None
+02/24/2018 12:20:52 AM No HTTPs-Redirect, making explicit HTTPs request: https://idb.dbkl.gov.my
+02/24/2018 12:20:52 AM Starting new HTTPS connection (1): idb.dbkl.gov.my
+02/24/2018 12:20:52 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:20:52 AM Hostname: idengue.remotesensing.gov.my
+02/24/2018 12:20:52 AM Getting WHOIS for IP: 202.60.59.148
+02/24/2018 12:20:52 AM ASN lookup for 202.60.59.148
+02/24/2018 12:20:52 AM ASN query for 148.59.60.202.origin.asn.cymru.com
+02/24/2018 12:20:52 AM ASN verbose query for AS38044.asn.cymru.com
+02/24/2018 12:20:52 AM RDAP lookup for 202.60.59.148
+02/24/2018 12:20:52 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/202.60.59.148
+02/24/2018 12:20:52 AM HTTP query for 202.60.59.148 at http://rdap.apnic.net/ip/202.60.59.148
+02/24/2018 12:20:52 AM Parsing RDAP network object
+02/24/2018 12:20:52 AM Parsing RDAP root level entities
+02/24/2018 12:20:52 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:20:52 AM HTTP Request: http://idengue.remotesensing.gov.my
+02/24/2018 12:20:52 AM Starting new HTTP connection (1): idengue.remotesensing.gov.my
+02/24/2018 12:20:52 AM http://idengue.remotesensing.gov.my:80 "GET / HTTP/1.1" 302 0
+02/24/2018 12:20:52 AM Resetting dropped connection: idengue.remotesensing.gov.my
+02/24/2018 12:20:52 AM http://idengue.remotesensing.gov.my:80 "GET /idengue HTTP/1.1" 301 167
+02/24/2018 12:20:55 AM http://idengue.remotesensing.gov.my:80 "GET /idengue/ HTTP/1.1" 200 20224
+02/24/2018 12:20:55 AM No HTTPs-Redirect, making explicit HTTPs request: https://idengue.remotesensing.gov.my
+02/24/2018 12:20:55 AM Starting new HTTPS connection (1): idengue.remotesensing.gov.my
+02/24/2018 12:21:00 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:21:00 AM Hostname: idsweb.lkim.gov.my
+02/24/2018 12:21:00 AM Getting WHOIS for IP: 1.9.139.62
+02/24/2018 12:21:00 AM ASN lookup for 1.9.139.62
+02/24/2018 12:21:00 AM ASN query for 62.139.9.1.origin.asn.cymru.com
+02/24/2018 12:21:01 AM ASN verbose query for AS4788.asn.cymru.com
+02/24/2018 12:21:01 AM RDAP lookup for 1.9.139.62
+02/24/2018 12:21:01 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/1.9.139.62
+02/24/2018 12:21:01 AM HTTP query for 1.9.139.62 at http://rdap.apnic.net/ip/1.9.139.62
+02/24/2018 12:21:01 AM Parsing RDAP network object
+02/24/2018 12:21:01 AM Parsing RDAP root level entities
+02/24/2018 12:21:01 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:21:01 AM HTTP Request: http://idsweb.lkim.gov.my
+02/24/2018 12:21:01 AM Starting new HTTP connection (1): idsweb.lkim.gov.my
+02/24/2018 12:21:01 AM http://idsweb.lkim.gov.my:80 "GET / HTTP/1.1" 200 76
+02/24/2018 12:21:01 AM No HTTPs-Redirect, making explicit HTTPs request: https://idsweb.lkim.gov.my
+02/24/2018 12:21:01 AM Starting new HTTPS connection (1): idsweb.lkim.gov.my
+02/24/2018 12:21:01 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:21:01 AM Hostname: ifcem.bomba.gov.my
+02/24/2018 12:21:01 AM Getting WHOIS for IP: 103.245.90.94
+02/24/2018 12:21:01 AM ASN lookup for 103.245.90.94
+02/24/2018 12:21:01 AM ASN query for 94.90.245.103.origin.asn.cymru.com
+02/24/2018 12:21:01 AM ASN verbose query for AS38044.asn.cymru.com
+02/24/2018 12:21:01 AM RDAP lookup for 103.245.90.94
+02/24/2018 12:21:01 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.245.90.94
+02/24/2018 12:21:01 AM HTTP query for 103.245.90.94 at http://rdap.apnic.net/ip/103.245.90.94
+02/24/2018 12:21:02 AM Parsing RDAP network object
+02/24/2018 12:21:02 AM Parsing RDAP root level entities
+02/24/2018 12:21:02 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:21:02 AM HTTP Request: http://ifcem.bomba.gov.my
+02/24/2018 12:21:02 AM Starting new HTTP connection (1): ifcem.bomba.gov.my
+02/24/2018 12:21:02 AM http://ifcem.bomba.gov.my:80 "GET / HTTP/1.1" 200 354
+02/24/2018 12:21:02 AM No HTTPs-Redirect, making explicit HTTPs request: https://ifcem.bomba.gov.my
+02/24/2018 12:21:02 AM Starting new HTTPS connection (1): ifcem.bomba.gov.my
+02/24/2018 12:21:07 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:21:07 AM Hostname: iimm.bnm.gov.my
+02/24/2018 12:21:07 AM Getting WHOIS for IP: 103.6.238.25
+02/24/2018 12:21:07 AM ASN lookup for 103.6.238.25
+02/24/2018 12:21:07 AM ASN query for 25.238.6.103.origin.asn.cymru.com
+02/24/2018 12:21:07 AM ASN verbose query for AS132197.asn.cymru.com
+02/24/2018 12:21:07 AM RDAP lookup for 103.6.238.25
+02/24/2018 12:21:07 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.6.238.25
+02/24/2018 12:21:07 AM HTTP query for 103.6.238.25 at http://rdap.apnic.net/ip/103.6.238.25
+02/24/2018 12:21:07 AM Parsing RDAP network object
+02/24/2018 12:21:07 AM Parsing RDAP root level entities
+02/24/2018 12:21:07 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:21:07 AM HTTP Request: http://iimm.bnm.gov.my
+02/24/2018 12:21:07 AM Starting new HTTP connection (1): iimm.bnm.gov.my
+02/24/2018 12:21:08 AM http://iimm.bnm.gov.my:80 "GET / HTTP/1.1" 200 None
+02/24/2018 12:21:12 AM No HTTPs-Redirect, making explicit HTTPs request: https://iimm.bnm.gov.my
+02/24/2018 12:21:12 AM Starting new HTTPS connection (1): iimm.bnm.gov.my
+02/24/2018 12:21:13 AM https://iimm.bnm.gov.my:443 "GET / HTTP/1.1" 200 None
+02/24/2018 12:21:13 AM HTTPs Detected. Checking Certs
+02/24/2018 12:21:13 AM Cert Data Saved
+02/24/2018 12:21:13 AM Hostname: ikan.remotesensing.gov.my
+02/24/2018 12:21:13 AM Getting WHOIS for IP: 202.60.59.137
+02/24/2018 12:21:13 AM ASN lookup for 202.60.59.137
+02/24/2018 12:21:13 AM ASN query for 137.59.60.202.origin.asn.cymru.com
+02/24/2018 12:21:13 AM ASN verbose query for AS38044.asn.cymru.com
+02/24/2018 12:21:13 AM RDAP lookup for 202.60.59.137
+02/24/2018 12:21:13 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/202.60.59.137
+02/24/2018 12:21:13 AM HTTP query for 202.60.59.137 at http://rdap.apnic.net/ip/202.60.59.137
+02/24/2018 12:21:14 AM Parsing RDAP network object
+02/24/2018 12:21:14 AM Parsing RDAP root level entities
+02/24/2018 12:21:14 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:21:14 AM HTTP Request: http://ikan.remotesensing.gov.my
+02/24/2018 12:21:14 AM Starting new HTTP connection (1): ikan.remotesensing.gov.my
+02/24/2018 12:21:14 AM http://ikan.remotesensing.gov.my:80 "GET / HTTP/1.1" 302 160
+02/24/2018 12:21:14 AM http://ikan.remotesensing.gov.my:80 "GET /fsi/ HTTP/1.1" 200 11055
+02/24/2018 12:21:14 AM No HTTPs-Redirect, making explicit HTTPs request: https://ikan.remotesensing.gov.my
+02/24/2018 12:21:14 AM Starting new HTTPS connection (1): ikan.remotesensing.gov.my
+02/24/2018 12:21:19 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:21:19 AM Hostname: ikepoh.kpkt.gov.my
+02/24/2018 12:21:19 AM Getting WHOIS for IP: 103.8.145.204
+02/24/2018 12:21:19 AM ASN lookup for 103.8.145.204
+02/24/2018 12:21:19 AM ASN query for 204.145.8.103.origin.asn.cymru.com
+02/24/2018 12:21:19 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:21:19 AM RDAP lookup for 103.8.145.204
+02/24/2018 12:21:19 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.145.204
+02/24/2018 12:21:19 AM HTTP query for 103.8.145.204 at http://rdap.apnic.net/ip/103.8.145.204
+02/24/2018 12:21:19 AM Parsing RDAP network object
+02/24/2018 12:21:19 AM Parsing RDAP root level entities
+02/24/2018 12:21:19 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:21:19 AM HTTP Request: http://ikepoh.kpkt.gov.my
+02/24/2018 12:21:19 AM Starting new HTTP connection (1): ikepoh.kpkt.gov.my
+02/24/2018 12:21:19 AM http://ikepoh.kpkt.gov.my:80 "GET / HTTP/1.1" 200 24254
+02/24/2018 12:21:19 AM No HTTPs-Redirect, making explicit HTTPs request: https://ikepoh.kpkt.gov.my
+02/24/2018 12:21:19 AM Starting new HTTPS connection (1): ikepoh.kpkt.gov.my
+02/24/2018 12:21:20 AM https://ikepoh.kpkt.gov.my:443 "GET / HTTP/1.1" 200 24254
+02/24/2018 12:21:20 AM HTTPs Detected. Checking Certs
+02/24/2018 12:21:20 AM Cert Data Saved
+02/24/2018 12:21:20 AM Hostname: ikpkt.kpkt.gov.my
+02/24/2018 12:21:20 AM Getting WHOIS for IP: 203.217.179.82
+02/24/2018 12:21:20 AM ASN lookup for 203.217.179.82
+02/24/2018 12:21:20 AM ASN query for 82.179.217.203.origin.asn.cymru.com
+02/24/2018 12:21:20 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:21:20 AM RDAP lookup for 203.217.179.82
+02/24/2018 12:21:20 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/203.217.179.82
+02/24/2018 12:21:20 AM HTTP query for 203.217.179.82 at http://rdap.apnic.net/ip/203.217.179.82
+02/24/2018 12:21:20 AM Parsing RDAP network object
+02/24/2018 12:21:20 AM Parsing RDAP root level entities
+02/24/2018 12:21:20 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:21:20 AM HTTP Request: http://ikpkt.kpkt.gov.my
+02/24/2018 12:21:20 AM Starting new HTTP connection (1): ikpkt.kpkt.gov.my
+02/24/2018 12:21:21 AM http://ikpkt.kpkt.gov.my:80 "GET / HTTP/1.1" 200 6899
+02/24/2018 12:21:21 AM No HTTPs-Redirect, making explicit HTTPs request: https://ikpkt.kpkt.gov.my
+02/24/2018 12:21:21 AM Starting new HTTPS connection (1): ikpkt.kpkt.gov.my
+02/24/2018 12:21:26 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:21:26 AM Hostname: ilmu.forestry.gov.my
+02/24/2018 12:21:26 AM Getting WHOIS for IP: 175.28.12.93
+02/24/2018 12:21:26 AM ASN lookup for 175.28.12.93
+02/24/2018 12:21:26 AM ASN query for 93.12.28.175.origin.asn.cymru.com
+02/24/2018 12:21:26 AM ASN verbose query for AS38044.asn.cymru.com
+02/24/2018 12:21:26 AM RDAP lookup for 175.28.12.93
+02/24/2018 12:21:26 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/175.28.12.93
+02/24/2018 12:21:26 AM HTTP query for 175.28.12.93 at http://rdap.apnic.net/ip/175.28.12.93
+02/24/2018 12:21:26 AM Parsing RDAP network object
+02/24/2018 12:21:26 AM Parsing RDAP root level entities
+02/24/2018 12:21:26 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:21:26 AM HTTP Request: http://ilmu.forestry.gov.my
+02/24/2018 12:21:26 AM Starting new HTTP connection (1): ilmu.forestry.gov.my
+02/24/2018 12:21:26 AM No HTTPs-Redirect, making explicit HTTPs request: https://ilmu.forestry.gov.my
+02/24/2018 12:21:26 AM Starting new HTTPS connection (1): ilmu.forestry.gov.my
+02/24/2018 12:21:26 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:21:26 AM Hostname: ilmu.jpa.gov.my
+02/24/2018 12:21:26 AM Getting WHOIS for IP: 202.75.4.213
+02/24/2018 12:21:26 AM ASN lookup for 202.75.4.213
+02/24/2018 12:21:26 AM ASN query for 213.4.75.202.origin.asn.cymru.com
+02/24/2018 12:21:27 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:21:27 AM RDAP lookup for 202.75.4.213
+02/24/2018 12:21:27 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/202.75.4.213
+02/24/2018 12:21:27 AM HTTP query for 202.75.4.213 at http://rdap.apnic.net/ip/202.75.4.213
+02/24/2018 12:21:27 AM Parsing RDAP network object
+02/24/2018 12:21:27 AM Parsing RDAP root level entities
+02/24/2018 12:21:27 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:21:27 AM HTTP Request: http://ilmu.jpa.gov.my
+02/24/2018 12:21:27 AM Starting new HTTP connection (1): ilmu.jpa.gov.my
+02/24/2018 12:21:32 AM No HTTPs-Redirect, making explicit HTTPs request: https://ilmu.jpa.gov.my
+02/24/2018 12:21:32 AM Starting new HTTPS connection (1): ilmu.jpa.gov.my
+02/24/2018 12:21:37 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:21:37 AM Hostname: ilmu.kbs.gov.my
+02/24/2018 12:21:37 AM Getting WHOIS for IP: 202.75.7.233
+02/24/2018 12:21:37 AM ASN lookup for 202.75.7.233
+02/24/2018 12:21:37 AM ASN query for 233.7.75.202.origin.asn.cymru.com
+02/24/2018 12:21:37 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:21:37 AM RDAP lookup for 202.75.7.233
+02/24/2018 12:21:37 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/202.75.7.233
+02/24/2018 12:21:37 AM HTTP query for 202.75.7.233 at http://rdap.apnic.net/ip/202.75.7.233
+02/24/2018 12:21:38 AM Parsing RDAP network object
+02/24/2018 12:21:38 AM Parsing RDAP root level entities
+02/24/2018 12:21:38 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:21:38 AM HTTP Request: http://ilmu.kbs.gov.my
+02/24/2018 12:21:38 AM Starting new HTTP connection (1): ilmu.kbs.gov.my
+02/24/2018 12:21:38 AM http://ilmu.kbs.gov.my:80 "GET / HTTP/1.1" 404 315
+02/24/2018 12:21:38 AM No HTTPs-Redirect, making explicit HTTPs request: https://ilmu.kbs.gov.my
+02/24/2018 12:21:38 AM Starting new HTTPS connection (1): ilmu.kbs.gov.my
+02/24/2018 12:21:38 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:21:38 AM Hostname: ilmuonline.mpc.gov.my
+02/24/2018 12:21:38 AM Getting WHOIS for IP: 202.60.59.85
+02/24/2018 12:21:38 AM ASN lookup for 202.60.59.85
+02/24/2018 12:21:38 AM ASN query for 85.59.60.202.origin.asn.cymru.com
+02/24/2018 12:21:38 AM ASN verbose query for AS38044.asn.cymru.com
+02/24/2018 12:21:38 AM RDAP lookup for 202.60.59.85
+02/24/2018 12:21:38 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/202.60.59.85
+02/24/2018 12:21:38 AM HTTP query for 202.60.59.85 at http://rdap.apnic.net/ip/202.60.59.85
+02/24/2018 12:21:38 AM Parsing RDAP network object
+02/24/2018 12:21:38 AM Parsing RDAP root level entities
+02/24/2018 12:21:38 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:21:38 AM HTTP Request: http://ilmuonline.mpc.gov.my
+02/24/2018 12:21:38 AM Starting new HTTP connection (1): ilmuonline.mpc.gov.my
+02/24/2018 12:21:39 AM http://ilmuonline.mpc.gov.my:80 "GET / HTTP/1.1" 200 None
+02/24/2018 12:21:39 AM No HTTPs-Redirect, making explicit HTTPs request: https://ilmuonline.mpc.gov.my
+02/24/2018 12:21:39 AM Starting new HTTPS connection (1): ilmuonline.mpc.gov.my
+02/24/2018 12:21:44 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:21:44 AM Hostname: ilsm.dosm.gov.my
+02/24/2018 12:21:45 AM Getting WHOIS for IP: 104.25.233.109
+02/24/2018 12:21:45 AM ASN lookup for 104.25.233.109
+02/24/2018 12:21:45 AM ASN query for 109.233.25.104.origin.asn.cymru.com
+02/24/2018 12:21:45 AM ASN verbose query for AS13335.asn.cymru.com
+02/24/2018 12:21:45 AM RDAP lookup for 104.25.233.109
+02/24/2018 12:21:45 AM Response not given, perform RDAP lookup for http://rdap.arin.net/registry/ip/104.25.233.109
+02/24/2018 12:21:45 AM HTTP query for 104.25.233.109 at http://rdap.arin.net/registry/ip/104.25.233.109
+02/24/2018 12:21:46 AM Parsing RDAP network object
+02/24/2018 12:21:46 AM Parsing RDAP root level entities
+02/24/2018 12:21:46 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:21:46 AM HTTP Request: http://ilsm.dosm.gov.my
+02/24/2018 12:21:46 AM Starting new HTTP connection (1): ilsm.dosm.gov.my
+02/24/2018 12:21:46 AM http://ilsm.dosm.gov.my:80 "GET / HTTP/1.1" 200 None
+02/24/2018 12:21:46 AM No HTTPs-Redirect, making explicit HTTPs request: https://ilsm.dosm.gov.my
+02/24/2018 12:21:46 AM Starting new HTTPS connection (1): ilsm.dosm.gov.my
+02/24/2018 12:21:46 AM https://ilsm.dosm.gov.my:443 "GET / HTTP/1.1" 200 None
+02/24/2018 12:21:46 AM HTTPs Detected. Checking Certs
+02/24/2018 12:21:46 AM Cert Data Saved
+02/24/2018 12:21:46 AM Hostname: imagegallery.tourism.gov.my
+02/24/2018 12:21:46 AM Getting WHOIS for IP: 203.217.179.14
+02/24/2018 12:21:46 AM ASN lookup for 203.217.179.14
+02/24/2018 12:21:46 AM ASN query for 14.179.217.203.origin.asn.cymru.com
+02/24/2018 12:21:47 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:21:47 AM RDAP lookup for 203.217.179.14
+02/24/2018 12:21:47 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/203.217.179.14
+02/24/2018 12:21:47 AM HTTP query for 203.217.179.14 at http://rdap.apnic.net/ip/203.217.179.14
+02/24/2018 12:21:47 AM Parsing RDAP network object
+02/24/2018 12:21:47 AM Parsing RDAP root level entities
+02/24/2018 12:21:47 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:21:47 AM HTTP Request: http://imagegallery.tourism.gov.my
+02/24/2018 12:21:47 AM Starting new HTTP connection (1): imagegallery.tourism.gov.my
+02/24/2018 12:21:47 AM http://imagegallery.tourism.gov.my:80 "GET / HTTP/1.1" 301 251
+02/24/2018 12:21:47 AM http://imagegallery.tourism.gov.my:80 "GET /fotoweb/ HTTP/1.1" 200 13670
+02/24/2018 12:21:47 AM No HTTPs-Redirect, making explicit HTTPs request: https://imagegallery.tourism.gov.my
+02/24/2018 12:21:47 AM Starting new HTTPS connection (1): imagegallery.tourism.gov.my
+02/24/2018 12:21:47 AM https://imagegallery.tourism.gov.my:443 "GET / HTTP/1.1" 301 252
+02/24/2018 12:21:47 AM https://imagegallery.tourism.gov.my:443 "GET /fotoweb/ HTTP/1.1" 200 13670
+02/24/2018 12:21:47 AM HTTPs Detected. Checking Certs
+02/24/2018 12:21:47 AM Cert Data Saved
+02/24/2018 12:21:47 AM Hostname: imas.isn.gov.my
+02/24/2018 12:21:47 AM Getting WHOIS for IP: 103.18.244.26
+02/24/2018 12:21:47 AM ASN lookup for 103.18.244.26
+02/24/2018 12:21:47 AM ASN query for 26.244.18.103.origin.asn.cymru.com
+02/24/2018 12:21:48 AM ASN verbose query for AS46015.asn.cymru.com
+02/24/2018 12:21:48 AM RDAP lookup for 103.18.244.26
+02/24/2018 12:21:48 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.18.244.26
+02/24/2018 12:21:48 AM HTTP query for 103.18.244.26 at http://rdap.apnic.net/ip/103.18.244.26
+02/24/2018 12:21:48 AM Parsing RDAP network object
+02/24/2018 12:21:48 AM Parsing RDAP root level entities
+02/24/2018 12:21:48 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:21:48 AM HTTP Request: http://imas.isn.gov.my
+02/24/2018 12:21:48 AM Starting new HTTP connection (1): imas.isn.gov.my
+02/24/2018 12:21:48 AM http://imas.isn.gov.my:80 "GET / HTTP/1.1" 200 None
+02/24/2018 12:21:48 AM No HTTPs-Redirect, making explicit HTTPs request: https://imas.isn.gov.my
+02/24/2018 12:21:48 AM Starting new HTTPS connection (1): imas.isn.gov.my
+02/24/2018 12:21:48 AM https://imas.isn.gov.my:443 "GET / HTTP/1.1" 200 260
+02/24/2018 12:21:48 AM HTTPs Detected. Checking Certs
+02/24/2018 12:21:49 AM Cert Data Saved
+02/24/2018 12:21:49 AM Hostname: imej.spa.gov.my
+02/24/2018 12:21:49 AM Getting WHOIS for IP: 203.217.178.63
+02/24/2018 12:21:49 AM ASN lookup for 203.217.178.63
+02/24/2018 12:21:49 AM ASN query for 63.178.217.203.origin.asn.cymru.com
+02/24/2018 12:21:49 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:21:49 AM RDAP lookup for 203.217.178.63
+02/24/2018 12:21:49 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/203.217.178.63
+02/24/2018 12:21:49 AM HTTP query for 203.217.178.63 at http://rdap.apnic.net/ip/203.217.178.63
+02/24/2018 12:21:49 AM Parsing RDAP network object
+02/24/2018 12:21:49 AM Parsing RDAP root level entities
+02/24/2018 12:21:49 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:21:49 AM HTTP Request: http://imej.spa.gov.my
+02/24/2018 12:21:49 AM Starting new HTTP connection (1): imej.spa.gov.my
+02/24/2018 12:21:49 AM http://imej.spa.gov.my:80 "GET / HTTP/1.1" 200 410
+02/24/2018 12:21:49 AM No HTTPs-Redirect, making explicit HTTPs request: https://imej.spa.gov.my
+02/24/2018 12:21:49 AM Starting new HTTPS connection (1): imej.spa.gov.my
+02/24/2018 12:21:54 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:21:54 AM Hostname: imlearning.mardi.gov.my
+02/24/2018 12:21:54 AM Getting WHOIS for IP: 58.26.125.231
+02/24/2018 12:21:54 AM ASN lookup for 58.26.125.231
+02/24/2018 12:21:54 AM ASN query for 231.125.26.58.origin.asn.cymru.com
+02/24/2018 12:21:54 AM ASN verbose query for AS4788.asn.cymru.com
+02/24/2018 12:21:54 AM RDAP lookup for 58.26.125.231
+02/24/2018 12:21:54 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/58.26.125.231
+02/24/2018 12:21:54 AM HTTP query for 58.26.125.231 at http://rdap.apnic.net/ip/58.26.125.231
+02/24/2018 12:21:55 AM Parsing RDAP network object
+02/24/2018 12:21:55 AM Parsing RDAP root level entities
+02/24/2018 12:21:55 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:21:55 AM HTTP Request: http://imlearning.mardi.gov.my
+02/24/2018 12:21:55 AM Starting new HTTP connection (1): imlearning.mardi.gov.my
+02/24/2018 12:21:55 AM http://imlearning.mardi.gov.my:80 "GET / HTTP/1.1" 200 2964
+02/24/2018 12:21:55 AM No HTTPs-Redirect, making explicit HTTPs request: https://imlearning.mardi.gov.my
+02/24/2018 12:21:55 AM Starting new HTTPS connection (1): imlearning.mardi.gov.my
+02/24/2018 12:21:55 AM https://imlearning.mardi.gov.my:443 "GET / HTTP/1.1" 403 4961
+02/24/2018 12:21:55 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:21:55 AM Hostname: ims.infra.gov.my
+02/24/2018 12:21:55 AM Getting WHOIS for IP: 175.28.13.78
+02/24/2018 12:21:55 AM ASN lookup for 175.28.13.78
+02/24/2018 12:21:55 AM ASN query for 78.13.28.175.origin.asn.cymru.com
+02/24/2018 12:21:55 AM ASN verbose query for AS38044.asn.cymru.com
+02/24/2018 12:21:55 AM RDAP lookup for 175.28.13.78
+02/24/2018 12:21:55 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/175.28.13.78
+02/24/2018 12:21:55 AM HTTP query for 175.28.13.78 at http://rdap.apnic.net/ip/175.28.13.78
+02/24/2018 12:21:56 AM Parsing RDAP network object
+02/24/2018 12:21:56 AM Parsing RDAP root level entities
+02/24/2018 12:21:56 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:21:56 AM HTTP Request: http://ims.infra.gov.my
+02/24/2018 12:21:56 AM Starting new HTTP connection (1): ims.infra.gov.my
+02/24/2018 12:21:56 AM http://ims.infra.gov.my:80 "GET / HTTP/1.1" 302 0
+02/24/2018 12:21:56 AM Resetting dropped connection: ims.infra.gov.my
+02/24/2018 12:21:56 AM http://ims.infra.gov.my:80 "GET /imsv2/ HTTP/1.1" 302 0
+02/24/2018 12:21:56 AM Resetting dropped connection: ims.infra.gov.my
+02/24/2018 12:21:56 AM http://ims.infra.gov.my:80 "GET /imsv2/login.php HTTP/1.1" 200 3065
+02/24/2018 12:21:56 AM No HTTPs-Redirect, making explicit HTTPs request: https://ims.infra.gov.my
+02/24/2018 12:21:56 AM Starting new HTTPS connection (1): ims.infra.gov.my
+02/24/2018 12:21:56 AM https://ims.infra.gov.my:443 "GET / HTTP/1.1" 302 0
+02/24/2018 12:21:56 AM Resetting dropped connection: ims.infra.gov.my
+02/24/2018 12:21:56 AM https://ims.infra.gov.my:443 "GET /imsv2/ HTTP/1.1" 302 0
+02/24/2018 12:21:56 AM Resetting dropped connection: ims.infra.gov.my
+02/24/2018 12:21:56 AM https://ims.infra.gov.my:443 "GET /imsv2/login.php HTTP/1.1" 200 3065
+02/24/2018 12:21:56 AM HTTPs Detected. Checking Certs
+02/24/2018 12:21:57 AM Cert Data Saved
+02/24/2018 12:21:57 AM Hostname: info.malaysia.gov.my
+02/24/2018 12:21:57 AM Getting WHOIS for IP: 103.8.146.249
+02/24/2018 12:21:57 AM ASN lookup for 103.8.146.249
+02/24/2018 12:21:57 AM ASN query for 249.146.8.103.origin.asn.cymru.com
+02/24/2018 12:21:57 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:21:57 AM RDAP lookup for 103.8.146.249
+02/24/2018 12:21:57 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.146.249
+02/24/2018 12:21:57 AM HTTP query for 103.8.146.249 at http://rdap.apnic.net/ip/103.8.146.249
+02/24/2018 12:21:57 AM Parsing RDAP network object
+02/24/2018 12:21:57 AM Parsing RDAP root level entities
+02/24/2018 12:21:57 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:21:57 AM HTTP Request: http://info.malaysia.gov.my
+02/24/2018 12:21:57 AM Starting new HTTP connection (1): info.malaysia.gov.my
+02/24/2018 12:21:57 AM http://info.malaysia.gov.my:80 "GET / HTTP/1.1" 301 194
+02/24/2018 12:21:57 AM Starting new HTTPS connection (1): info.malaysia.gov.my
+02/24/2018 12:21:57 AM https://info.malaysia.gov.my:443 "GET / HTTP/1.1" 200 5849
+02/24/2018 12:21:57 AM HTTP redirected to HTTPS: https://info.malaysia.gov.my/
+02/24/2018 12:21:57 AM HTTPs Detected. Checking Certs
+02/24/2018 12:21:58 AM Cert Data Saved
+02/24/2018 12:21:58 AM Hostname: infokop.skm.gov.my
+02/24/2018 12:21:58 AM Getting WHOIS for IP: 202.60.56.21
+02/24/2018 12:21:58 AM ASN lookup for 202.60.56.21
+02/24/2018 12:21:58 AM ASN query for 21.56.60.202.origin.asn.cymru.com
+02/24/2018 12:21:58 AM ASN verbose query for AS38044.asn.cymru.com
+02/24/2018 12:21:58 AM RDAP lookup for 202.60.56.21
+02/24/2018 12:21:58 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/202.60.56.21
+02/24/2018 12:21:58 AM HTTP query for 202.60.56.21 at http://rdap.apnic.net/ip/202.60.56.21
+02/24/2018 12:22:00 AM Parsing RDAP network object
+02/24/2018 12:22:00 AM Parsing RDAP root level entities
+02/24/2018 12:22:00 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:22:00 AM HTTP Request: http://infokop.skm.gov.my
+02/24/2018 12:22:00 AM Starting new HTTP connection (1): infokop.skm.gov.my
+02/24/2018 12:22:00 AM http://infokop.skm.gov.my:80 "GET / HTTP/1.1" 404 315
+02/24/2018 12:22:00 AM No HTTPs-Redirect, making explicit HTTPs request: https://infokop.skm.gov.my
+02/24/2018 12:22:00 AM Starting new HTTPS connection (1): infokop.skm.gov.my
+02/24/2018 12:22:01 AM https://infokop.skm.gov.my:443 "GET / HTTP/1.1" 302 149
+02/24/2018 12:22:01 AM https://infokop.skm.gov.my:443 "GET /infokop/defaultInfokop.aspx HTTP/1.1" 302 144
+02/24/2018 12:22:01 AM https://infokop.skm.gov.my:443 "GET /infokop/Mainpage1.aspx HTTP/1.1" 200 1939
+02/24/2018 12:22:01 AM HTTPs Detected. Checking Certs
+02/24/2018 12:22:02 AM Cert Data Saved
+02/24/2018 12:22:02 AM Hostname: inhouse.imi.gov.my
+02/24/2018 12:22:02 AM Getting WHOIS for IP: 58.27.46.13
+02/24/2018 12:22:02 AM ASN lookup for 58.27.46.13
+02/24/2018 12:22:02 AM ASN query for 13.46.27.58.origin.asn.cymru.com
+02/24/2018 12:22:02 AM ASN verbose query for AS4788.asn.cymru.com
+02/24/2018 12:22:02 AM RDAP lookup for 58.27.46.13
+02/24/2018 12:22:02 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/58.27.46.13
+02/24/2018 12:22:02 AM HTTP query for 58.27.46.13 at http://rdap.apnic.net/ip/58.27.46.13
+02/24/2018 12:22:02 AM Parsing RDAP network object
+02/24/2018 12:22:02 AM Parsing RDAP root level entities
+02/24/2018 12:22:02 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:22:02 AM HTTP Request: http://inhouse.imi.gov.my
+02/24/2018 12:22:02 AM Starting new HTTP connection (1): inhouse.imi.gov.my
+02/24/2018 12:22:02 AM http://inhouse.imi.gov.my:80 "GET / HTTP/1.1" 302 0
+02/24/2018 12:22:02 AM http://inhouse.imi.gov.my:80 "GET /dashboard/ HTTP/1.1" 200 None
+02/24/2018 12:22:02 AM No HTTPs-Redirect, making explicit HTTPs request: https://inhouse.imi.gov.my
+02/24/2018 12:22:02 AM Starting new HTTPS connection (1): inhouse.imi.gov.my
+02/24/2018 12:22:07 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:22:07 AM Hostname: intadfs.customs.gov.my
+02/24/2018 12:22:07 AM Getting WHOIS for IP: 218.208.33.107
+02/24/2018 12:22:07 AM ASN lookup for 218.208.33.107
+02/24/2018 12:22:07 AM ASN query for 107.33.208.218.origin.asn.cymru.com
+02/24/2018 12:22:08 AM ASN verbose query for AS4788.asn.cymru.com
+02/24/2018 12:22:08 AM RDAP lookup for 218.208.33.107
+02/24/2018 12:22:08 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/218.208.33.107
+02/24/2018 12:22:08 AM HTTP query for 218.208.33.107 at http://rdap.apnic.net/ip/218.208.33.107
+02/24/2018 12:22:08 AM Parsing RDAP network object
+02/24/2018 12:22:08 AM Parsing RDAP root level entities
+02/24/2018 12:22:08 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:22:08 AM HTTP Request: http://intadfs.customs.gov.my
+02/24/2018 12:22:08 AM Starting new HTTP connection (1): intadfs.customs.gov.my
+02/24/2018 12:22:08 AM No HTTPs-Redirect, making explicit HTTPs request: https://intadfs.customs.gov.my
+02/24/2018 12:22:08 AM Starting new HTTPS connection (1): intadfs.customs.gov.my
+02/24/2018 12:22:08 AM https://intadfs.customs.gov.my:443 "GET / HTTP/1.1" 404 None
+02/24/2018 12:22:08 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:22:08 AM Hostname: intellx.mpc.gov.my
+02/24/2018 12:22:08 AM Getting WHOIS for IP: 203.62.1.227
+02/24/2018 12:22:08 AM ASN lookup for 203.62.1.227
+02/24/2018 12:22:08 AM ASN query for 227.1.62.203.origin.asn.cymru.com
+02/24/2018 12:22:08 AM ASN verbose query for AS38044.asn.cymru.com
+02/24/2018 12:22:08 AM RDAP lookup for 203.62.1.227
+02/24/2018 12:22:08 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/203.62.1.227
+02/24/2018 12:22:08 AM HTTP query for 203.62.1.227 at http://rdap.apnic.net/ip/203.62.1.227
+02/24/2018 12:22:09 AM Parsing RDAP network object
+02/24/2018 12:22:09 AM Parsing RDAP root level entities
+02/24/2018 12:22:09 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:22:09 AM HTTP Request: http://intellx.mpc.gov.my
+02/24/2018 12:22:09 AM Starting new HTTP connection (1): intellx.mpc.gov.my
+02/24/2018 12:22:09 AM http://intellx.mpc.gov.my:80 "GET / HTTP/1.1" 200 608
+02/24/2018 12:22:09 AM No HTTPs-Redirect, making explicit HTTPs request: https://intellx.mpc.gov.my
+02/24/2018 12:22:09 AM Starting new HTTPS connection (1): intellx.mpc.gov.my
+02/24/2018 12:22:14 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:22:14 AM Hostname: interaktif.kbs.gov.my
+02/24/2018 12:22:14 AM Getting WHOIS for IP: 202.75.6.252
+02/24/2018 12:22:14 AM ASN lookup for 202.75.6.252
+02/24/2018 12:22:14 AM ASN query for 252.6.75.202.origin.asn.cymru.com
+02/24/2018 12:22:14 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:22:14 AM RDAP lookup for 202.75.6.252
+02/24/2018 12:22:14 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/202.75.6.252
+02/24/2018 12:22:14 AM HTTP query for 202.75.6.252 at http://rdap.apnic.net/ip/202.75.6.252
+02/24/2018 12:22:15 AM Parsing RDAP network object
+02/24/2018 12:22:15 AM Parsing RDAP root level entities
+02/24/2018 12:22:15 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:22:15 AM HTTP Request: http://interaktif.kbs.gov.my
+02/24/2018 12:22:15 AM Starting new HTTP connection (1): interaktif.kbs.gov.my
+02/24/2018 12:22:15 AM http://interaktif.kbs.gov.my:80 "GET / HTTP/1.1" 403 202
+02/24/2018 12:22:15 AM No HTTPs-Redirect, making explicit HTTPs request: https://interaktif.kbs.gov.my
+02/24/2018 12:22:15 AM Starting new HTTPS connection (1): interaktif.kbs.gov.my
+02/24/2018 12:22:20 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:22:20 AM Hostname: internetcmdb.mampu.gov.my
+02/24/2018 12:22:20 AM Getting WHOIS for IP: 103.8.160.157
+02/24/2018 12:22:20 AM ASN lookup for 103.8.160.157
+02/24/2018 12:22:20 AM ASN query for 157.160.8.103.origin.asn.cymru.com
+02/24/2018 12:22:20 AM ASN verbose query for AS17564.asn.cymru.com
+02/24/2018 12:22:20 AM RDAP lookup for 103.8.160.157
+02/24/2018 12:22:20 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/103.8.160.157
+02/24/2018 12:22:20 AM HTTP query for 103.8.160.157 at http://rdap.apnic.net/ip/103.8.160.157
+02/24/2018 12:22:20 AM Parsing RDAP network object
+02/24/2018 12:22:20 AM Parsing RDAP root level entities
+02/24/2018 12:22:20 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:22:20 AM HTTP Request: http://internetcmdb.mampu.gov.my
+02/24/2018 12:22:20 AM Starting new HTTP connection (1): internetcmdb.mampu.gov.my
+02/24/2018 12:22:20 AM http://internetcmdb.mampu.gov.my:80 "GET / HTTP/1.1" 302 0
+02/24/2018 12:22:20 AM http://internetcmdb.mampu.gov.my:80 "GET /login.html HTTP/1.1" 200 6504
+02/24/2018 12:22:20 AM No HTTPs-Redirect, making explicit HTTPs request: https://internetcmdb.mampu.gov.my
+02/24/2018 12:22:20 AM Starting new HTTPS connection (1): internetcmdb.mampu.gov.my
+02/24/2018 12:22:20 AM HTTPs not detected. Bypassing Cert Checks
+02/24/2018 12:22:20 AM Hostname: internship.nsc.gov.my
+02/24/2018 12:22:20 AM Getting WHOIS for IP: 175.140.137.78
+02/24/2018 12:22:20 AM ASN lookup for 175.140.137.78
+02/24/2018 12:22:20 AM ASN query for 78.137.140.175.origin.asn.cymru.com
+02/24/2018 12:22:21 AM ASN verbose query for AS4788.asn.cymru.com
+02/24/2018 12:22:21 AM RDAP lookup for 175.140.137.78
+02/24/2018 12:22:21 AM Response not given, perform RDAP lookup for http://rdap.apnic.net/ip/175.140.137.78
+02/24/2018 12:22:21 AM HTTP query for 175.140.137.78 at http://rdap.apnic.net/ip/175.140.137.78
+02/24/2018 12:22:21 AM Parsing RDAP network object
+02/24/2018 12:22:21 AM Parsing RDAP root level entities
+02/24/2018 12:22:21 AM Parsing RDAP sub-entities to depth: 1
+02/24/2018 12:22:21 AM HTTP Request: http://internship.nsc.gov.my
+02/24/2018 12:22:21 AM Starting new HTTP connection (1): internship.nsc.gov.my
+02/24/2018 12:22:26 AM No HTTPs-Redirect, making explicit HTTPs request: https://internship.nsc.gov.my
+02/24/2018 12:22:26 AM Starting new HTTPS connection (1): internship.nsc.gov.my
+02/24/2018 12:22:26 AM https://internship.nsc.gov.my:443 "GET / HTTP/1.1" 200 112
+02/24/2018 12:22:26 AM HTTPs Detected. Checking Certs
