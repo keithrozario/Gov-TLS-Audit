@@ -85,9 +85,11 @@ def get_cert(site_json):
 
 
 def get_ip_whois(ip_addr):
-
-    obj = ipwhois.IPWhois(ip_addr)
-    result = obj.lookup_rdap(depth=1)
+    try:
+        obj = ipwhois.IPWhois(ip_addr)
+        result = obj.lookup_rdap(depth=1)
+    except ipwhois.exceptions.IPDefinedError:
+        result = None
     return result
 
 

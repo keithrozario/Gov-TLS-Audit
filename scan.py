@@ -45,9 +45,6 @@ if __name__ == "__main__":
     with open(json_file, 'w') as dumb_file:
         pass
 
-    with open(full_json_file, 'w') as dumb_file:
-        pass
-
     with open(csv_file, 'w', newline='') as csvfile:
         csv_writer = csv.writer(csvfile, delimiter=',')
         csv_writer.writerow(csv_header)
@@ -56,7 +53,6 @@ if __name__ == "__main__":
         hostnames = f.readlines()
 
     hostnames = [x.strip() for x in hostnames]
-    hostnames = ['keithrozario.com']
     for hostname in hostnames:
 
         logger.info("Hostname: " + hostname)
@@ -68,7 +64,9 @@ if __name__ == "__main__":
         if site_data['ip']:
             # IP Whois
             logger.info("Getting WHOIS for IP: " + site_data['ip'])
-            site_data['ipWhois'] = get_ip_whois(site_data['ip'])
+            ipWhois = get_ip_whois(site_data['ip'])
+            if ipWhois:
+                site_data['ipWhois'] = ipWhois
 
             # Request HTTP Site
             http_url = append_http(hostname, False)
@@ -138,6 +136,6 @@ if __name__ == "__main__":
 
     full_json = {'results': site_jsons}
 
-    with open(full_json_file, 'a') as outfile:
+    with open(full_json_file, 'w') as outfile:
         json.dump(full_json, outfile, cls=DateTimeEncoder)
         outfile.write("\n")
