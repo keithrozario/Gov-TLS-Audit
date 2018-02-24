@@ -205,7 +205,7 @@ def format_csv_data(site_data_json):
                 for c in range(len(csv_cert_issuer)):
                     result.append('')
         else:
-            for c in range(len(csv_cert_data)):
+            for c in range(len(csv_cert_data)+len(csv_cert_issuer)):
                 result.append('')
 
     if 'httpResponse' in site_data_json:

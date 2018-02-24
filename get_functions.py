@@ -2,6 +2,7 @@ import requests
 import ipwhois
 import socket
 import csv
+import tldextract
 from datetime import datetime
 
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
@@ -20,19 +21,14 @@ class CustomResponse:
         self.error_message = error_message
 
 
+# return hostname from a url (minus the http)
 def get_hostname(site_url):
-
-    doublequote = site_url.find("//")
-    if doublequote == -1:
-        hostname_start = 0
+    ext = tldextract.extract(site_url)
+    hostname = '.'.join(ext[:3])
+    if hostname[:1] == ".":
+        return hostname[1:]
     else:
-        hostname_start = doublequote + 2
-
-    if site_url.find("/", hostname_start) == -1:
-        return site_url[hostname_start:]
-    else:
-        hostname_end = site_url.find("/", hostname_start)
-        return site_url[hostname_start:hostname_end]
+        return hostname
 
 
 def get_ip(hostname):
@@ -77,10 +73,10 @@ def get_cert(site_json):
         server_info.test_connectivity_to_server()
         command = CertificateInfoScanCommand()
         synchronous_scanner = SynchronousScanner()
+        scan_result = synchronous_scanner.run_scan_command(server_info, command)
     except ServerConnectivityError:
         return None
 
-    scan_result = synchronous_scanner.run_scan_command(server_info, command)
     return scan_result
 
 

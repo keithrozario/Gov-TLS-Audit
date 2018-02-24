@@ -27,7 +27,7 @@ class DateTimeEncoder(json.JSONEncoder):
 if __name__ == "__main__":
 
     # Logging setup
-    logging.basicConfig(filename='log.txt',
+    logging.basicConfig(filename='logs/scan.log',
                         filemode='a',
                         level=logging.DEBUG,
                         format='%(asctime)s %(message)s',
@@ -53,6 +53,7 @@ if __name__ == "__main__":
         hostnames = f.readlines()
 
     hostnames = [x.strip() for x in hostnames]
+
     for hostname in hostnames:
 
         logger.info("Hostname: " + hostname)
