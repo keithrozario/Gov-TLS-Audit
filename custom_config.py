@@ -9,12 +9,11 @@ timeout = 5
 # Successful HTTP Status Codes
 http_success = [200, 203]
 
-# output csv file
-csv_file = 'output.csv'
-
-# output json file
-json_file = 'output.jsonl'
-full_json_file = 'full_output.json'
+# input/output files
+hostname_file = 'files/hostnames.txt'
+csv_file = 'files/output.csv'
+json_file = 'files/output.jsonl'
+full_json_file = 'files/full_output.json'
 
 # csv output
 csv_data = ['hostname', 'ip', 'TLSRedirect','TLSSiteExist']
@@ -24,6 +23,7 @@ csv_cert_issuer = ['commonName']
 csv_http_headers = ['Server', 'X-Powered-By']
 csv_ip_whois = ['asn', 'asnCountryCode', 'asnDescription']
 
+# header of csv file
 csv_header = []
 csv_header.extend(csv_data)
 csv_header.extend(csv_cert_data)

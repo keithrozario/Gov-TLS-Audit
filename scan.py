@@ -1,9 +1,9 @@
 import logging
-import custom_config
 import json
 import csv
 from datetime import datetime
-from custom_config import csv_file, json_file, full_json_file, csv_header
+from custom_config import http_success
+from custom_config import csv_file, json_file, full_json_file, csv_header, hostname_file
 
 from get_functions import get_cert, get_site, get_hostname, get_ip, get_ip_whois, get_certificate_status
 from format_functions import format_json_data, format_csv_data
@@ -49,7 +49,7 @@ if __name__ == "__main__":
         csv_writer = csv.writer(csvfile, delimiter=',')
         csv_writer.writerow(csv_header)
 
-    with open('hostnames.txt') as f:
+    with open(hostname_file) as f:
         hostnames = f.readlines()
 
     hostnames = [x.strip() for x in hostnames]
@@ -77,7 +77,7 @@ if __name__ == "__main__":
 
             # If http request is re-directed to https, set TLS_Redirect True and proceed
             # Else request https://hostname
-            if site_data['httpResponse'].status_code in custom_config.http_success:
+            if site_data['httpResponse'].status_code in http_success:
                 if site_data['httpResponse'].history:
                     if site_data['httpResponse'].url[4] in ['S', 's']:
                         logger.info("HTTP redirected to HTTPS: " + site_data['httpResponse'].url)
@@ -98,7 +98,7 @@ if __name__ == "__main__":
                 request_response = get_site(https_url, browser)
                 site_data['httpsRequest'] = request_response['request']
                 site_data['httpsResponse'] = request_response['response']
-                if site_data['httpsResponse'].status_code in custom_config.http_success:
+                if site_data['httpsResponse'].status_code in http_success:
                     TLS_site_exist = True
                 else:
                     TLS_site_exist = False
