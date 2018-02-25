@@ -53,7 +53,7 @@ if __name__ == "__main__":
         hostnames = f.readlines()
 
     hostnames = [x.strip() for x in hostnames]
-
+    hostnames = ['www.tourismmalaysia.gov.my','www.kpkk.gov.my','www.cio.sabah.gov.my']
     for hostname in hostnames:
 
         logger.info("Hostname: " + hostname)

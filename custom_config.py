@@ -34,10 +34,19 @@ csv_header.extend(csv_http_headers)
 csv_header.extend(csv_ip_whois)
 
 # list of domains to skip (don't crawl)
-skip_domains = ['twitter', 'facebook', 'youtube', 'google', 'instagram', \
-                'vimeo', 'thestar', 'goo', 'feedburner', 'statcounter', \
-                'blogspot', 'nst', 'youtu', 'bit', 'wordpress', \
-                'is', '']
+skip_domains = ['twitter', 'facebook', 'youtube', 'google', 'instagram',
+                'vimeo', 'thestar', 'goo', 'feedburner', 'statcounter',
+                'blogspot', 'nst', 'youtu', 'bit', 'wordpress',
+                'is']
 
 # list of file extensions to skip
 skip_extensions = ['pdf', 'txt', 'xls', 'doc', 'jpg', 'png']
+
+# start links for crawler
+start_links = ['http://www.kln.gov.my/web/guest/other-ministry',
+               'https://moe.gov.my/index.php/my/',
+               'http://www.skmm.gov.my/',
+               'http://moha.gov.my/',
+               'http://mod.gov.my/',
+               'http://www.selangor.gov.my/',
+               'http://www.penang.gov.my']
