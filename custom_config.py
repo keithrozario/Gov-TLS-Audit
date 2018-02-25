@@ -19,8 +19,8 @@ processed_url_file = 'files/processed_urls.txt'
 
 # csv output
 csv_data = ['hostname', 'ip', 'TLSRedirect','TLSSiteExist']
-csv_cert_data = ['serialNumber', 'notValidAfter', 'signatureHashAlgorithm',\
-                 'statusCode', 'statusMessage']
+csv_cert_data = ['serialNumber', 'notValidBefore', 'notValidAfter',
+                 'signatureHashAlgorithm', 'statusCode', 'statusMessage']
 csv_cert_issuer = ['commonName']
 csv_http_headers = ['Server', 'X-Powered-By']
 csv_ip_whois = ['asn', 'asnCountryCode', 'asnDescription']
@@ -50,3 +50,6 @@ start_links = ['http://www.kln.gov.my/web/guest/other-ministry',
                'http://mod.gov.my/',
                'http://www.selangor.gov.my/',
                'http://www.penang.gov.my']
+
+# Shodan Key File
+shodan_key_file = "/home/l33t/.shodan/key.txt"

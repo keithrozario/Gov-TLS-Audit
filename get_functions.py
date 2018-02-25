@@ -5,6 +5,8 @@ import csv
 import tldextract
 from datetime import datetime
 
+import shodan
+
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
 from sslyze.server_connectivity import ServerConnectivityInfo, ServerConnectivityError
@@ -81,12 +83,11 @@ def get_cert(site_json):
 
 
 def get_ip_whois(ip_addr):
-    try:
-        obj = ipwhois.IPWhois(ip_addr)
-        result = obj.lookup_rdap(depth=1)
-    except ipwhois.exceptions.IPDefinedError:
-        result = None
-    return result
+    with open(custom_config.shodan_key_file, 'r') as key_file:
+        shodan_api_key = key_file.readline().rstrip()
+    api = shodan.Shodan(shodan_api_key)
+    host = api.host(ip_addr)
+    return None
 
 
 def get_domain_whois(hostname):
