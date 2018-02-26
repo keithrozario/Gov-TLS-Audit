@@ -1,0 +1,1280 @@
+hostname,ip,TLSRedirect,TLSSiteExist,serialNumber,notValidAfter,signatureHashAlgorithm,statusCode,statusMessage,commonName,Server,X-Powered-By,asn,asnCountryCode,asnDescription
+1akses.malaysia.gov.my,Fail,,,,,,,,,,,,,
+1govserv.1govnet.gov.my,203.12.220.140,TRUE,TRUE,2.96741E+28,04/26/19 8:16,sha256,1,Pass,AlphaSSL CA - SHA256 - G2,Apache,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+1malaysiamap.mygeoportal.gov.my,103.8.160.33,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+1pp.treasury.gov.my,103.8.144.196,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+1works.kkr.gov.my,175.28.15.45,FALSE,FALSE,,,,,,Apache,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+3ps.jkr.gov.my,43.252.232.157,TRUE,TRUE,1.15708E+38,08/19/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Organization Validation Secure Server CA,n/a,PHP/5.5.38,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+abt.met.gov.my,175.28.14.115,FALSE,FALSE,,,,,,Apache/2.2.15 (CentOS),PHP/5.3.3,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+admm.mod.gov.my,103.27.113.37,FALSE,FALSE,,,,,,n/a,n/a,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY",
+aduan.customs.gov.my,103.8.160.205,FALSE,FALSE,,,,,,Apache/2.2.22 (Ubuntu),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+aduan.jkr.gov.my,43.252.232.157,TRUE,TRUE,1.15708E+38,08/19/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Organization Validation Secure Server CA,n/a,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+aduan.kettha.gov.my,Fail,,,,,,,,,,,,,
+aduan.kpkt.gov.my,203.217.179.36,TRUE,TRUE,1.46576E+36,12/6/18 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+aduan.kraftangan.gov.my,58.26.125.192,FALSE,FALSE,,,,,,Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.7,PHP/5.4.7,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+aduan.sabah.gov.my,27.0.4.40,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,55420,MY,"SABAHNET-AS-AP APNIC ASN Block, MY",
+aduan.spa.gov.my,202.75.5.44,FALSE,FALSE,,,,,,Apache,PHP/5.5.15,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+aduan.sprm.gov.my,150.242.181.69,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+aduanadmin.lkim.gov.my,1.9.139.80,FALSE,TRUE,1.30985E+19,11/8/19 23:48,sha1,-1,Certificate & Hostname mismatch,localhost,Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.3,PHP/5.5.3,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+aduanbpm.lkim.gov.my,1.9.139.46,FALSE,FALSE,,,,,,Apache/2.2.3 (CentOS),PHP/5.1.6,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+aduanintegriti.mod.gov.my,103.27.113.85,FALSE,TRUE,1.33769E+36,04/23/18 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,,,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY"
+agc-wopac.agc.gov.my,203.217.177.215,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+agiswlk.kwp.gov.my,103.8.145.9,FALSE,FALSE,,,,,,Microsoft-IIS/7.0,XXXXXXXX,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+agromedia.mardi.gov.my,58.26.125.242,FALSE,FALSE,,,,,,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+aichr.kln.gov.my,203.12.220.162,FALSE,FALSE,,,,,,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+aims.mod.gov.my,103.27.113.21,FALSE,FALSE,,,,,,n/a,n/a,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY",
+aimsweb.mod.gov.my,103.27.113.24,FALSE,FALSE,,,,,,n/a,n/a,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY",
+ain.mosti.gov.my,202.75.5.73,FALSE,FALSE,,,,,,nginx/1.8.1,PHP/5.6.20,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+aip.dca.gov.my,103.8.160.75,FALSE,FALSE,,,,,,Apache/2.4.6 (CentOS),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+airforce.mil.my,58.27.64.251,FALSE,FALSE,,,,,,Apache,PHP/5.5.9-1ubuntu4.19,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+akept.mohe.gov.my,103.8.162.6,FALSE,FALSE,,,,,,nginx centminmod,centminmod,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+akk.mod.gov.my,103.27.113.33,FALSE,FALSE,,,,,,n/a,n/a,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY",
+ambc.mardi.gov.my,58.26.125.243,FALSE,FALSE,,,,,,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+amlcft.bnm.gov.my,103.6.236.129,FALSE,TRUE,8.47443E+37,05/5/18 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,Apache,n/a,132197,MY,"SKALI-MY SKALI, MY"
+ansn.aelb.gov.my,Fail,,,,,,,,,,,,,
+apb1.moe.gov.my,1.9.210.13,TRUE,TRUE,2.08353E+38,05/23/18 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Domain Validation Secure Server CA,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+api.met.gov.my,150.242.180.40,TRUE,TRUE,3.62122E+18,06/20/20 20:47,sha256,1,Pass,Go Daddy Secure Certificate Authority - G2,nginx,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+apims.doe.gov.my,150.242.180.190,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+aplikasi.jpm.gov.my,103.8.146.219,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+aplikasi.rela.gov.my,Fail,,,,,,,,,,,,,
+apm.dof.gov.my,103.8.145.61,TRUE,TRUE,2.31258E+36,10/10/19 12:00,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",DigiCert SHA2 Secure Server CA,Apache,PHP/5.6.20,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+app.bomba.gov.my,103.8.160.24,TRUE,TRUE,1.59953E+37,10/1/18 12:00,sha256,1,Pass,DigiCert SHA2 Extended Validation Server CA,Apache/2.2.22 (Ubuntu),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+app.imi.gov.my,58.27.46.24,FALSE,FALSE,,,,,,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+app.mohe.gov.my,103.8.160.240,TRUE,TRUE,1356133872,08/7/18 17:49,sha256,1,Pass,Entrust Certification Authority - L1K,nginx,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+app1.imi.gov.my,58.27.46.19,FALSE,FALSE,,,,,,Apache/2.4.16 (Win32) OpenSSL/1.0.1p PHP/5.5.28,PHP/5.5.28,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+app2.bomba.gov.my,175.28.12.226,FALSE,FALSE,,,,,,Apache/2.2.15 (Red Hat),PHP/5.5.38,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+app2.mohe.gov.my,103.8.160.240,FALSE,TRUE,1356133872,08/7/18 17:49,sha256,1,Pass,Entrust Certification Authority - L1K,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+appjpan.sabah.gov.my,27.0.4.158,FALSE,FALSE,,,,,,Microsoft-IIS/6.0,ASP.NET,55420,MY,"SABAHNET-AS-AP APNIC ASN Block, MY",
+apponline.mara.gov.my,1.9.138.208,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+apponline.skm.gov.my,202.60.56.74,FALSE,TRUE,1.82247E+38,11/27/18 2:27,sha256,1,Pass,Entrust Certification Authority - L1K,Microsoft-IIS/7.0,ASP.NET,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+apps.dbkl.gov.my,58.26.53.45,FALSE,FALSE,,,,,,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+apps.jpapencen.gov.my,203.121.102.171,FALSE,FALSE,,,,,,Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.1,PHP/7.0.1,9930,MY,"TTNET-MY TIME dotCom Berhad, MY",
+apps.jpm.gov.my,150.242.180.204,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+apps.kraftangan.gov.my,58.26.125.200,FALSE,FALSE,,,,,,Apache/2.4.7 (Win32) OpenSSL/0.9.8y PHP/5.4.22,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+apps.mafhq.mil.my,103.27.113.131,FALSE,FALSE,,,,,,Apache,n/a,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY",
+apps.mara.gov.my,1.9.138.200,FALSE,FALSE,,,,,,Microsoft-IIS/8.0,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+apps.wildlife.gov.my,203.12.220.134,FALSE,TRUE,2.08846E+38,12/7/19 1:41,sha256,1,Pass,Entrust Certification Authority - L1K,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+apps1.jmm.gov.my,Fail,,,,,,,,,,,,,
+appsys.dbkl.gov.my,58.26.53.39,FALSE,TRUE,9.66386E+36,10/11/18 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+aps.jobsmalaysia.gov.my,202.60.59.55,FALSE,FALSE,,,,,,XXXXXXXXXXXXXXXXXXXXX),n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+arahankpkrv2.jkr.gov.my,43.252.232.157,TRUE,TRUE,1.15708E+38,08/19/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Organization Validation Secure Server CA,n/a,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+architec.jkr.gov.my,Fail,,,,,,,,,,,,,
+arkib.jkkn.gov.my,103.8.145.26,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+army.mod.gov.my,103.27.113.128,FALSE,FALSE,,,,,,,,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY",
+aset.mohe.gov.my,203.217.177.118,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+atpis.moa.gov.my,103.8.144.72,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+bakau.forestry.gov.my,175.28.12.98,FALSE,TRUE,1.29889E+38,12/7/18 4:14,sha256,1,Pass,Entrust Certification Authority - L1K,Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.4.16,PHP/5.4.16,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+bayucloud.sabah.gov.my,27.0.4.212,TRUE,TRUE,1.84605E+38,05/28/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Organization Validation Secure Server CA,Apache/2.4.7 (Ubuntu),n/a,55420,MY,"SABAHNET-AS-AP APNIC ASN Block, MY"
+bencana.met.gov.my,103.245.89.57,FALSE,FALSE,,,,,,Apache/2.4.6 (CentOS) PHP/5.4.16,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+bencanaalam.jkr.gov.my,43.252.232.161,FALSE,FALSE,,,,,,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+biasiswa.mohe.gov.my,202.75.6.139,TRUE,TRUE,1356133872,08/7/18 17:49,sha256,1,Pass,Entrust Certification Authority - L1K,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+bigbox.1govuc.gov.my,58.26.10.155,FALSE,TRUE,3.3962E+41,04/14/18 15:44,sha256,1,Pass,Let's Encrypt Authority X3,Apache/2.4.18 (Ubuntu),n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+bless2.bless.gov.my,58.26.69.41,FALSE,TRUE,1.4679E+37,03/16/19 23:59,sha256,1,Pass,GeoTrust EV SSL CA - G4,Apache/2.4.6 (Red Hat Enterprise Linux) mod_cluster/1.3.1.Final OpenSSL/1.0.1e-fips,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+blog.data.gov.my,150.242.180.12,FALSE,FALSE,,,,,,Apache/2.4.18 (Ubuntu),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+Blog.miti.gov.my,103.8.161.245,FALSE,FALSE,,,,,,Apache,PHP/5.6.13,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+blog.moa.gov.my,202.75.7.101,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+blog.tourism.gov.my,203.217.179.20,FALSE,TRUE,1.1341E+37,08/30/19 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.6,PHP/7.1.6,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+bmt.lgm.gov.my,43.252.233.123,FALSE,FALSE,,,,,,Microsoft-IIS/10.0,ASP.NET,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+bond.mpc.gov.my,103.245.89.249,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,"PHP/5.6.30, ASP.NET",38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+bondinfo.bnm.gov.my,211.25.63.143,FALSE,FALSE,,,,,,n/a,ASP.NET,9930,MY,"TTNET-MY TIME dotCom Berhad, MY",
+bph.spab.gov.my,103.8.163.112,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+bpm.moh.gov.my,103.8.146.71,FALSE,TRUE,2.86921E+41,05/17/17 6:53,sha256,-1,Certificate & Hostname mismatch,Let's Encrypt Authority X3,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+bpp.treasury.gov.my,202.75.6.54,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+bptv.moe.gov.my,1.9.210.59,FALSE,FALSE,,,,,,Apache/2.4.6 (CentOS) PHP/5.4.16,PHP/5.4.16,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+bseep.gov.my,203.115.216.240,FALSE,TRUE,2.76737E+37,03/6/23 10:11,sha1,-1,Certificate & Hostname mismatch,WMSvc-WIN-NC0IT7G4SQQ,Microsoft-IIS/7.5,ASP.NET,10204,MY,"ARCNET-NTTMSC-MY Arcnet NTT MSC ISP, MY"
+bskn.khidmatnegara.gov.my,210.19.222.239,FALSE,FALSE,,,,,,Apache/2.2.15 (CentOS),n/a,9930,MY,"TTNET-MY TIME dotCom Berhad, MY",
+careers.bnm.gov.my,211.25.63.18,FALSE,TRUE,8.36958E+36,10/28/18 6:20,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",Entrust Certification Authority - L1K,,,9930,MY,"TTNET-MY TIME dotCom Berhad, MY"
+cariankahwin.jpn.gov.my,1.9.138.133,FALSE,FALSE,,,,,,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+cars-asean.miros.gov.my,43.252.232.210,FALSE,FALSE,,,,,,Apache/2.4.29 (Win32) OpenSSL/1.0.2l PHP/5.6.32,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+cas.idfr.gov.my,175.28.15.186,TRUE,TRUE,1.60724E+38,08/30/17 23:59,sha256,-1,Certificate expired,COMODO RSA Domain Validation Secure Server CA,Apache/2.2.23 (Unix) PHP/5.4.8 mod_ssl/2.2.3 OpenSSL/0.9.8e-fips-rhel5,PHP/5.4.8,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+casemix.moh.gov.my,Fail,,,,,,,,,,,,,
+caskt.jkr.gov.my,Fail,,,,,,,,,,,,,
+cbm.jkr.gov.my,Fail,,,,,,,,,,,,,
+cbw1.jkr.gov.my,Fail,,,,,,,,,,,,,
+cbw2.jkr.gov.my,Fail,,,,,,,,,,,,,
+ccpm.cidb.gov.my,202.171.33.82,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,23659,MY,"HEITECH-AS-AP APNIC HEITECH ASN, MY",
+cdpk.jkr.gov.my,Fail,,,,,,,,,,,,,
+cec.jkr.gov.my,Fail,,,,,,,,,,,,,
+chdisability.moh.gov.my,103.8.162.33,FALSE,FALSE,,,,,,Apache,PHP/5.3.3,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+chw.jkr.gov.my,Fail,,,,,,,,,,,,,
+cic.jobsmalaysia.gov.my,202.60.59.55,FALSE,FALSE,,,,,,XXXXXXXXXXXXXXXXXXXXX),n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+cimms.kkr.gov.my,175.28.14.212,FALSE,FALSE,,,,,,Apache,PHP/5.3.3-1ubuntu9.10,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+cims.cidb.gov.my,202.171.33.91,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,23659,MY,"HEITECH-AS-AP APNIC HEITECH ASN, MY",
+cj.jkr.gov.my,Fail,,,,,,,,,,,,,
+ckg.jkr.gov.my,Fail,,,,,,,,,,,,,
+ckm.jkr.gov.my,Fail,,,,,,,,,,,,,
+ckp.jkr.gov.my,Fail,,,,,,,,,,,,,
+ckub.jkr.gov.my,Fail,,,,,,,,,,,,,
+cli.jkr.gov.my,Fail,,,,,,,,,,,,,
+cloud.dca.gov.my,203.217.177.45,TRUE,TRUE,4.4025E+36,05/24/19 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,nginx,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+cloud.pcb.gov.my,202.75.7.36,FALSE,TRUE,1.37365E+19,06/16/36 8:18,sha256,-1,Certificate & Hostname mismatch,Synology Inc. CA,nginx,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+cmos.kejora.gov.my,60.48.138.81,FALSE,TRUE,3.46926E+18,11/6/18 5:14,sha256,-1,Certificate & Hostname mismatch,Go Daddy Secure Certificate Authority - G2,Apache/2.2.11 (Win32) PHP/5.3.0,PHP/5.3.0,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+cns.jkr.gov.my,Fail,,,,,,,,,,,,,
+coachingacademy.isn.gov.my,104.27.144.184,FALSE,TRUE,2.18312E+38,08/2/18 23:59,sha256,1,Pass,COMODO ECC Domain Validation Secure Server CA 2,cloudflare,PHP/5.6.33,13335,US,"CLOUDFLARENET - Cloudflare, Inc., US"
+compassweb.arkib.gov.my,203.62.1.68,FALSE,FALSE,,,,,,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+computerlab.mod.gov.my,103.27.113.82,FALSE,FALSE,,,,,,n/a,n/a,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY",
+connect2u.mod.gov.my,103.27.113.80,FALSE,FALSE,,,,,,n/a,n/a,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY",
+contest.khidmatnegara.gov.my,168.1.55.245,FALSE,FALSE,,,,,,Apache,n/a,36351,US,"SOFTLAYER - SoftLayer Technologies Inc., US",
+cp.doe.gov.my,202.75.5.83,FALSE,FALSE,,,,,,Apache/2.2.15 (CentOS),PHP/5.3.3,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+cpab.jkr.gov.my,Fail,,,,,,,,,,,,,
+cpum.jkr.gov.my,Fail,,,,,,,,,,,,,
+create.jkr.gov.my,43.252.232.173,FALSE,FALSE,,,,,,Apache/2.2.15 (Red Hat),PHP/7.0.20,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+creditbureau.bnm.gov.my,103.6.236.129,FALSE,TRUE,8.47443E+37,05/5/18 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,Apache,n/a,132197,MY,"SKALI-MY SKALI, MY"
+crm.jkr.gov.my,Fail,,,,,,,,,,,,,
+ctmserver.kkr.gov.my,202.60.59.5,FALSE,TRUE,7182,08/13/13 17:02,sha1,-1,Certificate & Hostname mismatch,localhost.localdomain,Apache/2.2.15 (CentOS),n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+customs.gov.my,218.208.33.104,FALSE,FALSE,,,,,,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+customsgc.gov.my,103.8.162.98,FALSE,FALSE,,,,,,Apache/1.3.41 (Unix) VOBSEnhydra-DynaLink/4.1_01 mod_ssl/2.8.31 OpenSSL/0.9.8b,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+daftarj.spr.gov.my,103.8.163.104,FALSE,TRUE,1.63308E+38,11/29/19 0:45,sha256,-1,Certificate & Hostname mismatch,Entrust Certification Authority - L1M,Microsoft-IIS/7.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+dananelayan.lkim.gov.my,1.9.139.55,FALSE,FALSE,,,,,,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+data.gov.my,203.217.178.194,FALSE,FALSE,,,,,,nginx/1.1.19,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+dbtldm.mil.my,1.9.77.146,FALSE,FALSE,,,,,,Apache,PHP/5.6.10,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+ddms.malaysia.gov.my,103.8.146.244,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+ddms.mampu.gov.my,103.8.163.204,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+did.kelantan.gov.my,210.187.31.4,FALSE,FALSE,,,,,,SUKKELANTAN,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+digitaldoc.kln.gov.my,202.60.59.124,FALSE,FALSE,,,,,,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+direktori.mosti.gov.my,103.8.161.18,FALSE,TRUE,1.63951E+37,10/28/16 12:00,sha1,-1,Certificate expired,DigiCert High Assurance CA-3,nginx,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+dkoop.skm.gov.my,175.28.13.34,FALSE,TRUE,1.82247E+38,11/27/18 2:27,sha256,1,Pass,Entrust Certification Authority - L1K,Microsoft-IIS/7.0,ASP.NET,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+dmpmnetspace.nre.gov.my,202.75.6.187,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+dms.span.gov.my,211.25.98.175,FALSE,TRUE,1.41774E+19,01/1/38 0:00,sha256,-1,Certificate & Hostname mismatch,SPAN WebAdmin CA,Apache-Coyote/1.1,n/a,9930,MY,"TTNET-MY TIME dotCom Berhad, MY"
+docs.jpa.gov.my,203.217.177.199,FALSE,FALSE,,,,,,nginx,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+dohe.mohe.gov.my,202.75.4.124,TRUE,TRUE,1356133872,08/7/18 17:49,sha256,1,Pass,Entrust Certification Authority - L1K,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+domino.spa.gov.my,202.75.7.59,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+domino01.mpc.gov.my,202.60.59.76,FALSE,FALSE,,,,,,Lotus-Domino,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+duit.bnm.gov.my,103.6.236.135,TRUE,TRUE,8.47443E+37,05/5/18 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,Apache,PHP/7.1.12,132197,MY,"SKALI-MY SKALI, MY"
+e-aduan.kpdnkk.gov.my,203.217.177.65,FALSE,TRUE,1.27676E+38,09/21/20 7:44,sha256,1,Pass,Entrust Certification Authority - L1K,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+e-gaji.skm.gov.my,175.28.13.29,FALSE,FALSE,,,,,,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+e-lejer.kesedar.gov.my,1.9.138.9,FALSE,FALSE,,,,,,Apache/2.2.14 (Win32) DAV/2 mod_ssl/2.2.14 OpenSSL/0.9.8l mod_autoindex_color PHP/5.3.1 mod_apreq2-20090110/2.7.1 mod_perl/2.0.4 Perl/v5.10.1,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+e-myra.mohe.gov.my,183.81.161.46,TRUE,TRUE,2.83073E+41,04/22/18 3:28,sha256,1,Pass,Let's Encrypt Authority X3,Apache/2.2.15 (CentOS),PHP/5.3.3,45352,MY,"IPSERVERONE-AS-AP IP ServerOne Solutions Sdn Bhd, MY"
+e-room.rurallink.gov.my,Fail,,,,,,,,,,,,,
+e-semakanbcc.spa.gov.my,103.21.35.57,FALSE,FALSE,,,,,,Apache/2.2.15 (CentOS),PHP/5.3.3,132170 132434,MY,,
+e-tatatertib.jpm.gov.my,103.8.163.23,FALSE,FALSE,,,,,,Apache/2.4.2 (Win32) OpenSSL/1.0.1c PHP/5.4.4,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+eaduan.airforce.mil.my,58.27.64.248,FALSE,FALSE,,,,,,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+eaduan.kpdnkk.gov.my,203.217.177.65,FALSE,TRUE,1.27676E+38,09/21/20 7:44,sha256,1,Pass,Entrust Certification Authority - L1K,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+eaduan.span.gov.my,211.25.98.172,FALSE,TRUE,1.41774E+19,01/1/38 0:00,sha256,-1,Certificate & Hostname mismatch,SPAN WebAdmin CA,Microsoft-IIS/7.5,ASP.NET,9930,MY,"TTNET-MY TIME dotCom Berhad, MY"
+eaduanict.mod.gov.my,103.27.113.58,FALSE,FALSE,,,,,,n/a,n/a,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY",
+easet.lkim.gov.my,1.9.139.58,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+ebantuan.cidb.gov.my,202.171.33.85,FALSE,FALSE,,,,,,Microsoft-IIS/8.0,ASP.NET,23659,MY,"HEITECH-AS-AP APNIC HEITECH ASN, MY",
+ebantuan.rurallink.gov.my,103.8.161.62,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+ebencana.rurallink.gov.my,103.8.161.59,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+ebiz.jupem.gov.my,202.60.57.157,TRUE,TRUE,1.50278E+37,12/5/18 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Microsoft-IIS/7.5,ASP.NET,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+ebmgpermit.nre.gov.my,103.8.146.131,FALSE,TRUE,9.8002E+37,06/7/18 23:59,sha256,1,Pass,COMODO RSA Organization Validation Secure Server CA,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+ebook.kpdnkk.gov.my,202.75.6.78,FALSE,FALSE,,,,,,nginx/1.11.10,PHP/5.6.30,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+ebookshop.mardi.gov.my,58.26.125.241,FALSE,FALSE,,,,,,Apache,PHP/5.2.17,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+eborneo.dbp.gov.my,1.9.24.201,FALSE,FALSE,,,,,,nginx/1.6.3,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+ebr1m.hasil.gov.my,113.11.237.37,FALSE,TRUE,1.49991E+38,10/13/18 4:33,sha256,1,Pass,Entrust Certification Authority - L1K,,,55951,MY,"LHDNM-MY Blok 9 Kompleks Bangunan Kerajaan, MY"
+eccris.bnm.gov.my,211.25.63.129,FALSE,TRUE,9.92738E+35,10/30/18 6:55,sha256,1,Pass,Entrust Certification Authority - L1K,,,9930,MY,"TTNET-MY TIME dotCom Berhad, MY"
+ecoms.jkr.gov.my,43.252.232.157,TRUE,TRUE,1.15708E+38,08/19/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Organization Validation Secure Server CA,Apache-Coyote/1.1,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+ecos.st.gov.my,111.67.45.243,FALSE,FALSE,,,,,,Microsoft-IIS/10.0,ARR/3.0,17666,MY,"HITACHISUNWAY Unit 13-4, Block F1, MY",
+edaftar.kwp.gov.my,103.8.160.211,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+edana.mosti.gov.my,103.8.144.124,TRUE,TRUE,2.84333E+36,11/6/19 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Apache,PHP/5.6.32,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+edcfz.pka.gov.my,58.26.183.50,FALSE,TRUE,2.51416E+38,03/3/18 4:08,sha256,1,Pass,Entrust Certification Authority - L1K,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+edik.st.gov.my,202.9.104.12,FALSE,FALSE,,,,,,Microsoft-IIS/8.0,ASP.NET,17666,MY,"HITACHISUNWAY Unit 13-4, Block F1, MY",
+edirektori.kpkt.gov.my,203.217.179.60,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+edog.dbkl.gov.my,58.26.53.57,FALSE,FALSE,,,,,,Apache/2.2.25 (Win32) PHP/5.3.29,PHP/5.3.29,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+edrugsnews.adk.gov.my,175.28.15.225,FALSE,FALSE,,,,,,Apache/2.4.18 (Ubuntu),n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+edsl.mot.gov.my,202.75.5.168,FALSE,FALSE,,,,,,Microsoft-IIS/7.0,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+educationmalaysia.gov.my,54.254.54.74,TRUE,TRUE,3.53562E+37,11/18/18 23:59,sha256,1,Pass,Symantec Class 3 EV SSL CA - G3,nginx/1.10.2,n/a,16509 38895,US,
+efit.seda.gov.my,110.74.145.133,TRUE,TRUE,2.08469E+38,01/8/19 23:59,sha256,1,Pass,COMODO RSA Organization Validation Secure Server CA,Apache,n/a,45668,MY,"AIMS-MY-NET AIMS Data Centre Sdn Bhd, MY"
+eforgris.forestry.gov.my,175.28.12.38,TRUE,TRUE,1.29889E+38,12/7/18 4:14,sha256,1,Pass,Entrust Certification Authority - L1K,Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.4.16,PHP/5.4.16,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+eforlog.forestry.gov.my,175.28.12.56,FALSE,TRUE,1.29889E+38,12/7/18 4:14,sha256,1,Pass,Entrust Certification Authority - L1K,Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.4.16,PHP/5.4.16,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+eform.ptptn.gov.my,211.24.235.211,FALSE,TRUE,1.56447E+38,01/15/20 2:58,sha256,1,Pass,Entrust Certification Authority - L1K,,,9930,MY,"TTNET-MY TIME dotCom Berhad, MY"
+egdms.lkim.gov.my,1.9.139.50,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+egdms.lpj.gov.my,58.27.54.8,FALSE,FALSE,,,,,,Microsoft-IIS/6.0,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+egjpkn.sabah.gov.my,27.0.4.168,FALSE,FALSE,,,,,,Microsoft-IIS/6.0,ASP.NET,55420,MY,"SABAHNET-AS-AP APNIC ASN Block, MY",
+egsentrik.mohe.gov.my,203.217.179.6,TRUE,TRUE,0,09/30/10 9:10,md5,-1,Certificate & Hostname mismatch,localhost,Apache/2.4.25 (Unix) OpenSSL/1.0.2j PHP/5.6.30 mod_perl/2.0.8-dev Perl/v5.16.3,PHP/5.6.30,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+ehandbook.airforce.mil.my,58.27.64.252,FALSE,FALSE,,,,,,Apache,PHP/5.5.9-1ubuntu4.14,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+ehcd.mosti.gov.my,203.217.177.44,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+ehlp.moh.gov.my,103.8.146.69,FALSE,FALSE,,,,,,Apache,XXXXXXXXXXX,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+ehome.kpkt.gov.my,203.217.179.47,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+ehomeonline.kpkt.gov.my,103.8.163.10,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+eia.doe.gov.my,203.217.178.157,FALSE,FALSE,,,,,,Apache,PHP/5.2.6,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+eikbn.gov.my,203.217.177.160,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+eiklan.cidb.gov.my,103.245.90.3,FALSE,FALSE,,,,,,Apache/2.2.15 (CentOS),Fat-Free Framework,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+eipts.mohe.gov.my,103.8.160.240,TRUE,TRUE,1356133872,08/7/18 17:49,sha256,1,Pass,Entrust Certification Authority - L1K,nginx,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+ejawatan.keda.gov.my,1.9.138.174,FALSE,FALSE,,,,,,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+ejawatan.llm.gov.my,203.12.220.169,FALSE,FALSE,,,,,,Apache/2.2.14 (Win32) DAV/2 mod_ssl/2.2.14 OpenSSL/0.9.8l mod_autoindex_color PHP/5.3.1 mod_apreq2-20090110/2.7.1 mod_perl/2.0.4 Perl/v5.10.1,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+ejawatan.mardi.gov.my,58.26.125.213,FALSE,FALSE,,,,,,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+ejob.stats.gov.my,103.8.162.125,TRUE,TRUE,1.08464E+38,12/6/19 9:53,sha256,1,Pass,Entrust Certification Authority - L1K,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+ejurnal.dbp.gov.my,1.9.24.201,FALSE,FALSE,,,,,,nginx/1.6.3,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+ekampus.kbs.gov.my,103.8.145.164,TRUE,TRUE,1.53841E+38,10/14/18 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Domain Validation Secure Server CA,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+ekamus.dbp.gov.my,1.9.24.201,FALSE,FALSE,,,,,,nginx/1.6.3,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+ekasih.icu.gov.my,58.26.69.24,TRUE,TRUE,3.01288E+38,01/19/20 3:20,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",Entrust Certification Authority - L1K,Microsoft-IIS/8.5,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+ekedatangan.lkim.gov.my,1.9.139.165,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+ekenderaan.kejora.gov.my,60.48.138.81,FALSE,TRUE,3.46926E+18,11/6/18 5:14,sha256,-1,Certificate & Hostname mismatch,Go Daddy Secure Certificate Authority - G2,Apache/2.2.11 (Win32) PHP/5.3.0,PHP/5.3.0,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+ekereta.treasury.gov.my,203.217.177.147,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+eklaim.lkim.gov.my,1.9.139.79,FALSE,FALSE,,,,,,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+eklinik.dbkl.gov.my,58.26.53.70,TRUE,TRUE,9.66386E+36,10/11/18 12:00,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",DigiCert SHA2 Secure Server CA,nginx/1.13.1,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+ekris.rurallink.gov.my,202.75.6.117,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+eksamindef.mod.gov.my,103.27.113.36,FALSE,FALSE,,,,,,n/a,n/a,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY",
+ekursus.kkr.gov.my,202.60.59.1,FALSE,FALSE,,,,,,Apache,PHP/5.5.3,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+elandskap.kpkt.gov.my,203.217.179.35,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+elatihan.jmm.gov.my,103.245.90.136,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+elatihan.kejora.gov.my,60.48.138.81,FALSE,TRUE,3.46926E+18,11/6/18 5:14,sha256,-1,Certificate & Hostname mismatch,Go Daddy Secure Certificate Authority - G2,Microsoft-IIS/7.0,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+elatihan.rurallink.gov.my,Fail,,,,,,,,,,,,,
+elearning.mycc.gov.my,104.27.167.48,FALSE,TRUE,2.36389E+38,08/30/18 23:59,sha256,1,Pass,COMODO ECC Domain Validation Secure Server CA 2,cloudflare,PHP/7.0.13,13335,US,"CLOUDFLARENET - Cloudflare, Inc., US"
+elesen.aelb.gov.my,103.229.114.173,FALSE,TRUE,7.58189E+37,11/14/18 4:19,sha256,1,Pass,Entrust Certification Authority - L1K,Microsoft-IIS/7.5,ASP.NET,133444,MY,"NET2ONE-AS-AP Net2One Sdn Bhd, MY"
+elesen.dbkl.gov.my,58.26.53.15,TRUE,TRUE,9.66386E+36,10/11/18 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Microsoft-IIS/7.0,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+elesen.lkim.gov.my,1.9.139.48,TRUE,TRUE,9.0312E+37,06/16/18 23:59,sha256,1,Pass,GeoTrust DV SSL CA - G3,Apache/2.2.15 (Red Hat),PHP/5.3.3,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+elibrary.rurallink.gov.my,202.75.5.211,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+emaklum.anm.gov.my,175.28.15.162,TRUE,TRUE,1.32201E+38,09/29/18 23:59,sha256,1,Pass,GeoTrust EV SSL CA - G4,n/a,"Undertow/1, JSP/2.3",38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+emaklumweb.anm.gov.my,218.208.102.15,FALSE,FALSE,,,,,,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+emaps.kpkt.gov.my,203.217.179.74,TRUE,TRUE,1.46576E+36,12/6/18 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Microsoft-IIS/8.5,XXXXXXXX,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+emel.kbs.gov.my,Fail,,,,,,,,,,,,,
+enotifikasi.moh.gov.my,103.8.162.247,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,XXXXXXXX,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+enviro.doe.gov.my,202.75.5.58,TRUE,TRUE,1.37933E+38,11/1/18 23:59,sha256,1,Pass,GeoTrust EV SSL CA - G4,Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.6.32,PHP/5.6.32,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+eotc.rurallink.gov.my,Fail,,,,,,,,,,,,,
+eparlimen.rurallink.gov.my,202.75.6.110,FALSE,FALSE,,,,,,Apache/2.2.0 (Linux/SUSE),PHP/5.1.2,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+epatuh.moh.gov.my,103.8.144.50,FALSE,FALSE,,,,,,nginx,PHP/5.5.22,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+epayment.mod.gov.my,103.27.113.19,FALSE,FALSE,,,,,,,,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY",
+epbm.parlimenbelia.gov.my,103.8.161.168,TRUE,TRUE,2.06271E+38,06/16/19 3:50,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",Entrust Certification Authority - L1K,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+epbr.rurallink.gov.my,Fail,,,,,,,,,,,,,
+epck.forestry.gov.my,175.28.12.205,FALSE,TRUE,1.29889E+38,12/7/18 4:14,sha256,1,Pass,Entrust Certification Authority - L1K,Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.4.16,PHP/5.4.16,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+epelanggan.jpm.gov.my,203.217.178.178,FALSE,FALSE,,,,,,Apache,PHP/5.5.9-1ubuntu4.14,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+epelanggan.kkr.gov.my,202.60.59.51,FALSE,FALSE,,,,,,Apache,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+epengambilan.lkim.gov.my,1.9.139.59,FALSE,FALSE,,,,,,Apache/2.2.15 (CentOS),PHP/5.3.3,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+epenyatagaji-laporan.anm.gov.my,218.208.102.12,FALSE,TRUE,1.25604E+38,12/20/19 6:43,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",Entrust Certification Authority - L1K,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+eperjawatan.kejora.gov.my,60.48.138.81,FALSE,TRUE,3.46926E+18,11/6/18 5:14,sha256,-1,Certificate & Hostname mismatch,Go Daddy Secure Certificate Authority - G2,Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.0.22,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+epermit2.dvs.gov.my,103.8.163.20,TRUE,TRUE,3.3782E+41,04/4/18 2:37,sha256,1,Pass,Let's Encrypt Authority X3,nginx/1.10.1,PHP/5.2.17,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+eperolehan.dbkl.gov.my,58.26.53.59,TRUE,TRUE,9.66386E+36,10/11/18 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Apache/2.4.9 (Win64) OpenSSL/1.0.1g PHP/5.5.12,PHP/5.5.12,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+eperolehan.kejora.gov.my,60.48.138.81,TRUE,TRUE,3.46926E+18,11/6/18 5:14,sha256,1,Pass,Go Daddy Secure Certificate Authority - G2,Microsoft-IIS/7.0,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+eperubatan.kejora.gov.my,60.48.138.81,FALSE,TRUE,3.46926E+18,11/6/18 5:14,sha256,-1,Certificate & Hostname mismatch,Go Daddy Secure Certificate Authority - G2,Microsoft-IIS/7.0,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+eperumahan.dbkl.gov.my,58.26.53.30,FALSE,FALSE,,,,,,Apache/2.2.8 (Win32),n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+eperunding.treasury.gov.my,203.217.177.7,TRUE,TRUE,1.00704E+38,01/1/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",GeoTrust SSL CA - G3,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+epi.llm.gov.my,203.12.220.154,FALSE,TRUE,2.4441E+38,07/4/20 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,Microsoft-IIS/8.0,PHP/7.0.9,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+eplis.pl.gov.my,104.27.167.142,FALSE,FALSE,,,,,,cloudflare,ASP.NET,13335,US,"CLOUDFLARENET - Cloudflare, Inc., US",
+epmk.koko.gov.my,58.26.125.156,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+eprasekolah.moe.gov.my,1.9.210.13,TRUE,TRUE,2.08353E+38,05/23/18 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Domain Validation Secure Server CA,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+eprk.airforce.mil.my,58.27.64.252,FALSE,FALSE,,,,,,Apache,PHP/5.5.9-1ubuntu4.14,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+eprotocol.kln.gov.my,202.60.56.88,FALSE,FALSE,,,,,,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+epsa.gov.my,103.8.160.32,TRUE,TRUE,4.68903E+36,12/28/19 2:16,sha256,1,Pass,Entrust Certification Authority - L1M,Apache,PHP/5.5.14,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+epsikologi.mod.gov.my,Fail,,,,,,,,,,,,,
+epublisiti.townplan.gov.my,175.28.15.62,FALSE,FALSE,,,,,,nginx,PHP/5.3.10-1ubuntu3.5,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+eqms.airforce.mil.my,58.27.64.252,FALSE,FALSE,,,,,,Apache,PHP/5.5.9-1ubuntu4.14,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+eras.moe.gov.my,1.9.210.13,TRUE,TRUE,2.08353E+38,05/23/18 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Domain Validation Secure Server CA,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+erasmi.jkr.gov.my,43.252.232.157,TRUE,TRUE,1.15708E+38,08/19/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Organization Validation Secure Server CA,n/a,PHP/5.5.32,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+ereport.skm.gov.my,175.28.13.36,FALSE,FALSE,,,,,,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+ernd.mosti.gov.my,202.75.5.35,TRUE,TRUE,2.84333E+36,11/6/19 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,nginx/1.12.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+eroy.gov.my,103.8.161.179,FALSE,TRUE,6.71502E+36,05/23/17 12:00,sha256,-1,Certificate expired,DigiCert SHA2 Extended Validation Server CA,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+eroyv2.gov.my,103.8.145.160,TRUE,TRUE,6.97602E+28,04/8/18 2:27,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",Entrust Certification Authority - L1K,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+esd.imi.gov.my,103.21.252.77,TRUE,TRUE,1.29451E+37,05/14/20 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Apache,n/a,131310,MY,"PLT-NET-MY CX2 Computer Exchange, MY"
+eselenggara.rurallink.gov.my,Fail,,,,,,,,,,,,,
+eseminar.dbp.gov.my,1.9.24.201,FALSE,FALSE,,,,,,nginx/1.6.3,"PHP/5.6.26, ASP.NET",4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+eservices.dof.gov.my,202.75.4.194,TRUE,TRUE,2.31258E+36,10/10/19 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips PHP/5.5.30,PHP/5.5.30,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+eservices.imi.gov.my,58.27.46.27,FALSE,TRUE,2.77259E+38,10/28/18 13:41,sha256,1,Pass,Entrust Certification Authority - L1K,IBM_HTTP_Server,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+eservices.moh.gov.my,103.8.146.71,FALSE,TRUE,2.86921E+41,05/17/17 6:53,sha256,-1,Certificate & Hostname mismatch,Let's Encrypt Authority X3,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+esilav2.jpa.gov.my,202.75.5.91,FALSE,TRUE,3.30309E+38,01/14/19 3:38,sha256,1,Pass,Entrust Certification Authority - L1K,Microsoft-IIS/7.5,"PHP/5.4.34, ASP.NET",17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+esisdok.jkr.gov.my,43.252.232.148,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+esite.kkr.gov.my,175.28.14.217,FALSE,FALSE,,,,,,Apache,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+esmup.hasil.gov.my,113.11.237.55,FALSE,TRUE,7.11598E+28,01/27/19 2:22,sha256,1,Pass,Entrust Certification Authority - L1K,,,55951,MY,"LHDNM-MY Blok 9 Kompleks Bangunan Kerajaan, MY"
+esp.mohe.gov.my,103.8.160.224,TRUE,TRUE,1356133872,08/7/18 17:49,sha256,1,Pass,Entrust Certification Authority - L1K,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+espek.instun.gov.my,103.8.146.213,TRUE,TRUE,4.08553E+17,08/26/18 8:27,sha256,1,Pass,Go Daddy Secure Certificate Authority - G2,Apache/2.4.18 (Ubuntu),Phusion Passenger 5.1.12,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+espekmobil.instun.gov.my,202.60.56.200,FALSE,TRUE,4.08553E+17,08/26/18 8:27,sha256,-1,Certificate & Hostname mismatch,Go Daddy Secure Certificate Authority - G2,Apache,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+espl.ipn.gov.my,175.28.15.154,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+ess.kejora.gov.my,202.171.33.105,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,23659,MY,"HEITECH-AS-AP APNIC HEITECH ASN, MY",
+essem.moe.gov.my,1.9.210.13,TRUE,TRUE,2.08353E+38,05/23/18 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Domain Validation Secure Server CA,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+estatsdigest.mida.gov.my,210.187.41.16,TRUE,TRUE,2.89039E+38,10/31/18 2:30,sha256,1,Pass,Entrust Certification Authority - L1K,Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.15,PHP/5.6.15,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+estk.instun.gov.my,Fail,,,,,,,,,,,,,
+estk.sprm.gov.my,203.217.178.2,FALSE,TRUE,1.03616E+37,05/19/20 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+esurat.jakoa.gov.my,1.9.138.13,FALSE,FALSE,,,,,,Apache/2.0.64 (Win32) PHP/5.2.17,PHP/5.2.17,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+esurvey.airforce.mil.my,58.27.64.252,FALSE,FALSE,,,,,,Apache,PHP/5.5.9-1ubuntu4.14,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+esurvey.jkr.gov.my,43.252.232.157,TRUE,TRUE,1.15708E+38,08/19/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Organization Validation Secure Server CA,n/a,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+esurvey.mastic.gov.my,103.8.163.73,FALSE,FALSE,,,,,,Apache,PHP/5.5.38,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+esurvey.rurallink.gov.my,103.8.161.60,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+eswis.doe.gov.my,203.217.179.119,TRUE,TRUE,1.27724E+38,11/1/18 23:59,sha256,1,Pass,GeoTrust EV SSL CA - G4,,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+etass.jkr.gov.my,43.252.232.157,TRUE,TRUE,1.15708E+38,08/19/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Organization Validation Secure Server CA,Apache-Coyote/1.1,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+etempah.mosti.gov.my,Fail,,,,,,,,,,,,,
+etempahan.pl.gov.my,104.27.166.142,FALSE,FALSE,,,,,,cloudflare,n/a,13335,US,"CLOUDFLARENET - Cloudflare, Inc., US",
+etender.mod.gov.my,103.27.113.43,FALSE,FALSE,,,,,,Apache/2.2.0 (Fedora),PHP/5.3.2-1ubuntu4.14,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY",
+etesis.dbp.gov.my,1.9.24.201,FALSE,FALSE,,,,,,nginx/1.6.3,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+etmr.mardi.gov.my,1.9.139.249,FALSE,FALSE,,,,,,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+etp.pemandu.gov.my,202.9.103.179,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,17666,MY,"HITACHISUNWAY Unit 13-4, Block F1, MY",
+etribunal.jpn.gov.my,1.9.138.149,FALSE,FALSE,,,,,,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+eu.lkim.gov.my,1.9.139.57,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+eusahawan.kejora.gov.my,60.48.138.81,FALSE,TRUE,3.46926E+18,11/6/18 5:14,sha256,-1,Certificate & Hostname mismatch,Go Daddy Secure Certificate Authority - G2,Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.0.22,PHP/7.0.22,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+ev.rurallink.gov.my,Fail,,,,,,,,,,,,,
+evendor.kkr.gov.my,202.60.56.78,FALSE,FALSE,,,,,,Apache,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+evetting.cgso.gov.my,103.8.162.5,TRUE,TRUE,6.21243E+28,03/31/18 7:01,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",Entrust Certification Authority - L1K,Apache,JSP/2.2,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+ewarta.mara.gov.my,192.0.78.13,TRUE,TRUE,3.44284E+41,03/29/18 7:03,sha256,1,Pass,Let's Encrypt Authority X3,nginx,n/a,2635,US,"AUTOMATTIC - Automattic, Inc, US"
+exam.jkr.gov.my,43.252.232.157,TRUE,TRUE,1.15708E+38,08/19/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Organization Validation Secure Server CA,n/a,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+extranet.fama.gov.my,1.9.138.76,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+ez.hasil.gov.my,113.11.237.66,FALSE,TRUE,2.94515E+38,02/8/19 4:01,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",Entrust Certification Authority - L1M,,,55951,MY,"LHDNM-MY Blok 9 Kompleks Bangunan Kerajaan, MY"
+ezsinar.arkib.gov.my,175.28.13.3,FALSE,FALSE,,,,,,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+ezsnap.jpm.gov.my,150.242.180.44,FALSE,FALSE,,,,,,Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/5.6.31,PHP/5.6.31,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+failmeja.jpm.gov.my,Fail,,,,,,,,,,,,,
+fast.bnm.gov.my,211.25.63.38,FALSE,TRUE,3.401E+28,10/12/18 9:56,sha256,1,Pass,GlobalSign Organization Validation CA - SHA256 - G2,,,9930,MY,"TTNET-MY TIME dotCom Berhad, MY"
+fh.moh.gov.my,103.8.146.71,FALSE,TRUE,2.86921E+41,05/17/17 6:53,sha256,-1,Certificate & Hostname mismatch,Let's Encrypt Authority X3,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+fmrs.remotesensing.gov.my,202.60.59.145,FALSE,FALSE,,,,,,Microsoft-IIS/7.0,ASP.NET,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+fms.lkim.gov.my,103.8.160.254,FALSE,FALSE,,,,,,Apache/2.2.15 (CentOS),PHP/5.3.3,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+fms.mardi.gov.my,103.8.160.254,FALSE,FALSE,,,,,,Apache/2.2.15 (CentOS),PHP/5.3.3,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+fms.pl.gov.my,104.27.167.142,FALSE,FALSE,,,,,,cloudflare,n/a,13335,US,"CLOUDFLARENET - Cloudflare, Inc., US",
+fms.skm.gov.my,203.12.220.248,FALSE,TRUE,1.29126E+19,04/13/19 22:04,sha1,-1,Certificate & Hostname mismatch,localhost,Apache/2.2.17 (Win32) mod_ssl/2.2.17 OpenSSL/0.9.8o PHP/5.3.4 mod_perl/2.0.4 Perl/v5.10.1,PHP/5.3.5,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+fms.tbnsa.gov.my,103.8.160.254,FALSE,FALSE,,,,,,Apache/2.2.15 (CentOS),PHP/5.3.3,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+fram.bomba.gov.my,210.48.154.23,FALSE,FALSE,,,,,,,,17971,MY,"TMVADS-AP TM-VADS DC Hosting, MY",
+fri.dof.gov.my,103.8.145.61,TRUE,TRUE,2.31258E+36,10/10/19 12:00,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",DigiCert SHA2 Secure Server CA,Apache,PHP/5.6.20,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+fta.miti.gov.my,103.8.161.245,FALSE,FALSE,,,,,,Apache,PHP/5.6.13,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+gaji2u.lkim.gov.my,1.9.139.51,FALSE,FALSE,,,,,,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+galeria.mara.gov.my,1.9.138.212,FALSE,FALSE,,,,,,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+galerifoto.arkib.gov.my,202.60.59.45,FALSE,FALSE,,,,,,Apache/2.4.9 (Win64) PHP/5.5.12,PHP/5.5.12,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+gamma.malaysia.gov.my,103.8.160.3,FALSE,FALSE,,,,,,nginx/1.6.2,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+gcert.mampu.gov.my,202.75.7.73,FALSE,FALSE,,,,,,Apache/2.2.15 (CentOS),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+gedung1nahrim.nahrim.gov.my,175.28.15.99,FALSE,TRUE,5.50201E+37,08/24/16 6:59,sha256,-1,Certificate & Hostname mismatch,intranet.nahrim.gov.my,Microsoft-IIS/8.5,ASP.NET,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+gems.mara.gov.my,1.9.138.202,FALSE,FALSE,,,,,,Microsoft-IIS/8.0,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+geoportal.johor.gov.my,210.19.13.213,FALSE,FALSE,,,,,,Apache/2.2.31 (Win32) DAV/2 mod_ssl/2.2.31 OpenSSL/1.0.2h mod_fcgid/2.3.9 mod_wsgi/3.4 Python/2.7.6 PHP/5.6.24 mod_perl/2.0.8 Perl/v5.16.3,PHP/5.6.24,9930,MY,"TTNET-MY TIME dotCom Berhad, MY",
+gids.mohe.gov.my,103.8.145.246,FALSE,FALSE,,,,,,Apache/2.4.7 (Ubuntu),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+gis9.ns.gov.my,103.21.45.125,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,"PHP/5.4.24, ASP.NET",132435,MY,"SYMPHONET-MY No.31-A, Jalan Tiara, Tiara Square, MY",
+gmbo.skmm.gov.my,Fail,,,,,,,,,,,,,
+gosgstg.malaysia.gov.my,103.8.146.254,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+gpis.treasury.gov.my,203.217.177.140,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+gpki.mampu.gov.my,203.217.178.58,TRUE,TRUE,7.11981E+37,02/7/20 9:00,sha256,1,Pass,Entrust Certification Authority - L1M,nginx/1.12.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+graduan.mohe.gov.my,103.8.160.240,FALSE,TRUE,1356133872,08/7/18 17:49,sha256,1,Pass,Entrust Certification Authority - L1K,nginx,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+grp.miti.gov.my,103.8.161.245,FALSE,FALSE,,,,,,Apache,PHP/5.6.13,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+grp.mpc.gov.my,202.60.59.78,FALSE,FALSE,,,,,,Apache/2.2.22 (Win32) mod_ssl/2.2.22 OpenSSL/0.9.8x,PHP/5.4.11 ZendServer,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+gsoil.jkr.gov.my,43.252.232.157,TRUE,TRUE,1.15708E+38,08/19/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Organization Validation Secure Server CA,n/a,PHP/5.5.38,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+gst.customs.gov.my,218.208.33.99,FALSE,FALSE,,,,,,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+gtp.pemandu.gov.my,202.9.103.179,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,17666,MY,"HITACHISUNWAY Unit 13-4, Block F1, MY",
+h1n1.moh.gov.my,103.8.162.239,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+habinovasi.mampu.gov.my,203.217.178.192,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+hbeaufort.moh.gov.my,103.8.162.243,FALSE,TRUE,2.75344E+38,03/15/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+hdok.moh.gov.my,103.8.162.243,FALSE,TRUE,1.05393E+38,03/15/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+helpdesk.ketengah.gov.my,Fail,,,,,,,,,,,,,
+hkbtgn.moh.gov.my,103.8.162.243,FALSE,TRUE,1.34197E+38,03/11/18 23:59,sha256,-1,Certificate & Hostname mismatch,"cPanel, Inc. Certification Authority",Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+hkgu.moh.gov.my,103.8.162.243,FALSE,TRUE,4.43925E+37,03/24/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+hkm.moh.gov.my,103.8.162.243,FALSE,TRUE,3552634707,02/13/18 9:59,sha256,-1,Certificate expired,hkm.moh.gov.my,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+hknk.moh.gov.my,Fail,,,,,,,,,,,,,
+hkotabelud.moh.gov.my,103.8.162.243,FALSE,TRUE,3.30597E+38,03/17/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+hldu.moh.gov.my,103.8.162.243,FALSE,TRUE,1.05237E+38,01/14/18 23:59,sha256,-1,Certificate expired,"cPanel, Inc. Certification Authority",Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+hmbp.moh.gov.my,103.8.162.243,FALSE,TRUE,2.48646E+38,03/15/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+home.eperolehan.gov.my,107.154.131.21,FALSE,FALSE,,,,,,Apache/2.2.15 (Red Hat),n/a,19551,US,"INCAPSULA - Incapsula Inc, US",
+hpapar.moh.gov.my,103.8.162.243,FALSE,TRUE,1.34197E+38,03/11/18 23:59,sha256,-1,Certificate & Hostname mismatch,"cPanel, Inc. Certification Authority",Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+hpitas.moh.gov.my,103.8.162.243,FALSE,TRUE,2.0455E+38,03/22/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+hqe2.moh.gov.my,103.8.162.243,FALSE,TRUE,1.79326E+38,03/15/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+hranau.moh.gov.my,103.8.162.243,FALSE,TRUE,1.34197E+38,03/11/18 23:59,sha256,-1,Certificate & Hostname mismatch,"cPanel, Inc. Certification Authority",Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+hrd.water.gov.my,203.62.1.143,FALSE,FALSE,,,,,,Microsoft-IIS/6.0,ASP.NET,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+hrmis.eghrmis.gov.my,Fail,,,,,,,,,,,,,
+hrmis2.eghrmis.gov.my,203.217.177.203,TRUE,TRUE,3.27738E+38,01/14/19 3:41,sha256,1,Pass,Entrust Certification Authority - L1K,Microsoft-IIS/8.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+hrmisone.eghrmis.gov.my,203.217.177.204,TRUE,TRUE,3.27738E+38,01/14/19 3:41,sha256,1,Pass,Entrust Certification Authority - L1K,Microsoft-IIS/6.0,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+hsipitang.moh.gov.my,103.8.162.243,FALSE,TRUE,1.34197E+38,03/11/18 23:59,sha256,-1,Certificate & Hostname mismatch,"cPanel, Inc. Certification Authority",Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+hspkpyu.moh.gov.my,103.8.162.243,FALSE,TRUE,1.48243E+38,03/15/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+hspn.moh.gov.my,103.8.162.243,FALSE,TRUE,1.34197E+38,03/11/18 23:59,sha256,-1,Certificate & Hostname mismatch,"cPanel, Inc. Certification Authority",Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+htbn.moh.gov.my,103.8.162.243,FALSE,TRUE,1.34197E+38,03/11/18 23:59,sha256,-1,Certificate & Hostname mismatch,"cPanel, Inc. Certification Authority",Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+htenom.moh.gov.my,103.8.162.243,FALSE,TRUE,1.34197E+38,03/11/18 23:59,sha256,-1,Certificate & Hostname mismatch,"cPanel, Inc. Certification Authority",Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+htuaran.moh.gov.my,103.8.162.243,FALSE,TRUE,1.53764E+38,03/15/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+htwu.moh.gov.my,103.8.162.243,FALSE,TRUE,2.27413E+38,03/31/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+hutan.remotesensing.gov.my,202.60.59.143,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+hwkks.moh.gov.my,103.8.162.243,FALSE,TRUE,1.01528E+38,03/15/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+hydro.gov.my,218.208.35.220,FALSE,TRUE,7.77984E+37,11/3/20 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+icare.ptptn.gov.my,211.24.235.210,FALSE,FALSE,,,,,,Apache-Coyote/1.1,Servlet 2.4; JBoss-4.2.2.GA (build: SVNTag=JBoss_4_2_2_GA date=200710221139)/Tomcat-5.5,9930,MY,"TTNET-MY TIME dotCom Berhad, MY",
+ict.jkkn.gov.my,Fail,,,,,,,,,,,,,
+idb.dbkl.gov.my,58.26.53.56,FALSE,FALSE,,,,,,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+idengue.remotesensing.gov.my,202.60.59.148,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,"PHP/5.3.2, ASP.NET",38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+idsweb.lkim.gov.my,1.9.139.62,FALSE,FALSE,,,,,,Apache/2.2.22 (Win32) mod_jk/1.2.28,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+ifcem.bomba.gov.my,103.245.90.94,FALSE,FALSE,,,,,,Apache/2.2.22 (Ubuntu),n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+iimm.bnm.gov.my,103.6.238.25,FALSE,TRUE,5.17849E+37,04/19/18 23:59,sha256,-1,Certificate & Hostname mismatch,Symantec Class 3 Secure Server CA - G4,Apache,n/a,132197,MY,"SKALI-MY SKALI, MY"
+ikan.remotesensing.gov.my,202.60.59.137,FALSE,FALSE,,,,,,Microsoft-IIS/7.0,ASP.NET,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+ikepoh.kpkt.gov.my,103.8.145.204,FALSE,TRUE,1.46576E+36,12/6/18 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+ikpkt.kpkt.gov.my,203.217.179.82,FALSE,FALSE,,,,,,Apache,XXXXXXXXXXXXXXXXXXXXXX,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+ilmu.forestry.gov.my,175.28.12.93,FALSE,FALSE,,,,,,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+ilmu.jpa.gov.my,202.75.4.213,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+ilmu.kbs.gov.my,202.75.7.233,FALSE,FALSE,,,,,,Microsoft-HTTPAPI/2.0,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+ilmuonline.mpc.gov.my,202.60.59.85,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+ilsm.dosm.gov.my,104.25.233.109,FALSE,TRUE,1.76002E+38,08/5/18 23:59,sha256,1,Pass,COMODO ECC Domain Validation Secure Server CA 2,cloudflare,PHP/5.4.45,13335,US,"CLOUDFLARENET - Cloudflare, Inc., US"
+imagegallery.tourism.gov.my,203.217.179.14,FALSE,TRUE,1.41816E+19,08/4/16 8:52,sha1,-1,Certificate & Hostname mismatch,fotoserver8,Apache/2.4.12 (Win32) OpenSSL/1.0.1l mod_fcgid/2.3.9 mod_wsgi/3.5 Python/2.7.2,FotoWeb/8.0,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+imas.isn.gov.my,103.18.244.26,FALSE,TRUE,19335,03/25/15 7:31,sha1,-1,Certificate & Hostname mismatch,new-imas2.isn.gov.my,Apache/2.2.15,PHP/5.3.3,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+imej.spa.gov.my,203.217.178.63,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+imlearning.mardi.gov.my,58.26.125.231,FALSE,FALSE,,,,,,Apache/2.2.15 (CentOS),PHP/5.5.30,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+ims.infra.gov.my,175.28.13.78,FALSE,TRUE,3.77597E+37,02/9/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Domain Validation Secure Server CA,Apache/2.2.3 (CentOS),PHP/5.1.6,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+info.malaysia.gov.my,103.8.146.249,TRUE,TRUE,2.78938E+41,03/24/18 17:31,sha256,1,Pass,Let's Encrypt Authority X3,nginx/1.10.3 (Ubuntu),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+infokop.skm.gov.my,202.60.56.21,FALSE,TRUE,1.82247E+38,11/27/18 2:27,sha256,1,Pass,Entrust Certification Authority - L1K,Microsoft-HTTPAPI/2.0,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+inhouse.imi.gov.my,58.27.46.13,FALSE,FALSE,,,,,,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+intadfs.customs.gov.my,218.208.33.107,FALSE,FALSE,,,,,,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+intellx.mpc.gov.my,203.62.1.227,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+interaktif.kbs.gov.my,202.75.6.252,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+internetcmdb.mampu.gov.my,103.8.160.157,FALSE,FALSE,,,,,,Apache/2.2.17 (Linux/SUSE),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+internship.nsc.gov.my,175.140.137.78,FALSE,TRUE,1.07811E+37,05/14/21 0:00,sha256,1,Pass,GeoTrust TLS RSA CA G1,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+intra.jmm.gov.my,Fail,,,,,,,,,,,,,
+intra.skm.gov.my,175.28.12.237,FALSE,FALSE,,,,,,Apache/2.4.6 (CentOS) PHP/5.5.21,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+intranet.jawhar.gov.my,202.75.6.202,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+intranet.jpa.gov.my,203.217.179.167,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+intranet.kada.gov.my,1.9.138.104,FALSE,FALSE,,,,,,Apache/2.2.11 (Win32) DAV/2 mod_ssl/2.2.11 OpenSSL/0.9.8i mod_autoindex_color PHP/5.2.8,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+intranet.kbs.gov.my,203.217.177.162,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+intranet.khidmatnegara.gov.my,Fail,,,,,,,,,,,,,
+intranet.kpkt.gov.my,Fail,,,,,,,,,,,,,
+intranet.lpp.gov.my,1.9.138.55,FALSE,FALSE,,,,,,Apache/2.2.11 (Win32),n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+intranet.mampu.gov.my,Fail,,,,,,,,,,,,,
+intranet.mosti.gov.my,103.8.163.75,FALSE,FALSE,,,,,,Microsoft-IIS/8.0,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+intranet.mygeoportal.gov.my,Fail,,,,,,,,,,,,,
+intranet.nahrim.gov.my,175.28.15.99,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+intranet.spa.gov.my,Fail,,,,,,,,,,,,,
+intranet.st.gov.my,202.9.104.14,FALSE,FALSE,,,,,,Microsoft-IIS/10.0,"PHP/7.1.10, ARR/3.0",17666,MY,"HITACHISUNWAY Unit 13-4, Block F1, MY",
+intranet.stats.gov.my,203.217.177.171,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+invite.skillsmalaysia.gov.my,103.228.53.185,FALSE,TRUE,2.41072E+37,05/3/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",cloudflare,PHP/5.6.33,55720,MY,"GIGABIT-MY Gigabit Hosting Sdn Bhd, MY"
+ipays.llm.gov.my,203.12.220.239,FALSE,FALSE,,,,,,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+iplan.townplan.gov.my,175.28.12.232,FALSE,FALSE,,,,,,Apache/2.4.25 (Ubuntu),n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+ipms.1govuc.gov.my,58.26.10.178,FALSE,TRUE,2.78199E+41,04/28/18 17:30,sha256,1,Pass,Let's Encrypt Authority X3,nginx,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+iponline.myipo.gov.my,210.187.40.150,FALSE,FALSE,,,,,,Microsoft-IIS/7.0,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+iportal.mastic.gov.my,103.8.163.70,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+iprmarketplace.myipo.gov.my,210.187.40.168,FALSE,TRUE,20689,10/8/16 13:44,sha256,-1,Certificate & Hostname mismatch,ipr.myipo.gov.my,Apache/2.2.15 (CentOS),PHP/5.3.3,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+iptk.moh.gov.my,210.48.154.58,FALSE,FALSE,,,,,,,,17971,MY,"TMVADS-AP TM-VADS DC Hosting, MY",
+isn.gov.my,104.27.144.184,FALSE,TRUE,2.18312E+38,08/2/18 23:59,sha256,1,Pass,COMODO ECC Domain Validation Secure Server CA 2,cloudflare,n/a,13335,US,"CLOUDFLARENET - Cloudflare, Inc., US"
+iso.kejora.gov.my,60.48.138.81,FALSE,TRUE,3.46926E+18,11/6/18 5:14,sha256,-1,Certificate & Hostname mismatch,Go Daddy Secure Certificate Authority - G2,Apache/2.2.11 (Win32) PHP/5.3.0,PHP/5.3.0,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+ispaaadbkl.dbkl.gov.my,58.26.53.48,FALSE,FALSE,,,,,,Apache-Coyote/1.1,Servlet 2.4; JBoss-4.2.2.GA (build: SVNTag=JBoss_4_2_2_GA date=200710221139)/Tomcat-5.5,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+isupervision2.jkr.gov.my,43.252.232.131,FALSE,FALSE,,,,,,Apache/2.2.22 (Ubuntu),PHP/5.3.10-1ubuntu3.26,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+itanya.spp.gov.my,103.8.161.204,FALSE,FALSE,,,,,,Apache/2.2.15 (CentOS),PHP/5.3.3,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+itc.gov.my,104.28.28.112,FALSE,FALSE,,,,,,cloudflare,PHP/5.5.9-1ubuntu4.14,13335,US,"CLOUDFLARENET - Cloudflare, Inc., US",
+itime.mampu.gov.my,103.8.160.169,FALSE,FALSE,,,,,,Microsoft-IIS/7.0,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+its.stats.gov.my,103.8.162.123,FALSE,TRUE,1.08464E+38,12/6/19 9:53,sha256,1,Pass,Entrust Certification Authority - L1K,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+iyres.gov.my,43.252.215.157,FALSE,TRUE,1.41481E+38,05/8/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,PHP/5.3.29,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+jawatankosong.miros.gov.my,43.252.232.208,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+jcs.mohr.gov.my,202.75.5.149,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+jkdm.customskl.gov.my,219.94.115.30,FALSE,FALSE,,,,,,Apache/2.2.23 (Unix) mod_ssl/2.2.23 OpenSSL/1.0.1c DAV/2 PHP/5.3.19,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+jkjrspa.jkjr.gov.my,103.8.161.96,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+jknkl.moh.gov.my,175.28.12.119,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+jknsabah.moh.gov.my,103.8.146.71,FALSE,TRUE,2.86921E+41,05/17/17 6:53,sha256,-1,Certificate & Hostname mismatch,Let's Encrypt Authority X3,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+jkt.kpkt.gov.my,203.217.179.57,FALSE,FALSE,,,,,,Apache,XXXXXXXXXXX,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+jln.kpkt.gov.my,103.8.144.177,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+jmal.jkr.gov.my,43.252.232.157,TRUE,TRUE,1.15708E+38,08/19/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Organization Validation Secure Server CA,n/a,PHP/5.1.6,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+jointforce.mil.my,Fail,,,,,,,,,,,,,
+jpa.spab.gov.my,103.8.163.112,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+jpak.jkr.gov.my,43.252.232.155,FALSE,FALSE,,,,,,Apache,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+jpedia.jkr.gov.my,43.252.232.152,FALSE,FALSE,,,,,,Apache/2.2.15 (Red Hat),PHP/7.0.12,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+jpls.dof.gov.my,103.8.145.61,TRUE,TRUE,2.31258E+36,10/10/19 12:00,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",DigiCert SHA2 Secure Server CA,Apache,PHP/5.6.20,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+jpm.mymesyuarat.gov.my,203.217.179.219,FALSE,FALSE,,,,,,Apache,PHP/5.3.3,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+jpmportal.prison.gov.my,175.28.15.199,FALSE,FALSE,,,,,,Apache/2.4.7 (Unix) OpenSSL/1.0.1e PHP/5.4.22 mod_perl/2.0.8-dev Perl/v5.16.3,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+jpn.spab.gov.my,103.8.163.112,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+jps.johor.gov.my,210.19.13.246,FALSE,TRUE,7.96268E+37,09/29/17 23:59,sha256,-1,Certificate expired,"cPanel, Inc. Certification Authority",Apache,n/a,9930,MY,"TTNET-MY TIME dotCom Berhad, MY"
+jps.melaka.gov.my,1.9.133.53,TRUE,TRUE,2.05335E+36,10/24/18 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.4.16 mod_wsgi/3.4 Python/2.7.5,PHP/5.4.16,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+jps.pahang.gov.my,1.9.139.198,FALSE,FALSE,,,,,,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+jps.penang.gov.my,58.27.61.131,FALSE,FALSE,,,,,,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+jpsns.ns.gov.my,Fail,,,,,,,,,,,,,
+jpspn.kpkt.gov.my,103.8.144.176,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+jpsweb.terengganu.gov.my,202.188.29.22,FALSE,FALSE,,,,,,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+jpt.mohe.gov.my,103.8.145.245,FALSE,TRUE,29868,01/19/19 13:35,sha256,-1,Certificate & Hostname mismatch,jupiter,Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.4.16,PHP/5.4.16,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+kada.gov.my,103.8.160.209,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+kadceria.kwp.gov.my,103.8.144.8,TRUE,TRUE,6.59755E+36,07/18/18 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Apache/2.4.25 (Win64) OpenSSL/1.0.2j PHP/5.6.29,XXXXXXXXXXX,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+katu.kpkt.gov.my,103.8.145.218,FALSE,FALSE,,,,,,Apache/2.4.18 (Ubuntu),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+kdnmail.moha.gov.my,103.8.145.35,TRUE,TRUE,1.69282E+38,11/1/18 23:59,sha256,1,Pass,GeoTrust EV SSL CA - G4,nginx,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+kelantanlibrary.gov.my,Fail,,,,,,,,,,,,,
+kemahiran.kbs.gov.my,103.8.161.28,FALSE,FALSE,,,,,,nginx,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+kenyir-mas.ketengah.gov.my,203.106.246.122,FALSE,TRUE,1395109033,03/17/17 2:17,sha1,-1,Certificate & Hostname mismatch,Fireware web CA,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+khidmatnegara.spab.gov.my,103.8.163.112,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+kidzania.hasil.gov.my,113.11.237.51,FALSE,FALSE,,,,,,Apache/2.2.17 (Unix) DAV/2 PHP/5.3.6,XXXXXXXXXX,55951,MY,"LHDNM-MY Blok 9 Kompleks Bangunan Kerajaan, MY",
+kklw.mymesyuarat.gov.my,203.217.179.219,FALSE,FALSE,,,,,,Apache,PHP/5.3.3,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+kkr.spab.gov.my,103.8.163.112,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+kln.gov.my,Fail,,,,,,,,,,,,,
+klnportal.kln.gov.my,202.60.59.126,FALSE,FALSE,,,,,,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+kltrax.dbkl.gov.my,58.26.53.60,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+km.anm.gov.my,218.208.102.13,TRUE,TRUE,2.4656E+38,07/26/19 8:58,sha256,1,Pass,Entrust Certification Authority - L1K,Microsoft-IIS/7.5,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+knk2hilang.rmp.gov.my,218.208.39.96,FALSE,TRUE,7.84903E+37,08/17/19 10:04,sha256,1,Pass,Entrust Certification Authority - L1K,Microsoft-IIS/7.5,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+komunikasibelia.skmm.gov.my,Fail,,,,,,,,,,,,,
+kontrak.airforce.mil.my,58.27.64.252,FALSE,FALSE,,,,,,Apache,PHP/5.5.9-1ubuntu4.14,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+kontrak.water.gov.my,203.62.1.114,FALSE,FALSE,,,,,,Microsoft-IIS/6.0,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+kpdnkk.gov.my,103.8.160.11,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+krat.mod.gov.my,103.27.113.37,FALSE,FALSE,,,,,,n/a,n/a,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY",
+kskkr.kkr.gov.my,202.60.59.5,FALSE,TRUE,7182,08/13/13 17:02,sha1,-1,Certificate & Hostname mismatch,localhost.localdomain,Apache/2.2.15 (CentOS),PHP/5.3.3,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+ksn.jpm.gov.my,Fail,,,,,,,,,,,,,
+kwp.spab.gov.my,103.8.163.112,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+labuanfsa.gov.my,219.93.30.148,FALSE,FALSE,,,,,,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+laman.dbp.gov.my,1.9.24.252,FALSE,FALSE,,,,,,Microsoft-IIS/7.0,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+lamanweb.dbp.gov.my,1.9.24.213,FALSE,FALSE,,,,,,Apache,PHP/5.6.30,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+latihan.createjkr.gov.my,43.252.232.116,FALSE,FALSE,,,,,,nginx/1.12.1,PHP/7.0.22,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+latihan.jkr.gov.my,43.252.232.157,TRUE,TRUE,1.15708E+38,08/19/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Organization Validation Secure Server CA,Apache-Coyote/1.1,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+latihan.kraftangan.gov.my,58.26.125.244,FALSE,FALSE,,,,,,Apache/2.2.22 (Win32) mod_ssl/2.2.22 OpenSSL/0.9.8o,PHP/5.3.14 ZendServer,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+latihan.moh.gov.my,103.8.146.71,FALSE,TRUE,2579407538,11/17/18 7:31,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",latihan.moh.gov.my,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+latihanskala.jkr.gov.my,43.252.232.136,TRUE,TRUE,1.58883E+19,09/15/24 6:33,sha1,0,"Host did not provide intermediate certs, unable to build trust chain",*.jkr.gov.my,nginx/0.5.33,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+legal.airforce.mil.my,58.27.64.252,FALSE,FALSE,,,,,,Apache,PHP/5.5.9-1ubuntu4.14,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+lib.doe.gov.my,103.8.144.193,FALSE,FALSE,,,,,,Apache/2.2.22 (Debian),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+lib.pl.gov.my,104.27.166.142,FALSE,FALSE,,,,,,cloudflare,n/a,13335,US,"CLOUDFLARENET - Cloudflare, Inc., US",
+library_v2.instun.gov.my,202.60.56.22,FALSE,FALSE,,,,,,Apache/2.2.22 (Debian),n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+library.idfr.gov.my,203.12.220.224,TRUE,TRUE,7.31493E+37,01/22/21 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Domain Validation Secure Server CA,Apache,PHP/5.6.32,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+library.iyres.gov.my,103.8.162.46,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+library.jmm.gov.my,175.28.14.120,FALSE,FALSE,,,,,,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+library.kehakiman.gov.my,202.75.7.135,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+library.nuclearmalaysia.gov.my,Fail,,,,,,,,,,,,,
+library.treasury.gov.my,Fail,,,,,,,,,,,,,
+library.water.gov.my,203.62.1.107,FALSE,FALSE,,,,,,Microsoft-IIS/5.0,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+librarykpm.moe.gov.my,1.9.210.29,FALSE,FALSE,,,,,,Apache/2.2.3 (Unix),n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+lpf.moha.gov.my,103.8.145.107,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+lpjpcs.gov.my,110.4.41.229,TRUE,TRUE,1.29979E+38,07/14/19 23:59,sha256,1,Pass,GeoTrust SSL CA - G3,Microsoft-IIS/8.5,ASP.NET,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+lpp.gov.my,103.8.163.254,FALSE,FALSE,,,,,,nginx/1.10.3 (Ubuntu),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+maca.sprm.gov.my,203.217.177.54,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+maf.mod.gov.my,Fail,,,,,,,,,,,,,
+mafca.mod.gov.my,103.27.113.37,FALSE,FALSE,,,,,,n/a,n/a,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY",
+maid-online.imi.gov.my,58.27.46.4,TRUE,TRUE,3.12088E+26,12/22/20 10:51,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",GlobalSign Organization Validation CA - SHA256 - G2,Apache TomEE,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+mail.adk.gov.my,175.28.15.227,TRUE,TRUE,2.89995E+38,04/10/20 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,n/a,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+mail.aelb.gov.my,103.229.114.168,FALSE,TRUE,7.58189E+37,11/14/18 4:19,sha256,1,Pass,Entrust Certification Authority - L1K,Microsoft-IIS/7.5,ASP.NET,133444,MY,"NET2ONE-AS-AP Net2One Sdn Bhd, MY"
+mail.airforce.mil.my,58.27.64.245,FALSE,TRUE,1.23807E+38,06/20/18 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+mail.dca.gov.my,202.75.6.238,FALSE,TRUE,4.4025E+36,05/24/19 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Microsoft-IIS/7.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+mail.fama.gov.my,1.9.138.85,TRUE,TRUE,,,,,,Apache-Coyote/1.1,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+mail.hpj.gov.my,175.28.13.133,TRUE,TRUE,1.63678E+19,12/5/20 9:05,sha1,-1,Certificate & Hostname mismatch,hpj-mail.hpj.gov.my,Apache,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+mail.hydro.gov.my,218.208.35.222,FALSE,TRUE,1.76527E+38,05/12/18 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,nginx,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+mail.isn.gov.my,103.215.137.28,TRUE,TRUE,3.03744E+38,07/12/18 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,Microsoft-IIS/8.5,ASP.NET,132111,MY,"BIGBANDNET-MY Bigband Sdn Bhd, MY"
+mail.iyres.gov.my,110.74.172.78,TRUE,TRUE,1.44608E+38,04/2/19 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,IceWarp/12.0.3.1 RHEL7 x64,n/a,45668,MY,"AIMS-MY-NET AIMS Data Centre Sdn Bhd, MY"
+mail.jkkn.gov.my,110.4.42.43,FALSE,TRUE,86570719511,03/31/25 7:25,sha1,0,"Host did not provide intermediate certs, unable to build trust chain",mail.jkkn.gov.my,n/a,n/a,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+mail.kejora.gov.my,219.95.25.197,TRUE,TRUE,3.46926E+18,11/6/18 5:14,sha256,-1,Certificate & Hostname mismatch,Go Daddy Secure Certificate Authority - G2,Microsoft-IIS/7.5,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+mail.ketengah.gov.my,203.106.246.103,TRUE,TRUE,2.00555E+28,05/16/19 8:26,sha256,1,Pass,GlobalSign Organization Validation CA - SHA256 - G2,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+mail.lpj.gov.my,58.27.54.12,FALSE,TRUE,1.72321E+38,09/26/18 23:59,sha256,1,Pass,COMODO RSA Organization Validation Secure Server CA,Microsoft-IIS/7.5,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+mail.mot.gov.my,202.75.5.170,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+mail.pcb.gov.my,202.75.7.32,FALSE,TRUE,1.19472E+38,01/17/19 23:59,sha256,1,Pass,GeoTrust EV SSL CA - G4,Microsoft-IIS/8.0,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+mail.penangport.gov.my,58.26.204.140,FALSE,FALSE,,,,,,Microsoft-IIS/7.0,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+mail.pka.gov.my,58.26.183.38,FALSE,FALSE,,,,,,Microsoft-IIS/7.0,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+mail.seda.gov.my,110.74.178.93,TRUE,TRUE,1.19056E+19,03/22/18 4:13,sha256,1,Pass,Go Daddy Secure Certificate Authority - G2,Microsoft-IIS/7.5,ASP.NET,45668,MY,"AIMS-MY-NET AIMS Data Centre Sdn Bhd, MY"
+mail.sprm.gov.my,202.75.4.52,FALSE,TRUE,1.46143E+37,05/19/20 12:00,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",DigiCert SHA2 Secure Server CA,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+mail.stats.gov.my,202.75.5.48,FALSE,TRUE,2.04295E+37,09/19/18 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Microsoft-IIS/8.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+maklumbalas.hasil.gov.my,113.11.237.49,FALSE,FALSE,,,,,,Apache/2.2.17 (Unix) DAV/2 PHP/5.3.6,XXXXXXXXXX,55951,MY,"LHDNM-MY Blok 9 Kompleks Bangunan Kerajaan, MY",
+maksak.jpm.gov.my,203.217.177.78,FALSE,TRUE,1.30985E+19,11/8/19 23:48,sha1,-1,Certificate & Hostname mismatch,localhost,Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/5.6.31,PHP/5.6.31,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+malay.penangport.gov.my,58.26.204.131,FALSE,FALSE,,,,,,Microsoft-IIS/6.0,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+malaysiabiz.mampu.gov.my,103.8.144.238,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+malaysiaunsc.kln.gov.my,202.60.59.23,FALSE,FALSE,,,,,,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+mampu.spab.gov.my,103.8.163.112,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+marris.treasury.gov.my,202.75.7.217,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+mastic.mosti.gov.my,103.8.163.65,TRUE,TRUE,2.84333E+36,11/6/19 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Apache/2.4.29 (Ubuntu),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+matrikulasi.moe.gov.my,1.9.210.13,TRUE,TRUE,2.08353E+38,05/23/18 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Domain Validation Secure Server CA,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+mbj.kkr.gov.my,202.60.59.5,FALSE,TRUE,7182,08/13/13 17:02,sha1,-1,Certificate & Hostname mismatch,localhost.localdomain,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+mcyportal.mosti.gov.my,202.75.5.34,FALSE,FALSE,,,,,,Apache/2.2.15 (CentOS),PHP/5.5.38,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+mecc.matrade.gov.my,210.1.224.90,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,45785,MY,"TECHAVENUE-AP TechAvenue Malaysia, MY",
+media.mosti.gov.my,103.8.161.156,FALSE,FALSE,,,,,,Apache/2.4.27 (Ubuntu),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+mediabank.kraftangan.gov.my,58.26.125.204,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+meih.st.gov.my,202.9.104.11,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17666,MY,"HITACHISUNWAY Unit 13-4, Block F1, MY",
+melur.spp.gov.my,103.8.146.11,FALSE,TRUE,2.89017E+38,07/14/19 9:16,sha256,1,Pass,Entrust Certification Authority - L1K,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+members.st.gov.my,202.9.104.14,FALSE,FALSE,,,,,,Microsoft-IIS/10.0,"PHP/7.1.10, ARR/3.0",17666,MY,"HITACHISUNWAY Unit 13-4, Block F1, MY",
+meps.motac.gov.my,103.8.145.94,FALSE,TRUE,1.33996E+38,10/6/19 23:59,sha256,1,Pass,GeoTrust SSL CA - G3,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+midas.mod.gov.my,103.27.113.37,FALSE,FALSE,,,,,,n/a,n/a,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY",
+mides.mod.gov.my,103.27.113.37,FALSE,FALSE,,,,,,n/a,n/a,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY",
+mm2honline.motac.gov.my,103.8.145.28,FALSE,FALSE,,,,,,Apache/2.2.15 (CentOS),PHP/5.5.36,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+mod.spab.gov.my,103.8.163.112,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+moe.gov.my,1.9.210.32,TRUE,TRUE,2.08353E+38,05/23/18 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+moe.spab.gov.my,103.8.163.112,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+moftube.treasury.gov.my,203.217.177.144,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+moh.gov.my,103.8.162.11,FALSE,FALSE,,,,,,Apache/2.2.15 (CentOS),XXXXXXXXXXX,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+moh.spab.gov.my,103.8.163.112,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+moha.spab.gov.my,103.8.163.112,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+mohe.spab.gov.my,103.8.163.112,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+morc.kkr.gov.my,203.12.220.123,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+mot.spab.gov.my,103.8.163.112,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+motac.gov.my,203.217.177.192,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+motac.spab.gov.my,103.8.163.112,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+mpbn.kbs.gov.my,203.217.177.163,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+mpcnasecr.mpc.gov.my,203.62.1.228,FALSE,TRUE,1.83326E+19,03/9/26 10:45,sha256,-1,Certificate & Hostname mismatch,QNAP NAS,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+mpcnasecrk.mpc.gov.my,202.60.56.34,FALSE,FALSE,,,,,,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+mpcnasecrt.mpc.gov.my,202.60.56.35,FALSE,TRUE,1.83326E+19,03/9/26 10:45,sha256,-1,Certificate & Hostname mismatch,QNAP NAS,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+mpcnashq.mpc.gov.my,175.28.13.93,FALSE,TRUE,1.83326E+19,03/9/26 10:45,sha256,-1,Certificate & Hostname mismatch,QNAP NAS,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+mpcnasnro.mpc.gov.my,203.62.1.229,FALSE,TRUE,1.83326E+19,03/9/26 10:45,sha256,-1,Certificate & Hostname mismatch,QNAP NAS,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+mpcnassbo.mpc.gov.my,203.12.220.60,FALSE,TRUE,1.83326E+19,03/9/26 10:45,sha256,-1,Certificate & Hostname mismatch,QNAP NAS,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+mpcnassko.mpc.gov.my,203.62.1.225,FALSE,TRUE,1.83326E+19,03/9/26 10:45,sha256,-1,Certificate & Hostname mismatch,QNAP NAS,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+mpcnassro.mpc.gov.my,203.62.1.224,FALSE,TRUE,1.83326E+19,03/9/26 10:45,sha256,-1,Certificate & Hostname mismatch,QNAP NAS,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+mpcservices.gov.my,202.71.109.19,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,17971,MY,"TMVADS-AP TM-VADS DC Hosting, MY",
+mpmis.dmpm.nre.gov.my,202.75.6.187,FALSE,FALSE,,,,,,Apache/2.2.9 (Win32),PHP/5.2.6,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+ms1759.mygeoportal.gov.my,202.75.5.80,FALSE,TRUE,2.53724E+38,12/12/19 6:53,sha256,-1,Certificate & Hostname mismatch,Entrust Certification Authority - L1M,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+msic.stats.gov.my,203.217.177.171,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+mtcp.kln.gov.my,202.60.59.127,FALSE,FALSE,,,,,,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+mtcpcoms.kln.gov.my,202.60.59.129,FALSE,FALSE,,,,,,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+murninet.townplan.gov.my,175.28.15.74,FALSE,TRUE,1.29126E+19,04/13/19 22:04,sha1,-1,Certificate & Hostname mismatch,localhost,Apache/2.2.17 (Win32) mod_ssl/2.2.17 OpenSSL/0.9.8o PHP/5.3.4 mod_perl/2.0.4 Perl/v5.10.1,PHP/5.3.5,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+museum.bnm.gov.my,103.6.239.97,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,132197,MY,"SKALI-MY SKALI, MY",
+myasean.kln.gov.my,202.60.59.126,FALSE,FALSE,,,,,,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+myasset.forestry.gov.my,175.28.12.97,FALSE,TRUE,1.88851E+38,12/7/17 4:40,sha256,-1,Certificate expired,Entrust Certification Authority - L1K,Microsoft-IIS/8.5,ASP.NET,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+mybayar.gov.my,103.8.163.209,FALSE,TRUE,3.31978E+38,07/7/19 8:56,sha256,1,Pass,Entrust Certification Authority - L1K,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+mybooking.jkr.gov.my,43.252.232.157,TRUE,TRUE,1.15708E+38,08/19/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Organization Validation Secure Server CA,Apache-Coyote/1.1,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+mybos.pdn.gov.my,110.4.45.157,FALSE,TRUE,3.96421E+37,04/29/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,PHP/5.6.33,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+mybrightidea.jkr.gov.my,43.252.232.157,TRUE,TRUE,1.15708E+38,08/19/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Organization Validation Secure Server CA,n/a,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+mycc.gov.my,104.27.167.48,FALSE,TRUE,2.36389E+38,08/30/18 23:59,sha256,1,Pass,COMODO ECC Domain Validation Secure Server CA 2,cloudflare,n/a,13335,US,"CLOUDFLARENET - Cloudflare, Inc., US"
+mycukai.treasury.gov.my,103.8.145.63,TRUE,TRUE,1.39105E+38,03/9/18 23:59,sha256,1,Pass,GeoTrust DV SSL CA - G3,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+myeduloan.mara.gov.my,1.9.138.209,FALSE,TRUE,1.70316E+37,12/22/20 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+myevent.moha.gov.my,203.217.179.147,FALSE,FALSE,,,,,,Apache/2.2.15 (CentOS),PHP/5.3.3,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+myfex.gov.my,202.75.4.197,TRUE,TRUE,1.27676E+38,09/21/20 7:44,sha256,-1,Certificate & Hostname mismatch,Entrust Certification Authority - L1K,Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips PHP/5.6.22,PHP/5.6.22,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+myfex.kpdnkk.gov.my,202.75.4.197,FALSE,TRUE,1.27676E+38,09/21/20 7:44,sha256,1,Pass,Entrust Certification Authority - L1K,Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips PHP/5.6.22,PHP/5.6.22,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+myfisvendor.tourism.gov.my,203.217.178.29,TRUE,TRUE,2.65044E+37,02/21/19 2:55,sha256,1,Pass,Entrust Certification Authority - L1K,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+mygdimap.mygeoportal.gov.my,202.75.7.191,TRUE,TRUE,1.54771E+38,01/19/20 0:58,sha256,1,Pass,Entrust Certification Authority - L1M,Microsoft-IIS/7.0,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+mygdix.mygeoportal.gov.my,202.75.6.221,FALSE,TRUE,1.17046E+38,07/17/19 23:59,sha256,1,Pass,GeoTrust EV SSL CA - G4,Microsoft-IIS/7.0,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+mygempa.met.gov.my,103.245.89.39,FALSE,FALSE,,,,,,Apache,PHP/7.1.7,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+mygeoname.mygeoportal.gov.my,202.75.5.80,FALSE,TRUE,2.53724E+38,12/12/19 6:53,sha256,-1,Certificate & Hostname mismatch,Entrust Certification Authority - L1M,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+mygeotranslator.mygeoportal.gov.my,103.8.144.70,FALSE,FALSE,,,,,,Apache/2.4.9 (Win64) PHP/5.5.12,PHP/5.5.12,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+mygos.mygeoportal.gov.my,103.8.145.125,FALSE,TRUE,1.95741E+37,05/15/19 12:00,sha256,1,Pass,GeoTrust EV RSA CA 2018,Microsoft-IIS/8.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+mygov.malaysia.gov.my,203.217.177.77,FALSE,FALSE,,,,,,Apache/2.4.9 (Win32) PHP/5.5.12,PHP/5.5.12,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+mygovmobile.malaysia.gov.my,202.171.41.170,FALSE,TRUE,1.331E+19,01/1/38 0:00,sha1,-1,Certificate & Hostname mismatch,Dapat Vista WebAdmin CA,Microsoft-IIS/7.5,"PHP/5.3.10, ASP.NET",23659,MY,"HEITECH-AS-AP APNIC HEITECH ASN, MY"
+mygrants.gov.my,210.5.44.74,FALSE,TRUE,3.33409E+28,07/16/18 2:59,sha256,1,Pass,AlphaSSL CA - SHA256 - G2,TehTarikAis/1.7.2.9,n/a,45352,MY,"IPSERVERONE-AS-AP IP ServerOne Solutions Sdn Bhd, MY"
+mygwa.arkib.gov.my,202.60.58.203,FALSE,FALSE,,,,,,Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.6.31,PHP/5.6.31,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+myhome.kpkt.gov.my,103.8.161.30,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+myhomestay.kejora.gov.my,60.48.138.81,FALSE,TRUE,3.46926E+18,11/6/18 5:14,sha256,-1,Certificate & Hostname mismatch,Go Daddy Secure Certificate Authority - G2,Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.0.22,PHP/7.0.22,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+mykadganti.jpn.gov.my,1.9.138.147,TRUE,TRUE,1.43735E+38,03/3/19 4:35,sha256,1,Pass,Entrust Certification Authority - L1K,Apache/2.2.12 (Linux/SUSE),n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+mykiragst.kpdnkk.gov.my,103.8.144.24,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+mykj.jkr.gov.my,43.252.232.157,TRUE,TRUE,1.15708E+38,08/19/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Organization Validation Secure Server CA,Apache-Coyote/1.1,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+mylearning.mpc.gov.my,103.245.89.250,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+myliis3.mygeoportal.gov.my,202.75.5.80,FALSE,TRUE,2.53724E+38,12/12/19 6:53,sha256,-1,Certificate & Hostname mismatch,Entrust Certification Authority - L1M,Microsoft-IIS/7.0,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+mymatradesso.matrade.gov.my,203.12.220.16,FALSE,FALSE,,,,,,n/a,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+mymeeting.kejora.gov.my,60.48.138.81,FALSE,TRUE,3.46926E+18,11/6/18 5:14,sha256,-1,Certificate & Hostname mismatch,Go Daddy Secure Certificate Authority - G2,Apache/2.2.20 (Ubuntu),PHP/5.3.6-13ubuntu3.3,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+mymohes.mohe.gov.my,113.23.201.2,FALSE,FALSE,,,,,,Microsoft-IIS/7.0,ASP.NET,38182,MY,"EXTREMEBB-AS-MY Extreme Broadband - Total Broadband Experience, MY",
+mypelanggan.mampu.gov.my,103.8.162.160,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+myprestasi.kejora.gov.my,60.48.138.81,FALSE,TRUE,3.46926E+18,11/6/18 5:14,sha256,-1,Certificate & Hostname mismatch,Go Daddy Secure Certificate Authority - G2,Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.0.22,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+myprocurement.treasury.gov.my,203.217.178.108,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+myquest.mohe.gov.my,203.217.177.120,TRUE,TRUE,1356133872,08/7/18 17:49,sha256,1,Pass,Entrust Certification Authority - L1K,Beskelll/5.0,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+myrela.moha.gov.my,103.8.161.158,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+myroadpedia.kkr.gov.my,103.245.90.163,FALSE,FALSE,,,,,,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+myself.jpa.gov.my,202.75.5.91,FALSE,TRUE,3.30309E+38,01/14/19 3:38,sha256,1,Pass,Entrust Certification Authority - L1K,Microsoft-IIS/7.5,"PHP/5.4.34, ASP.NET",17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+myservices.miti.gov.my,Fail,,,,,,,,,,,,,
+mysidc.statistics.gov.my,203.217.177.171,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+mysms.gov.my,202.171.41.169,FALSE,TRUE,1.331E+19,01/1/38 0:00,sha1,-1,Certificate & Hostname mismatch,Dapat Vista WebAdmin CA,Microsoft-IIS/7.5,"PHP/5.3.10, ASP.NET",23659,MY,"HEITECH-AS-AP APNIC HEITECH ASN, MY"
+mystandard.kpdnkk.gov.my,202.75.7.102,TRUE,TRUE,1.27676E+38,09/21/20 7:44,sha256,1,Pass,Entrust Certification Authority - L1K,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+mysurat.kejora.gov.my,60.48.138.81,FALSE,TRUE,3.46926E+18,11/6/18 5:14,sha256,-1,Certificate & Hostname mismatch,Go Daddy Secure Certificate Authority - G2,Microsoft-IIS/8.5,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+mytourismdata.tourism.gov.my,124.150.143.191,FALSE,FALSE,,,,,,Microsoft-IIS/7.0,"PHP/5.4.12, ASP.NET",45945,MY,"WEBSERVER-MY Acme Commerce Sdb Bhd, Malayia, Network, MY",
+navyex.navy.mil.my,103.27.113.196,FALSE,TRUE,1.1214E+37,10/19/18 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Microsoft-IIS/8.0,ASP.NET,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY"
+nbi.skmm.gov.my,202.171.39.77,FALSE,FALSE,,,,,,n/a,ASP.NET,23659,MY,"HEITECH-AS-AP APNIC HEITECH ASN, MY",
+ncafm.mardi.gov.my,58.26.125.243,FALSE,FALSE,,,,,,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+ncc.mardi.gov.my,58.26.125.243,FALSE,FALSE,,,,,,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+nehapmalaysia.moh.gov.my,103.8.146.79,FALSE,FALSE,,,,,,Apache,PHP/5.6.33,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+newss.statistics.gov.my,175.28.12.49,FALSE,TRUE,2.17651E+36,07/9/18 10:13,sha256,1,Pass,Entrust Certification Authority - L1K,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+ngis.mygeoportal.gov.my,202.75.5.80,FALSE,TRUE,2.53724E+38,12/12/19 6:53,sha256,-1,Certificate & Hostname mismatch,Entrust Certification Authority - L1M,Microsoft-IIS/8.0,PHP/7.0.9,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+niceexpo.mosti.gov.my,103.8.161.155,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+njm.kpdnkk.gov.my,202.75.6.97,FALSE,FALSE,,,,,,Apache/2.4.18 (Ubuntu),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+npra.moh.gov.my,117.53.155.48,FALSE,TRUE,2.33529E+38,10/17/17 23:59,sha256,-1,Certificate expired,"cPanel, Inc. Certification Authority",Apache/2.2.31 (Unix) mod_ssl/2.2.31 OpenSSL/1.0.1e-fips mod_bwlimited/1.4,PHP/5.6.27,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+nrelib.nre.gov.my,202.75.6.187,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+nreloglatihan.nre.gov.my,202.75.6.187,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+nrerim.nre.gov.my,Fail,,,,,,,,,,,,,
+oa.mpc.gov.my,202.60.59.93,FALSE,FALSE,,,,,,Lotus-Domino,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+oaserver.smecorp.gov.my,211.24.250.132,TRUE,TRUE,5.95471E+37,12/4/19 23:59,sha256,1,Pass,RapidSSL SHA256 CA,Lotus-Domino,n/a,9930,MY,"TTNET-MY TIME dotCom Berhad, MY"
+ofa.arkib.gov.my,175.28.15.120,FALSE,TRUE,7.54631E+37,04/19/18 23:59,sha256,1,Pass,GeoTrust DV SSL CA - G3,Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+oku.jkm.gov.my,203.217.179.133,FALSE,TRUE,0,09/30/10 9:10,md5,-1,Certificate & Hostname mismatch,localhost,Apache/2.2.17 (Unix) DAV/2 mod_ssl/2.2.17 OpenSSL/1.0.0c PHP/5.3.5 mod_apreq2-20090110/2.7.1 mod_perl/2.0.4 Perl/v5.10.1,PHP/5.3.5,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+oneso.1govuc.gov.my,58.26.10.156,FALSE,TRUE,10270,04/21/16 4:24,sha256,-1,Certificate expired,TM Applied Business Certification Authority,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+online.mara.gov.my,1.9.138.198,FALSE,FALSE,,,,,,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+online.moha.gov.my,203.217.179.155,TRUE,TRUE,3.44143E+37,04/11/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",GeoTrust EV SSL CA - G4,Apache,PHP/5.6.25,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+online.mohe.gov.my,103.8.146.21,FALSE,TRUE,1356133872,08/7/18 17:49,sha256,1,Pass,Entrust Certification Authority - L1K,nginx,PHP/5.6.28,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+online.spa.gov.my,202.75.7.228,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+online.stadium.gov.my,202.129.170.5,FALSE,FALSE,,,,,,n/a,PHP/5.6.30,9655,MY,"TPMNETWORK-AS-AP TPM Corp. Berhad, MY",
+Online06.mara.gov.my,1.9.138.206,FALSE,FALSE,,,,,,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+online06.mara.gov.my,1.9.138.206,FALSE,FALSE,,,,,,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+onlineapps.kada.gov.my,1.9.138.105,FALSE,FALSE,,,,,,Apache/2.2.11 (Win32) PHP/5.3.0,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+opac.pnm.gov.my,1.9.139.139,FALSE,TRUE,3.33104E+37,12/25/18 23:59,sha256,1,Pass,GeoTrust SSL CA - G3,Apache-Coyote/1.1,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+ope.kpkt.gov.my,103.8.160.222,FALSE,FALSE,,,,,,Apache/2.4.18 (Ubuntu),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+open.bless.gov.my,58.26.69.50,FALSE,FALSE,,,,,,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+parlimenkbs.kbs.gov.my,103.8.144.163,FALSE,FALSE,,,,,,nginx,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+pcb.spab.gov.my,103.8.163.112,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+pcrs.kejora.gov.my,60.48.138.81,FALSE,TRUE,3.46926E+18,11/6/18 5:14,sha256,-1,Certificate & Hostname mismatch,Go Daddy Secure Certificate Authority - G2,Apache/2.2.14 (Win32) DAV/2 mod_ssl/2.2.14 OpenSSL/0.9.8l mod_autoindex_color PHP/5.3.1 mod_apreq2-20090110/2.7.1 mod_perl/2.0.4 Perl/v5.10.1,PHP/5.3.1,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+pdn.gov.my,110.4.45.157,FALSE,TRUE,3.28696E+38,05/12/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,PHP/5.6.33,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+pegis.penang.gov.my,210.187.66.197,FALSE,TRUE,1.83558E+37,01/31/20 12:00,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",DigiCert SHA2 Secure Server CA,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+pemudah.gov.my,101.99.81.167,FALSE,TRUE,1.551E+38,03/21/18 23:59,sha256,-1,Certificate & Hostname mismatch,"cPanel, Inc. Certification Authority",Microsoft-IIS/8.5,PHP/7.0.0,45839,MY,"SHINJIRU-MY-AS-AP Shinjiru Technology Sdn Bhd, MY"
+pemudah.spab.gov.my,103.8.163.112,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+penangport.gov.my,58.26.204.131,FALSE,FALSE,,,,,,Microsoft-IIS/6.0,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+pengundi.spr.gov.my,103.8.163.104,FALSE,TRUE,1.63308E+38,11/29/19 0:45,sha256,1,Pass,Entrust Certification Authority - L1M,Microsoft-IIS/7.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+penyiarankahwin.jpn.gov.my,43.252.233.227,FALSE,TRUE,1.30985E+19,11/8/19 23:48,sha1,-1,Certificate & Hostname mismatch,localhost,Apache/2.4.7 (Win32) OpenSSL/0.9.8y PHP/5.4.22,PHP/5.4.22,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+perjawatan.fama.gov.my,1.9.138.82,FALSE,FALSE,,,,,,Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+pers.dbp.gov.my,1.9.24.201,FALSE,FALSE,,,,,,nginx/1.6.3,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+persys.kraftangan.gov.my,1.9.139.1,FALSE,TRUE,1.06027E+38,11/5/23 2:59,sha256,-1,Certificate & Hostname mismatch,FortiGate CA,Apache/2.2.22 (Win32) mod_ssl/2.2.22 OpenSSL/0.9.8o,PHP/5.3.14 ZendServer,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+petabelia.kbs.gov.my,202.75.5.186,FALSE,FALSE,,,,,,Microsoft-IIS/7.0,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+petpassport.dvs.gov.my,203.217.179.239,FALSE,FALSE,,,,,,Apache/2.2.15 (CentOS),PHP/5.3.3,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+PI1M.skmm.gov.my,202.171.39.128,FALSE,FALSE,,,,,,n/a,ASP.NET,23659,MY,"HEITECH-AS-AP APNIC HEITECH ASN, MY",
+piagam.rurallink.gov.my,202.75.5.211,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+pikat.jkr.gov.my,43.252.232.157,TRUE,TRUE,1.15708E+38,08/19/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Organization Validation Secure Server CA,n/a,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+pingat.kwp.gov.my,103.8.145.3,FALSE,TRUE,1356108465,06/29/18 10:07,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",Entrust Certification Authority - L1K,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+pintu.instun.gov.my,103.8.146.212,FALSE,FALSE,,,,,,nginx,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+pismp.moe.gov.my,1.9.210.13,TRUE,TRUE,2.08353E+38,05/23/18 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Domain Validation Secure Server CA,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+pkapp.pka.gov.my,58.26.183.41,FALSE,TRUE,1.30985E+19,11/8/19 23:48,sha1,-1,Certificate & Hostname mismatch,localhost,Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.19,PHP/5.5.19,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+pkb.gov.my,103.8.146.106,FALSE,FALSE,,,,,,Apache/2.4.7 (Ubuntu),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+pl.spab.gov.my,103.8.163.112,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+pmsabah.treasury.gov.my,202.75.4.221,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+pmsarawak.treasury.gov.my,103.8.161.196,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+pmspk.moe.gov.my,1.9.210.23,FALSE,TRUE,2.08353E+38,05/23/18 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+politeknik.gov.my,103.6.198.175,FALSE,TRUE,2.10268E+38,05/24/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,PHP/5.3.29,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+portal.1govuc.gov.my,58.26.10.177,FALSE,FALSE,,,,,,Microsoft-IIS/7.0,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+portal.aelb.gov.my,103.229.114.171,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,133444,MY,"NET2ONE-AS-AP Net2One Sdn Bhd, MY",
+portal.anm.gov.my,Fail,,,,,,,,,,,,,
+portal.bph.gov.my,103.8.161.220,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+portal.jpapencen.gov.my,203.121.102.163,FALSE,TRUE,1.30985E+19,11/8/19 23:48,sha1,-1,Certificate & Hostname mismatch,localhost,Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/5.6.33,n/a,9930,MY,"TTNET-MY TIME dotCom Berhad, MY"
+portal.kedah.gov.my,219.93.43.46,TRUE,TRUE,3.49361E+28,11/23/19 2:17,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",GlobalSign Domain Validation CA - SHA256 - G2,Apache,PHP/5.6.31,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+portal.lam.gov.my,43.252.214.225,FALSE,FALSE,,,,,,Apache/2.2.21 (Win64) mod_ssl/2.2.21 OpenSSL/1.0.0g PHP/5.3.10,PHP/5.3.10,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY",
+portal.lpj.gov.my,58.27.54.9,FALSE,FALSE,,,,,,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+portal.pl.gov.my,104.27.167.142,FALSE,FALSE,,,,,,cloudflare,n/a,13335,US,"CLOUDFLARENET - Cloudflare, Inc., US",
+portal.spp.gov.my,103.8.145.88,TRUE,TRUE,7.81308E+37,07/14/19 8:57,sha256,-1,Certificate & Hostname mismatch,Entrust Certification Authority - L1K,Apache,PHP/7.1.11,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+portal2.mymesyuarat.gov.my,103.8.145.150,FALSE,TRUE,1.47067E+38,02/27/19 23:59,sha256,-1,Certificate & Hostname mismatch,GeoTrust EV SSL CA - G4,Apache-Coyote/1.1,JSP/2.2,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+portaladuan.sprm.gov.my,103.8.145.12,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+portalawam.mod.gov.my,Fail,,,,,,,,,,,,,
+portalintranet.kettha.gov.my,103.8.144.1,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+portalspa.bomba.gov.my,103.8.160.22,FALSE,TRUE,3.84126E+36,09/22/20 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Microsoft-IIS/7.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+porteperunding.treasury.gov.my,203.217.178.107,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+ppaj.johordt.gov.my,Fail,,,,,,,,,,,,,
+ppapk.treasury.gov.my,203.217.178.107,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+ppcpencen.gov.my,103.51.43.145,FALSE,FALSE,,,,,,Microsoft-IIS/8.0,"PHP/5.4.45, ASP.NET",133936,MY,"X86NETWORK-AS-AP X86 Network Sdn Bhd, MY",
+ppn.spr.gov.my,103.8.163.99,FALSE,TRUE,1.30985E+19,11/8/19 23:48,sha1,-1,Certificate & Hostname mismatch,localhost,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+pps.kbs.gov.my,202.75.7.87,FALSE,FALSE,,,,,,nginx,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+prau.moe.gov.my,1.9.210.13,TRUE,TRUE,2.08353E+38,05/23/18 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Domain Validation Secure Server CA,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+profitv2.mampu.gov.my,103.8.144.244,TRUE,TRUE,5.00719E+37,11/17/18 23:59,sha256,1,Pass,GeoTrust EV SSL CA - G4,Apache/2.2.21 (Win32) mod_ssl/2.2.21 OpenSSL/0.9.8r PHP/5.2.8,PHP/5.2.8,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+prpm.dbp.gov.my,1.9.24.201,FALSE,FALSE,,,,,,nginx/1.6.3,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+prpmv1.dbp.gov.my,1.9.24.201,FALSE,FALSE,,,,,,nginx/1.6.3,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+psm.adk.gov.my,202.60.59.41,FALSE,FALSE,,,,,,Microsoft-IIS/8.0,ASP.NET,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+public.adk.gov.my,175.28.15.224,FALSE,FALSE,,,,,,Apache/2.2.11 (Unix) DAV/2 mod_ssl/2.2.11 OpenSSL/0.9.8k PHP/5.2.9 mod_apreq2-20051231/2.6.0 mod_perl/2.0.4 Perl/v5.10.0,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+public.moe.gov.my,1.9.210.13,TRUE,TRUE,2.08353E+38,05/23/18 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Domain Validation Secure Server CA,Generic,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+publicinfobanjir.water.gov.my,202.60.56.148,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+pusatilmu.mardi.gov.my,58.26.125.230,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+pusmas.navy.mil.my,103.27.113.193,FALSE,FALSE,,,,,,Apache/2.4.12 (Ubuntu),n/a,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY",
+puspanita.kkr.gov.my,202.60.59.5,FALSE,TRUE,7182,08/13/13 17:02,sha1,-1,Certificate & Hostname mismatch,localhost.localdomain,Apache/2.2.15 (CentOS),PHP/5.3.3,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+puspanita.mod.gov.my,103.27.113.23,FALSE,FALSE,,,,,,n/a,n/a,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY",
+puspanita.moe.gov.my,1.9.210.13,TRUE,TRUE,2.08353E+38,05/23/18 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Domain Validation Secure Server CA,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+puspanita.moha.gov.my,103.8.145.110,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+puspanita.mosti.gov.my,202.75.7.85,FALSE,TRUE,2.84333E+36,11/6/19 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,nginx/1.10.2,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+puspanita.mot.gov.my,202.75.5.249,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+puspanita.spa.gov.my,103.8.161.98,FALSE,TRUE,1.30985E+19,11/8/19 23:48,sha1,-1,Certificate & Hostname mismatch,localhost,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+puspanitakecil.jpm.gov.my,150.242.180.202,FALSE,FALSE,,,,,,Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30,PHP/5.6.30,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+pustaka.customs.gov.my,203.217.178.249,FALSE,FALSE,,,,,,Apache/2.2.11 (Win32) PHP/5.2.9-2,PHP/5.2.9-2,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+pustaka.ketengah.gov.my,203.106.246.119,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+pustaxa.dbp.gov.my,1.9.24.202,FALSE,FALSE,,,,,,n/a,"PHP/5.6.32, ASP.NET",4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+putra12.spa.gov.my,103.8.144.173,TRUE,TRUE,5.29778E+28,03/8/18 6:56,sha256,1,Pass,Entrust Certification Authority - L1K,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+putra2.spa.gov.my,202.75.5.47,TRUE,TRUE,3.6057E+28,03/8/18 6:54,sha256,1,Pass,Entrust Certification Authority - L1K,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+putra3.spa.gov.my,202.75.5.38,FALSE,FALSE,,,,,,Oracle Application Server Containers for J2EE 10g (9.0.4.1.0),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+pwcic.jkr.gov.my,43.252.232.159,FALSE,FALSE,,,,,,Apache,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+qeh.moh.gov.my,103.8.162.243,FALSE,TRUE,2.78398E+38,03/15/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+qss.stats.gov.my,103.8.162.122,FALSE,TRUE,1.08464E+38,12/6/19 9:53,sha256,1,Pass,Entrust Certification Authority - L1K,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+quest3plus.bpfk.gov.my,103.245.88.187,FALSE,TRUE,6.95126E+37,07/8/18 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",GeoTrust EV SSL CA - G4,Apache/2.2.31 (Unix) mod_ssl/2.2.31 OpenSSL/1.0.1e-fips mod_bwlimited/1.4,PHP/5.6.27,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+rails.gov.my,103.8.146.237,TRUE,TRUE,2.29444E+38,08/25/18 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Domain Validation Secure Server CA,nginx/1.10.3,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+rakan.jpm.gov.my,103.8.162.36,FALSE,FALSE,,,,,,Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.13,PHP/7.0.13,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+rakanagro.moa.gov.my,203.217.178.36,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+ras.doe.gov.my,203.217.177.230,TRUE,TRUE,7.31123E+37,11/1/18 23:59,sha256,1,Pass,GeoTrust EV SSL CA - G4,Apache/2.2.15 (CentOS),PHP/5.5.38,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+ratol.jkr.gov.my,43.252.232.149,FALSE,FALSE,,,,,,Apache,PHP/5.3.3,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+rehiring.imi.gov.my,Fail,,,,,,,,,,,,,
+research.dvs.gov.my,203.217.179.31,FALSE,FALSE,,,,,,Apache/2.2.22 (Ubuntu),PHP/5.3.10-1ubuntu3.26,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+restsa.osdec.gov.my,202.75.6.224,FALSE,FALSE,,,,,,Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips PHP/5.4.16,PHP/5.4.16,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+rfs.skm.gov.my,Fail,,,,,,,,,,,,,
+rmp.spab.gov.my,103.8.163.112,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+rms.isn.gov.my,143.192.97.142,FALSE,FALSE,,,,,,,,131310,MY,"PLT-NET-MY CX2 Computer Exchange, MY",
+roadsafety.jkr.gov.my,43.252.232.151,FALSE,FALSE,,,,,,Apache,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+rosa.kbs.gov.my,103.8.161.171,TRUE,TRUE,1.69889E+38,10/2/19 1:38,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",Entrust Certification Authority - L1M,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+roy.kbs.gov.my,202.75.7.87,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+rumawip.kwp.gov.my,103.8.145.2,TRUE,TRUE,2.00269E+37,07/18/18 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,XXXXXXXXX,XXXXXXXXXXX,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+rurallink.spab.gov.my,103.8.163.112,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+saga.ketengah.gov.my,203.106.246.117,FALSE,FALSE,,,,,,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+sahabatgerah.sprm.gov.my,150.242.180.172,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+sahamonline.miti.gov.my,103.245.89.102,TRUE,TRUE,1.62391E+38,04/14/18 23:59,sha256,1,Pass,RapidSSL SHA256 CA,Apache/2.4.23 (Unix) OpenSSL/1.0.2j PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3,PHP/5.6.24,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+sart.moa.gov.my,203.217.178.32,FALSE,FALSE,,,,,,Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+satuid.treasury.gov.my,203.217.177.138,FALSE,TRUE,1.16087E+38,01/1/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",GeoTrust SSL CA - G3,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+sbmb.dbp.gov.my,1.9.24.201,FALSE,FALSE,,,,,,nginx/1.6.3,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+sddsa.mampu.gov.my,103.8.161.115,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+sdvi.fama.gov.my,1.9.138.86,TRUE,TRUE,4.63145E+37,11/15/18 7:59,sha256,1,Pass,Entrust Certification Authority - L1K,Microsoft-IIS/6.0,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+sdvi2.fama.gov.my,1.9.138.84,FALSE,FALSE,,,,,,Microsoft-IIS/6.0,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+sec.treasury.gov.my,103.8.161.195,FALSE,TRUE,4.81158E+37,10/25/18 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+secure.kwsp.gov.my,202.162.21.166,FALSE,TRUE,6.67564E+36,10/16/18 23:59,sha256,1,Pass,Symantec Class 3 Secure Server CA - G4,n/a,n/a,18206,MY,"VPIS-AP VADS Managed Business Internet Service Provider, MY"
+secure.wildlife.gov.my,175.28.13.16,FALSE,TRUE,7.4661E+37,12/9/19 4:19,sha256,1,Pass,Entrust Certification Authority - L1K,Microsoft-HTTPAPI/2.0,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+seda.gov.my,110.74.145.132,FALSE,FALSE,,,,,,Apache,n/a,45668,MY,"AIMS-MY-NET AIMS Data Centre Sdn Bhd, MY",
+semakan.jpn.gov.my,1.9.138.148,FALSE,FALSE,,,,,,Apache/2.2.12 (Linux/SUSE),n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+semakan.spp.gov.my,103.8.161.203,FALSE,TRUE,3.09675E+38,07/14/19 9:07,sha256,1,Pass,Entrust Certification Authority - L1K,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+semakerjaya.moh.gov.my,103.8.144.215,FALSE,FALSE,,,,,,Apache/2.4.6 (CentOS) PHP/5.6.33,PHP/5.6.33,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+servicedesk.mampu.gov.my,203.217.179.222,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+services.seda.gov.my,110.74.178.84,TRUE,TRUE,1.7682E+19,04/7/19 0:34,sha256,1,Pass,Go Daddy Secure Certificate Authority - G2,Apache/2.2.15 (CentOS),PHP/5.6.31,45668,MY,"AIMS-MY-NET AIMS Data Centre Sdn Bhd, MY"
+SGMy.moe.gov.my,1.9.210.13,TRUE,TRUE,2.08353E+38,05/23/18 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Domain Validation Secure Server CA,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+si01.mampu.gov.my,203.217.177.84,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+siapp.moa.gov.my,202.75.7.237,TRUE,TRUE,1.47616E+38,12/8/18 2:48,sha256,1,Pass,Entrust Certification Authority - L1K,Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/7.1.10,PHP/7.1.10,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+sip.forestry.gov.my,175.28.12.120,TRUE,TRUE,1.29889E+38,12/7/18 4:14,sha256,1,Pass,Entrust Certification Authority - L1K,Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+sisaduan.khidmatnegara.gov.my,Fail,,,,,,,,,,,,,
+sisharta.jpkn.sabah.gov.my,27.0.4.158,FALSE,FALSE,,,,,,Microsoft-IIS/6.0,ASP.NET,55420,MY,"SABAHNET-AS-AP APNIC ASN Block, MY",
+sismass.mod.gov.my,103.27.113.30,FALSE,FALSE,,,,,,n/a,n/a,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY",
+sispek.infosihat.gov.my,103.8.162.238,FALSE,FALSE,,,,,,Apache/2.2.15 (CentOS),XXXXXXXXXX,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+sispek.jpm.gov.my,Fail,,,,,,,,,,,,,
+sisper.ketengah.gov.my,203.106.246.109,FALSE,TRUE,1395109033,03/17/17 2:17,sha1,-1,Certificate & Hostname mismatch,Fireware web CA,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+sistem.jpa.gov.my,203.217.179.169,TRUE,TRUE,3.30309E+38,01/14/19 3:38,sha256,1,Pass,Entrust Certification Authority - L1K,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+sistem.ketengah.gov.my,203.106.246.121,FALSE,TRUE,2.00555E+28,05/16/19 8:26,sha256,1,Pass,GlobalSign Organization Validation CA - SHA256 - G2,nginx/1.10.0,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+sistemaadk.adk.gov.my,Fail,,,,,,,,,,,,,
+siswa.water.gov.my,175.28.13.69,FALSE,TRUE,3.92759E+37,08/16/18 7:58,sha256,1,Pass,Entrust Certification Authority - L1K,Apache/2.4.12 (Win32) OpenSSL/1.0.1m PHP/5.6.11,PHP/5.6.11,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+skala.jkr.gov.my,43.252.232.157,TRUE,TRUE,1.15708E+38,08/19/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Organization Validation Secure Server CA,Apache-Coyote/1.1,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+skpbc.customs.gov.my,218.208.33.119,FALSE,FALSE,,,,,,Apache/2.4.17 (Win32) OpenSSL/1.0.2d,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+skuad.adk.gov.my,203.12.220.144,TRUE,TRUE,2.89995E+38,04/10/20 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,Apache/2.4.7 (Ubuntu),PHP/5.5.9-1ubuntu4.9,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+slb.kpkt.gov.my,103.8.163.11,TRUE,TRUE,1.46576E+36,12/6/18 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Apache,XXXXXXXXXXX,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+sma.wipers.gov.my,103.8.163.92,FALSE,FALSE,,,,,,Apache/2.2.22 (Ubuntu),PHP/5.3.10-1ubuntu3.4,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+smanre.mygeoportal.gov.my,202.75.5.80,FALSE,TRUE,2.53724E+38,12/12/19 6:53,sha256,-1,Certificate & Hostname mismatch,Entrust Certification Authority - L1M,Microsoft-IIS/8.0,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+smart.mampu.gov.my,Fail,,,,,,,,,,,,,
+smb.cidb.gov.my,Fail,,,,,,,,,,,,,
+smips.moe.gov.my,1.9.210.13,TRUE,TRUE,2.08353E+38,05/23/18 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Domain Validation Secure Server CA,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+sml.forestry.gov.my,175.28.12.203,FALSE,TRUE,1.29889E+38,12/7/18 4:14,sha256,1,Pass,Entrust Certification Authority - L1K,Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.4.16,PHP/5.4.16,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+smlp.forestry.gov.my,175.28.12.99,FALSE,TRUE,1.29889E+38,12/7/18 4:14,sha256,1,Pass,Entrust Certification Authority - L1K,Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.4.16,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+smpc.treasury.gov.my,202.75.4.220,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+sms.keda.gov.my,103.4.7.156,FALSE,FALSE,,,,,,Microsoft-IIS/6.0,ASP.NET,45352,MY,"IPSERVERONE-AS-AP IP ServerOne Solutions Sdn Bhd, MY",
+spa.arkib.gov.my,Fail,,,,,,,,,,,,,
+spa.gov.my,202.75.5.42,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+spa.heritage.gov.my,175.28.12.195,FALSE,FALSE,,,,,,Microsoft-IIS/7.0,ASP.NET,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+spa.instun.gov.my,103.8.146.215,FALSE,TRUE,4.08553E+17,08/26/18 8:27,sha256,1,Pass,Go Daddy Secure Certificate Authority - G2,Microsoft-IIS/7.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+spa.jakoa.gov.my,1.9.138.36,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+spa.jkkn.gov.my,Fail,,,,,,,,,,,,,
+spa.jmm.gov.my,103.8.161.140,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+spa.kbs.gov.my,203.217.177.164,FALSE,FALSE,,,,,,Microsoft-IIS/7.0,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+spa.kejora.gov.my,Fail,,,,,,,,,,,,,
+spa.kpkt.gov.my,203.217.179.45,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+spa.lpj.gov.my,58.27.54.7,FALSE,FALSE,,,,,,Apache/2.2.25 (Win32) mod_jk/1.2.32,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+spa.pnm.gov.my,Fail,,,,,,,,,,,,,
+spa.rurallink.gov.my,Fail,,,,,,,,,,,,,
+spak.jkr.gov.my,43.252.232.169,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+spak.ketengah.gov.my,203.106.246.104,FALSE,FALSE,,,,,,Apache/2.2.22 (Win32) mod_jk/1.2.40,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+spark.jkr.gov.my,43.252.232.157,TRUE,TRUE,1.15708E+38,08/19/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Organization Validation Secure Server CA,Apache-Coyote/1.1,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+spassm.moe.gov.my,1.9.210.13,TRUE,TRUE,2.08353E+38,05/23/18 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Domain Validation Secure Server CA,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+spaudit.jpm.gov.my,150.242.180.206,FALSE,FALSE,,,,,,Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/5.6.31,PHP/5.6.31,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+spd-kraf.kraftangan.gov.my,58.26.125.201,FALSE,TRUE,8.74897E+37,03/9/08 15:46,sha256,-1,Certificate & Hostname mismatch,FortiGate CA,Apache/2.2.8 (Win32) DAV/2 mod_ssl/2.2.8 OpenSSL/0.9.8g mod_autoindex_color PHP/5.2.5,PHP/5.2.5,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+spe.dbp.gov.my,1.9.24.208,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+spek.kemas.gov.my,203.217.179.103,TRUE,TRUE,1.67464E+37,06/5/17 12:00,sha256,-1,Certificate expired,DigiCert SHA2 Secure Server CA,Apache,PHP/5.4.31,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+spem.airforce.mil.my,58.27.64.252,FALSE,FALSE,,,,,,Apache,PHP/5.5.9-1ubuntu4.14,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+spfb.jkr.gov.my,43.252.232.160,FALSE,FALSE,,,,,,Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/5.6.30,PHP/5.6.30,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+spict.kpkt.gov.my,Fail,,,,,,,,,,,,,
+spk.jpm.gov.my,150.242.180.203,FALSE,TRUE,1.30985E+19,11/8/19 23:48,sha1,-1,Certificate & Hostname mismatch,localhost,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+spl.mosti.gov.my,Fail,,,,,,,,,,,,,
+spli.kejora.gov.my,60.48.138.81,FALSE,TRUE,3.46926E+18,11/6/18 5:14,sha256,-1,Certificate & Hostname mismatch,Go Daddy Secure Certificate Authority - G2,Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.0.22,PHP/7.0.22,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+splkpm.moe.gov.my,1.9.210.13,TRUE,TRUE,2.08353E+38,05/23/18 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Domain Validation Secure Server CA,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+spp.rurallink.gov.my,Fail,,,,,,,,,,,,,
+sppa-hq.moh.gov.my,103.8.146.80,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+sppa.bph.gov.my,203.217.178.84,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+sppa.customs.gov.my,103.8.160.202,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+sppa.jpm.gov.my,103.8.145.70,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+sppa.kemas.gov.my,203.217.179.104,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+sppa.nsc.gov.my,175.140.137.74,FALSE,TRUE,1.07811E+37,05/14/21 0:00,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",GeoTrust TLS RSA CA G1,Microsoft-IIS/7.5,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+sppat.rurallink.gov.my,103.8.163.195,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+sppb.lppsa.gov.my,103.8.161.114,FALSE,TRUE,2.76713E+38,06/15/19 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+sppk.ketengah.gov.my,203.106.246.107,FALSE,FALSE,,,,,,Apache/2.2.3 (CentOS),n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+sppkm.kraftangan.gov.my,1.9.138.19,FALSE,FALSE,,,,,,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+sppl.llm.gov.my,203.12.220.239,TRUE,TRUE,2.4441E+38,07/4/20 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,Microsoft-IIS/8.0,"PHP/5.6.0, ASP.NET",38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+spppk.moh.gov.my,103.8.162.140,FALSE,FALSE,,,,,,Apache/2.2.3 (CentOS),PHP/5.1.6,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+sppx.kejora.gov.my,60.48.138.81,FALSE,TRUE,3.46926E+18,11/6/18 5:14,sha256,-1,Certificate & Hostname mismatch,Go Daddy Secure Certificate Authority - G2,Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.0.22,PHP/7.0.22,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+sprn.kpkt.gov.my,103.8.145.203,TRUE,TRUE,1.46576E+36,12/6/18 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+sps.jkr.gov.my,43.252.232.157,TRUE,TRUE,1.15708E+38,08/19/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Organization Validation Secure Server CA,Apache-Coyote/1.1,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+spsb.jkr.gov.my,43.252.232.157,TRUE,TRUE,1.15708E+38,08/19/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Organization Validation Secure Server CA,n/a,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+sptk.ketengah.gov.my,203.106.246.116,FALSE,FALSE,,,,,,Apache/2.2.15 (CentOS),n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+sptv.moe.gov.my,1.9.210.13,TRUE,TRUE,2.08353E+38,05/23/18 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Domain Validation Secure Server CA,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+spu.ketengah.gov.my,203.106.246.118,FALSE,FALSE,,,,,,nginx,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+ssg.miros.gov.my,43.252.232.210,FALSE,FALSE,,,,,,Apache/2.4.29 (Win32) OpenSSL/1.0.2l PHP/5.6.32,PHP/5.6.32,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+sso.jkr.gov.my,43.252.232.165,FALSE,TRUE,1.15708E+38,08/19/19 23:59,sha256,1,Pass,COMODO RSA Organization Validation Secure Server CA,Apache-Coyote/1.1,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+sso.kettha.gov.my,103.8.144.174,FALSE,FALSE,,,,,,Apache/2.2.22 (Ubuntu),PHP/5.3.10-1ubuntu3.18,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+sso.mosti.gov.my,202.75.7.85,TRUE,TRUE,2.84333E+36,11/6/19 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,nginx/1.10.2,PHP/5.6.32,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+sso.rmp.gov.my,218.208.39.112,TRUE,TRUE,7.84903E+37,08/17/19 10:04,sha256,1,Pass,Entrust Certification Authority - L1K,Microsoft-IIS/8.5,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+sso.sprm.gov.my,203.217.177.53,TRUE,TRUE,1.03616E+37,05/19/20 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Apache/2.4.17 (Win64) OpenSSL/1.0.2d PHP/5.5.30,PHP/5.5.30,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+sspi.imi.gov.my,58.27.46.3,FALSE,FALSE,,,,,,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+sst1.moe.gov.my,1.9.210.13,TRUE,TRUE,2.08353E+38,05/23/18 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Domain Validation Secure Server CA,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+sst6.moe.gov.my,1.9.210.13,TRUE,TRUE,2.08353E+38,05/23/18 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Domain Validation Secure Server CA,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+stadium.gov.my,103.6.196.122,FALSE,TRUE,3.1918E+38,05/19/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,PHP/5.6.32,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+staff.customs.gov.my,218.208.33.106,FALSE,TRUE,8.74818E+37,12/21/18 23:59,sha256,1,Pass,Symantec Class 3 Secure Server CA - G4,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+staffportal.mpc.gov.my,175.28.13.92,FALSE,FALSE,,,,,,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+standard.mygeoportal.gov.my,Fail,,,,,,,,,,,,,
+state.water.gov.my,175.28.12.52,FALSE,FALSE,,,,,,Apache/2.2.14 (Win32) DAV/2 mod_autoindex_color PHP/5.3.1 mod_apreq2-20090110/2.7.1 mod_perl/2.0.4 Perl/v5.10.1,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+static.jobsmalaysia.gov.my,202.60.59.58,FALSE,FALSE,,,,,,XXXXXXX,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+sukma2018.perak.gov.my,202.188.163.185,FALSE,FALSE,,,,,,Apache,PHP/7.1.7,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+support.jmm.gov.my,Fail,,,,,,,,,,,,,
+survey.jkr.gov.my,43.252.232.166,FALSE,FALSE,,,,,,Microsoft-IIS/7.0,ASP.NET,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+sww.jpkn.sabah.gov.my,Fail,,,,,,,,,,,,,
+symbiosis.nre.gov.my,202.75.6.187,FALSE,FALSE,,,,,,Microsoft-IIS/8.0,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+tabungonline.motac.gov.my,103.8.145.28,FALSE,FALSE,,,,,,Apache/2.2.15 (CentOS),PHP/5.5.36,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+tams.jpm.gov.my,Fail,,,,,,,,,,,,,
+tams.mpc.gov.my,103.245.89.248,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+tariff.customs.gov.my,218.208.33.79,FALSE,FALSE,,,,,,Apache/2.2.11 (Win32) PHP/5.3.0,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+tbnsa.gov.my,103.8.160.209,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+tc.moh.gov.my,103.8.162.232,FALSE,TRUE,1.14469E+38,09/26/18 23:59,sha256,1,Pass,GeoTrust EV SSL CA - G4,Microsoft-IIS/7.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+teams.llm.gov.my,203.62.1.221,TRUE,TRUE,2.4441E+38,07/4/20 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,Microsoft-IIS/8.0,PHP/5.4.24,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+teratai.spp.gov.my,103.8.163.180,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+tldmnet.navy.mil.my,Fail,,,,,,,,,,,,,
+tn50.pmo.gov.my,58.26.20.82,FALSE,FALSE,,,,,,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+topmail.adk.gov.my,175.28.15.226,TRUE,TRUE,2.89995E+38,04/10/20 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,n/a,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+tourism.gov.my,111.221.98.2,TRUE,TRUE,1.93269E+37,08/30/19 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,nginx/1.8.0,PHP/5.5.9-1ubuntu4.14,8075,SG,"MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US"
+tpbk.kpkt.gov.my,103.8.163.13,FALSE,FALSE,,,,,,Apache/2.2.22 (Ubuntu),XXXXXXXXXXXXXXXXXXXXXXX,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+tpm.jpm.gov.my,103.8.146.117,FALSE,FALSE,,,,,,Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3,PHP/5.6.3,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+trafik.rmp.gov.my,218.208.39.22,FALSE,TRUE,7.84903E+37,08/17/19 10:04,sha256,1,Pass,Entrust Certification Authority - L1K,Microsoft-IIS/8.0,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+treasury.spab.gov.my,103.8.163.112,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+tribunalkastam.treasury.gov.my,103.8.144.11,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+ttpm.kpdnkk.gov.my,103.8.163.150,TRUE,TRUE,1.27676E+38,09/21/20 7:44,sha256,1,Pass,Entrust Certification Authority - L1K,nginx/1.13.8,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+tube.smecorp.gov.my,43.252.213.123,TRUE,TRUE,5.95471E+37,12/4/19 23:59,sha256,1,Pass,RapidSSL SHA256 CA,Apache/2.4.16 (Win32) OpenSSL/1.0.1p PHP/5.5.28,PHP/5.5.28,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+uap.malaysia.gov.my,103.8.163.181,FALSE,TRUE,9.94884E+36,11/6/18 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+uap.treasury.gov.my,103.8.161.186,FALSE,TRUE,2.29622E+28,03/15/18 9:53,sha256,1,Pass,Entrust Certification Authority - L1K,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+umrahmksu.motac.gov.my,150.242.180.237,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+undilot.kraftangan.gov.my,58.26.125.249,FALSE,TRUE,8.74897E+37,03/9/08 15:46,sha256,-1,Certificate & Hostname mismatch,FortiGate CA,Apache/2.2.8 (Win32) DAV/2 mod_ssl/2.2.8 OpenSSL/0.9.8g mod_autoindex_color PHP/5.2.5,PHP/5.2.5,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+ups.jkr.gov.my,43.252.232.158,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+upu.moe.gov.my,175.28.13.168,FALSE,FALSE,,,,,,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+upu.mohe.gov.my,103.8.146.21,FALSE,TRUE,1356133872,08/7/18 17:49,sha256,1,Pass,Entrust Certification Authority - L1K,nginx,PHP/5.6.28,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+usahawan.yen.gov.my,103.8.145.124,FALSE,FALSE,,,,,,nginx,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+veteranatm.jhev.gov.my,210.19.20.218,FALSE,FALSE,,,,,,,,9930,MY,"TTNET-MY TIME dotCom Berhad, MY",
+virtualshowcase.matrade.gov.my,210.5.41.108,TRUE,TRUE,2.06275E+38,04/13/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,n/a,45352,MY,"IPSERVERONE-AS-AP IP ServerOne Solutions Sdn Bhd, MY"
+vlib.moh.gov.my,103.8.162.225,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+vlib.stats.gov.my,175.28.12.168,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+vlibimr.moh.gov.my,175.28.13.107,FALSE,TRUE,1.03519E+19,12/4/06 15:11,sha1,-1,Certificate & Hostname mismatch,localhost,Apache/2.2.3 (Win32) DAV/2 mod_ssl/2.2.3 OpenSSL/0.9.8d mod_autoindex_color PHP/5.2.0,PHP/5.2.0,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+vms2.dof.gov.my,202.75.6.227,TRUE,TRUE,1.26003E+37,10/10/19 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Microsoft-IIS/7.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+voluntourism.motac.gov.my,103.8.162.111,FALSE,FALSE,,,,,,Apache,PHP/5.6.32,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+w-iccs.lkim.gov.my,1.9.139.54,FALSE,TRUE,1.70356E+19,09/11/16 18:55,sha1,-1,Certificate & Hostname mismatch,*,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+warga.aelb.gov.my,10.2.3.16,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,,,,
+warganre.nre.gov.my,202.75.6.187,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+warkah.kraftangan.gov.my,58.26.125.194,TRUE,TRUE,1.70398E+38,12/15/19 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+wataniah.mod.gov.my,103.27.113.23,FALSE,FALSE,,,,,,n/a,n/a,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY",
+water.selangor.gov.my,210.187.101.104,FALSE,FALSE,,,,,,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+water.spab.gov.my,103.8.163.112,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+webcor.customs.gov.my,103.8.162.99,FALSE,TRUE,4.9208E+37,03/20/18 23:59,sha256,1,Pass,COMODO RSA Organization Validation Secure Server CA,Apache/1.3.41 (Unix) VOBSEnhydra-DynaLink/4.1_01 mod_ssl/2.8.31 OpenSSL/0.9.8b,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+webmail.1govuc.gov.my,58.26.10.82,TRUE,TRUE,3.37121E+28,01/16/19 3:30,sha256,1,Pass,GlobalSign Organization Validation CA - SHA256 - G2,Microsoft-IIS/8.5,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+webmail.crc.gov.my,74.125.68.121,TRUE,TRUE,,,,,,GSE,n/a,15169,US,"GOOGLE - Google LLC, US",
+webmail.customs.gov.my,218.208.33.68,TRUE,TRUE,2.66886E+38,01/27/20 12:36,sha256,1,Pass,Entrust Certification Authority - L1M,n/a,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+webmail.imr.gov.my,175.28.13.109,TRUE,TRUE,1.47788E+38,12/20/18 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,n/a,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+webmail.instun.gov.my,202.60.56.160,FALSE,TRUE,4.71246E+17,06/29/18 4:03,sha256,1,Pass,Go Daddy Secure Certificate Authority - G2,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+webmail.kettha.gov.my,202.75.6.154,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+webmail.khidmatnegara.gov.my,210.19.222.238,FALSE,TRUE,2.3752E+38,11/22/20 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,,,9930,MY,"TTNET-MY TIME dotCom Berhad, MY"
+webmail.mod.gov.my,103.27.113.15,FALSE,TRUE,1.33769E+36,04/23/18 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Microsoft-IIS/8.5,ASP.NET,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY"
+webmail.navy.mil.my,103.27.113.196,FALSE,TRUE,1.1214E+37,10/19/18 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Microsoft-IIS/8.0,ASP.NET,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY"
+webmail.pkb.gov.my,Fail,,,,,,,,,,,,,
+webmail.pl.gov.my,74.125.68.121,TRUE,TRUE,,,,,,Google Frontend,n/a,15169,US,"GOOGLE - Google LLC, US",
+webmail.rurallink.gov.my,Fail,,,,,,,,,,,,,
+webmail.sabah.gov.my,27.0.4.16,TRUE,TRUE,1.84605E+38,05/28/19 23:59,sha256,1,Pass,COMODO RSA Organization Validation Secure Server CA,n/a,n/a,55420,MY,"SABAHNET-AS-AP APNIC ASN Block, MY"
+webmail.skm.gov.my,203.62.1.70,FALSE,FALSE,,,,,,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+webmail2.1govuc.gov.my,58.26.10.172,TRUE,TRUE,3.37121E+28,01/16/19 3:30,sha256,1,Pass,GlobalSign Organization Validation CA - SHA256 - G2,Microsoft-IIS/8.5,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+webopac.arkib.gov.my,203.62.1.71,FALSE,FALSE,,,,,,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+webopac.isn.gov.my,143.192.97.135,FALSE,FALSE,,,,,,Microsoft-HTTPAPI/2.0,n/a,131310,MY,"PLT-NET-MY CX2 Computer Exchange, MY",
+webopac.kln.gov.my,202.60.59.125,FALSE,FALSE,,,,,,,,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+webopac.lgm.gov.my,58.26.125.144,FALSE,FALSE,,,,,,Apache/2.2.3 (Unix),n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+wte.kpkt.gov.my,103.8.163.14,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.1dana.gov.my,103.8.146.15,FALSE,TRUE,3.16481E+41,01/15/18 17:20,sha256,-1,Certificate expired,Let's Encrypt Authority X3,Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.6.30,PHP/5.6.30,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.1govnet.gov.my,203.12.220.140,FALSE,TRUE,5.3591E+26,03/7/20 4:38,sha256,-1,Certificate & Hostname mismatch,AlphaSSL CA - SHA256 - G2,Apache,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+www.1govuc.gov.my,58.26.10.176,FALSE,FALSE,,,,,,nginx/1.10.3 (Ubuntu),n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.1mocc.gov.my,103.8.146.36,FALSE,FALSE,,,,,,Apache/2.2.15 (Red Hat),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.1mtc.gov.my,103.8.163.109,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.999.gov.my,198.199.92.59,FALSE,FALSE,,,,,,Apache/2.2.22 (Debian),PHP/5.4.45-0+deb7u5,14061,US,"DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
+www.adamas.gov.my,150.242.180.165,FALSE,FALSE,,,,,,nginx,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.adk.gov.my,175.28.15.229,TRUE,TRUE,2.89995E+38,04/10/20 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,Apache/2.4.18 (Ubuntu),n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+www.aelb.gov.my,103.229.114.170,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,133444,MY,"NET2ONE-AS-AP Net2One Sdn Bhd, MY",
+www.agc.gov.my,202.75.6.111,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.airforce.gov.my,Fail,,,,,,,,,,,,,
+www.airforce.mil.my,58.27.64.251,FALSE,FALSE,,,,,,Apache,PHP/5.5.9-1ubuntu4.19,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.akademisains.gov.my,103.8.162.101,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,"PHP/5.6.32, ASP.NET",17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.angkasa.gov.my,103.8.162.80,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.anm.gov.my,218.208.102.11,FALSE,FALSE,,,,,,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.arkib.gov.my,175.28.13.2,FALSE,FALSE,,,,,,n/a,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www.army.mil.my,103.27.113.210,FALSE,FALSE,,,,,,,,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY",
+www.artgallery.gov.my,175.28.12.48,FALSE,FALSE,,,,,,Apache/2.4.7 (Ubuntu),PHP/5.5.9-1ubuntu4.22,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www.biasiswa.sabah.gov.my,27.0.4.178,FALSE,FALSE,,,,,,Microsoft-IIS/6.0,ASP.NET,55420,MY,"SABAHNET-AS-AP APNIC ASN Block, MY",
+www.bioetika.gov.my,202.75.5.32,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.bless.gov.my,58.26.69.20,FALSE,FALSE,,,,,,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.bnm.gov.my,103.6.236.129,FALSE,TRUE,8.47443E+37,05/5/18 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,Apache,n/a,132197,MY,"SKALI-MY SKALI, MY"
+www.bocs.gov.my,202.75.6.186,TRUE,TRUE,3.49892E+41,04/25/18 17:29,sha256,1,Pass,Let's Encrypt Authority X3,Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips mod_fcgid/2.3.9 PHP/7.0.15,PHP/7.0.15,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.bomba.gov.my,103.8.160.21,FALSE,TRUE,2.14867E+36,09/22/20 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Microsoft-IIS/7.5,"PHP/5.6.32, ASP.NET",17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.bpa.gov.my,58.26.203.106,FALSE,TRUE,1.40072E+19,07/18/16 7:08,sha1,-1,Certificate & Hostname mismatch,*.demo.snt.com.my,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+www.bpfk.gov.my,117.53.155.48,FALSE,TRUE,2.07169E+38,08/14/17 23:59,sha256,-1,Certificate expired,"cPanel, Inc. Certification Authority",Apache/2.2.31 (Unix) mod_ssl/2.2.31 OpenSSL/1.0.1e-fips mod_bwlimited/1.4,PHP/5.6.27,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+www.bph.gov.my,103.8.144.216,FALSE,TRUE,5.21083E+37,10/8/20 23:59,sha256,1,Pass,GeoTrust DV SSL CA - G3,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.bqsm.gov.my,124.150.142.151,TRUE,TRUE,1.18148E+38,12/2/18 23:59,sha256,1,Pass,GeoTrust DV SSL CA - G3,Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30,PHP/5.6.30,45945,MY,"WEBSERVER-MY Acme Commerce Sdb Bhd, Malayia, Network, MY"
+www.cidb.gov.my,202.171.33.88,FALSE,FALSE,,,,,,Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips PHP/5.4.16,PHP/5.4.16,23659,MY,"HEITECH-AS-AP APNIC HEITECH ASN, MY",
+www.cio.sabah.gov.my,27.0.4.227,TRUE,TRUE,1.84605E+38,05/28/19 23:59,sha256,-1,Certificate & Hostname mismatch,COMODO RSA Organization Validation Secure Server CA,Apache/2.4.7 (Ubuntu),PHP/5.5.9-1ubuntu4.20,55420,MY,"SABAHNET-AS-AP APNIC ASN Block, MY"
+www.civildefence.gov.my,103.245.89.19,FALSE,FALSE,,,,,,Apache/2.4.26 (Win64) PHP/7.1.11,PHP/7.1.11,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www.cogg.ros.gov.my,150.242.180.87,FALSE,FALSE,,,,,,Apache/2.4.18 (Win64) PHP/5.6.19,PHP/5.6.19,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.crc.gov.my,103.6.196.189,FALSE,TRUE,3.15774E+38,04/7/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,PHP/5.6.33,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+www.createjkr.gov.my,43.252.232.113,FALSE,FALSE,,,,,,Apache/2.2.15 (Red Hat),PHP/7.0.20,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www.customs.gov.my,218.208.33.104,FALSE,FALSE,,,,,,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.dashboard.1govuc.gov.my,58.26.10.176,FALSE,FALSE,,,,,,nginx/1.10.3 (Ubuntu),ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.data.gov.my,203.217.178.194,FALSE,FALSE,,,,,,nginx/1.1.19,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.davetsa.sabah.gov.my,27.0.4.140,FALSE,FALSE,,,,,,Apache/2.0.59 (Win32) PHP/5.2.0,PHP/5.2.0,55420,MY,"SABAHNET-AS-AP APNIC ASN Block, MY",
+www.dbkl.gov.my,58.26.53.10,FALSE,FALSE,,,,,,n/a,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.dbp.gov.my,1.9.24.200,FALSE,FALSE,,,,,,Apache/2.2.9 (Unix) DAV/2 mod_ssl/2.2.9 OpenSSL/0.9.8h PHP/5.2.6 mod_apreq2-20051231/2.6.0 mod_perl/2.0.4 Perl/v5.10.0,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.dca.gov.my,103.8.146.246,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.deramakot.sabah.gov.my,27.0.4.10,FALSE,FALSE,,,,,,Microsoft-IIS/7.0,ASP.NET,55420,MY,"SABAHNET-AS-AP APNIC ASN Block, MY",
+www.dermaorgan.gov.my,103.8.162.12,FALSE,FALSE,,,,,,Apache/2.4.6 (CentOS) PHP/5.6.33,XXXXXXXXXXX,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.did.sabah.gov.my,27.0.4.10,FALSE,FALSE,,,,,,Microsoft-IIS/7.0,"PHP/5.3.6, ASP.NET",55420,MY,"SABAHNET-AS-AP APNIC ASN Block, MY",
+www.did.sarawak.gov.my,58.26.203.114,FALSE,TRUE,1.26889E+19,08/9/16 0:54,sha1,-1,Certificate & Hostname mismatch,*.anjungmasjid.sarawak.gov.my,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+www.didkedah.gov.my,175.136.228.220,TRUE,TRUE,1.94791E+38,01/4/20 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,Apache/2.4.12 (Ubuntu),n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+www.dmpm.nre.gov.my,103.8.146.114,FALSE,FALSE,,,,,,Apache/2.2.23 (Win64) PHP/5.3.18,PHP/5.3.18,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.doa.gov.my,103.8.145.232,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,"PHP/5.6.32, ASP.NET",17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.doa.sarawak.gov.my,58.26.203.226,FALSE,TRUE,1.69915E+19,11/27/17 1:24,sha1,-1,Certificate & Hostname mismatch,*.ipo.sarawak.gov.my,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+www.doe.gov.my,202.75.5.5,TRUE,TRUE,3.28275E+37,10/25/18 23:59,sha256,1,Pass,GeoTrust EV SSL CA - G4,n/a,PHP/5.6.32,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.dof.gov.my,103.8.145.61,TRUE,TRUE,2.31258E+36,10/10/19 12:00,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",DigiCert SHA2 Secure Server CA,Apache,PHP/5.6.20,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.dosm.gov.my,104.25.234.109,TRUE,TRUE,1.76002E+38,08/5/18 23:59,sha256,1,Pass,COMODO ECC Domain Validation Secure Server CA 2,cloudflare,PHP/5.4.45,13335,US,"CLOUDFLARENET - Cloudflare, Inc., US"
+www.dsd.gov.my,202.75.5.216,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.dvs.gov.my,103.8.163.52,FALSE,FALSE,,,,,,Apache/2.2.15 (CentOS),PHP/5.6.14,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.e-ehs.doe.gov.my,Fail,,,,,,,,,,,,,
+www.e-solat.gov.my,202.75.5.204,FALSE,TRUE,30248,12/5/14 8:57,sha1,-1,Certificate & Hostname mismatch,e-solat,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.e3p.fama.gov.my,203.189.18.24,FALSE,FALSE,,,,,,n/a,ASP.NET,38006,MY,"TQT-AS-AP Time Quantum Technologies Sdn. Bhd., MY",
+www.ebekalan.keda.gov.my,1.9.138.174,FALSE,FALSE,,,,,,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.eghrmis.gov.my,202.75.5.128,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.ekbs.gov.my,202.75.7.47,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.ekontraktor.keda.gov.my,1.9.138.174,FALSE,FALSE,,,,,,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.elx.gov.my,202.75.5.131,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.epbt.gov.my,203.217.179.73,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.epbtonline.gov.my,203.217.179.65,FALSE,TRUE,4.58043E+37,12/30/18 23:59,sha256,1,Pass,GeoTrust EV SSL CA - G4,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.eperolehan.gov.my,107.154.247.35,TRUE,TRUE,6.3092E+27,12/16/18 7:17,sha256,1,Pass,GlobalSign CloudSSL CA - SHA256 - G3,Apache-Coyote/1.1,JSP/2.2,19551,US,"INCAPSULA - Incapsula Inc, US"
+www.epsa.gov.my,103.8.160.32,TRUE,TRUE,4.68903E+36,12/28/19 2:16,sha256,1,Pass,Entrust Certification Authority - L1M,Apache,PHP/5.5.14,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.epu.gov.my,103.8.145.121,FALSE,FALSE,,,,,,Apache/2.4.6 (CentOS) PHP/7.0.9,XXXXXXXXXX,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.eroses.gov.my,45.64.67.189,TRUE,TRUE,8.11373E+27,08/1/18 10:13,sha256,1,Pass,GlobalSign CloudSSL CA - SHA256 - G3,Apache/2.4.9 (Win64) OpenSSL/1.0.1u,n/a,19551,HK,"INCAPSULA - Incapsula Inc, US"
+www.esis.gov.my,203.80.16.137,TRUE,TRUE,2.40413E+38,01/8/20 1:33,sha256,1,Pass,Entrust Certification Authority - L1K,Apache-Coyote/1.1,n/a,24514,MY,"MYREN-MY Malaysian Research & Education Network, MY"
+www.fama.gov.my,103.8.160.209,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.feloperdana.gov.my,103.8.161.178,FALSE,FALSE,,,,,,nginx,PHP/5.6.33,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.finas.gov.my,103.198.68.1,FALSE,TRUE,2.65876E+41,04/26/18 4:06,sha256,1,Pass,Let's Encrypt Authority X3,nginx,"PHP/7.0.27, PleskLin",45352,MY,"IPSERVERONE-AS-AP IP ServerOne Solutions Sdn Bhd, MY"
+www.fishdept.sabah.gov.my,27.0.4.11,FALSE,TRUE,1.84605E+38,05/28/19 23:59,sha256,-1,Certificate & Hostname mismatch,COMODO RSA Organization Validation Secure Server CA,Microsoft-IIS/8.5,"PHP/5.6.0, ASP.NET",55420,MY,"SABAHNET-AS-AP APNIC ASN Block, MY"
+www.forestry.gov.my,103.8.146.135,TRUE,TRUE,1.29889E+38,12/7/18 4:14,sha256,1,Pass,Entrust Certification Authority - L1K,Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips PHP/5.6.30,PHP/5.6.30,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.frim.gov.my,203.12.220.172,TRUE,TRUE,1.79427E+38,10/7/19 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,Apache,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+www.fsd.gov.my,Fail,,,,,,,,,,,,,
+www.glob.gov.my,Fail,,,,,,,,,,,,,
+www.halaljakim.gov.my,Fail,,,,,,,,,,,,,
+www.hasil.gov.my,113.11.237.1,FALSE,FALSE,,,,,,wwwLHDN,XXXXXXXXXXX,55951,MY,"LHDNM-MY Blok 9 Kompleks Bangunan Kerajaan, MY",
+www.heritage.gov.my,175.28.12.200,FALSE,FALSE,,,,,,Apache,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www.hkl.gov.my,175.28.13.72,FALSE,FALSE,,,,,,Apache/2.4.6 (CentOS) PHP/5.4.16,PHP/5.4.16,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www.hpj.gov.my,175.28.13.149,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,"PHP/5.6.22, ASP.NET",38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www.hydro.gov.my,218.208.35.220,FALSE,TRUE,7.77984E+37,11/3/20 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+www.icu.gov.my,58.26.69.12,FALSE,FALSE,,,,,,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.idfr.gov.my,175.28.15.184,TRUE,TRUE,7.31493E+37,01/22/21 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,Apache,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+www.ijn.gov.my,Fail,,,,,,,,,,,,,
+www.iks.sabah.gov.my,27.0.4.158,FALSE,FALSE,,,,,,Microsoft-IIS/6.0,ASP.NET,55420,MY,"SABAHNET-AS-AP APNIC ASN Block, MY",
+www.iktbnsp.gov.my,Fail,,,,,,,,,,,,,
+www.iku.gov.my,175.28.12.175,FALSE,FALSE,,,,,,Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.15,PHP/5.6.15,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www.imi.gov.my,58.27.46.23,FALSE,FALSE,,,,,,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.imr.gov.my,175.28.13.118,FALSE,FALSE,,,,,,Apache/2.4.18 (Ubuntu),n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www.infosihat.gov.my,103.8.162.235,FALSE,TRUE,457,01/2/15 6:45,sha1,-1,Certificate & Hostname mismatch,infosihat,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.infra.gov.my,175.28.13.84,FALSE,FALSE,,,,,,Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips mod_fcgid/2.3.9 PHP/5.4.16,PHP/5.4.16,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www.insken.gov.my,103.6.198.163,FALSE,TRUE,1.2862E+38,05/11/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,PHP/5.4.45,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+www.inspen.gov.my,202.60.59.156,FALSE,TRUE,1.59179E+19,07/13/37 5:07,sha256,-1,Certificate & Hostname mismatch,SANGFOR,Apache/2.2.3 (Unix) DAV/2 mod_ssl/2.2.3 OpenSSL/0.9.8d PHP/5.1.6 mod_apreq2-20051231/2.5.7 mod_perl/2.0.2 Perl/v5.8.7,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+www.instun.gov.my,103.8.146.214,TRUE,TRUE,4.08553E+17,08/26/18 8:27,sha256,1,Pass,Go Daddy Secure Certificate Authority - G2,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.interactive.jpa.gov.my,202.75.5.14,TRUE,TRUE,3.30309E+38,01/14/19 3:38,sha256,1,Pass,Entrust Certification Authority - L1K,Microsoft-IIS/7.0,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.intranet.jakoa.gov.my,Fail,,,,,,,,,,,,,
+www.investkl.gov.my,183.81.167.225,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,45352,MY,"IPSERVERONE-AS-AP IP ServerOne Solutions Sdn Bhd, MY",
+www.ippbm.gov.my,43.252.215.157,FALSE,TRUE,1.41481E+38,05/8/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,PHP/5.3.29,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+www.iptk.gov.my,210.48.154.58,FALSE,FALSE,,,,,,,,17971,MY,"TMVADS-AP TM-VADS DC Hosting, MY",
+www.ises.gov.my,110.74.145.139,FALSE,FALSE,,,,,,Apache/2.4.18 (Ubuntu),n/a,45668,MY,"AIMS-MY-NET AIMS Data Centre Sdn Bhd, MY",
+www.islam.gov.my,103.8.146.156,FALSE,FALSE,,,,,,Apache/2.4.6 (Red Hat Enterprise Linux) PHP/5.6.31,PHP/5.6.31,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.ism.gov.my,103.8.146.115,FALSE,FALSE,,,,,,Apache/2.4.7 (Ubuntu),PHP/5.5.9-1ubuntu4,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.isn.gov.my,104.27.145.184,FALSE,TRUE,2.18312E+38,08/2/18 23:59,sha256,1,Pass,COMODO ECC Domain Validation Secure Server CA 2,cloudflare,n/a,13335,US,"CLOUDFLARENET - Cloudflare, Inc., US"
+www.istanabudaya.gov.my,103.8.146.50,FALSE,FALSE,,,,,,Apache/2.4.7 (Ubuntu),PHP/5.5.9-1ubuntu4.22,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.istiadat.gov.my,103.8.161.251,FALSE,FALSE,,,,,,Apache/2.2.21 (Win32),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.itc.gov.my,104.28.28.112,FALSE,FALSE,,,,,,cloudflare,PHP/5.5.9-1ubuntu4.14,13335,US,"CLOUDFLARENET - Cloudflare, Inc., US",
+www.iyres.gov.my,43.252.215.157,FALSE,TRUE,1.41481E+38,05/8/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,PHP/5.3.29,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+www.jakoa.gov.my,43.252.234.98,FALSE,FALSE,,,,,,Apache/2.4.6 (CentOS) PHP/5.6.32,PHP/5.6.32,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www.jans.sabah.gov.my,27.0.4.129,FALSE,TRUE,1.31234E+38,01/17/19 23:59,sha256,1,Pass,thawte SSL CA - G2,,,55420,MY,"SABAHNET-AS-AP APNIC ASN Block, MY"
+www.jawatan.sabah.gov.my,27.0.4.178,FALSE,FALSE,,,,,,Microsoft-IIS/6.0,ASP.NET,55420,MY,"SABAHNET-AS-AP APNIC ASN Block, MY",
+www.jawhar.gov.my,202.75.5.172,FALSE,FALSE,,,,,,Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.30,PHP/5.6.30,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.jba.gov.my,203.217.178.12,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.jbsn.gov.my,103.8.145.162,FALSE,FALSE,,,,,,nginx,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.jemputan.sabah.gov.my,27.0.4.158,FALSE,FALSE,,,,,,Microsoft-IIS/6.0,ASP.NET,55420,MY,"SABAHNET-AS-AP APNIC ASN Block, MY",
+www.jhev.gov.my,210.19.20.219,FALSE,FALSE,,,,,,,,9930,MY,"TTNET-MY TIME dotCom Berhad, MY",
+www.jkjr.gov.my,203.217.178.210,FALSE,FALSE,,,,,,Apache/2.2.22 (Ubuntu),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.jkkn.gov.my,103.8.146.245,FALSE,FALSE,,,,,,Apache/2.4.6 (CentOS) PHP/5.4.16,PHP/5.4.16,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.jkm.gov.my,203.217.179.135,FALSE,FALSE,,,,,,nginx/1.13.4,PHP/5.6.31,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.jkptg.gov.my,202.75.6.185,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.jkr.gov.my,43.252.232.157,TRUE,TRUE,1.15708E+38,08/19/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",COMODO RSA Organization Validation Secure Server CA,n/a,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+www.jmg.gov.my,103.8.146.7,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.jmm.gov.my,103.8.161.141,FALSE,TRUE,1.99271E+37,09/17/13 12:00,sha1,-1,Certificate expired,DigiCert High Assurance CA-3,Apache,PHP/5.2.4-2ubuntu5.25,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.joblink.sabah.gov.my,27.0.4.138,FALSE,TRUE,0,04/26/15 2:09,md5,-1,Certificate & Hostname mismatch,sabahjobcenter.com,Apache/2.4.9 (Unix) OpenSSL/1.0.1g PHP/5.5.11 mod_jk/1.2.40,n/a,55420,MY,"SABAHNET-AS-AP APNIC ASN Block, MY"
+www.jobsmalaysia.gov.my,202.60.59.57,FALSE,FALSE,,,,,,XXXXXXX,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www.johor.gov.my,210.19.13.244,FALSE,FALSE,,,,,,Apache,n/a,9930,MY,"TTNET-MY TIME dotCom Berhad, MY",
+www.jointforces.mil.my,210.187.101.40,FALSE,FALSE,,,,,,Microsoft-IIS/8.0,PHP/7.0.9,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.jpa.gov.my,202.75.5.18,FALSE,FALSE,,,,,,nginx/1.12.2,PHP/5.6.33,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.jpapencen.gov.my,202.75.5.22,FALSE,FALSE,,,,,,Microsoft-IIS/7.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.jpbdselangor.gov.my,58.27.46.174,FALSE,FALSE,,,,,,Apache/2.2.15 (CentOS),XXXXXXXXXXX,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.jpj.gov.my,43.252.232.68,FALSE,FALSE,,,,,,n/a,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www.jpm.gov.my,103.8.146.17,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.jpn.gov.my,1.9.138.125,FALSE,FALSE,,,,,,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.jpp.gov.my,203.217.178.12,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.jpph.gov.my,202.75.6.23,TRUE,TRUE,2.70242E+38,01/19/20 2:12,sha256,1,Pass,Entrust Certification Authority - L1M,Apache/2.2.15 (CentOS),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.jpsperak.gov.my,103.6.199.25,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY",
+www.jpsperlis.gov.my,103.6.199.25,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY",
+www.jsm.gov.my,203.12.220.121,FALSE,FALSE,,,,,,n/a,JSP/2.2,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www.jtm.gov.my,202.75.5.220,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.jupem.gov.my,202.60.56.110,FALSE,TRUE,1.89066E+37,12/5/18 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips mod_fcgid/2.3.9 PHP/5.4.16,PHP/5.4.16,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+www.kabinet.gov.my,202.75.6.115,FALSE,FALSE,,,,,,Apache,PHP/5.5.9,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.kada.gov.my,103.8.160.209,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.kbs.gov.my,202.75.6.253,FALSE,FALSE,,,,,,nginx,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.keda.gov.my,188.165.223.104,FALSE,FALSE,,,,,,n/a,n/a,16276,FR,"OVH, FR",
+www.kehakiman.gov.my,103.8.162.88,FALSE,FALSE,,,,,,Apache/2.2.15 (CentOS),PHP/5.6.31,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.kejora.gov.my,110.4.42.151,FALSE,TRUE,2.58596E+38,05/17/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,PHP/5.5.35,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+www.kelantan.gov.my,210.187.31.7,FALSE,FALSE,,,,,,SUKKELANTAN,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.kemas.gov.my,103.8.160.57,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.kesedar.gov.my,1.9.138.2,FALSE,FALSE,,,,,,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.ketengah.gov.my,203.106.246.102,FALSE,FALSE,,,,,,nginx/1.6.2,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.kettha.gov.my,103.8.160.95,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.khidmatnegara.gov.my,210.19.222.251,FALSE,TRUE,2.20467E+37,12/22/18 23:59,sha256,1,Pass,GeoTrust EV SSL CA - G4,Apache/2,PHP/5.6.30,9930,MY,"TTNET-MY TIME dotCom Berhad, MY"
+www.kimia.gov.my,202.75.5.104,FALSE,FALSE,,,,,,Apache/2,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.kkmm.gov.my,203.217.179.111,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.kkr.gov.my,175.28.14.207,FALSE,FALSE,,,,,,Apache,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www.klbotanicalgarden.gov.my,58.26.53.46,FALSE,FALSE,,,,,,Microsoft-IIS/7.0,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.kln.gov.my,202.60.59.122,FALSE,FALSE,,,,,,wisma,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www.knowyourmedicine.gov.my,1.9.36.216,FALSE,FALSE,,,,,,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.koko.gov.my,58.26.125.153,FALSE,FALSE,,,,,,Microsoft-IIS/6.0,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.kpdnkk.gov.my,103.8.163.151,TRUE,TRUE,1.27676E+38,09/21/20 7:44,sha256,1,Pass,Entrust Certification Authority - L1K,nginx,W3 Total Cache/0.9.5.2,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.kpkk.gov.my,Fail,,,,,,,,,,,,,
+www.kpkt.gov.my,203.217.179.72,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.kppk.gov.my,202.75.6.38,TRUE,TRUE,1.35043E+38,07/11/19 23:59,sha256,-1,Certificate & Hostname mismatch,GeoTrust EV SSL CA - G4,Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips mod_fcgid/2.3.9 mod_wsgi/3.4 Python/2.7.5,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.kptg.gov.my,202.75.6.185,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.kpwkm.gov.my,103.8.161.52,TRUE,TRUE,2.11947E+37,03/30/19 23:59,sha256,1,Pass,GeoTrust EV SSL CA - G4,nginx,PHP/5.6.32,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.kraftangan.gov.my,58.26.125.191,FALSE,FALSE,,,,,,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.ksn.gov.my,103.8.146.249,TRUE,TRUE,2.98702E+41,05/5/18 17:32,sha256,1,Pass,Let's Encrypt Authority X3,nginx/1.10.3 (Ubuntu),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.kwap.gov.my,219.92.4.20,FALSE,FALSE,,,,,,n/a,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.kwp.gov.my,103.8.145.1,FALSE,FALSE,,,,,,Apache/2.4.29 (Win32) PHP/5.6.32,PHP/5.6.32,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.kwsp.gov.my,211.25.59.98,FALSE,TRUE,6.67564E+36,10/16/18 23:59,sha256,-1,Certificate & Hostname mismatch,Symantec Class 3 Secure Server CA - G4,n/a,n/a,9930,MY,"TTNET-MY TIME dotCom Berhad, MY"
+www.lada.gov.my,Fail,,,,,,,,,,,,,
+www.lam.gov.my,103.6.196.118,FALSE,TRUE,5.83446E+37,05/16/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,n/a,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+www.lawnet.sabah.gov.my,27.0.4.11,FALSE,TRUE,1.84605E+38,05/28/19 23:59,sha256,-1,Certificate & Hostname mismatch,COMODO RSA Organization Validation Secure Server CA,Microsoft-IIS/8.5,ASP.NET,55420,MY,"SABAHNET-AS-AP APNIC ASN Block, MY"
+www.lgm.gov.my,58.26.125.133,FALSE,FALSE,,,,,,Microsoft-IIS/6.0,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.library.sabah.gov.my,27.0.4.11,FALSE,TRUE,1.84605E+38,05/28/19 23:59,sha256,-1,Certificate & Hostname mismatch,COMODO RSA Organization Validation Secure Server CA,,,55420,MY,"SABAHNET-AS-AP APNIC ASN Block, MY"
+www.lkim.gov.my,110.4.42.151,FALSE,TRUE,3.17068E+38,03/8/17 23:59,sha256,-1,Certificate expired,"cPanel, Inc. Certification Authority",Apache,PHP/5.5.35,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+www.lktn.gov.my,58.26.125.129,FALSE,FALSE,,,,,,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.llm.gov.my,175.28.14.168,FALSE,FALSE,,,,,,Microsoft-IIS/8.0,PHP/5.6.0,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www.lpj.gov.my,110.4.41.32,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,"PHP/5.6.30, ASP.NET",46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY",
+www.lpjpcs.gov.my,110.4.41.229,TRUE,TRUE,1.29979E+38,07/14/19 23:59,sha256,1,Pass,GeoTrust SSL CA - G3,Microsoft-IIS/8.5,ASP.NET,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+www.lpkp.gov.my,Fail,,,,,,,,,,,,,
+www.lpktn.gov.my,58.26.163.2,FALSE,FALSE,,,,,,Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3,PHP/5.6.3,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.lpp.gov.my,103.8.163.254,FALSE,FALSE,,,,,,nginx/1.10.3 (Ubuntu),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.lppsa.gov.my,202.75.6.54,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.mada.gov.my,103.18.247.196,FALSE,TRUE,3.38246E+38,04/15/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,PHP/5.6.33,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+www.mafhq.mil.my,210.187.101.52,FALSE,FALSE,,,,,,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.malaysia.gov.my,103.8.161.146,TRUE,TRUE,9.94884E+36,11/6/18 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.mampu.gov.my,103.8.145.155,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.maqis.gov.my,103.8.160.209,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.mara.gov.my,103.6.238.231,FALSE,FALSE,,,,,,lighttpd/1.5.0,n/a,132197,MY,"SKALI-MY SKALI, MY",
+www.mardi.gov.my,1.9.139.154,TRUE,TRUE,1.99603E+37,11/13/18 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Apache,PHP/5.6.30,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+www.marine.gov.my,202.129.173.30,FALSE,FALSE,,,,,,n/a,n/a,9655,MY,"TPMNETWORK-AS-AP TPM Corp. Berhad, MY",
+www.mastic.gov.my,Fail,,,,,,,,,,,,,
+www.matrade.gov.my,203.12.220.16,FALSE,FALSE,,,,,,Apache,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www.mcmc.gov.my,202.171.39.22,TRUE,TRUE,7.68403E+37,01/17/19 23:59,sha256,1,Pass,GeoTrust EV SSL CA - G4,n/a,ASP.NET,23659,MY,"HEITECH-AS-AP APNIC HEITECH ASN, MY"
+www.mdb.gov.my,110.4.42.205,FALSE,TRUE,3.99134E+36,01/24/19 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Apache,PHP/5.3.3,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+www.mdi.gov.my,203.217.178.132,FALSE,FALSE,,,,,,Apache/2.4.7 (Ubuntu),PHP/5.5.9-1ubuntu4.20,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.melaka.gov.my,1.9.133.36,FALSE,TRUE,2.05335E+36,10/24/18 12:00,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",DigiCert SHA2 Secure Server CA,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+www.met.gov.my,175.28.14.16,FALSE,FALSE,,,,,,Apache/2.4.6 (CentOS) mod_auth_gssapi/1.5.1 mod_nss/1.0.14 NSS/3.28.4 mod_wsgi/3.4 Python/2.7.5 PHP/7.1.12,PHP/7.1.12,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www.mida.gov.my,52.230.31.145,FALSE,FALSE,,,,,,Apache/2.4.7 (Ubuntu),PHP/5.5.9-1ubuntu4.22,8075,US,"MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
+www.mima.gov.my,104.18.44.122,FALSE,TRUE,2.69341E+38,08/22/18 23:59,sha256,1,Pass,COMODO ECC Domain Validation Secure Server CA 2,cloudflare,ASP.NET,13335,US,"CLOUDFLARENET - Cloudflare, Inc., US"
+www.miros.gov.my,43.252.232.217,TRUE,TRUE,2.54136E+38,07/12/20 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3,PHP/5.6.3,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+www.mitec.sarawak.gov.my,58.26.203.115,FALSE,TRUE,1.66139E+19,08/13/22 2:52,sha1,0,"Host did not provide intermediate certs, unable to build trust chain",*.mitec.sarawak.gov.my,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+www.miti.gov.my,103.8.161.245,FALSE,FALSE,,,,,,Apache,PHP/5.6.13,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.mkn.gov.my,202.75.6.121,TRUE,TRUE,2.80751E+38,12/9/19 9:27,sha256,1,Pass,Entrust Certification Authority - L1K,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.mlutudm.mil.my,175.139.254.245,FALSE,FALSE,,,,,,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.mm2h.gov.my,203.217.179.192,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.mmc.gov.my,103.8.146.88,FALSE,FALSE,,,,,,Apache/2.4.18 (Ubuntu),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.mmea.gov.my,202.60.59.223,TRUE,TRUE,3.68191E+37,11/1/19 5:30,sha256,1,Pass,Entrust Certification Authority - L1K,Apache/2.4.9 (Win64) OpenSSL/1.0.1g,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+www.moa.gov.my,103.8.160.209,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.mod.gov.my,103.27.113.16,FALSE,FALSE,,,,,,n/a,n/a,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY",
+www.moe.gov.my,1.9.210.32,TRUE,TRUE,2.08353E+38,05/23/18 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+www.moh.gov.my,103.8.162.11,FALSE,FALSE,,,,,,Apache/2.2.15 (CentOS),XXXXXXXXXXX,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.moha.gov.my,202.75.5.242,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.mohe.gov.my,150.242.180.77,FALSE,TRUE,1356133872,08/7/18 17:49,sha256,1,Pass,Entrust Certification Authority - L1K,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.mohr.gov.my,202.75.5.131,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.mosti.gov.my,202.75.5.25,TRUE,TRUE,2.84333E+36,11/6/19 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Apache/2.4.29 (Ubuntu),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.mot.gov.my,202.75.5.249,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.motac.gov.my,203.217.177.192,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.motour.gov.my,203.217.177.192,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.mpc.gov.my,202.60.59.84,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,PHP/7.0.0,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www.mpib.gov.my,103.18.247.196,FALSE,TRUE,2.78901E+37,05/16/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,n/a,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+www.mpic.gov.my,202.75.6.38,TRUE,TRUE,1.35043E+38,07/11/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",GeoTrust EV SSL CA - G4,Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips mod_fcgid/2.3.9 mod_wsgi/3.4 Python/2.7.5,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.mpob.gov.my,202.185.186.80,FALSE,FALSE,,,,,,n/a,PHP/5.2.17,9930,MY,"TTNET-MY TIME dotCom Berhad, MY",
+www.mqa.gov.my,103.8.160.133,FALSE,FALSE,,,,,,,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.mrm.gov.my,124.150.142.233,FALSE,FALSE,,,,,,Microsoft-IIS/6.0,ASP.NET,45945,MY,"WEBSERVER-MY Acme Commerce Sdb Bhd, Malayia, Network, MY",
+www.msc.gov.my,Fail,,,,,,,,,,,,,
+www.msnperak.gov.my,104.28.26.24,FALSE,TRUE,2.194E+38,08/24/18 23:59,sha256,1,Pass,COMODO ECC Domain Validation Secure Server CA 2,cloudflare,n/a,13335,US,"CLOUDFLARENET - Cloudflare, Inc., US"
+www.msonline.gov.my,58.27.114.207,FALSE,TRUE,1.44894E+19,03/31/19 10:20,sha256,1,Pass,Starfield Secure Certificate Authority - G2,Apache/2.4.26 (Unix) OpenSSL/1.0.2l PHP/5.6.31 mod_perl/2.0.8-dev Perl/v5.16.3,PHP/5.6.31,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+www.mtib.gov.my,1.9.139.31,FALSE,FALSE,,,,,,Apache/2.2.3 (CentOS),PHP/5.2.14,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.museum.sabah.gov.my,27.0.4.160,FALSE,FALSE,,,,,,Apache/2.2.14 (Win32) PHP/5.2.17,PHP/5.2.17,55420,MY,"SABAHNET-AS-AP APNIC ASN Block, MY",
+www.museumbnm.gov.my,103.6.239.97,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,132197,MY,"SKALI-MY SKALI, MY",
+www.muziumnegara.gov.my,103.8.161.141,FALSE,TRUE,1.99271E+37,09/17/13 12:00,sha1,-1,Certificate & Hostname mismatch,DigiCert High Assurance CA-3,Apache,PHP/5.2.4-2ubuntu5.25,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.mvc.gov.my,210.48.154.57,FALSE,FALSE,,,,,,,,17971,MY,"TMVADS-AP TM-VADS DC Hosting, MY",
+www.mybis.gov.my,43.252.213.233,TRUE,TRUE,2.63671E+37,03/13/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,PHP/5.6.23,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+www.mycc.gov.my,104.27.166.48,FALSE,TRUE,2.36389E+38,08/30/18 23:59,sha256,1,Pass,COMODO ECC Domain Validation Secure Server CA 2,cloudflare,n/a,13335,US,"CLOUDFLARENET - Cloudflare, Inc., US"
+www.mycpd.moh.gov.my,103.8.162.229,FALSE,FALSE,,,,,,Apache/2.2.15 (CentOS),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.mycpd2.moh.gov.my,103.8.160.38,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.mygeoportal.gov.my,202.75.5.80,FALSE,TRUE,2.53724E+38,12/12/19 6:53,sha256,1,Pass,Entrust Certification Authority - L1M,Microsoft-IIS/8.0,PHP/7.0.9,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.mygovmobile.malaysia.gov.my,202.171.41.170,FALSE,TRUE,1.331E+19,01/1/38 0:00,sha1,-1,Certificate & Hostname mismatch,Dapat Vista WebAdmin CA,Microsoft-IIS/7.5,"PHP/5.3.10, ASP.NET",23659,MY,"HEITECH-AS-AP APNIC HEITECH ASN, MY"
+www.myhealth.gov.my,103.8.162.234,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.myhealthcare.gov.my,Fail,,,,,,,,,,,,,
+www.myidentity.gov.my,203.12.220.68,TRUE,TRUE,2.22151E+37,01/22/20 3:50,sha256,1,Pass,Entrust Certification Authority - L1K,n/a,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+www.myipo.gov.my,210.187.40.143,FALSE,FALSE,,,,,,Apache/2.4.6 (CentOS) PHP/5.4.16,PHP/5.4.16,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.mymobile.gov.my,202.171.41.170,FALSE,TRUE,1.331E+19,01/1/38 0:00,sha1,-1,Certificate & Hostname mismatch,Dapat Vista WebAdmin CA,Microsoft-IIS/7.5,"PHP/5.3.10, ASP.NET",23659,MY,"HEITECH-AS-AP APNIC HEITECH ASN, MY"
+www.mynodc.gov.my,150.242.180.27,FALSE,FALSE,,,,,,Mimos Server,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.myresults.gov.my,103.8.161.189,FALSE,TRUE,1.35531E+38,02/2/19 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",GeoTrust SSL CA - G3,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.mysihat.gov.my,104.27.157.27,FALSE,TRUE,4.73881E+37,08/29/18 23:59,sha256,1,Pass,COMODO ECC Domain Validation Secure Server CA 2,cloudflare,n/a,13335,US,"CLOUDFLARENET - Cloudflare, Inc., US"
+www.mysms.gov.my,202.171.41.169,FALSE,TRUE,1.331E+19,01/1/38 0:00,sha1,-1,Certificate & Hostname mismatch,Dapat Vista WebAdmin CA,Microsoft-IIS/7.5,"PHP/5.3.10, ASP.NET",23659,MY,"HEITECH-AS-AP APNIC HEITECH ASN, MY"
+www.mytradelink.gov.my,203.189.18.17,FALSE,TRUE,1.56006E+37,03/23/18 23:59,sha256,1,Pass,Symantec Class 3 Secure Server CA - G4,n/a,n/a,38006,MY,"TQT-AS-AP Time Quantum Technologies Sdn. Bhd., MY"
+www.myttx.customs.gov.my,103.8.160.98,TRUE,TRUE,8.54262E+27,09/21/19 11:14,sha256,1,Pass,GlobalSign Organization Validation CA - SHA256 - G2,Microsoft-IIS/7.0,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.nahrim.gov.my,203.12.220.214,FALSE,FALSE,,,,,,Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.7,PHP/5.4.7,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www.navy.mil.my,103.27.113.198,FALSE,FALSE,,,,,,Apache/2.4.12 (Ubuntu),n/a,132885,MY,"CDSB-AS-AP CET DEVELOPMENT SDN BHD, MY",
+www.nbos.gov.my,202.75.6.49,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.nih.gov.my,103.6.196.200,FALSE,TRUE,2.26491E+37,03/17/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,n/a,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+www.nmmr.gov.my,Fail,,,,,,,,,,,,,
+www.nmrr.gov.my,203.115.198.216,TRUE,TRUE,6.10031E+36,02/28/19 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Custom Web Server/ Last Updated 20170619,n/a,10204,MY,"ARCNET-NTTMSC-MY Arcnet NTT MSC ISP, MY"
+www.nre.gov.my,202.75.6.187,FALSE,FALSE,,,,,,Microsoft-IIS/8.0,ASP.NET,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.ns.gov.my,103.21.45.37,FALSE,FALSE,,,,,,Apache,n/a,132435,MY,"SYMPHONET-MY No.31-A, Jalan Tiara, Tiara Square, MY",
+www.nsc.gov.my,202.75.57.70,TRUE,TRUE,1.07811E+37,05/14/21 0:00,sha256,1,Pass,GeoTrust TLS RSA CA G1,Apache,PHP/5.6.33,17971,MY,"TMVADS-AP TM-VADS DC Hosting, MY"
+www.nslibrary.gov.my,103.6.196.236,FALSE,TRUE,3.19652E+38,05/18/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,PHP/5.3.29,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+www.nuclearmalaysia.gov.my,202.186.20.90,FALSE,FALSE,,,,,,Microsoft-IIS/7.0,"PHP/5.2.5, ASP.NET",9930,MY,"TTNET-MY TIME dotCom Berhad, MY",
+www.osdec.gov.my,202.75.6.224,FALSE,FALSE,,,,,,Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips PHP/5.4.16,PHP/5.4.16,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.pahang.gov.my,1.9.139.199,FALSE,FALSE,,,,,,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.parlimen.gov.my,192.124.249.3,FALSE,TRUE,2.81992E+38,03/21/18 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,nginx,n/a,30148,US,"SUCURI-SEC - Sucuri, US"
+www.parlimenbelia.gov.my,103.8.161.174,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.pcb.gov.my,202.75.7.33,FALSE,TRUE,1.30985E+19,11/8/19 23:48,sha1,-1,Certificate & Hostname mismatch,localhost,Apache/2.2.21 (Win32) mod_ssl/2.2.21 OpenSSL/1.0.0e PHP/5.3.8 mod_perl/2.0.4 Perl/v5.10.1,PHP/5.3.8,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.pdn.gov.my,110.4.45.157,FALSE,FALSE,,,,,,,,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY",
+www.pemandu.gov.my,202.9.103.176,FALSE,TRUE,1.24492E+28,05/4/18 2:08,sha256,1,Pass,AlphaSSL CA - SHA256 - G2,Microsoft-IIS/8.5,n/a,17666,MY,"HITACHISUNWAY Unit 13-4, Block F1, MY"
+www.pemudah.gov.my,101.99.81.167,FALSE,TRUE,1.551E+38,03/21/18 23:59,sha256,-1,Certificate & Hostname mismatch,"cPanel, Inc. Certification Authority",Microsoft-IIS/8.5,PHP/7.0.0,45839,MY,"SHINJIRU-MY-AS-AP Shinjiru Technology Sdn Bhd, MY"
+www.penang.gov.my,210.187.66.200,TRUE,TRUE,1.83558E+37,01/31/20 12:00,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",DigiCert SHA2 Secure Server CA,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+www.penanglib.gov.my,61.4.106.135,FALSE,FALSE,,,,,,Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23,PHP/5.6.23,24321,MY,"OCENET-AS-AP OCE Sdn Bhd ISP, MY",
+www.penangport.gov.my,58.26.204.131,FALSE,FALSE,,,,,,Microsoft-IIS/6.0,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.perak.gov.my,202.188.163.164,TRUE,TRUE,1.41256E+38,10/30/18 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+www.perkeso.gov.my,49.236.205.181,TRUE,TRUE,5.42248E+37,06/2/19 23:59,sha256,1,Pass,GeoTrust SSL CA - G3,Apache/2.2.15 (CentOS),PHP/5.6.30,17971,MY,"TMVADS-AP TM-VADS DC Hosting, MY"
+www.perlis.gov.my,175.28.15.219,TRUE,TRUE,2.94901E+38,10/6/18 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,Apache/2.4.18 (Ubuntu),n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+www.pidm.gov.my,14.102.146.110,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,45352,MY,"IPSERVERONE-AS-AP IP ServerOne Solutions Sdn Bhd, MY",
+www.pka.gov.my,58.26.183.36,FALSE,FALSE,,,,,,Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3,PHP/5.6.3,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.pkb.gov.my,103.8.146.106,FALSE,FALSE,,,,,,Apache/2.4.7 (Ubuntu),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.pl.gov.my,104.27.167.142,TRUE,TRUE,2.88112E+38,08/31/18 23:59,sha256,1,Pass,COMODO ECC Domain Validation Secure Server CA 2,cloudflare,n/a,13335,US,"CLOUDFLARENET - Cloudflare, Inc., US"
+www.plws.gov.my,103.8.162.24,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.pmo.gov.my,58.26.20.3,FALSE,TRUE,1.84622E+37,11/28/18 12:00,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",DigiCert SHA2 Secure Server CA,nginx,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+www.pnm.gov.my,103.8.161.210,FALSE,FALSE,,,,,,Apache,PHP/5.6.28,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.pnmdigital.gov.my,103.8.161.210,FALSE,FALSE,,,,,,Apache,PHP/5.6.28,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.polaris-ppc.gov.my,110.4.46.117,FALSE,FALSE,,,,,,Microsoft-IIS/8.5,ASP.NET,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY",
+www.polisjohor.gov.my,59.153.27.12,FALSE,FALSE,,,,,,,,132901,MY,"GFSB-AS-AP Global Forway Sdn Bhd, MY",
+www.portal.mohe.gov.my,202.75.6.246,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.ppa1m.gov.my,103.8.146.222,TRUE,TRUE,1.8743E+28,09/10/18 4:07,sha256,1,Pass,GlobalSign Organization Validation CA - SHA256 - G2,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.ppanpk.gov.my,58.26.238.174,FALSE,FALSE,,,,,,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.ppas.gov.my,120.138.95.235,FALSE,TRUE,1.59914E+19,06/10/37 3:59,sha256,-1,Certificate & Hostname mismatch,SANGFOR,Apache/2.4.17 (Win64) PHP/5.6.16,PHP/5.6.16,38199,MY,"MACROLYNX-AS Macro Lynx Sdn Bhd, Internet Service Provider, Malaysia, MY"
+www.ppcfczonline.gov.my,103.76.88.26,TRUE,TRUE,2.87002E+28,01/23/21 11:05,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",GlobalSign Organization Validation CA - SHA256 - G2,Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.6.32,PHP/5.6.32,133889,MY,"PRECISION-AS-AP Precision Computer (Malaysia) Sdn Bhd, MY"
+www.ppj.gov.my,218.208.115.198,FALSE,TRUE,3.24143E+38,08/11/19 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,Oracle-Application-Server-10g/9.0.4.0.0 Oracle-HTTP-Server OracleAS-Web-Cache-10g/9.0.4.0.0 (G;max-age=429496087+0;age=0),n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+www.pprn.mohe.gov.my,161.139.21.161,FALSE,FALSE,,,,,,nginx,n/a,133014,MY,"UTM-AS-AP Universiti Teknologi Malaysia, MY",
+www.ppsppa.gov.my,Fail,,,,,,,,,,,,,
+www.prison.gov.my,175.28.15.200,FALSE,FALSE,,,,,,"Oracle-Application-Server-10g/10.1.2.0.2 Oracle-HTTP-Server OracleAS-Web-Cache-10g/10.1.2.0.2 (G;max-age=0+0;age=0;ecid=78445796447,0)",n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www.ptgwp.gov.my,1.9.139.21,FALSE,TRUE,2.22247E+38,07/12/18 23:59,sha256,1,Pass,SSL.com DV CA,n/a,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+www.ptptn.gov.my,211.24.235.215,FALSE,TRUE,2.75111E+38,10/25/18 2:10,sha256,1,Pass,Entrust Certification Authority - L1K,nginx,n/a,9930,MY,"TTNET-MY TIME dotCom Berhad, MY"
+www.rac.gov.my,128.199.247.107,FALSE,FALSE,,,,,,Apache,PHP/5.6.13,14061,GB,"DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
+www.rela.gov.my,203.217.178.243,FALSE,FALSE,,,,,,Apache/2.2.14 (Win32) mod_ssl/2.2.14 OpenSSL/0.9.8l mod_autoindex_color,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.remotesensing.gov.my,103.245.90.73,FALSE,FALSE,,,,,,Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.15,PHP/5.5.15,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www.risda.gov.my,45.60.120.47,FALSE,FALSE,,,,,,Apache,n/a,19551,US,"INCAPSULA - Incapsula Inc, US",
+www.rmp.gov.my,218.208.39.45,FALSE,TRUE,7.84903E+37,08/17/19 10:04,sha256,1,Pass,Entrust Certification Authority - L1K,,,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+www.ros.gov.my,45.60.36.233,FALSE,FALSE,,,,,,,,19551,US,"INCAPSULA - Incapsula Inc, US",
+www.rtm.gov.my,52.74.85.236,FALSE,TRUE,3.09837E+38,05/16/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache/2.4.29 (Unix) OpenSSL/1.0.2k-fips mod_bwlimited/1.4,PHP/5.6.33,16509 38895,US,
+www.rurallink.gov.my,103.8.161.61,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.sabah.gov.my,27.0.4.11,FALSE,TRUE,1.84605E+38,05/28/19 23:59,sha256,1,Pass,COMODO RSA Organization Validation Secure Server CA,Microsoft-IIS/8.5,"PHP/5.6.0, ASP.NET",55420,MY,"SABAHNET-AS-AP APNIC ASN Block, MY"
+www.sarawak.gov.my,58.26.203.15,TRUE,TRUE,3.94133E+36,08/3/19 23:59,sha256,1,Pass,RapidSSL SHA256 CA,wrp101,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+www.searcct.gov.my,104.18.43.98,FALSE,TRUE,3.3522E+38,08/23/18 23:59,sha256,1,Pass,COMODO ECC Domain Validation Secure Server CA 2,cloudflare,Proton,13335,US,"CLOUDFLARENET - Cloudflare, Inc., US"
+www.seda.gov.my,110.74.145.132,FALSE,FALSE,,,,,,Apache,n/a,45668,MY,"AIMS-MY-NET AIMS Data Centre Sdn Bhd, MY",
+www.selangor.gov.my,139.162.28.49,FALSE,FALSE,,,,,,Apache,PHP/5.6.23,63949,NL,"LINODE-AP Linode, LLC, US",
+www.seriperdana.gov.my,58.26.20.3,FALSE,TRUE,1.84622E+37,11/28/18 12:00,sha256,-1,Certificate & Hostname mismatch,DigiCert SHA2 Secure Server CA,nginx,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+www.sga.sabah.gov.my,27.0.4.158,FALSE,FALSE,,,,,,Microsoft-IIS/6.0,ASP.NET,55420,MY,"SABAHNET-AS-AP APNIC ASN Block, MY",
+www.skillsmalaysia.gov.my,103.228.53.185,FALSE,TRUE,2.1271E+38,05/3/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,PHP/5.6.33,55720,MY,"GIGABIT-MY Gigabit Hosting Sdn Bhd, MY"
+www.skm.gov.my,103.8.146.248,FALSE,FALSE,,,,,,Apache/2.4.20 (Win64) PHP/5.5.30,PHP/5.5.30,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.skmm.gov.my,202.171.39.22,TRUE,TRUE,2.22768E+38,09/6/19 15:10,sha256,1,Pass,Entrust Certification Authority - L1M,n/a,ASP.NET,23659,MY,"HEITECH-AS-AP APNIC HEITECH ASN, MY"
+www.skn.sabah.gov.my,27.0.4.11,FALSE,TRUE,1.84605E+38,05/28/19 23:59,sha256,-1,Certificate & Hostname mismatch,COMODO RSA Organization Validation Secure Server CA,,,55420,MY,"SABAHNET-AS-AP APNIC ASN Block, MY"
+www.smecorp.gov.my,110.4.43.227,FALSE,TRUE,5.70992E+37,04/28/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,n/a,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+www.spa.gov.my,202.75.5.42,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.spad.gov.my,110.74.168.83,FALSE,TRUE,2.32886E+37,05/6/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,n/a,45668,MY,"AIMS-MY-NET AIMS Data Centre Sdn Bhd, MY"
+www.span.gov.my,211.25.98.164,FALSE,TRUE,1.41774E+19,01/1/38 0:00,sha256,-1,Certificate & Hostname mismatch,SPAN WebAdmin CA,Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.24,PHP/5.6.24,9930,MY,"TTNET-MY TIME dotCom Berhad, MY"
+www.spins.sabah.gov.my,Fail,,,,,,,,,,,,,
+www.spip.gov.my,103.8.144.205,TRUE,TRUE,3.37194E+28,11/29/18 23:59,sha256,1,Pass,GlobalSign Organization Validation CA - SHA256 - G2,Apache/2.4.16 (Win32) OpenSSL/1.0.1p PHP/5.5.28,PHP/5.5.28,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.spkp.gov.my,202.75.5.96,FALSE,FALSE,,,,,,Apache,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.spp.gov.my,103.8.161.78,TRUE,TRUE,7.81308E+37,07/14/19 8:57,sha256,1,Pass,Entrust Certification Authority - L1K,Apache,PHP/7.1.11,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.sppii.icu.gov.my,Fail,,,,,,,,,,,,,
+www.sppim.gov.my,103.8.161.218,FALSE,TRUE,8.66247E+37,12/22/18 23:59,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",GeoTrust EV SSL CA - G4,Apache-Coyote/1.1,JSP/2.2,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.spr.gov.my,103.8.163.98,FALSE,FALSE,,,,,,Apache/2.4.6 (CentOS) PHP/5.4.16,PHP/5.4.16,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.sprm.gov.my,150.242.180.168,FALSE,FALSE,,,,,,Apache,PHP/5.5.30,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.ss.sarawak.gov.my,58.26.203.226,FALSE,TRUE,1.69915E+19,11/27/17 1:24,sha1,-1,Certificate & Hostname mismatch,*.ipo.sarawak.gov.my,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+www.ssig.gov.my,103.8.160.197,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.ssl.sabah.gov.my,27.0.4.10,FALSE,FALSE,,,,,,,,55420,MY,"SABAHNET-AS-AP APNIC ASN Block, MY",
+www.st.gov.my,202.9.104.9,FALSE,TRUE,3.23067E+36,06/7/18 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,Apache,n/a,17666,MY,"HITACHISUNWAY Unit 13-4, Block F1, MY"
+www.stadium.gov.my,103.6.196.122,FALSE,TRUE,3.1918E+38,05/19/18 23:59,sha256,1,Pass,"cPanel, Inc. Certification Authority",Apache,PHP/5.6.32,46015,MY,"EXABYTES-AS-AP Exa Bytes Network Sdn.Bhd., MY"
+www.standardsmalaysia.gov.my,203.12.220.121,FALSE,FALSE,,,,,,n/a,JSP/2.2,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www.statistics.gov.my,104.18.59.209,TRUE,TRUE,1.2244E+37,08/29/18 23:59,sha256,1,Pass,COMODO ECC Domain Validation Secure Server CA 2,cloudflare,PHP/5.4.45,13335,US,"CLOUDFLARENET - Cloudflare, Inc., US"
+www.stride.gov.my,210.48.154.34,FALSE,FALSE,,,,,,,,17971,MY,"TMVADS-AP TM-VADS DC Hosting, MY",
+www.sumberilmu.mampu.gov.my,202.75.7.199,FALSE,FALSE,,,,,,Apache-Coyote/1.1,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.swcorp.gov.my,103.8.145.122,FALSE,FALSE,,,,,,Apache/2.4.6 (CentOS) PHP/5.4.16,PHP/5.4.16,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.tabunghaji.gov.my,139.162.26.149,TRUE,TRUE,4.21253E+37,09/30/19 23:59,sha256,1,Pass,COMODO RSA Domain Validation Secure Server CA,nginx,n/a,63949,NL,"LINODE-AP Linode, LLC, US"
+www.tbnsa.gov.my,103.8.160.209,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.tekun.gov.my,104.25.144.25,FALSE,FALSE,,,,,,,,13335,US,"CLOUDFLARENET - Cloudflare, Inc., US",
+www.teraju.gov.my,103.8.160.140,FALSE,TRUE,6865845935,11/28/17 3:16,sha256,-1,Certificate & Hostname mismatch,mampu.teraju.gov.my,Apache/2.4.28 (Unix) OpenSSL/1.0.1e-fips mod_bwlimited/1.4,PHP/5.6.31,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.terengganu.gov.my,202.188.29.142,FALSE,FALSE,,,,,,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.tmw18.gov.my,159.65.8.152,FALSE,FALSE,,,,,,Apache/2.4.18 (Ubuntu),n/a,14061,US,"DIGITALOCEAN-ASN - DigitalOcean, LLC, US",
+www.tourism.gov.my,111.221.98.2,TRUE,TRUE,1.93269E+37,08/30/19 12:00,sha256,1,Pass,DigiCert SHA2 Secure Server CA,nginx/1.8.0,PHP/5.5.9-1ubuntu4.14,8075,SG,"MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US"
+www.tourismmalaysia.gov.my,111.221.98.2,TRUE,TRUE,1.93269E+37,08/30/19 12:00,sha256,-1,Certificate & Hostname mismatch,DigiCert SHA2 Secure Server CA,nginx/1.8.0,PHP/5.5.9-1ubuntu4.14,8075,SG,"MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US"
+www.tourismpenang.gov.my,Fail,,,,,,,,,,,,,
+www.townplan.gov.my,175.28.15.85,FALSE,FALSE,,,,,,nginx,PHP/5.3.10-1ubuntu3.14,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www.treasury.gov.my,203.217.178.106,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.u-library.gov.my,103.8.163.177,FALSE,TRUE,2.76408E+38,05/3/18 7:22,sha256,1,Pass,Entrust Certification Authority - L1K,Apache/2.2.3 (Red Hat),n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+www.uins.sabah.gov.my,27.0.4.11,FALSE,TRUE,1.84605E+38,05/28/19 23:59,sha256,-1,Certificate & Hostname mismatch,COMODO RSA Organization Validation Secure Server CA,Microsoft-IIS/8.5,ASP.NET,55420,MY,"SABAHNET-AS-AP APNIC ASN Block, MY"
+www.ukas.gov.my,103.8.161.20,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.visitkl.gov.my,58.26.53.12,FALSE,FALSE,,,,,,Apache,n/a,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY",
+www.vlib.spr.gov.my,103.8.163.107,FALSE,FALSE,,,,,,,,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.water.gov.my,203.62.1.118,TRUE,TRUE,1.70379E+19,01/3/21 3:26,sha256,1,Pass,Go Daddy Secure Certificate Authority - G2,Apache,PHP/5.6.30,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+www.wildlife.gov.my,202.60.56.137,FALSE,TRUE,22508,02/22/13 8:44,sha1,-1,Certificate & Hostname mismatch,localhost.localdomain,Apache,PHP/5.6.32,38044,MY,"GITN-NETWORK GITN-NETWORK, MY"
+www.wipers.gov.my,203.217.178.233,FALSE,FALSE,,,,,,Apache/2.4.7 (Ubuntu),PHP/5.5.9-1ubuntu4.22,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www.yen.gov.my,103.8.145.123,FALSE,FALSE,,,,,,nginx,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www1.treasury.gov.my,103.8.161.200,FALSE,FALSE,,,,,,n/a,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www2.anm.gov.my,218.208.102.13,TRUE,TRUE,2.4656E+38,07/26/19 8:58,sha256,1,Pass,Entrust Certification Authority - L1K,Microsoft-IIS/7.5,ASP.NET,4788,MY,"TMNET-AS-AP TM Net, Internet Service Provider, MY"
+www2.arkib.gov.my,175.28.13.91,FALSE,FALSE,,,,,,Apache,n/a,38044,MY,"GITN-NETWORK GITN-NETWORK, MY",
+www2.mqa.gov.my,103.8.160.144,FALSE,FALSE,,,,,,,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY",
+www2.mymesyuarat.gov.my,103.8.145.150,FALSE,TRUE,1.47067E+38,02/27/19 23:59,sha256,1,Pass,GeoTrust EV SSL CA - G4,Apache-Coyote/1.1,JSP/2.2,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
+ydata.iyres.gov.my,103.8.145.158,TRUE,TRUE,2.63589E+41,05/21/18 1:07,sha256,0,"Host did not provide intermediate certs, unable to build trust chain",Let's Encrypt Authority X3,nginx/1.12.2,n/a,17564,MY,"GITN-PCN-AS-AP GITN (M) Sdn. Bhd., MY"
