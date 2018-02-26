@@ -23,7 +23,7 @@ csv_cert_data = ['serialNumber', 'notValidBefore', 'notValidAfter',
                  'signatureHashAlgorithm', 'statusCode', 'statusMessage']
 csv_cert_issuer = ['commonName']
 csv_http_headers = ['Server', 'X-Powered-By']
-csv_ip_whois = ['asn', 'asnCountryCode', 'asnDescription']
+csv_shodan = ['asn', 'asnCountryCode', 'isp']
 
 # header of csv file
 csv_header = []
@@ -31,7 +31,7 @@ csv_header.extend(csv_data)
 csv_header.extend(csv_cert_data)
 csv_header.extend(csv_cert_issuer)
 csv_header.extend(csv_http_headers)
-csv_header.extend(csv_ip_whois)
+csv_header.extend(csv_shodan)
 
 # list of domains to skip (don't crawl)
 skip_domains = ['twitter', 'facebook', 'youtube', 'google', 'instagram',

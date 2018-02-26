@@ -1,4 +1,4 @@
-from custom_config import csv_data, csv_cert_data, csv_cert_issuer, csv_http_headers, csv_ip_whois
+from custom_config import csv_data, csv_cert_data, csv_cert_issuer, csv_http_headers, csv_shodan, csv_header
 
 
 def copy_over(source_dict, destination_dict, source_field, destination_field, field_type='keyValue'):
@@ -62,7 +62,7 @@ def format_json_data(site_data):
     certData_dict = 'certData'
     certStatus_dict = 'certStatus'
     tls_server_info_dict = 'TLSServerInfo'
-    ipWhois_dict = 'ipWhois'
+    shodan_dict = 'shodan'
 
     # mapping from site_data
     mapping = [['hostname', 'hostname', 'keyValue'],
@@ -99,10 +99,13 @@ def format_json_data(site_data):
                            ['tls_server_name_indication', 'TLSServerNameIndication', 'attribute']]
 
     # mapping from ipWhois
-    mapping_ip_whois = [['asn', 'asn', 'keyValue'],
-                        ['asn_country_code', 'asnCountryCode', 'keyValue'],
-                        ['asn_description', 'asnDescription', 'keyValue'],
-                        ['asn_cidr', 'asnCidr', 'keyValue']]
+    mapping_shodan = [['asn', 'asn', 'keyValue'],
+                      ['country_code', 'asnCountryCode', 'keyValue'],
+                      ['isp', 'isp', 'keyValue'],
+                      ['os','os','keyValue'],
+                      ['ip_str','ipStr','keyValue'],
+                      ['ports', 'ports', 'keyValue'],
+                      ['last_update','lastUpdate','keyValue']]
 
     # implement mapping for site_data
     for map_rule in mapping:
@@ -171,25 +174,30 @@ def format_json_data(site_data):
             server_info = getattr(site_data[certData_dict], 'server_info')
             for map_rule in mapping_server_info:
                 result[tls_server_info_dict] = copy_over(server_info, result[tls_server_info_dict],
-                                                  map_rule[0], map_rule[1], map_rule[2])
+                                                map_rule[0], map_rule[1], map_rule[2])
 
-    if 'ipWhois' in site_data:
-        result[ipWhois_dict] = dict()
-        for map_rule in mapping_ip_whois:
-            result[ipWhois_dict] = copy_over(site_data['ipWhois'], result[ipWhois_dict],
-                                              map_rule[0], map_rule[1], map_rule[2])
+    if 'shodan' in site_data:
+        result[shodan_dict] = dict()
+        for map_rule in mapping_shodan:
+            result[shodan_dict] = copy_over(site_data['shodan'], result[shodan_dict],
+                                            map_rule[0], map_rule[1], map_rule[2])
 
     return result
 
 
 def format_csv_data(site_data_json):
 
-
     result = []
 
     if site_data_json['ip'] is None:
         result.append(site_data_json['hostname'])
+
+        # Append Fail and end the row
+        # (header-1) because Fail i one new row
         result.append('Fail')
+        result.extend(['' for i in range(len(csv_header)-1)])
+        return result
+
     else:
         for data in csv_data:
             result.append(site_data_json[data])
@@ -223,11 +231,11 @@ def format_csv_data(site_data_json):
         for c in range(len(csv_http_headers)):
             result.append('')
 
-    if 'ipWhois' in site_data_json:
-        for data in csv_ip_whois:
-            result.append(site_data_json['ipWhois'][data])
+    if 'shodan' in site_data_json:
+        for data in csv_shodan:
+            result.append(site_data_json['shodan'][data])
     else:
-        for c in range(len(csv_ip_whois)):
+        for c in range(len(csv_shodan)):
             result.append('')
 
     return result

@@ -1,5 +1,4 @@
 import requests
-import ipwhois
 import socket
 import csv
 import tldextract
@@ -82,12 +81,18 @@ def get_cert(site_json):
     return scan_result
 
 
-def get_ip_whois(ip_addr):
-    with open(custom_config.shodan_key_file, 'r') as key_file:
-        shodan_api_key = key_file.readline().rstrip()
-    api = shodan.Shodan(shodan_api_key)
-    host = api.host(ip_addr)
-    return None
+def get_shodan(ip_addr):
+
+    try:
+        with open(custom_config.shodan_key_file, 'r') as key_file:
+            shodan_api_key = key_file.readline().rstrip()
+            api = shodan.Shodan(shodan_api_key)
+            host = api.host(ip_addr)
+
+    except shodan.APIError:
+        return None
+    
+    return host
 
 
 def get_domain_whois(hostname):

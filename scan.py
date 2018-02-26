@@ -5,7 +5,7 @@ from datetime import datetime
 from custom_config import http_success
 from custom_config import csv_file, json_file, full_json_file, csv_header, hostname_file
 
-from get_functions import get_cert, get_site, get_hostname, get_ip, get_ip_whois, get_certificate_status
+from get_functions import get_cert, get_site, get_hostname, get_ip, get_shodan, get_certificate_status
 from format_functions import format_json_data, format_csv_data
 
 
@@ -53,7 +53,7 @@ if __name__ == "__main__":
         hostnames = f.readlines()
 
     hostnames = [x.strip() for x in hostnames]
-    hostnames = ['keithrozario.com']
+
     for hostname in hostnames:
 
         logger.info("Hostname: " + hostname)
@@ -63,11 +63,13 @@ if __name__ == "__main__":
         site_data['ip'] = get_ip(site_data['hostname'])
 
         if site_data['ip']:
-            # IP Whois
-            logger.info("Getting WHOIS for IP: " + site_data['ip'])
-            ipWhois = get_ip_whois(site_data['ip'])
-            if ipWhois:
-                site_data['ipWhois'] = ipWhois
+            # Shodan Scan
+            logger.info("Calling Shodan API for : " + site_data['ip'])
+            shodan_results = get_shodan(site_data['ip'])
+            if shodan_results:
+                site_data['shodan'] = shodan_results
+            else:
+                logger.info("No Shodan Results for IP")
 
             # Request HTTP Site
             http_url = append_http(hostname, False)
@@ -85,7 +87,7 @@ if __name__ == "__main__":
                         TLS_redirect = True
                         TLS_site_exist = True
                     else:
-                        TLS_redirect =False
+                        TLS_redirect = False
                 else:
                     TLS_redirect = False
             else:
@@ -135,6 +137,7 @@ if __name__ == "__main__":
             json.dump(site_data_json, outfile, cls=DateTimeEncoder)
             outfile.write("\n")
 
+    # stuff below this line might not work
     full_json = {'results': site_jsons}
 
     with open(full_json_file, 'w') as outfile:
