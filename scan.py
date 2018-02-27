@@ -5,7 +5,10 @@ from datetime import datetime
 from custom_config import http_success
 from custom_config import csv_file, json_file, full_json_file, csv_header, hostname_file
 
-from get_functions import get_cert, get_site, get_hostname, get_ip, get_ip_whois, get_certificate_status
+from get_functions import get_hostname, get_domain
+from get_functions import get_site, get_input_fields
+from get_functions import get_ip, get_shodan, get_ip_asn
+from get_functions import get_cert, get_certificate_status
 from format_functions import format_json_data, format_csv_data
 
 
@@ -29,7 +32,7 @@ if __name__ == "__main__":
     # Logging setup
     logging.basicConfig(filename='logs/scan.log',
                         filemode='a',
-                        level=logging.DEBUG,
+                        level=logging.INFO,
                         format='%(asctime)s %(message)s',
                         datefmt='%m/%d/%Y %I:%M:%S %p')
 
@@ -50,42 +53,58 @@ if __name__ == "__main__":
         csv_writer.writerow(csv_header)
 
     with open(hostname_file) as f:
-        hostnames = f.readlines()
+    # with open('files/hostnames_test.txt') as f:
+         hostnames = f.readlines()
 
     hostnames = [x.strip() for x in hostnames]
 
     for hostname in hostnames:
 
-        logger.info("Hostname: " + hostname)
+        logger.info("\nHostname: " + hostname)
 
         site_data = dict()
         site_data['hostname'] = get_hostname(hostname)
+        site_data['domain'] = get_domain(hostname)
         site_data['ip'] = get_ip(site_data['hostname'])
 
         if site_data['ip']:
-            # IP Whois
-            logger.info("Getting WHOIS for IP: " + site_data['ip'])
-            ipWhois = get_ip_whois(site_data['ip'])
-            if ipWhois:
-                site_data['ipWhois'] = ipWhois
+
+            # Shodan Scan
+            # logger.info("INFO: Calling Shodan for : " + site_data['ip'])
+            # shodan_results = get_shodan(site_data['ip'])
+            # if shodan_results:
+            #     site_data['shodan'] = shodan_results
+            # else:
+            #     logger.info("WARNING: No Shodan Results for IP")
+
+            # ASN Info
+            asn_info = get_ip_asn(site_data['ip'])
+            if asn_info:
+                site_data['asnInfo'] = asn_info
 
             # Request HTTP Site
             http_url = append_http(hostname, False)
-            logger.info("HTTP Request: " + http_url)
+            logger.info("INFO: HTTP Request: " + http_url)
             request_response = get_site(http_url, browser)
             site_data['httpRequest'] = request_response['request']
             site_data['httpResponse'] = request_response['response']
 
-            # If http request is re-directed to https, set TLS_Redirect True and proceed
-            # Else request https://hostname
+            # Check response
             if site_data['httpResponse'].status_code in http_success:
+
+                # Http request successful check for form Fields
+                form_fields = get_input_fields(site_data['httpResponse'].content)
+                if form_fields:
+                    site_data['formFields'] = form_fields
+
+                # Check if re-directed to https, set TLS_Redirect
                 if site_data['httpResponse'].history:
                     if site_data['httpResponse'].url[4] in ['S', 's']:
-                        logger.info("HTTP redirected to HTTPS: " + site_data['httpResponse'].url)
+                        logger.info("GOOD: Redirect to HTTPS: " + site_data['httpResponse'].url)
                         TLS_redirect = True
                         TLS_site_exist = True
                     else:
-                        TLS_redirect =False
+                        TLS_redirect = False
                 else:
                     TLS_redirect = False
             else:
@@ -93,9 +112,10 @@ if __name__ == "__main__":
 
             # No TLS Redirection, try direct https://
             if not TLS_redirect:
+
                 # Request HTTPS Site
                 https_url = append_http(hostname, True)
-                logger.info("No HTTPs-Redirect, making explicit HTTPs request: " + https_url)
+                logger.info("INFO: No HTTPs-Redirect, making explicit HTTPs request: " + https_url)
                 request_response = get_site(https_url, browser)
                 site_data['httpsRequest'] = request_response['request']
                 site_data['httpsResponse'] = request_response['response']
@@ -106,22 +126,22 @@ if __name__ == "__main__":
 
             # TLS Site Exist, check certs
             if TLS_site_exist:
-                logger.info("HTTPs Detected. Checking Certs")
+                logger.info("INFO: HTTPs Detected. Checking Certs")
                 cert_data = get_cert(site_data)
                 if cert_data:
                     site_data['certData'] = cert_data
                     site_data['certStatus'] = dict()
                     site_data['certStatus'] = get_certificate_status(cert_data)
-                    logger.info("Cert Data Saved")
+                    logger.info("INFO: Cert Data Saved")
                 else:
-                    logger.info("Unable to get Certificate Data")
+                    logger.info("ERROR: Unable to get Certificate Data")
             else:
-                logger.info("HTTPs not detected. Bypassing Cert Checks")
+                logger.info("INFO: HTTPs not detected. Bypassing Cert Checks")
             site_data['TLSRedirect'] = TLS_redirect
             site_data['TLSSiteExist'] = TLS_site_exist
 
         else:
-            logger.info("Unable to Lookup IP, bypassing all checks")
+            logger.info("ERROR: No IP Found")
 
         site_data_json = format_json_data(site_data)
         site_jsons.append(site_data_json)
@@ -135,6 +155,7 @@ if __name__ == "__main__":
             json.dump(site_data_json, outfile, cls=DateTimeEncoder)
             outfile.write("\n")
 
+    # stuff below this line might not work
     full_json = {'results': site_jsons}
 
     with open(full_json_file, 'w') as outfile:

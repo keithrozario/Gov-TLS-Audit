@@ -1,9 +1,13 @@
 import requests
-import ipwhois
 import socket
 import csv
 import tldextract
 from datetime import datetime
+
+import shodan
+from bs4 import BeautifulSoup
+from html.parser import HTMLParser
+
 
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
@@ -60,6 +64,8 @@ def get_site(site_url, browser, timeout=custom_config.timeout, verify=False):
         response = CustomResponse(-3, 'Read Time Out')
     except requests.exceptions.TooManyRedirects:
         response = CustomResponse(-4, 'Too Many Redirects')
+    except requests.exceptions.RequestException:
+        response = CustomResponse(-5, 'Unknown Requests Error')
 
     return {'request': request, 'response': response}
 
@@ -80,13 +86,17 @@ def get_cert(site_json):
     return scan_result
 
 
-def get_ip_whois(ip_addr):
+def get_shodan(ip_addr):
+
     try:
-        obj = ipwhois.IPWhois(ip_addr)
-        result = obj.lookup_rdap(depth=1)
-    except ipwhois.exceptions.IPDefinedError:
-        result = None
-    return result
+        with open(custom_config.shodan_key_file, 'r') as key_file:
+            shodan_api_key = key_file.readline().rstrip()
+            api = shodan.Shodan(shodan_api_key)
+            host = api.host(ip_addr)
+    except shodan.APIError:
+        return None
+
+    return host
 
 
 def get_domain_whois(hostname):
@@ -146,3 +156,38 @@ def get_certificate_status(cert_data):
             return cert_success
     else:
         return cert_mismatch
+
+
+def get_ip_asn(ip_addr):
+
+    try:
+        response = requests.get('https://api.iptoasn.com/v1/as/ip/' + ip_addr)
+    except requests.exceptions.SSLError:
+        return None
+    except requests.exceptions.RequestException:
+        return None
+
+    if response.ok:
+        return response.text
+    else:
+        return None
+
+
+def get_domain(hostname):
+    ext = tldextract.extract(hostname)
+    return ext.domain
+
+
+def get_input_fields(response):
+    field_str = ''
+
+    try:
+        html_content = BeautifulSoup(response, 'html.parser')
+        fields = [element['name'] for element in html_content.find_all('input')]
+
+        for field in fields:
+            field_str = field_str + "|" + str(field).replace(',', '')  # don't have a comma
+    except KeyError:
+        return "n/a"
+
+    return field_str

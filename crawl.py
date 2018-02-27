@@ -1,26 +1,16 @@
-import requests
+import asyncio
+import concurrent.futures
+import time
 import logging
+import requests
 
+from custom_config import start_links, http_success, skip_extensions, processed_url_file, hostname_file
+from get_functions import get_site, get_hostname
 from bs4 import BeautifulSoup, SoupStrainer
-from get_functions import get_hostname, get_site
-from custom_config import visited_urls_file, hostname_file, processed_url_file
-from custom_config import skip_extensions, http_success
-
-# Logging setup
-logging.basicConfig(filename='logs/crawl.log',
-                    filemode='a',
-                    level=logging.DEBUG,
-                    format='%(asctime)s %(message)s',
-                    datefmt='%m/%d/%Y %I:%M:%S %p')
-
-logger = logging.getLogger(__name__)
-console = logging.StreamHandler()
-console.setLevel(logging.INFO)
-logger.addHandler(console)
 
 
 # returns all links in a url (in a list)
-def get_links(url):
+def get_links(url, link_number, iteration, links_length):
     links = []
 
     try:
@@ -34,13 +24,18 @@ def get_links(url):
                     if link.has_attr('href'):
                         # skip internal links, check only for links with http
                         if str(link['href'])[:4] == 'http':
-                            # and ending with .gov.my
-                            if get_hostname(str(link['href']))[-7:] == ".gov.my":
+                            # and ending with .gov.my or .mil.my
+                            if get_hostname(str(link['href']))[-7:] in ['.mil.my', '.gov.my']:
                                 # and does not end with file extension
                                 if str(link['href'])[-3:] not in skip_extensions:
                                     links.append(link['href'])
 
-                logger.info("GOOD: Found " + str(len(links)) + " links in " + url)
+                with open(processed_url_file, 'a') as f:
+                    for link in links:
+                        f.write(link + "\n")
+
+                logger.info(str(iteration) + "-" + str(link_number) + "/" + str(links_length) +
+                            ": Found " + str(len(links)) + " links in " + url)
             except NotImplementedError:
                 logger.error("BAD: Unable to parse file")
 
@@ -61,74 +56,68 @@ def get_links(url):
     return links
 
 
-if __name__ == "__main__":
-    start_links = []
+async def parallel_get(hostnames, iter):
 
-    start_links.append('http://www.kln.gov.my/web/guest/other-ministry')
-    start_links.append('https://moe.gov.my/index.php/my/')
-    start_links.append('http://moh.gov.my/')
-    start_links.append('http://www.skmm.gov.my/')
-    start_links.append('http://moha.gov.my/')
-    start_links.append('http://mod.gov.my/')
-    start_links.append('http://www.selangor.gov.my/')
-    start_links.append('http://www.penang.gov.my')
-    start_links.append('http://sabah.gov.my')
-    start_links.append('http://www.melaka.gov.my')
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
 
-    with open(processed_url_file, 'w') as f:
-        for ahref in start_links:
-            f.write(ahref + "\n")
+        loop = asyncio.get_event_loop()
+        futures = [
+            loop.run_in_executor(
+                executor,
+                get_links,
+                hostnames[i], i, iter, len(hostnames)
+            )
+            for i in range(len(hostnames))
+        ]
+        for response in await asyncio.gather(*futures):
+            pass
 
-    next_links = []
-    page_links = []
-    visited_links = []
+start = time.time()
 
-    next_links = start_links
+# Logging setup
+logging.basicConfig(filename='logs/crawl.log',
+                    filemode='a',
+                    level=logging.DEBUG,
+                    format='%(asctime)s %(message)s',
+                    datefmt='%m/%d/%Y %I:%M:%S %p')
 
-    for x in range(3):
+logger = logging.getLogger(__name__)
+console = logging.StreamHandler()
+console.setLevel(logging.INFO)
+logger.addHandler(console)
 
-        count = 0
-        for link in next_links:
-            count += 1
-            # Only Crawl .gov.my links
-            if get_hostname(link)[-7:] == ".gov.my":
-                logger.info("Iter: " + str(x) + ",link: " + str(count) + " of " + str(len(next_links)))
+# empty out file, and write the initial list
+with open(processed_url_file, 'w') as f:
+    f.writelines(start_links)
 
-                # save all links to file, by default only .gov.my links are returned from get_links
-                ahrefs = get_links(link)
-                with open(processed_url_file, 'a') as f:
-                    for ahref in ahrefs:
-                        f.write(ahref + "\n")
+next_links = start_links
+visited_links = []
 
-                # add all links to page_links list (it has all the links in this iteration)
-                page_links.extend(ahrefs)
+for i in range(3):
 
-                # mark link as visited
-                visited_links.append(link)
-            else:
-                logger.info("Iter: " + str(x) + ", Non gov.my site, bypass")
-
-        # remove duplicate in next_links
-        page_links_dedup = set(page_links)
-        # next_links are all links in page_links_dedup that are not in visited links
-        del next_links[:]
-        next_links = [x for x in page_links_dedup if x not in visited_links]
+    # Code block writes all links in a page to process_url_file
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(parallel_get(next_links, i))
 
     visited_links.extend(next_links)
 
-    with open(visited_urls_file, 'w') as f:
-        for link in visited_links:
-            f.write(link + "\n")
+    # Open processed_url_file to get all the links processed this round
+    with open(processed_url_file, 'r') as f:
+        processed_urls = f.readlines()
+        processed_urls = [x.strip() for x in processed_urls]
 
-    hostnames = []
-    for link in visited_links:
-        hostnames.append(get_hostname(link))
+    # Deduplicate processed urls, and add unvisited to next links
+    del next_links[:]
+    next_links = [x for x in set(processed_urls) if x not in visited_links]
 
-    # unique hostnames
-    hostnames_dedup = set(hostnames)
+logger.info("Scan Complete, consolidating info")
 
-    with open(hostname_file, 'w') as f:
-        for hostname in hostnames_dedup:
-            f.write(hostname + "\n")
+# hostnames of all visited and processed urls
+all_hostnames = [get_hostname(url) for url in (next_links + visited_links)]
 
-    logger.info(len(hostnames_dedup))
+with open(hostname_file, 'w') as f:
+    for hostname in set(all_hostnames):
+        f.write(hostname + "\n")
+
+end = time.time()
+print("\n\n Time Taken: " + str(end - start))
