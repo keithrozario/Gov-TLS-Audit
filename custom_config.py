@@ -18,26 +18,22 @@ full_json_file = 'files/full_output.json'
 processed_url_file = 'files/processed_urls.txt'
 
 # csv output
-csv_data = ['hostname', 'ip', 'TLSRedirect','TLSSiteExist']
+csv_data = ['domain', 'hostname', 'ip', 'TLSRedirect', 'TLSSiteExist']
 csv_cert_data = ['serialNumber', 'notValidBefore', 'notValidAfter',
                  'signatureHashAlgorithm', 'statusCode', 'statusMessage']
 csv_cert_issuer = ['commonName']
 csv_http_headers = ['Server', 'X-Powered-By']
-csv_shodan = ['asn', 'asnCountryCode', 'isp']
+csv_optional = ['formFields']
+csv_ip = ['asn', 'asnCountryCode', 'isp']
 
 # header of csv file
 csv_header = []
 csv_header.extend(csv_data)
 csv_header.extend(csv_cert_data)
-csv_header.extend(csv_cert_issuer)
+csv_header.extend(['issuerCommonName'])  # renamed to something more meaningful
 csv_header.extend(csv_http_headers)
-csv_header.extend(csv_shodan)
-
-# list of domains to skip (don't crawl)
-skip_domains = ['twitter', 'facebook', 'youtube', 'google', 'instagram',
-                'vimeo', 'thestar', 'goo', 'feedburner', 'statcounter',
-                'blogspot', 'nst', 'youtu', 'bit', 'wordpress',
-                'is']
+csv_header.extend(csv_ip)
+csv_header.extend(csv_optional)
 
 # list of file extensions to skip
 skip_extensions = ['pdf', 'txt', 'xls', 'doc', 'jpg', 'png']
