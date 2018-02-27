@@ -2,6 +2,7 @@ import requests
 import socket
 import csv
 import tldextract
+import json
 from datetime import datetime
 
 import shodan
@@ -88,10 +89,9 @@ def get_shodan(ip_addr):
             shodan_api_key = key_file.readline().rstrip()
             api = shodan.Shodan(shodan_api_key)
             host = api.host(ip_addr)
-
     except shodan.APIError:
         return None
-    
+
     return host
 
 
@@ -152,3 +152,12 @@ def get_certificate_status(cert_data):
             return cert_success
     else:
         return cert_mismatch
+
+
+def get_ip_asn(ip_addr):
+
+    response = requests.get('https://api.iptoasn.com/v1/as/ip/' + ip_addr)
+    if response.ok:
+        return response
+    else:
+        return None
