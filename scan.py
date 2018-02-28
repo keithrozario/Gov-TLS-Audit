@@ -5,11 +5,12 @@ from datetime import datetime
 from custom_config import http_success
 from custom_config import csv_file, json_file, full_json_file, csv_header, hostname_file
 
-from get_functions import get_hostname, get_domain
-from get_functions import get_site, get_input_fields
-from get_functions import get_ip, get_shodan, get_ip_asn
-from get_functions import get_cert, get_certificate_status
-from format_functions import format_json_data, format_csv_data
+from functions.get_functions import get_hostname, get_domain
+from functions.get_functions import get_site, get_input_fields, get_site_title
+from functions.get_functions import get_ip, get_ip_asn
+from functions.get_functions import get_cert, get_certificate_status
+from functions.get_functions import get_shodan
+from functions.format_functions import format_json_data, format_csv_data
 
 
 def append_http(site_url, tls_flag=False):
@@ -52,8 +53,8 @@ if __name__ == "__main__":
         csv_writer = csv.writer(csvfile, delimiter=',')
         csv_writer.writerow(csv_header)
 
-    with open(hostname_file) as f:
-    # with open('files/hostnames_test.txt') as f:
+    # with open(hostname_file) as f:
+    with open('files/hostnames_test.txt') as f:
          hostnames = f.readlines()
 
     hostnames = [x.strip() for x in hostnames]
@@ -67,15 +68,15 @@ if __name__ == "__main__":
         site_data['domain'] = get_domain(hostname)
         site_data['ip'] = get_ip(site_data['hostname'])
 
-        if site_data['ip']:
+        if site_data['ip'] and site_data['ip'][:3] != '10.':
 
             # Shodan Scan
-            # logger.info("INFO: Calling Shodan for : " + site_data['ip'])
-            # shodan_results = get_shodan(site_data['ip'])
-            # if shodan_results:
-            #     site_data['shodan'] = shodan_results
-            # else:
-            #     logger.info("WARNING: No Shodan Results for IP")
+            logger.info("INFO: Calling Shodan for : " + site_data['ip'])
+            shodan_results = get_shodan(site_data['ip'])
+            if shodan_results:
+                site_data['shodan'] = shodan_results
+            else:
+                logger.info("WARNING: No Shodan Results for IP")
 
             # ASN Info
             asn_info = get_ip_asn(site_data['ip'])
@@ -96,6 +97,11 @@ if __name__ == "__main__":
                 form_fields = get_input_fields(site_data['httpResponse'].content)
                 if form_fields:
                     site_data['formFields'] = form_fields
+
+                # Http request successful check for form Fields
+                site_title = get_site_title(site_data['httpResponse'].content)
+                if site_title:
+                    site_data['siteTitle'] = site_title
 
                 # Check if re-directed to https, set TLS_Redirect
                 if site_data['httpResponse'].history:
@@ -140,17 +146,19 @@ if __name__ == "__main__":
             site_data['TLSRedirect'] = TLS_redirect
             site_data['TLSSiteExist'] = TLS_site_exist
 
+            # Write all this to file
+            site_data_json = format_json_data(site_data)
+            site_jsons.append(site_data_json)
+            csv_list = format_csv_data(site_data_json)
+
+            # Write to CSV only if IP
+            with open(csv_file, 'a', newline='') as csvfile:
+                csv_writer = csv.writer(csvfile, delimiter=',')
+                csv_writer.writerow(csv_list)
         else:
             logger.info("ERROR: No IP Found")
 
-        site_data_json = format_json_data(site_data)
-        site_jsons.append(site_data_json)
-        csv_list = format_csv_data(site_data_json)
-
-        with open(csv_file, 'a', newline='') as csvfile:
-            csv_writer = csv.writer(csvfile, delimiter=',')
-            csv_writer.writerow(csv_list)
-
+        # Write to JSONs (even it's just IP)
         with open(json_file, 'a') as outfile:
             json.dump(site_data_json, outfile, cls=DateTimeEncoder)
             outfile.write("\n")
