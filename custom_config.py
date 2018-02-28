@@ -37,6 +37,7 @@ csv_header.extend(csv_http_headers)
 csv_header.extend(csv_ip)
 csv_header.extend(csv_optional)
 csv_header.extend(['shodan_ports','shodan_last_update'])
+csv_header.extend(['html_size'])
 
 # list of file extensions to skip
 skip_extensions = ['pdf', 'txt', 'xls', 'doc', 'jpg', 'png']

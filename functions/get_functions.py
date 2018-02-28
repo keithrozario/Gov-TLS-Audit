@@ -61,7 +61,7 @@ def get_site(site_url, browser, timeout=custom_config.timeout, verify=False):
         response = CustomResponse(-2, 'Connection Error')
     except requests.exceptions.ReadTimeout:
         response = CustomResponse(-3, 'Read Time Out')
-    except requests.exceptions.TooManyRedn/airects:
+    except requests.exceptions.TooManyRedirects:
         response = CustomResponse(-4, 'Too Many Redirects')
     except requests.exceptions.RequestException:
         response = CustomResponse(-5, 'Unknown Requests Error')
@@ -200,6 +200,8 @@ def get_site_title(response):
         site_title = html_content.title.string
         site_title = site_title.strip()
     except KeyError:
-        return ""
+        return None
+    except AttributeError:
+        return None
 
     return site_title

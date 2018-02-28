@@ -1,6 +1,7 @@
 from custom_config import csv_data, csv_cert_data, csv_cert_issuer, csv_http_headers, csv_header, csv_ip
 from custom_config import csv_optional, csv_shodan
 import json
+from custom_config import http_success
 
 
 def copy_over(source_dict, destination_dict, source_field, destination_field, field_type='keyValue'):
@@ -141,6 +142,9 @@ def format_json_data(site_data):
                     for header_field in site_data[response_dict].headers._store.items():
                         result[response_dict]['headers'][header_field[1][0]] = header_field[1][1]
 
+            if hasattr(site_data[response_dict], 'content'):
+                result[response_dict]['htmlSize'] = len(site_data[response_dict].content)
+
     if 'certData' in site_data:
         result[certData_dict] = dict()
 
@@ -206,6 +210,7 @@ def format_csv_data(site_data_json):
     result = []
 
     if site_data_json['ip'] is None:
+
         result.append(site_data_json['hostname'])
 
         # Append Fail and end the row
@@ -279,5 +284,13 @@ def format_csv_data(site_data_json):
                 result.append('')
         else:
             [result.append('') for x in range(len(csv_shodan))]
+
+    if 'httpResponse' in site_data_json:
+        if 'htmlSize' in site_data_json['httpResponse']:
+            result.append(site_data_json['httpResponse']['htmlSize'])
+        else:
+            result.append('')
+    else:
+        result.append('')
 
     return result

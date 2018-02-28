@@ -53,8 +53,8 @@ if __name__ == "__main__":
         csv_writer = csv.writer(csvfile, delimiter=',')
         csv_writer.writerow(csv_header)
 
-    # with open(hostname_file) as f:
-    with open('files/hostnames_test.txt') as f:
+    with open(hostname_file) as f:
+    # with open('files/hostnames_test.txt') as f:
          hostnames = f.readlines()
 
     hostnames = [x.strip() for x in hostnames]
@@ -70,19 +70,6 @@ if __name__ == "__main__":
 
         if site_data['ip'] and site_data['ip'][:3] != '10.':
 
-            # Shodan Scan
-            logger.info("INFO: Calling Shodan for : " + site_data['ip'])
-            shodan_results = get_shodan(site_data['ip'])
-            if shodan_results:
-                site_data['shodan'] = shodan_results
-            else:
-                logger.info("WARNING: No Shodan Results for IP")
-
-            # ASN Info
-            asn_info = get_ip_asn(site_data['ip'])
-            if asn_info:
-                site_data['asnInfo'] = asn_info
-
             # Request HTTP Site
             http_url = append_http(hostname, False)
             logger.info("INFO: HTTP Request: " + http_url)
@@ -91,7 +78,24 @@ if __name__ == "__main__":
             site_data['httpResponse'] = request_response['response']
 
             # Check response
-            if site_data['httpResponse'].status_code in http_success:
+            if site_data['httpResponse'].status_code not in http_success:
+                logger.info("ERROR: HTTP request failed status code=" +
+                            str(site_data['httpResponse'].status_code))
+                continue  # go to next site
+            else:
+
+                # Shodan Scan
+                logger.info("INFO: Calling Shodan for : " + site_data['ip'])
+                shodan_results = get_shodan(site_data['ip'])
+                if shodan_results:
+                    site_data['shodan'] = shodan_results
+                else:
+                    logger.info("WARNING: No Shodan Results for IP")
+
+                # ASN Info
+                asn_info = get_ip_asn(site_data['ip'])
+                if asn_info:
+                    site_data['asnInfo'] = asn_info
 
                 # Http request successful check for form Fields
                 form_fields = get_input_fields(site_data['httpResponse'].content)
@@ -113,8 +117,6 @@ if __name__ == "__main__":
                         TLS_redirect = False
                 else:
                     TLS_redirect = False
-            else:
-                TLS_redirect = False
 
             # No TLS Redirection, try direct https://
             if not TLS_redirect:
