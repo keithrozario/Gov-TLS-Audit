@@ -228,7 +228,10 @@ def format_csv_data(site_data_json):
 
         if 'issuer' in site_data_json['certData']:
             for data in csv_cert_issuer:
-                result.append(site_data_json['certData']['issuer'][data])
+                if data in site_data_json['certData']['issuer']:
+                    result.append(site_data_json['certData']['issuer'][data])
+                else:
+                    result.append('')
         else:
             for c in range(len(csv_cert_issuer)):
                 result.append('')
