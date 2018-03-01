@@ -283,7 +283,7 @@ def format_csv_data(site_data_json):
             else:
                 result.append('')
         else:
-            [result.append('') for x in range(len(csv_shodan))]
+            result.append('')
 
     if 'httpResponse' in site_data_json:
         if 'htmlSize' in site_data_json['httpResponse']:
