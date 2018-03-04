@@ -65,8 +65,10 @@ if __name__ == "__main__":
 
         site_data = dict()
         site_data['hostname'] = get_hostname(hostname)
+        site_data['FQDN'] = get_hostname(hostname)
         site_data['domain'] = get_domain(hostname)
         site_data['ip'] = get_ip(site_data['hostname'])
+        site_data['scanDate'] = datetime.now()
 
         if site_data['ip'] and site_data['ip'][:3] != '10.':
 
