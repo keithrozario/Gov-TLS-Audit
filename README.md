@@ -16,9 +16,11 @@ crawl.py crawls from set number of urls, looking for all urls in the .gov.my dom
 
 Results are available in the output/ folder. Results are given in JSON, JSONL and CSV formats.CSV Formats has only subset of the data, consider using the JSON or JSONL for full record set. Or use the API.
 
+:warning: copy-pasting the csv from the RAW data on github won't work. You need to download the entire contents of the repo and get the csv from there. :warning:
+
 # API
 
-API is available on https://siteaudit.sayakenahack.com/api/siteDetails?FQDN= 
+API is available on https://siteaudit.sayakenahack.com/api/siteDetails?FQDN=
 
 Only one endpoint is available for now. API returns the latest scan, API data model to be published shortly. I chose to use the term FQDN (Fully Qualified Domain Name) as the parameter name, as it's more explicit than the ambigiously named 'hostname'. 
 
