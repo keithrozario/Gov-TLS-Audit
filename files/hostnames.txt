@@ -21,7 +21,6 @@ aduan.kraftangan.gov.my
 aduan.mbsa.gov.my
 aduan.mpaj.gov.my
 aduan.mpklang.gov.my
-aduan.mpsepang.gov.my
 aduan.perak.gov.my
 aduan.sabah.gov.my
 aduan.skmm.gov.my
@@ -84,7 +83,6 @@ arahankpkrv2.jkr.gov.my
 architec.jkr.gov.my
 arkib.jkkn.gov.my
 army.mod.gov.my
-article&id=6011&itemid=2733&lang=ms.
 aset.mohe.gov.my
 aspa.civildefence.gov.my
 asyikfm.rtm.gov.my
@@ -268,7 +266,7 @@ ekehadiran.jais.gov.my
 ekenderaan.pahang.gov.my
 ekenderaan.selangor.gov.my
 ekereta.treasury.gov.my
-ekl.mpsepang.gov.my
+ekl.mpsepang.gov.my/sso
 eklaim.lkim.gov.my
 eklinik.dbkl.gov.my
 ekompaun.mpk.gov.my

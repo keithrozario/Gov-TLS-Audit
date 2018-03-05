@@ -12,9 +12,10 @@ http_success = [200, 203]
 # input/output files
 visited_urls_file = 'files/visited_urls.txt'
 hostname_file = 'files/hostnames.txt'
-csv_file = 'files/output.csv'
-json_file = 'files/output.jsonl'
-full_json_file = 'files/full_output.json'
+domain_file = 'files/domains.txt'
+csv_file = 'output/output.csv'
+json_file = 'output/output.jsonl'
+full_json_file = 'output/full_output.json'
 processed_url_file = 'files/processed_urls.txt'
 
 # csv output
@@ -23,8 +24,9 @@ csv_cert_data = ['serialNumber', 'notValidBefore', 'notValidAfter',
                  'signatureHashAlgorithm', 'statusCode', 'statusMessage']
 csv_cert_issuer = ['commonName']
 csv_http_headers = ['Server', 'X-Powered-By']
-csv_optional = ['formFields']
+csv_optional = ['formFields', 'siteTitle']
 csv_ip = ['asn', 'asnCountryCode', 'isp']
+csv_shodan =['ports', 'lastUpdate']
 
 # header of csv file
 csv_header = []
@@ -34,6 +36,8 @@ csv_header.extend(['issuerCommonName'])  # renamed to something more meaningful
 csv_header.extend(csv_http_headers)
 csv_header.extend(csv_ip)
 csv_header.extend(csv_optional)
+csv_header.extend(['shodan_ports','shodan_last_update'])
+csv_header.extend(['html_size'])
 
 # list of file extensions to skip
 skip_extensions = ['pdf', 'txt', 'xls', 'doc', 'jpg', 'png']
@@ -49,3 +53,8 @@ start_links = ['http://www.kln.gov.my/web/guest/other-ministry',
 
 # Shodan Key File
 shodan_key_file = "/home/l33t/.shodan/key.txt"
+
+# Form fields to skip (not present in csv)
+skip_fields = ['__EVENTTARGET', '__EVENTARGUMENT', '__LASTFOCUS','__VIEWSTATE',
+               '__VIEWSTATEGENERATOR','__PREVIOUSPAGE','__EVENTVALIDATION',
+               '__VIEWSTATEENCRYPTED', '__REQUESTDIGEST']

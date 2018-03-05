@@ -5,7 +5,7 @@ import logging
 import requests
 
 from custom_config import start_links, http_success, skip_extensions, processed_url_file, hostname_file
-from get_functions import get_site, get_hostname
+from functions.get_functions import get_site, get_hostname
 from bs4 import BeautifulSoup, SoupStrainer
 
 
