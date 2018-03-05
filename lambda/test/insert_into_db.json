@@ -1,0 +1,7 @@
+{
+	  "queryStringParameters": {
+      "bucket_name":"jangankenahack",
+      "object_name":"output.jsonl"
+  }	
+
+}
