@@ -56,6 +56,21 @@ def get_links(url, link_number, iteration, links_length):
     return links
 
 
+async def async_get(hostnames, iter):
+
+    loop = asyncio.get_event_loop()
+    futures = [
+        loop.run_in_executor(
+            None,
+            get_links,
+            hostnames[i], i, iter, len(hostnames)
+        )
+        for i in range(len(hostnames))
+    ]
+    for response in await asyncio.gather(*futures):
+        pass
+
+
 async def parallel_get(hostnames, iter):
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
@@ -97,7 +112,7 @@ for i in range(3):
 
     # Code block writes all links in a page to process_url_file
     loop = asyncio.get_event_loop()
-    loop.run_until_complete(parallel_get(next_links, i))
+    loop.run_until_complete(async_get(next_links, i))
 
     visited_links.extend(next_links)
 

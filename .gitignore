@@ -105,3 +105,4 @@ ENV/
 
 #log
 .log
+/logs
