@@ -22,17 +22,17 @@ provider:
         - dynamodb:PutItem
         - dynamodb:BatchWriteItem
       Resource: "arn:aws:dynamodb:us-west-2:*:*"
-    - Effect: Allow
-      Action:
-        - s3:*  # Needed for DEBUG Later, should be specific..
-      Resource: "*" # Needed for DEBUG Later, should be specific ARN
+    # - Effect: Allow
+    #  Action:
+    #    - s3:*  # Needed for DEBUG Later, should be specific..
+    #  Resource: "*" # Needed for DEBUG Later, should be specific ARN
 
 versionFunctions: false # don't keep old versions (there's GIT for that)
 
 functions:
   get_by_fqdn: # function Name
     handler: handler.get_by_fqdn # def within handler.py that will handle this
-    name: ${self:provider.stage}-get_by_FQDN
+    name: ${opt:stage, self:provider.stage}-get_by_FQDN
     description: Get Full TLS Record for fqdn
     events:
       - http:
@@ -40,9 +40,9 @@ functions:
           method: get
   insert_into_dynamo:
     handler: insert.insert_into_dynamo
-    name: ${self:provider.stage}-insert_into_dynamo
+    name: ${opt:stage, self:provider.stage}-insert_into_dynamo
     description: Insert into Dynamo from jsonl file in S3 Bucket. No events. Manual invocation.
-    timeout: 300 #maximum allowed in lambda
+    timeout: 10 # maximum allowed in lambda is 300
 
 ###
 ### Comment all below if you do not wish to create bucket & DynamoDB ###

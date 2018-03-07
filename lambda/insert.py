@@ -56,6 +56,3 @@ def insert_into_dynamo(event, context):
                 batch.put_item(Item=dict_json)
 
             rowcount += 1
-
-
-insert_into_dynamo(1, 1)
