@@ -1,7 +1,14 @@
 import boto3
 import json
-import decimal
 from boto3.dynamodb.conditions import Key, Attr
+
+# Block below is required to avoid Decimal errors in DynamoDB
+import decimal
+from boto3.dynamodb.types import DYNAMODB_CONTEXT
+# Inhibit Inexact Exceptions
+DYNAMODB_CONTEXT.traps[decimal.Inexact] = 0
+# Inhibit Rounded Exceptions
+DYNAMODB_CONTEXT.traps[decimal.Rounded] = 0
 
 table_name = 'siteAuditGovMy'
 table_key = 'FQDN'
