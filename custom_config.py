@@ -58,3 +58,11 @@ shodan_key_file = "/home/l33t/.shodan/key.txt"
 skip_fields = ['__EVENTTARGET', '__EVENTARGUMENT', '__LASTFOCUS','__VIEWSTATE',
                '__VIEWSTATEGENERATOR','__PREVIOUSPAGE','__EVENTVALIDATION',
                '__VIEWSTATEENCRYPTED', '__REQUESTDIGEST']
+
+# aws configuration
+bucket_name = 'files.siteaudit.sayakenahack.com'
+obj_prefix = 'scan_'
+output_dir = 'output/'
+dynamo_table_name = 'siteAuditGovMy'
+aws_region = 'us-west-2'
+endpoint_url = 'https://dynamodb.' + aws_region + '.amazonaws.com'
