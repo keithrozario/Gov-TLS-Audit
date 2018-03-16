@@ -10,7 +10,7 @@ from html.parser import HTMLParser
 
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
-from sslyze.server_connectivity import ServerConnectivityInfo, ServerConnectivityError
+from sslyze.server_connectivity_tester import ServerConnectivityTester, ServerConnectivityError
 from sslyze.synchronous_scanner import SynchronousScanner
 from sslyze.plugins.certificate_info_plugin import CertificateInfoScanCommand
 
@@ -74,12 +74,12 @@ def get_cert(site_json):
     hostname = get_hostname(site_json['hostname'])
 
     try:
-        server_info = ServerConnectivityInfo(hostname=hostname)
-        server_info.test_connectivity_to_server()
+        server_tester = ServerConnectivityTester(hostname=hostname)
+        server_info = server_tester.perform()
         command = CertificateInfoScanCommand()
         synchronous_scanner = SynchronousScanner()
         scan_result = synchronous_scanner.run_scan_command(server_info, command)
-    except ServerConnectivityError:
+    except ServerConnectivityError:  # plugin has very little documentation, keeping this here for now
         return None
 
     return scan_result
