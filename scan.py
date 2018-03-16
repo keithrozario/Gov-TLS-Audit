@@ -54,7 +54,6 @@ if __name__ == "__main__":
         csv_writer.writerow(csv_header)
 
     with open(hostname_file) as f:
-    # with open('files/hostnames_test.txt') as f:
          hostnames = f.readlines()
 
     hostnames = [x.strip() for x in hostnames]
@@ -164,8 +163,11 @@ if __name__ == "__main__":
 
         # Write to JSONs (even it's just IP)
         with open(json_file, 'a') as outfile:
-            json.dump(site_data_json, outfile, cls=DateTimeEncoder)
-            outfile.write("\n")
+            if len(site_data_json) > 0:
+                json.dump(site_data_json, outfile, cls=DateTimeEncoder)
+                outfile.write("\n")
+            else:
+                pass  # empty row
 
     # stuff below this line might not work
     full_json = {'results': site_jsons}
