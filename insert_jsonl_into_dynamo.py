@@ -81,6 +81,16 @@ def insert_into_dynamo():
     logger.info('Total rows written:' + str(counter))
 
 
+def upload_and_write():
+    logger.info("Zipping Files")
+    object_name = zip_file()
+    logger.info("Uploading to S3 Bucket: " + object_name)
+    upload_to_s3(object_name)
+    logger.info("Writing to DynamoDB")
+    insert_into_dynamo()
+    logger.info("DONE")
+
+
 if __name__ == "__main__":
     # Logging setup
     logging.basicConfig(filename='logs/upload.log',
@@ -94,10 +104,4 @@ if __name__ == "__main__":
     console.setLevel(logging.INFO)
     logger.addHandler(console)
 
-    logger.info("Zipping Files")
-    object_name = zip_file()
-    logger.info("Uploading to S3 Bucket: " + object_name)
-    upload_to_s3(object_name)
-    logger.info("Writing to DynamoDB")
-    insert_into_dynamo()
-    logger.info("DONE")
+    upload_and_write()
