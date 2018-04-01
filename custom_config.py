@@ -19,7 +19,7 @@ full_json_file = 'output/full_output.json'
 processed_url_file = 'files/processed_urls.txt'
 
 # csv output
-csv_data = ['domain', 'hostname', 'ip', 'TLSRedirect', 'TLSSiteExist']
+csv_data = ['domain', 'hostname', 'ip', 'TLSRedirect', 'redirectType', 'TLSSiteExist']
 csv_cert_data = ['serialNumber', 'notValidBefore', 'notValidAfter',
                  'signatureHashAlgorithm', 'statusCode', 'statusMessage']
 csv_cert_issuer = ['commonName']

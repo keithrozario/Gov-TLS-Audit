@@ -6,11 +6,10 @@ from datetime import datetime
 
 import shodan
 from bs4 import BeautifulSoup
-from html.parser import HTMLParser
 
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
-from sslyze.server_connectivity_tester import ServerConnectivityTester, ServerConnectivityError
+from sslyze.server_connectivity_tester import ServerConnectivityTester, ServerConnectivityError, ServerNotReachableError
 from sslyze.synchronous_scanner import SynchronousScanner
 from sslyze.plugins.certificate_info_plugin import CertificateInfoScanCommand
 
@@ -79,6 +78,8 @@ def get_cert(site_json):
         command = CertificateInfoScanCommand()
         synchronous_scanner = SynchronousScanner()
         scan_result = synchronous_scanner.run_scan_command(server_info, command)
+    except ServerNotReachableError:
+        return None
     except ServerConnectivityError:  # plugin has very little documentation, keeping this here for now
         return None
 
@@ -205,3 +206,25 @@ def get_site_title(response):
         return None
 
     return site_title
+
+
+def get_meta_redirect(content):
+
+    html_content = BeautifulSoup(content, 'html.parser')
+
+    try:
+        # find meta
+        refresh_header = html_content.find('meta', attrs={'http-equiv': 'refresh'})
+        refresh_content = refresh_header['content']
+        url = refresh_content[refresh_content.find("url=") + len("url="):]
+        if url[:5] == 'https':
+            TLS_Redirect = True
+            redirect_type = "meta-tag"
+        else:
+            TLS_Redirect = False
+            redirect_type = "None"
+    except (TypeError, IndexError):
+        TLS_Redirect = False
+        redirect_type = "None"
+
+    return TLS_Redirect, redirect_type

@@ -70,12 +70,13 @@ def format_json_data(site_data):
 
     # mapping from site_data
     mapping = [['hostname', 'hostname', 'keyValue'],
-               ['FQDN','FQDN','keyValue'],
+               ['FQDN', 'FQDN','keyValue'],
                ['scanDate','scanDate','keyValue'],
                ['ip', 'ip', 'keyValue'],
                ['url', 'url', 'keyValue'],
                ['TLSRedirect', 'TLSRedirect', 'keyValue'],
                ['TLSSiteExist', 'TLSSiteExist', 'keyValue'],
+               ['redirectType', 'redirectType', 'keyValue'],
                ['domain', 'domain', 'keyValue'],
                ['formFields', 'formFields', 'keyValue'],
                ['siteTitle', 'siteTitle', 'keyValue']]

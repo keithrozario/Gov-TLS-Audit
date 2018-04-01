@@ -6,7 +6,7 @@ from custom_config import http_success
 from custom_config import csv_file, json_file, full_json_file, csv_header, hostname_file
 
 from functions.get_functions import get_hostname, get_domain
-from functions.get_functions import get_site, get_input_fields, get_site_title
+from functions.get_functions import get_site, get_input_fields, get_site_title, get_meta_redirect
 from functions.get_functions import get_ip, get_ip_asn
 from functions.get_functions import get_cert, get_certificate_status
 from functions.get_functions import get_shodan
@@ -63,6 +63,9 @@ if __name__ == "__main__":
         logger.info("\nHostname: " + hostname)
 
         site_data = dict()
+        site_data_json = dict()
+        csv_list = []
+
         site_data['hostname'] = get_hostname(hostname)
         site_data['FQDN'] = get_hostname(hostname)
         site_data['domain'] = get_domain(hostname)
@@ -133,6 +136,19 @@ if __name__ == "__main__":
                 else:
                     TLS_site_exist = False
 
+            # Last bit of javascript checks
+            if TLS_redirect:
+                site_data['TLSRedirect'] = TLS_redirect
+                site_data['redirectType'] = "HTTP Status Code"
+            elif TLS_site_exist:
+                # TLS Redirect is False, but https site exist, check meta tag
+                site_data['TLSRedirect'], site_data['redirectType'] = get_meta_redirect(site_data['httpResponse'].content)
+            else:
+                site_data['TLSRedirect'] = TLS_redirect
+                site_data['redirectType'] = "None"
+
+            site_data['TLSSiteExist'] = TLS_site_exist
+
             # TLS Site Exist, check certs
             if TLS_site_exist:
                 logger.info("INFO: HTTPs Detected. Checking Certs")
@@ -146,8 +162,7 @@ if __name__ == "__main__":
                     logger.info("ERROR: Unable to get Certificate Data")
             else:
                 logger.info("INFO: HTTPs not detected. Bypassing Cert Checks")
-            site_data['TLSRedirect'] = TLS_redirect
-            site_data['TLSSiteExist'] = TLS_site_exist
+
 
             # Write all this to file
             site_data_json = format_json_data(site_data)
@@ -158,16 +173,17 @@ if __name__ == "__main__":
             with open(csv_file, 'a', newline='') as csvfile:
                 csv_writer = csv.writer(csvfile, delimiter=',')
                 csv_writer.writerow(csv_list)
+
+            # Write to JSONs (even it's just IP)
+            with open(json_file, 'a') as outfile:
+                if len(site_data_json) > 0:
+                    json.dump(site_data_json, outfile, cls=DateTimeEncoder)
+                    outfile.write("\n")
+                else:
+                    pass  # empty row
+
         else:
             logger.info("ERROR: No IP Found")
-
-        # Write to JSONs (even it's just IP)
-        with open(json_file, 'a') as outfile:
-            if len(site_data_json) > 0:
-                json.dump(site_data_json, outfile, cls=DateTimeEncoder)
-                outfile.write("\n")
-            else:
-                pass  # empty row
 
     # stuff below this line might not work
     full_json = {'results': site_jsons}
