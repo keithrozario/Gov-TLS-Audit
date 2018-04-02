@@ -87,6 +87,8 @@ def get_cert(site_json):
         return None
     except RuntimeError:
         return None
+    except ValueError:
+        return None
 
     return scan_result
 
