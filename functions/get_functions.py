@@ -3,6 +3,7 @@ import socket
 import csv
 import tldextract
 from datetime import datetime
+import sslyze
 
 import shodan
 from bs4 import BeautifulSoup
@@ -78,9 +79,13 @@ def get_cert(site_json):
         command = CertificateInfoScanCommand()
         synchronous_scanner = SynchronousScanner()
         scan_result = synchronous_scanner.run_scan_command(server_info, command)
-    except ServerNotReachableError:
+    except sslyze.server_connectivity_tester.ServerNotReachableError:
         return None
-    except ServerConnectivityError:  # plugin has very little documentation, keeping this here for now
+    except sslyze.server_connectivity_tester.ServerConnectivityError:  # plugin has very little documentation, keeping this here for now
+        return None
+    except OSError:
+        return None
+    except RuntimeError:
         return None
 
     return scan_result
@@ -220,6 +225,9 @@ def get_meta_redirect(content):
         if url[:5] == 'https':
             TLS_Redirect = True
             redirect_type = "meta-tag"
+        elif html_content.text.find("window.location.") > 0:
+            TLS_Redirect = False
+            redirect_type = "javascript?"
         else:
             TLS_Redirect = False
             redirect_type = "None"
