@@ -10,8 +10,8 @@
                 "dynamodb:PutItem"
             ],
             "Resource": [
-                "arn:aws:dynamodb:us-west-2:820756113164:table/siteAuditGovMy",
-                "arn:aws:s3:::files.siteaudit.sayakenahack.com/*"
+                "arn:aws:dynamodb:us-west-2:<account id>:table/siteAuditGovMy",
+                "arn:aws:s3:::<bucket name>"
             ]
         }
     ]
