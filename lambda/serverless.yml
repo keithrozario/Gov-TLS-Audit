@@ -22,10 +22,10 @@ provider:
         - dynamodb:PutItem
         - dynamodb:BatchWriteItem
       Resource: "arn:aws:dynamodb:us-west-2:*:*"
-    # - Effect: Allow
-    #  Action:
-    #    - s3:*  # Needed for DEBUG Later, should be specific..
-    #  Resource: "*" # Needed for DEBUG Later, should be specific ARN
+    - Effect: Allow
+      Action:
+        - s3:ListBucket  # Needed for DEBUG Later, should be specific..
+      Resource: "*" # Needed for DEBUG Later, should be specific ARN
 
 versionFunctions: false # don't keep old versions (there's GIT for that)
 
@@ -38,11 +38,14 @@ functions:
       - http:
           path: siteDetails # path of this function
           method: get
-  insert_into_dynamo:
-    handler: insert.insert_into_dynamo
-    name: ${opt:stage, self:provider.stage}-insert_into_dynamo
-    description: Insert into Dynamo from jsonl file in S3 Bucket. No events. Manual invocation.
-    timeout: 10 # maximum allowed in lambda is 300
+  list_scans:
+    handler: list_scans.list_scans
+    name: ${opt:stage, self:provider.stage}-list_scans
+    description: List scan files in S3 Bucket
+    events:
+      - http:
+          path: listScans
+          method: get
 
 ###
 ### Comment all below if you do not wish to create bucket & DynamoDB ###
