@@ -19,7 +19,7 @@
         "SNS:AddPermission",
         "SNS:Subscribe"
       ],
-      "Resource": "arn:aws:sns:ap-southeast-1:820756113164:GovTLS",
+      "Resource": "arn:aws:sns:us-west-2:820756113164:GovTLS",
       "Condition": {
         "StringEquals": {
           "AWS:SourceOwner": "820756113164"
@@ -33,7 +33,7 @@
   "AWS": "*"
   },
   "Action": "SNS:Publish",
-  "Resource": "arn:aws:sns:ap-southeast-1:820756113164:GovTLS",
+  "Resource": "arn:aws:sns:us-west-2:820756113164:GovTLS",
   "Condition": {
     "StringEquals": {
       "aws:SourceArn": "arn:aws:s3:::files.siteaudit.sayakenahack.com"
