@@ -108,5 +108,5 @@ ENV/
 /logs
 
 #lambda
-/lambda/.serverless
-/lambda/node_modules
+/lambda/.serverless/
+/lambda/node_modules/
