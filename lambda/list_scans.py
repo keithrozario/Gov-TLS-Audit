@@ -8,7 +8,7 @@ headers = {'Access-Control-Allow-Origin': '*'}  # allow CORS
 def list_scans(event, context):
 
     bucket_name = 'files.siteaudit.sayakenahack.com'
-    base_url = 'https://files.siteaudit.sayakenahack.com/'
+    base_url = 'https://siteaudit.sayakenahack.com/api/downloadScans?file='
     keys = []
     status_code = 200
     file_prefix = 'scan'
@@ -25,6 +25,7 @@ def list_scans(event, context):
 
     # sort by name, reverse to show latest file first
     keys.sort(reverse=True)
+    # Json needs to be string for API Gateway
     result = json.dumps({'files': keys})
 
     return {'statusCode': status_code,
