@@ -106,3 +106,7 @@ ENV/
 #log
 .log
 /logs
+
+#lambda
+/lambda/.serverless
+/lambda/node_modules
