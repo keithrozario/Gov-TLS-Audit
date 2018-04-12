@@ -9,7 +9,7 @@ headers = {'Access-Control-Allow-Origin': '*'}  # allow CORS
 def list_scans(event, context):
 
     bucket_name = 'files.siteaudit.sayakenahack.com'
-    base_url = 'https://siteaudit.sayakenahack.com/api/downloadScan?fileName='
+    base_url = 'https://api.sayakenahack.com/downloadScan?fileName='
     keys = []
     status_code = 200
     file_prefix = 'scan'
