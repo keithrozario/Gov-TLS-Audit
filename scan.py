@@ -32,7 +32,7 @@ if __name__ == "__main__":
 
     # Logging setup
     logging.basicConfig(filename='logs/scan.log',
-                        filemode='a',
+                        filemode='w',  # file gets uploaded to S3 at end of run
                         level=logging.INFO,
                         format='%(asctime)s %(message)s',
                         datefmt='%m/%d/%Y %I:%M:%S %p')
@@ -162,7 +162,6 @@ if __name__ == "__main__":
                     logger.info("ERROR: Unable to get Certificate Data")
             else:
                 logger.info("INFO: HTTPs not detected. Bypassing Cert Checks")
-
 
             # Write all this to file
             site_data_json = format_json_data(site_data)
