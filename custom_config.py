@@ -66,3 +66,4 @@ output_dir = 'output/'
 dynamo_table_name = 'siteAuditGovMy'
 aws_region = 'us-west-2'
 endpoint_url = 'https://dynamodb.' + aws_region + '.amazonaws.com'
+s3_upload_dir = "files"  # directory of bucket to upload file into
