@@ -72,6 +72,19 @@ functions:
           method: get
           contentHandling: CONVERT_TO_BINARY
           # cors: true  # disabling cors on this end point
+  history_details:
+    handler: site_history.history_by_fqdn
+    name: ${opt:stage, self:provider.stage}-history_by_fqdn
+    description: View History of Site
+    timeout: 300 # maximum timeout for the downloads
+    memorySize: 384 # more RAM = more CPU on lambda, need more CPU!
+    reservedConcurrency: 2 # maximum number of concurrent history
+    events:
+      - http:
+          path: siteHistory
+          method: get
+          cors: true
+
 
 ###
 ### Comment all below if you do not wish to create bucket & DynamoDB ###

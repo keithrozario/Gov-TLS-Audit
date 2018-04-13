@@ -15,13 +15,13 @@ sls invoke -f list_scans --stage Prod
 echo -r "\n\nDownload Scans\n"
 sls invoke -f download_zip -p test/200_download_zip.json >> output.txt --stage Prod
 echo -e "\n\nCurling Rest API\n"
-curl https://siteaudit.sayakenahack.com/api/siteDetails?FQDN=www2.selangor.gov.my
+curl https://api.sayakenahack.com/siteDetails?FQDN=www2.selangor.gov.my
 echo -e "\n\nCurling Rest API (non-https)\n"
-curl http://siteaudit.sayakenahack.com/api/siteDetails?FQDN=1govserv.1govnet.gov.my
+curl https://api.sayakenahack.com/api/siteDetails?FQDN=1govserv.1govnet.gov.my
 echo -e "\n\nCurling Rest API (decimal record)\n"
-curl https://siteaudit.sayakenahack.com/api/siteDetails?FQDN=pengundi.spr.gov.my
+curl https://api.sayakenahack.com/siteDetails?FQDN=pengundi.spr.gov.my
 echo -e "\n\nCurling Rest listed scans\n"
-curl https://siteaudit.sayakenahack.com/api/listScans
+curl https://api.sayakenahack.com/listScans
 echo -e "\n\nGetting a sample download\n"
-wget https://siteaudit.sayakenahack.com/api/downloadZip?file=scan_2018-04-07.zip scan_2018-04-07.zip
+wget https://api.sayakenahack.com/downloadZip?file=scan_2018-04-07.zip scan_2018-04-07.zip
 echo -e "\n#####DONE####\n"
