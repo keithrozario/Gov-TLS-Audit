@@ -36,16 +36,16 @@ def zip_file():
     return object_name
 
 
-def upload_to_s3(object_name, dir_name=None):
+def upload_to_s3(object_name, s3_dir_name=None, local_dir_name=custom_config.output_dir):
 
-    if dir_name:
-        object_path = custom_config.s3_upload_dir + object_name
+    if s3_dir_name is None:
+        object_path = custom_config.s3_upload_dir + "/" + object_name
     else:
-        object_path = dir_name + "/" + object_name
+        object_path = s3_dir_name + "/" + object_name
 
     # S3 setup
     s3 = boto3.resource('s3')  # need resource for meta.client.upload_file
-    s3.meta.client.upload_file(custom_config.output_dir + object_name,
+    s3.meta.client.upload_file(local_dir_name + object_name,
                                custom_config.bucket_name,
                                object_path,
                                )
@@ -91,6 +91,8 @@ def upload_and_write():
     object_name = zip_file()
     logger.info("Uploading to S3 Bucket: " + object_name)
     upload_to_s3(object_name)
+    logger.info("Uploading logs S3 Bucket: logs/scan.log")
+    upload_to_s3("scan.log", "logs", "logs/")
     logger.info("Writing to DynamoDB")
     insert_into_dynamo()
     logger.info("DONE")
@@ -108,5 +110,4 @@ if __name__ == "__main__":
     console = logging.StreamHandler()
     console.setLevel(logging.INFO)
     logger.addHandler(console)
-
     upload_and_write()
