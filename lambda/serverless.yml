@@ -41,13 +41,34 @@ provider:
 versionFunctions: false # don't keep old versions (there's GIT for that)
 
 functions:
-  get_by_fqdn: # function Name
-    handler: handler.get_by_fqdn # def within handler.py that will handle this
-    name: ${opt:stage, self:provider.stage}-get_by_FQDN
+  get_latest_fqdn: # function Name
+    handler: main.get_latest_fqdn # def within main.py that will handle this
+    name: ${opt:stage, self:provider.stage}-get_latest_fqdn
     description: Get Full TLS Record for fqdn
     events:
       - http:
-          path: siteDetails # path of this function
+          path: siteLatest # path of this function
+          method: get
+          cors: true
+  get_history_fqdn:
+    handler: main.get_history_fqdn
+    name: ${opt:stage, self:provider.stage}-get_history_fqdn
+    description: View History of Site
+    timeout: 6 # maximum timeout for the downloads
+    memorySize: 256 # more RAM = more CPU on lambda, need more CPU!
+    reservedConcurrency: 2 # maximum number of concurrent history
+    events:
+      - http:
+          path: siteHistory
+          method: get
+          cors: true
+  get_scan:
+    handler: main.get_scan
+    name: ${opt:stage, self:provider.stage}-get_scan
+    description: View History of Site
+    events:
+      - http:
+          path: scanDetails
           method: get
           cors: true
   list_scans:
@@ -72,18 +93,7 @@ functions:
           method: get
           contentHandling: CONVERT_TO_BINARY
           # cors: true  # disabling cors on this end point
-  history_details:
-    handler: site_history.history_by_fqdn
-    name: ${opt:stage, self:provider.stage}-history_by_fqdn
-    description: View History of Site
-    timeout: 300 # maximum timeout for the downloads
-    memorySize: 384 # more RAM = more CPU on lambda, need more CPU!
-    reservedConcurrency: 2 # maximum number of concurrent history
-    events:
-      - http:
-          path: siteHistory
-          method: get
-          cors: true
+
 
 
 ###
