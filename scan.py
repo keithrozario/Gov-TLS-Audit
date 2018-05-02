@@ -170,7 +170,10 @@ if __name__ == "__main__":
 
             # Write to CSV only if IP
             with open(csv_file, 'a', newline='') as csvfile:
-                csv_writer = csv.writer(csvfile, delimiter=',')
+                csv_writer = csv.writer(csvfile,
+                                        delimiter=',',
+                                        quotechar='"',
+                                        quoting=csv.QUOTE_MINIMAL)
                 csv_writer.writerow(csv_list)
 
             # Write to JSONs (even it's just IP)
