@@ -99,8 +99,7 @@ def format_json_data(site_data):
 
     # mapping from certData['certificate_chain[0]
     mapping_cert_0 = [['not_valid_after', 'notValidAfter', 'attribute'],
-                      ['not_valid_before', 'notValidBefore', 'attribute'],
-                      ['serial_number', 'serialNumber', 'attribute']]
+                      ['not_valid_before', 'notValidBefore', 'attribute']]
 
     # mapping from certData['server_info']
     mapping_server_info = [['highest_ssl_version_supported', 'highestTLSVersionSupported', 'attribute'],
@@ -170,6 +169,12 @@ def format_json_data(site_data):
             if hasattr(cert_chain[0], 'signature_hash_algorithm'):
                 result[certData_dict] = copy_over(cert_chain[0].signature_hash_algorithm, result[certData_dict],
                                                   'name','signatureHashAlgorithm', 'attribute')
+            # Serial
+            if hasattr(cert_chain[0], 'serial_number'):
+                serial_hex = str(hex(cert_chain[0].serial_number)).upper()[2:]
+                serial_pretty = ':'.join([serial_hex[i:i+2] for i in range(0, len(serial_hex), 2)])
+                result[certData_dict]['serialNumber'] = serial_pretty
+
             # issuer
             if hasattr(cert_chain[0], 'issuer'):
                 result[certData_dict]['issuer'] = dict()

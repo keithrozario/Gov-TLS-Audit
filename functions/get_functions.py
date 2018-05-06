@@ -144,7 +144,7 @@ def get_certificate_status(cert_data):
     cert_mismatch = {'statusCode': '-1', 'statusMessage': 'Certificate & Hostname mismatch'}
     cert_expired = {'statusCode': '-1', 'statusMessage': 'Certificate expired'}
     cert_future = {'statusCode': '-1', 'statusMessage': 'Certificate is future dated'}
-    cert_no_intermediate = {'statusCode': '0',\
+    cert_no_intermediate = {'statusCode': '0',
                             'statusMessage': 'Host did not provide intermediate certs, unable to build trust chain'}
     cert_success = {'statusCode': '1', 'statusMessage': 'Pass'}
 
