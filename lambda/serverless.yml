@@ -80,6 +80,15 @@ functions:
           path: listScans
           method: get
           cors: true
+  list_hostnames:
+    handler: list_scans.list_hostnames
+    name: ${opt:stage, self:provider.stage}-list_hostnames
+    description: List hostnames that are scanned
+    events:
+      - http:
+          path: listFQDNs
+          method: get
+          cors: true
   download_zip:
     handler: download_scan.download_zip
     name: ${opt:stage, self:provider.stage}-download_scan
