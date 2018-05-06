@@ -1,6 +1,7 @@
 from custom_config import csv_data, csv_cert_data, csv_cert_issuer, csv_http_headers, csv_header, csv_ip
 from custom_config import csv_optional, csv_shodan
 import json
+import hashlib
 from custom_config import http_success
 
 
@@ -146,6 +147,8 @@ def format_json_data(site_data):
 
             if hasattr(site_data[response_dict], 'content'):
                 result[response_dict]['htmlSize'] = len(site_data[response_dict].content)
+                html_string = str(site_data[response_dict].content)
+                result[response_dict]['htmlHash'] = hashlib.sha1(html_string.encode()).hexdigest()
 
     if 'certData' in site_data:
         result[certData_dict] = dict()
