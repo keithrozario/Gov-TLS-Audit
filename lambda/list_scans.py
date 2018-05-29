@@ -10,7 +10,7 @@ headers = {'Access-Control-Allow-Origin': '*'}  # allow CORS
 def list_scans(event, context):
 
     bucket_name = 'files.siteaudit.sayakenahack.com'
-    file_prefix = 'files/scan'  # prefix to scan files from
+    file_prefix = 'files/'  # prefix to scan files from
     base_url = 'https://gov-tls-audit.sayakenahack.com/files/'
     keys = []
     status_code = 200
