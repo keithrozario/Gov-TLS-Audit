@@ -65,6 +65,7 @@ def get_site(site_url, browser, timeout=custom_config.timeout, verify=False):
         response = CustomResponse(-4, 'Too Many Redirects')
     except requests.exceptions.RequestException:
         response = CustomResponse(-5, 'Unknown Requests Error')
+    # I know, I know --- but there's just so many exceptions to catch :(
     except:
         response = CustomResponse(-6, 'Unknown Error')
 
