@@ -101,7 +101,7 @@ def upload_and_write():
 if __name__ == "__main__":
     # Logging setup
     logging.basicConfig(filename='logs/upload.log',
-                        filemode='a',
+                        filemode='w',
                         level=logging.INFO,
                         format='%(asctime)s %(message)s',
                         datefmt='%m/%d/%Y %I:%M:%S %p')
