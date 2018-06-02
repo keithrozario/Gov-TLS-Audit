@@ -5,8 +5,11 @@ import boto3
 import logging
 import json
 import decimal
+import time
 
+from botocore.exceptions import ClientError
 from boto3.dynamodb.types import DYNAMODB_CONTEXT
+
 # Inhibit Inexact Exceptions
 DYNAMODB_CONTEXT.traps[decimal.Inexact] = 0
 # Inhibit Rounded Exceptions
@@ -55,6 +58,31 @@ def remove_nulls(d):
     return {k: v for k, v in d.items() if v is not None and v != ''}
 
 
+def update_table(dynamo_client, table_name, write_capacity):
+
+    try:
+        logger.info("Checking Table")
+        response = dynamo_client.describe_table(TableName=table_name)
+        read_capacity = response['Table']['ProvisionedThroughput']['ReadCapacityUnits']
+        logger.info("INFO: Table Read Capacity: " + str(read_capacity))
+        logger.info("INFO: Current Write Capacity: " + str(response['Table']['ProvisionedThroughput']['WriteCapacityUnits']))
+        logger.info("INFO: Updating Write Capacity to: " + str(write_capacity))
+        response = dynamo_client.update_table(
+                TableName=table_name,
+                ProvisionedThroughput=
+                {
+                'WriteCapacityUnits': write_capacity,
+                'ReadCapacityUnits': read_capacity
+                })
+        logger.info("INFO: Update Complete")
+    except ClientError:
+        logger.info("WARNING: Unable to Update Table")
+        return 0
+
+    logger.info("GOOD: Table " + response['TableDescription']['TableName'] + " updated")
+    logger.info("INFO: Table info -- ")
+
+
 def insert_into_dynamo():
 
     # Table setup
@@ -62,28 +90,49 @@ def insert_into_dynamo():
                                region_name=custom_config.aws_region,
                                endpoint_url=custom_config.endpoint_url)
     table = dynamo_db.Table(custom_config.dynamo_table_name)
+    dynamo_client = dynamo_db.meta.client
+
+    update_table(dynamo_client,
+                 custom_config.dynamo_table_name,
+                 custom_config.dynamo_table_write_capacity)
 
     with open(custom_config.json_file, 'r') as f:
-        jsons = f.readlines()
+        rows = f.readlines()
 
-    # load each json to a record, and append to json_records
-    counter = 0
-    for row in jsons:
-        counter += 1
-        try:
-            record = json.loads(row,
-                                object_hook=remove_nulls,
-                                parse_float=str(),  # needed to avoid exception thrown
-                                parse_int=str(),  # needed to avoid exception thrown
-                                parse_constant=str())
-            record['dateAdded'] = datetime.date.today().isoformat()
-            table.put_item(Item=record)
-            logger.info('Record: ' + record['FQDN'] + ' put to DB')
+    with table.batch_writer() as batch:
+        # load each json to a record, and append to json_records
+        for row in rows:
+            try:
+                record = json.loads(row,
+                                    object_hook=remove_nulls,
+                                    parse_float=str(),  # needed to avoid exception thrown
+                                    parse_int=str(),  # needed to avoid exception thrown
+                                    parse_constant=str())
+                record['dateAdded'] = datetime.date.today().isoformat()
+                batch.put_item(Item=record)
+                logger.info('Record: ' + record['FQDN'] + ' put to DB')
 
-        except AttributeError:
-            pass
+            except AttributeError:
+                logger.info("ERROR: Attribute Error on row")
 
-    logger.info('Total rows written:' + str(counter))
+    # Update write capacity back to 1
+    update_table(dynamo_client,
+                 custom_config.dynamo_table_name,
+                 1)
+    logger.info('Total rows written:' + str(len(rows)))
+
+    # wait 2 minute before beginning backup as
+    # "On-Demand Backup does not support causal consistency"
+    logger.info('Waiting 2 minutes before backing up table')
+    time.sleep(120)
+
+    # begin backup
+    backup_name = custom_config.dynamo_table_backup_prefix + str(datetime.date.today().isoformat())
+    response = dynamo_client.create_backup(TableName=custom_config.dynamo_table_name,
+                                           BackupName=backup_name)
+    logger.info("Backup Status: " + response['BackupDetails']['BackupStatus'])
+    logger.info("Backup Size: " + str(response['BackupDetails']['BackupSizeBytes']))
+    logger.info("Backup TimeStamp: " + str(response['BackupDetails']['BackupCreationDateTime']))
 
 
 def upload_and_write():
@@ -91,11 +140,12 @@ def upload_and_write():
     object_name = zip_file()
     logger.info("Uploading to S3 Bucket: " + object_name)
     upload_to_s3(object_name)
-    logger.info("Uploading logs S3 Bucket: logs/scan.log")
-    upload_to_s3("scan.log", "logs", "logs/")
     logger.info("Writing to DynamoDB")
     insert_into_dynamo()
+    logger.info("Uploading logs S3 Bucket: logs/scan.log")
     logger.info("DONE")
+    upload_to_s3("scan.log", "logs", "logs/")
+    logger.info("DONE Uploading")
 
 
 if __name__ == "__main__":
