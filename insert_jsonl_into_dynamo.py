@@ -75,8 +75,9 @@ def update_table(dynamo_client, table_name, write_capacity):
                 'ReadCapacityUnits': read_capacity
                 })
         logger.info("INFO: Update Complete")
-    except ClientError:
+    except ClientError as e:
         logger.info("WARNING: Unable to Update Table")
+        logger.info("ERROR: %s" % e.response['Error']['Message'])
         return 0
 
     logger.info("GOOD: Table " + response['TableDescription']['TableName'] + " updated")
