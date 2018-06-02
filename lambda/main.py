@@ -1,6 +1,6 @@
 import boto3
 import json
-from datetime import datetime
+import datetime
 from boto3.dynamodb.conditions import Key
 
 
@@ -104,7 +104,10 @@ def get_history_fqdn(event, context):
     try:
         scan_date_upper = event['queryStringParameters'][scan_date].upper()
     except KeyError:
-        scan_date_upper = datetime.now().isoformat().upper()
+        # Need to ensure UTC+8 in case lambda is running in US (other regions)
+        scan_date_upper = (datetime.datetime.now(datetime.timezone.utc) +
+                           datetime.timedelta(hours=8)).isoformat().upper()[:26]  # [:26] removes the timezone info
+
     # Limit search results
     try:
         limit = int(event['queryStringParameters']['limit'])
