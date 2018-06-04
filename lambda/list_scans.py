@@ -1,7 +1,7 @@
 import boto3
 import decimal
 import json
-import urllib.request
+import urllib.request,urllib.error
 from operator import itemgetter
 
 headers = {'Access-Control-Allow-Origin': '*'}  # allow CORS
@@ -46,10 +46,19 @@ def list_scans(event, context):
 def list_hostnames(event, context):
 
     url_of_hostnames = "https://raw.githubusercontent.com/keithrozario/Gov-TLS-Audit/master/files/hostnames.txt"
-    with urllib.request.urlopen(url_of_hostnames) as response:
-        content = response.read().decode(response.headers.get_content_charset())
-        hostnames = content.split("\n")
+    try:
+        with urllib.request.urlopen(url_of_hostnames) as response:
+            content = response.read().decode(response.headers.get_content_charset())
+        FQDNs = content.split("\n")
+        body = json.dumps({"FQDNs": FQDNs})
+        status_code = 200
+    except urllib.error.HTTPError:
+        status_code = 500
+        body = ""
+    except urllib.error.URLError:
+        status_code = 500
+        body = ""
 
-    return {'statusCode': 200,
+    return {'statusCode': status_code,
             'headers': headers,
-            'body': json.dumps(hostnames)}
+            'body': body}
