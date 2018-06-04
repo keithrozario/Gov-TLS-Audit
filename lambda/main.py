@@ -43,7 +43,7 @@ def get_latest_fqdn(event, context):
 
         if len(response['Items']) > 0:
             status_code = 200
-            result = json.dumps(response['Items'], cls=DecimalEncoder)
+            result = json.dumps(response['Items'][0], cls=DecimalEncoder)
         else:
             status_code = 404
             result = ''
@@ -68,7 +68,7 @@ def get_scan(event, context):
 
     try:
         # Lower case the query
-        query_parameter_lower = event['queryStringParameters'][query_parameter].lower()
+        query_parameter_lower = event['queryStringParameters'][query_parameter].strip().lower()
         # Upper 'T' in isoformat DateTime
         scan_parameter_upper = event['queryStringParameters'][scan_parameter].upper()
         # Query the DB
@@ -79,7 +79,7 @@ def get_scan(event, context):
 
         if len(response['Items']) > 0:
             status_code = 200
-            result = json.dumps(response['Items'], cls=DecimalEncoder)
+            result = json.dumps(response['Items'][0], cls=DecimalEncoder)
         else:
             status_code = 404
             result = ''
