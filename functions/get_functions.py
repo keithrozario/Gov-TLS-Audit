@@ -1,11 +1,10 @@
 import requests
 import socket
-import csv
 import tldextract
 from datetime import datetime
 import sslyze
 
-import shodan
+import json
 from bs4 import BeautifulSoup
 
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
@@ -66,7 +65,7 @@ def get_site(site_url, browser, timeout=custom_config.timeout, verify=False):
     except requests.exceptions.RequestException:
         response = CustomResponse(-5, 'Unknown Requests Error')
     # I know, I know --- but there's just so many exceptions to catch :(
-    except:
+    except :
         response = CustomResponse(-6, 'Unknown Error')
 
     return {'request': request, 'response': response}
@@ -96,17 +95,24 @@ def get_cert(site_json):
     return scan_result
 
 
-def get_shodan(ip_addr):
+def get_shodan(ip_addr, api_key):
 
+    base_url = 'https://api.shodan.io/shodan/host/'
+    url = base_url + ip_addr
+    params = {'key': api_key}
     try:
-        with open(custom_config.shodan_key_file, 'r') as key_file:
-            shodan_api_key = key_file.readline().rstrip()
-            api = shodan.Shodan(shodan_api_key)
-            host = api.host(ip_addr)
-    except shodan.APIError:
+        response = requests.get(url, params=params)
+    except requests.exceptions.SSLError:
+        return None
+    except requests.exceptions.RequestException:
+        return None
+    except:
         return None
 
-    return host
+    if response.ok:
+        return json.loads(response.text)
+    else:
+        return None
 
 
 def get_domain_whois(hostname):
@@ -121,20 +127,6 @@ def get_domain_whois(hostname):
     #
     # return domain_data
     return None
-
-
-def get_urls(filename):
-    urls = []
-
-    with open(filename, 'r', newline='', errors='ignore', encoding="utf8") as csvfile:
-        readerDict = csv.DictReader(csvfile,
-                                    fieldnames=custom_config.csv_columns,
-                                    delimiter=custom_config.csv_delimiter)
-        for row in readerDict:
-            if row['url'] != 'URL':
-                urls.append(row['url'])
-
-    return urls
 
 
 def get_certificate_status(cert_data):

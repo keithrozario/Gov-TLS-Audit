@@ -1,9 +1,11 @@
 import logging
 import json
 import csv
+
 from datetime import datetime
 from custom_config import http_success
 from custom_config import csv_file, json_file, full_json_file, csv_header, hostname_file
+from custom_config import shodan_key_file
 
 from functions.get_functions import get_hostname, get_domain
 from functions.get_functions import get_site, get_input_fields, get_site_title, get_meta_redirect
@@ -24,8 +26,6 @@ class DateTimeEncoder(json.JSONEncoder):
     def default(self, o):
         if isinstance(o, datetime):
             return o.isoformat()
-        if isinstance(o, OpenSslVersionEnum):
-            return str(o)
 
         return json.JSONEncoder.default(self, o)
 
@@ -47,6 +47,9 @@ if __name__ == "__main__":
     browser = 'fireFox'
     site_data_json = []
     site_jsons = []
+
+    with open(shodan_key_file, 'r') as key_file:
+        shodan_api_key = key_file.readline().rstrip()
 
     with open(json_file, 'w') as dumb_file:
         pass
@@ -92,7 +95,7 @@ if __name__ == "__main__":
 
                 # Shodan Scan
                 logger.info("INFO: Calling Shodan for : " + site_data['ip'])
-                shodan_results = get_shodan(site_data['ip'])
+                shodan_results = get_shodan(site_data['ip'], shodan_api_key)
                 if shodan_results:
                     site_data['shodan'] = shodan_results
                 else:
