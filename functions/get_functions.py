@@ -102,16 +102,15 @@ def get_shodan(ip_addr, api_key):
     params = {'key': api_key}
     try:
         response = requests.get(url, params=params)
+        if response.ok:
+            return json.loads(response.text)
+        else:
+            return None
     except requests.exceptions.SSLError:
         return None
     except requests.exceptions.RequestException:
         return None
     except:
-        return None
-
-    if response.ok:
-        return json.loads(response.text)
-    else:
         return None
 
 

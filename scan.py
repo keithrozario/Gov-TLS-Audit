@@ -1,6 +1,7 @@
 import logging
 import json
 import csv
+import sys
 
 from datetime import datetime
 from custom_config import http_success
@@ -20,6 +21,14 @@ def append_http(site_url, tls_flag=False):
         return "https://" + site_url
     else:
         return "http://" + site_url
+
+
+def log_uncaught_exception(exctype, value, tb):
+    logger.info("\n\n#### ERROR #####")
+    logger.info("Type: %s" % exctype)
+    logger.info("Value: %s" % value)
+    logger.info("Traceback: %s" % tb)
+    logger.info("\n\n")
 
 
 class DateTimeEncoder(json.JSONEncoder):
@@ -43,6 +52,9 @@ if __name__ == "__main__":
     console = logging.StreamHandler()
     console.setLevel(logging.INFO)
     logger.addHandler(console)
+
+    # Catch uncaught exceptions
+    sys.excepthook = log_uncaught_exception
 
     browser = 'fireFox'
     site_data_json = []
