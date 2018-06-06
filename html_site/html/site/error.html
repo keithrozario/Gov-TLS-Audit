@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Gov TLS Audit</title>
+	<script src="https://code.jquery.com/jquery-2.1.3.js" integrity="sha256-goy7ystDD5xbXSf+kwL4eV6zOPJCEBD1FBiCElIm+U8=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link href="css/style.css" rel="stylesheet">
+  </script>
+</head>
+<body>
+	<div class="container">
+		<div class="row vertical-center text-center">
+			<div class="form">
+				<div id="login">
+					<h1>Gov TLS Audit</h1>
+					<br>
+					<br>
+
+					<div class="field-wrap">
+						<label>FQDN (e.g. pengundi.spr.gov.my)
+							<span class="req">*</span>
+						</label>
+						<input id="FQDN" autocomplete="off" required>
+
+					</div>
+
+					<button id="callAPI" class="button button-block">Check History</button>
+
+				</div>
+				<div id="img-load">
+					<br>
+					<img src="img/loading.gif" height="42" width="42" alt="">
+				</div>
+				<br>
+				<br>
+				<div id="error_message"></div>
+				<br>
+				<br>
+				<div class="table-responsive">
+					<table class="table table-sm" id="result_table">
+
+						<tbody>
+
+
+						</tbody>
+					</table>
+				</div>
+				<div id="links"><a href="files.html">Full Downloads</a> | <a href="https://github.com/keithrozario/Gov-TLS-Audit/blob/master/files/hostnames.txt">List of Domains</a> | <a href="https://www.keithrozario.com/2018/02/gov-tls-audit.html">More Info</a> </div>
+			</div>
+			<!-- /form -->
+
+		</div>
+		<!-- row -->
+
+	</div>
+	<!-- container -->
+	<script src="js/main.js"></script>
+
+	<script>
+	</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+service: html_site
+
+plugins:
+  - serverless-finch
+
+provider:
+  name: aws
+
+custom:
+  client:
+    bucketName: gov-tls-audit.sayakenahack.com
+    distributionFolder: html/site
