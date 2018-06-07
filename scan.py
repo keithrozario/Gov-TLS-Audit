@@ -114,33 +114,49 @@ if __name__ == "__main__":
                     else:
                         logger.info("WARNING: No Shodan Results for IP")
                 except:  # lots of issues with shodan_results, temp fix
+                    logger.info("ERROR: SHODAN Query threw and error")
                     logger.exception("message")
 
                 # ASN Info
-                asn_info = get_ip_asn(site_data['ip'])
-                if asn_info:
-                    site_data['asnInfo'] = asn_info
+                logger.info("INFO: Getting ASN Info")
+                try:
+                    asn_info = get_ip_asn(site_data['ip'])
+                    if asn_info:
+                        site_data['asnInfo'] = asn_info
+                except:
+                    logger.info("ERROR: ASN Query threw an error")
+                    logger.exception("message")
 
                 # Http request successful check for form Fields
-                form_fields = get_input_fields(site_data['httpResponse'].content)
-                if form_fields:
-                    site_data['formFields'] = form_fields
+                logger.info("Getting Form Fields")
+                try:
+                    form_fields = get_input_fields(site_data['httpResponse'].content)
+                    if form_fields:
+                        site_data['formFields'] = form_fields
 
-                # Http request successful check for form Fields
-                site_title = get_site_title(site_data['httpResponse'].content)
-                if site_title:
-                    site_data['siteTitle'] = site_title
+                    # Http request successful check for form Fields
+                    site_title = get_site_title(site_data['httpResponse'].content)
+                    if site_title:
+                        site_data['siteTitle'] = site_title
+                except:
+                    logger.info("ERROR: Unable to Parse HTML")
+                    logger.exception("message")
 
                 # Check if re-directed to https, set TLS_Redirect
-                if site_data['httpResponse'].history:
-                    if site_data['httpResponse'].url[4] in ['S', 's']:
-                        logger.info("GOOD: Redirect to HTTPS: " + site_data['httpResponse'].url)
-                        TLS_redirect = True
-                        TLS_site_exist = True
+                logger.info("Checking for HTTPs")
+                try:
+                    if site_data['httpResponse'].history:
+                        if site_data['httpResponse'].url[4] in ['S', 's']:
+                            logger.info("GOOD: Redirect to HTTPS: " + site_data['httpResponse'].url)
+                            TLS_redirect = True
+                            TLS_site_exist = True
+                        else:
+                            TLS_redirect = False
                     else:
                         TLS_redirect = False
-                else:
-                    TLS_redirect = False
+                except:
+                    logger.info("ERROR: Unable to determine https")
+                    logger.exception("message")
 
             # No TLS Redirection, try direct https://
             if not TLS_redirect:
