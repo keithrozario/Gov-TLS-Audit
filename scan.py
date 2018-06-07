@@ -128,7 +128,7 @@ if __name__ == "__main__":
                     logger.exception("message")
 
                 # Http request successful check for form Fields
-                logger.info("Getting Form Fields")
+                logger.info("INFO: Getting Form Fields")
                 try:
                     form_fields = get_input_fields(site_data['httpResponse'].content)
                     if form_fields:
@@ -143,7 +143,7 @@ if __name__ == "__main__":
                     logger.exception("message")
 
                 # Check if re-directed to https, set TLS_Redirect
-                logger.info("Checking for HTTPs")
+                logger.info("INFO: Checking for HTTPs")
                 try:
                     if site_data['httpResponse'].history:
                         if site_data['httpResponse'].url[4] in ['S', 's']:
