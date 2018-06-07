@@ -4,7 +4,7 @@ firefox_UA = 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefo
 browser_UA = {'fireFox': firefox_UA, 'chrome': chrome_UA}
 
 # Requests timeout
-timeout = 10
+timeout = 3
 
 # Successful HTTP Status Codes
 http_success = [200, 203]
