@@ -106,12 +106,15 @@ if __name__ == "__main__":
             else:
 
                 # Shodan Scan
-                logger.info("INFO: Calling Shodan for : " + site_data['ip'])
-                shodan_results = get_shodan(site_data['ip'], shodan_api_key)
-                if shodan_results:
-                    site_data['shodan'] = shodan_results
-                else:
-                    logger.info("WARNING: No Shodan Results for IP")
+                try:
+                    logger.info("INFO: Calling Shodan for : " + site_data['ip'])
+                    shodan_results = get_shodan(site_data['ip'], shodan_api_key)
+                    if shodan_results:
+                        site_data['shodan'] = shodan_results
+                    else:
+                        logger.info("WARNING: No Shodan Results for IP")
+                except:  # lots of issues with shodan_results, temp fix
+                    logger.exception("message")
 
                 # ASN Info
                 asn_info = get_ip_asn(site_data['ip'])

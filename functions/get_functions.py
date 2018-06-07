@@ -98,12 +98,13 @@ def get_cert(site_json):
 def get_shodan(ip_addr, api_key):
 
     base_url = 'https://api.shodan.io/shodan/host/'
-    url = base_url + ip_addr
+    url = base_url + str(ip_addr)
     params = {'key': api_key}
     try:
         response = requests.get(url, params=params)
         if response.ok:
-            return json.loads(response.text)
+            shodan_results = json.loads(response.text)
+            return shodan_results
         else:
             return None
     except requests.exceptions.SSLError:
