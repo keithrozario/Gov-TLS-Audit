@@ -1,8 +1,8 @@
 # Gov-TLS-Audit
 
-Code for Gov-TLS-Audit available at [here](https://gov-tls-audit.sayakenahack.com)
+Gov-TLS-Audit is available [here](https://gov-tls-audit.sayakenahack.com)
 
-This project was created to scan all `.gov.my` domains (and sub-domains) to check TLS Implementation, TLS Redirection (from http to https), Certificate Status (Valid, Expired, hostname mismatch..etc), and other general details about the site.
+Project was created to scan all `.gov.my` domains (and sub-domains) to check TLS Implementation, TLS Redirection (from http to https), Certificate Status (Valid, Expired, hostname mismatch..etc), and other general details about the site.
 
 Version 2.0 includes Shodan search results (when available), the HTML title of the site, and the names of any form fields available on the root directory of the hostname.
 
