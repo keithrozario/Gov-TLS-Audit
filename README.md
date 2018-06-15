@@ -1,8 +1,8 @@
 # Gov-TLS-Audit
 
-Code for siteaudit.sayakenahack.com
+Code for Gov-TLS-Audit available at [here](https://gov-tls-audit.sayakenahack.com)
 
-This project was created to scan all .gov.my domains and check whether the sites deployed TLS, TLS Redirection (from http to https), Certificate Status (Valid, Expired, hostname mismatch..etc), and other general details about the site.
+This project was created to scan all `.gov.my` domains (and sub-domains) to check TLS Implementation, TLS Redirection (from http to https), Certificate Status (Valid, Expired, hostname mismatch..etc), and other general details about the site.
 
 Version 2.0 includes Shodan search results (when available), the HTML title of the site, and the names of any form fields available on the root directory of the hostname.
 
@@ -14,15 +14,11 @@ crawl.py crawls from set number of urls, looking for all urls in the .gov.my dom
 
 # Results
 
-Results are available in the output/ folder. Results are given in JSON, JSONL and CSV formats.CSV Formats has only subset of the data, consider using the JSON or JSONL for full record set. Or use the API.
-
-:warning: copy-pasting the csv from the RAW data on github won't work. You need to download the entire contents of the repo and get the csv from there. :warning:
+Daily scans results are available in csv, json, jsonl formats [here](https://gov-tls-audit.sayakenahack.com/files.html)
 
 # API
 
-API is available on https://siteaudit.sayakenahack.com/api/siteDetails?FQDN=
-
-Only one endpoint is available for now. API returns the latest scan, API data model to be published shortly. I chose to use the term FQDN (Fully Qualified Domain Name) as the parameter name, as it's more explicit than the ambigiously named 'hostname'. 
+API documentation is available [here](https://gov-tls-audit.sayakenahack.com/docs/index.html)
 
 # Lambda
 
