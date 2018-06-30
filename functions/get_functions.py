@@ -12,6 +12,8 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 from sslyze.server_connectivity_tester import ServerConnectivityTester, ServerConnectivityError, ServerNotReachableError
 from sslyze.synchronous_scanner import SynchronousScanner
 from sslyze.plugins.certificate_info_plugin import CertificateInfoScanCommand
+from bs4 import BeautifulSoup, SoupStrainer
+from custom_config import skip_extensions
 
 import custom_config
 
@@ -111,8 +113,6 @@ def get_shodan(ip_addr, api_key):
         return None
     except requests.exceptions.RequestException:
         return None
-    except:
-        return None
 
 
 def get_domain_whois(hostname):
@@ -163,15 +163,18 @@ def get_certificate_status(cert_data):
 def get_ip_asn(ip_addr):
 
     try:
-        response = requests.get('https://api.iptoasn.com/v1/as/ip/' + ip_addr)
+        url = 'https://api.iptoasn.com/v1/as/ip/' + ip_addr
+        response = requests.get(url, timeout=5)
+        if response.ok:
+            return response.text
+        else:
+            return None
+
     except requests.exceptions.SSLError:
         return None
     except requests.exceptions.RequestException:
         return None
-
-    if response.ok:
-        return response.text
-    else:
+    except:
         return None
 
 
@@ -233,3 +236,21 @@ def get_meta_redirect(content):
         redirect_type = "None"
 
     return TLS_Redirect, redirect_type
+
+
+def get_links(content):
+
+    html_content = BeautifulSoup(content, 'html.parser')
+    links = []
+    try:
+        for link in BeautifulSoup(html_content, 'html.parser', parse_only=SoupStrainer('a')):
+            if link.has_attr('href'):
+                # skip internal links, check only for links with http (or https)
+                if str(link['href'])[:4] == 'http':
+                    # and does not end with file extension
+                    if str(link['href'])[-3:] not in skip_extensions:
+                        links.append(link['href'])
+    except NotImplementedError:
+        return None
+
+    return links
