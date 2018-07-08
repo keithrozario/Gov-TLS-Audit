@@ -2,9 +2,9 @@ $(document).ready(function () {
 
   var result_table = document.getElementById("result_table");
   var error_message = document.getElementById("error_message");
-  var baseUrl = "https://api.sayakenahack.com/siteHistory?FQDN=";
+  var baseUrl = "https://govscan.info/api/v2/siteHistory?FQDN=";
   var urlAddition = "";
-  var urlScanDetail = "https://api.sayakenahack.com/scanDetails?FQDN=";
+  var urlScanDetail = "https://govscan.info/api/v2/scanDetails?FQDN=";
 
   $('.form').find('input, textarea').on('keyup blur focus', function (e) {
 

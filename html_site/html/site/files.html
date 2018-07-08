@@ -9,7 +9,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Gov TLS Audit</title>
 	<script src="https://code.jquery.com/jquery-2.1.3.js" integrity="sha256-goy7ystDD5xbXSf+kwL4eV6zOPJCEBD1FBiCElIm+U8=" crossorigin="anonymous"></script>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -26,10 +26,10 @@
 					<br>
 					<img src="img/loading.gif" height="42" width="42" alt="">
 				</div>
-				<div id="scans">
+				<div id="scans" class="table-responsive">
 
 				</div>
-								<br><br><div id="links"><a href="index.html">Search</a> | <a href="https://github.com/keithrozario/Gov-TLS-Audit/blob/master/files/hostnames.txt">List of Domains</a> | <a href="https://www.keithrozario.com/2018/02/gov-tls-audit.html">More Info</a> </div>
+								<br><br><div id="links"><a href="index.html">Search</a> | <a href="https://github.com/keithrozario/Gov-TLS-Audit/blob/master/files/hostnames.txt">List of Domains</a> | <a href="docs/index.html">Documentation</a> </div>
 			</div>
 
 
@@ -54,33 +54,4 @@
 <center><font size="1">
 <a href="https://www.freepik.com/free-photos-vectors/background">Background psd created by Ydlabs - Freepik.com</a></font></center>
 </html>
-<script>
-	const url = "https://api.sayakenahack.com/listScans";
-   	const resultsDiv = document.getElementById('scans');
-   	resultsDiv.innerHTML = "";
-
-  	fetch(url)
-  	.then(function(response) {
-  		 if(response.status === 200){
-   			let scanspan = document.createElement('span');
-   			let spanHead = "<br><br>List of Scans: <br>";
-   			scanspan.innerHTML = spanHead
-   			resultsDiv.appendChild(scanspan)
-   			}
-   			$('#img-load').hide();
-   	return response.json();
-	})
-
-	.then(function(response_json){
- 
-	response_json.files.forEach(function(element) {
-			let filespan = document.createElement('span');
-   			let filelink = "<br><a href=\"" + element.url + "\">"
-   			let filename = element.fileName + " (" + element.fileSize + ")</a>"
-   			filespan.innerHTML = filelink + filename
-   			resultsDiv.appendChild(filespan)
-	})
- 	}).catch(function(error) {
-  		return;
-	});
-</script>
+<script src="js/files.js"></script>
