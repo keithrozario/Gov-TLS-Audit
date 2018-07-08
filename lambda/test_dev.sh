@@ -1,5 +1,5 @@
 #!/bin/bash
-APIBASEURL=https://05upeahuti.execute-api.us-west-2.amazonaws.com/Dev
+APIBASEURL=https://zngyqel9cj.execute-api.us-west-2.amazonaws.com/Development/api/v2
 STAGE=""
 echo -e "Results: 200 with body (first record 1govserv.1govnet.gov.my)\n"
 sls invoke -f get_latest_fqdn -p test/200_get_latest_fqdn.json $STAGE
@@ -21,10 +21,6 @@ echo -e "\n\nCurling Rest API (decimal record)\n"
 curl "$APIBASEURL/siteLatest?FQDN=pengundi.spr.gov.my"
 echo -e "\n\nCurling Rest listed scans\n"
 curl "$APIBASEURL/listScans"
-echo -e "\n\nGetting a sample download via lambda\n"
-wget "$APIBASEURL/downloadScan?fileName=scan_2018-04-07.zip"
-echo -e "\n\nDeleting Download\n"
-rm downloadScan?fileName=scan_2018-04-07.zip
 echo -e "\n\nResults: 200 for 2018-04-13T01:20:01.686064\n"
 sls invoke -f get_history_fqdn -p test/200_get_scan_history.json $STAGE
 echo -e "Results: 200 , 20 records from today\n"

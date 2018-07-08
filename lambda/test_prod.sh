@@ -1,9 +1,9 @@
 #!/bin/bash
 
-APIBASEURL=https://api.sayakenahack.com
-SITEURL=https://gov-tls-audit.sayakenahack.com
+APIBASEURL=https://govscan.info/api/v2
+SITEURL=https://govscan.info
 ZIPFILE=scan_2018-04-13.zip
-STAGE="--stage Prod"
+STAGE="--stage Production"
 
 echo -e "\n\nGetting a sample download via url\n"
 wget $SITEURL/files/$ZIPFILE
@@ -30,10 +30,6 @@ echo -e "\n\nCurling Rest API (decimal record)\n"
 curl "$APIBASEURL/siteLatest?FQDN=pengundi.spr.gov.my"
 echo -e "\n\nCurling Rest listed scans\n"
 curl "$APIBASEURL/listScans"
-echo -e "\n\nGetting a sample download via lambda\n"
-wget "$APIBASEURL/downloadScan?fileName=scan_2018-04-07.zip"
-echo -e "\n\nDeleting Download\n"
-rm downloadScan?fileName=scan_2018-04-07.zip
 echo -e "\n\nResults: 200 for 2018-04-13T01:20:01.686064\n"
 sls invoke -f get_history_fqdn -p test/200_get_scan_history.json $STAGE
 echo -e "Results: 200 , 20 records from today\n"
