@@ -45,7 +45,8 @@ def list_scans(event, context):
 
 def list_hostnames(event, context):
 
-    url_of_hostnames = "https://raw.githubusercontent.com/keithrozario/Gov-TLS-Audit/master/files/hostnames.txt"
+    url_of_hostnames = "https://raw.githubusercontent.com/keithrozario/list_gov.my_websites/master/list.txt"
+
     try:
         with urllib.request.urlopen(url_of_hostnames) as response:
             content = response.read().decode(response.headers.get_content_charset())
