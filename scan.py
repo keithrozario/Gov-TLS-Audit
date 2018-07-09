@@ -13,6 +13,7 @@ from functions.get_functions import get_site, get_input_fields, get_site_title, 
 from functions.get_functions import get_ip, get_ip_asn
 from functions.get_functions import get_cert, get_certificate_status
 from functions.get_functions import get_shodan
+from functions.get_functions import get_links, get_hostnames
 from functions.format_functions import format_json_data, format_csv_data
 
 
@@ -70,10 +71,7 @@ if __name__ == "__main__":
         csv_writer = csv.writer(csvfile, delimiter=',')
         csv_writer.writerow(csv_header)
 
-    with open(hostname_file) as f:
-         hostnames = f.readlines()
-
-    hostnames = [x.strip() for x in hostnames]
+    hostnames = get_hostnames(rows=10)
 
     for hostname in hostnames:
         try:
@@ -105,6 +103,7 @@ if __name__ == "__main__":
                     continue  # go to next site
                 else:
 
+                    site_data['links'] = get_links(site_data['httpResponse'].content)
                     # Shodan Scan
                     try:
                         logger.info("INFO: Calling Shodan for : " + site_data['ip'])
@@ -117,15 +116,15 @@ if __name__ == "__main__":
                         logger.info("ERROR: SHODAN Query threw and error")
                         logger.exception("message")
 
-                    # ASN Info
-                    logger.info("INFO: Getting ASN Info")
-                    try:
-                        asn_info = get_ip_asn(site_data['ip'])
-                        if asn_info:
-                            site_data['asnInfo'] = asn_info
-                    except:
-                        logger.info("ERROR: ASN Query threw an error")
-                        logger.exception("message")
+                    # ASN Info (too many issues, forgoing for now)
+                    # logger.info("INFO: Getting ASN Info")
+                    # try:
+                    #     asn_info = get_ip_asn(site_data['ip'])
+                    #     if asn_info:
+                    #         site_data['asnInfo'] = asn_info
+                    # except:
+                    #     logger.info("ERROR: ASN Query threw an error")
+                    #     logger.exception("message")
 
                     # Http request successful check for form Fields
                     logger.info("INFO: Getting Form Fields")

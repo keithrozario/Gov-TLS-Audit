@@ -80,7 +80,8 @@ def format_json_data(site_data):
                ['redirectType', 'redirectType', 'keyValue'],
                ['domain', 'domain', 'keyValue'],
                ['formFields', 'formFields', 'keyValue'],
-               ['siteTitle', 'siteTitle', 'keyValue']]
+               ['siteTitle', 'siteTitle', 'keyValue'],
+               ['links', 'links', 'keyValue']]
 
     # mapping from request (http & https)
     mapping_request = [['headers','headers','keyValue'],

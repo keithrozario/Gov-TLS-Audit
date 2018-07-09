@@ -3,9 +3,7 @@ import socket
 import tldextract
 from datetime import datetime
 import sslyze
-
 import json
-from bs4 import BeautifulSoup
 
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
@@ -240,10 +238,9 @@ def get_meta_redirect(content):
 
 def get_links(content):
 
-    html_content = BeautifulSoup(content, 'html.parser')
     links = []
     try:
-        for link in BeautifulSoup(html_content, 'html.parser', parse_only=SoupStrainer('a')):
+        for link in BeautifulSoup(content, 'html.parser', parse_only=SoupStrainer('a')):
             if link.has_attr('href'):
                 # skip internal links, check only for links with http (or https)
                 if str(link['href'])[:4] == 'http':
@@ -254,3 +251,14 @@ def get_links(content):
         return None
 
     return links
+
+
+def get_hostnames(rows=-1):
+
+    response = requests.get("https://govscan.info/api/v2/listFQDNs")
+    FQDNs = json.loads(response.text)
+    if rows < 0: # rows = -1, return entire set
+        return FQDNs['FQDNs']
+    else:
+        return FQDNs['FQDNs'][:rows] # rows > 0, reserved for testing, return limited rows
+
