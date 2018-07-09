@@ -71,7 +71,7 @@ if __name__ == "__main__":
         csv_writer = csv.writer(csvfile, delimiter=',')
         csv_writer.writerow(csv_header)
 
-    hostnames = get_hostnames(rows=10)
+    hostnames = get_hostnames()
 
     for hostname in hostnames:
         try:
