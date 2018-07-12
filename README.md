@@ -14,7 +14,7 @@ crawl.py crawls from set number of urls, looking for all urls in the .gov.my dom
 
 # Results
 
-Daily scans results are available in csv, json, jsonl formats [here](https://gov-tls-audit.sayakenahack.com/files.html)
+Daily scans results are available in csv, json, jsonl formats [here](https://govscan.info/files.html)
 
 # API
 
