@@ -51,6 +51,10 @@ def list_hostnames(event, context):
         with urllib.request.urlopen(url_of_hostnames) as response:
             content = response.read().decode(response.headers.get_content_charset())
         FQDNs = content.split("\n")
+        # If newline at the end, delete it
+        if FQDNs[-1] == '':
+            del FQDNs[-1]
+
         body = json.dumps({"FQDNs": FQDNs})
         status_code = 200
     except urllib.error.HTTPError:
