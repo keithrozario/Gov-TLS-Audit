@@ -1,6 +1,6 @@
-# Gov-TLS-Audit
+# Gov-TLS-Audit (GovScan.info)
 
-Gov-TLS-Audit is available [here](https://gov-tls-audit.sayakenahack.com)
+Gov-TLS-Audit is available [here](https://govscan.info)
 
 Project was created to scan all `.gov.my` domains (and sub-domains) to check TLS Implementation, TLS Redirection (from http to https), Certificate Status (Valid, Expired, hostname mismatch..etc), and other general details about the site.
 
@@ -18,7 +18,7 @@ Daily scans results are available in csv, json, jsonl formats [here](https://gov
 
 # API
 
-API documentation is available [here](https://gov-tls-audit.sayakenahack.com/docs/index.html)
+API documentation is available [here](https://govscan.info/docs/index.html)
 
 # Lambda
 
