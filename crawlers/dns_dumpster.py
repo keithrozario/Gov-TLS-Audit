@@ -18,7 +18,7 @@ console.setLevel(logging.INFO)
 logger.addHandler(console)
 
 # Get domain names
-with open("registered_domains.txt", 'r') as domain_file:
+with open("./registered_domains.txt", 'r') as domain_file:
     domains = []
     past_domain = False
     for domain in domain_file:
