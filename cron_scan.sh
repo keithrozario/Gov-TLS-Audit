@@ -1,8 +1,11 @@
 #!/bin/bash
+DIR=~/Code/Gov-TLS-Audit
 
-rm output/full_output.json
-rm output/output.csv
-rm output/output.jsonl
-source venv/bin/activate
+rm $DIR/output/full_output.json
+rm $DIR/output/output.csv
+rm $DIR/output/output.jsonl
+source $DIR/venv/bin/activate
+cd $DIR
 python scan.py
 python insert_jsonl_into_dynamo.py
+python house_keeping.py
