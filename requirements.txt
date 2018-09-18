@@ -8,11 +8,11 @@ chardet==3.0.4
 click==6.7
 click-plugins==1.0.4
 colorama==0.3.9
-cryptography==2.3.1
+cryptography==2.3
 docutils==0.14
 idna==2.7
 jmespath==0.9.3
-nassl==1.1.0
+nassl==2.1.0
 pycparser==2.18
 pyOpenSSL==18.0.0
 python-dateutil==2.7.3
@@ -21,7 +21,7 @@ requests-file==1.4.3
 s3transfer==0.1.13
 shodan==1.7.7
 six==1.11.0
-SSLyze==1.4.0
+sslyze==2.0.0
 tldextract==2.2.0
 tls-parser==1.2.1
 urllib3==1.23
