@@ -53,6 +53,7 @@ start_links = ['http://www.kln.gov.my/web/guest/other-ministry',
 
 # Shodan Key File
 shodan_key_file = "/home/l33t/.shodan/key.txt"
+facebook_key_file = '/Users/k31th/.facebook/app_token'  # from my mac -- hence the location
 
 # Form fields to skip (not present in csv)
 skip_fields = ['__EVENTTARGET', '__EVENTARGUMENT', '__LASTFOCUS','__VIEWSTATE',
