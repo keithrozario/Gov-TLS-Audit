@@ -20,26 +20,9 @@ DB for all scans (ever!). All scans are stored in DynamoDB at maximum verbosity 
 
 All API Gateway calls invoke one(and only one) lambda function. All lambda functions are tied to just one API call. If this changes, I'll update the documentation format, but it's easier to document them in one section fo now.
 
-### /siteDetails
-Provides the latest entry for a Fully Qualified Domain Name(FQDN).
+## Proper Documentation
 
-Invokes the `get_by_fqdn` function. Takes in one mandatory FQDN parameter.
-
-e.g. https://siteaudit.sayakenahack.com/api/siteDetails?FQDN=pengundi.spr.gov.my
-
-### /listScans
-List all available scans (zip files) for download.
-
-Invokes the `list_scans` function. Takes no parameters.
-
-e.g. https://siteaudit.sayakenahack.com/api/listScans
-
-### /downloadScan
-Download a single scan (zip file)
-
-Invokes the `download_scan` function. Takes in one mandatory filename parameter.
-
-e.g. https://siteaudit.sayakenahack.com/api/downloadScan?filename=scan_2018-04-05.zip
+To use the api, refer to the API docs [here](https://govscan.info/docs/index.html).
 
 ## Test Scripts
 
