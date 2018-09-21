@@ -1,5 +1,5 @@
 #!/bin/bash
-APIBASEURL=https://zngyqel9cj.execute-api.us-west-2.amazonaws.com/Development/api/v2
+APIBASEURL=https://erim8fg5q3.execute-api.us-west-2.amazonaws.com/SIT/api/v2
 STAGE=""
 echo -e "Results: 200 with body (first record 1govserv.1govnet.gov.my)\n"
 sls invoke -f get_latest_fqdn -p test/200_get_latest_fqdn.json $STAGE
@@ -59,4 +59,12 @@ echo -e "List Hostnames"
 sls invoke -f list_hostnames $STAGE
 echo -e "List Hostnames"
 curl "$APIBASEURL/listFQDNs"
+echo -e "\n### Query for DNS Records###\n"
+sls invoke -f query_dns_records -p test/200_query_dns.json
+echo -e "\n#### Get DNS Records ###\n"
+curl "$APIBASEURL/dnsRecords?DN=spr.gov.my"
+echo -e "\n\nCurling History for www.skmm.gov.my"
+curl "$APIBASEURL/dnsRecords?DN=skmm.gov.my"
+
+
 echo -e "\n#####DONE####\n"

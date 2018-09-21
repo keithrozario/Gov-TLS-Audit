@@ -1,9 +1,9 @@
-import dns.resolver
 import tldextract
 import json
 import requests
 import logging
-
+import boto3
+import custom_config
 
 # Logging setup
 logging.basicConfig(filename='dns_log.txt',
@@ -30,21 +30,18 @@ for FQDN in FQDNs['FQDNs']:
 domains = list(set(domains))  # make unique (does not preserve order)
 logger.info("%d Unique Domains Found" % len(domains))
 
-ids = ['SOA', 'TXT', 'MX', 'NS']
+client = boto3.client('lambda', region_name=custom_config.aws_region)
 
 for domain in domains:
-    try:
-        for record_type in ids:
-            try:
-                answers = dns.resolver.query(domain, record_type)
-                for data in answers:
-                    print(domain, '-', record_type, ':', data.to_text())
-            except dns.resolver.NoAnswer:
-                print(domain, '-', record_type, ':', 'No answer')
-            except dns.resolver.NoNameservers:
-                print(domain, '-', record_type, ':', 'No Name Servers')
-            except dns.exception.Timeout:
-                print(domain, '-', record_type, ':', 'Timeout')
-    except dns.resolver.NXDOMAIN:
-        print(domain, '-', record_type, ':', 'None of the DNS Query Name exists')
+    event = dict()
+    event['queryStringParameters'] = {'DN': domain}
+    response = client.invoke(
+        FunctionName='SIT-query_dns_records',
+        InvocationType='Event',
+        Payload=json.dumps(event).encode()
+    )
+    logger.info("%s Called" % domain)
+    # data = response['Payload'].read().decode('utf-8')
+    # http_response = json.loads(data)
+    # print(domain, " : ", http_response['body'])
 

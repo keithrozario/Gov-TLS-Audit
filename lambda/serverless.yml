@@ -1,5 +1,12 @@
 service: govScanInfo
 
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: non-linux
+
 package:
   exclude:
     - test/*
@@ -10,7 +17,7 @@ provider:
   name: aws
   runtime: python3.6
   region: us-west-2
-  stage: Development  
+  stage: SIT
   memorySize: 128 # explicitly set to 128
   timeout: 10 # default is 6
   iamRoleStatements: # permissions for all of your functions can be set here
@@ -22,11 +29,12 @@ provider:
       Resource: "arn:aws:dynamodb:us-west-2:820756113164:table/siteAuditGovMy"
     - Effect: Allow
       Action:
-        s3:ListBucket
+        - s3:ListBucket
       Resource: "arn:aws:s3:::files.siteaudit.sayakenahack.com"
     - Effect: Allow
       Action:
-        s3:GetObject
+        - s3:GetObject
+        - s3:PutObject
       Resource: "arn:aws:s3:::files.siteaudit.sayakenahack.com/*"
 
 versionFunctions: false # don't keep old versions (there's GIT for that)
@@ -80,7 +88,20 @@ functions:
           path: /api/v2/listFQDNs
           method: get
           cors: true
-
+  query_dns_records:
+    handler: dns_query.query_dns_records
+    name: ${opt:stage, self:provider.stage}-query_dns_records
+    description: Queries DNS records and stores results in a file on S3 # No API Calls for this one
+    timeout: 120  # 6 seconds is not enough to query the dns records
+  get_dns_records:
+    handler: dns_query.get_dns_records
+    name: ${opt:stage, self:provider.stage}-get_dns_records
+    description: Get DNS records from file in S3 (does not real-time query)
+    events:
+      - http:
+          path: /api/v2/DNSRecords
+          method: get
+          cors: true
 
 
 ###
