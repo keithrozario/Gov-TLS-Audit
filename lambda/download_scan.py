@@ -2,6 +2,12 @@ import boto3
 import base64
 import botocore
 
+"""
+Deleted function but kept here for reference
+This has good info about how to return binary data from lambda
+Worthwhile to keep
+"""
+
 headers = {'Access-Control-Allow-Origin': '*',  # allow CORS
            'Content-Type': 'application/zip',
            'Content-Disposition': 'attachment; '}  # zip Download

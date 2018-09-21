@@ -30,7 +30,7 @@ for FQDN in FQDNs['FQDNs']:
 domains = list(set(domains))  # make unique (does not preserve order)
 logger.info("%d Unique Domains Found" % len(domains))
 
-ids = ['SOA','TXT','MX','NS']
+ids = ['SOA', 'TXT', 'MX', 'NS']
 
 for domain in domains:
     try:
