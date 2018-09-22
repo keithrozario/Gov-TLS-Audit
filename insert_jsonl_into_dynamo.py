@@ -161,4 +161,5 @@ if __name__ == "__main__":
     console = logging.StreamHandler()
     console.setLevel(logging.INFO)
     logger.addHandler(console)
+
     upload_and_write()

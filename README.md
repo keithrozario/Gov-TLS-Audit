@@ -1,16 +1,19 @@
 # Gov-TLS-Audit (GovScan.info)
 
-Gov-TLS-Audit is available [here](https://govscan.info)
+Site is available [here](https://govscan.info)
 
 Project was created to scan all `.gov.my` domains (and sub-domains) to check TLS Implementation, TLS Redirection (from http to https), Certificate Status (Valid, Expired, hostname mismatch..etc), and other general details about the site.
 
 Version 2.0 includes Shodan search results (when available), the HTML title of the site, and the names of any form fields available on the root directory of the hostname.
 
-# scan.py and crawl.py
+# scan.py
 
-scan.py scans hostnames from the /files/hostnames.txt file
+scan.py scans hostnames from this [repo](https://github.com/keithrozario/list_gov.my_websites). Consider making a pull request if you know of a `gov.my` domain that isn't being scanned. Latest version of scan.py **only** works with Python3.6 and above.
 
-crawl.py crawls from set number of urls, looking for all urls in the .gov.my domains to add to hostnames.
+# crawlers
+
+The `/crawlers` folder has a list of miscellaneous scripts that query OSINT databases for hostnames, subdomains, etc.
+
 
 # Results
 
