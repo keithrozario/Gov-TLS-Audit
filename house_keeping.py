@@ -48,30 +48,3 @@ for backup in response['BackupSummaries'][custom_config.max_backups:]:
 response = client.list_backups(TableName=custom_config.dynamo_table_name)
 for backup in response['BackupSummaries']:
     logger.info('Retained Backup: %s ' % backup)
-
-
-# list out scans in S3 bucket
-file_upper_bound = (datetime.now(timezone(timedelta(hours=custom_config.timezone_delta)))
-                    - timedelta(days=custom_config.file_retirement_age))
-logger.info("Retrieving list of files in S3 bucket")
-keys = []
-client = boto3.client('s3')
-file_prefix = custom_config.s3_upload_dir+
-response = client.list_objects_v2(Bucket=custom_config.bucket_name,
-                                  Prefix=file_prefix)
-
-# Sort response (latest files first)
-response['Contents'].sort(key=operator.itemgetter('LastModified'), reverse=True)
-
-# loop through only backups after max_backup:
-for content in response['Contents'][custom_config.file_max_backups:]:
-    file_name = content['Key'][len(file_prefix):]
-
-    if file_name == '':
-        continue  # S3 list bucket will return folder as an object (skip folder)
-    else:
-        if content['LastModified'] < file_upper_bound:
-            client.copy({'Bucket': custom_config.bucket_name, 'Key': content['Key']},
-                        custom_config.bucket_name, custom_config.s3_upload_dir + file_name)
-            logger.info("%s : Archived" % file_name)
-
