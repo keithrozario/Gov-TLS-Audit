@@ -41,7 +41,7 @@ for domain in domains:
         Payload=json.dumps(event).encode()
     )
     logger.info("%s Called" % domain)
-    # data = response['Payload'].read().decode('utf-8')
-    # http_response = json.loads(data)
+    data = response['Payload'].read().decode('utf-8')
+    http_response = json.loads(data)
     # print(domain, " : ", http_response['body'])
 

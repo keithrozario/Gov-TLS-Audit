@@ -59,11 +59,15 @@ echo -e "List Hostnames"
 sls invoke -f list_hostnames $STAGE
 echo -e "List Hostnames"
 curl "$APIBASEURL/listFQDNs"
+echo -e "List domains"
+sls invoke -f list_domains $STAGE
+echo -e "List Hostnames"
+curl "$APIBASEURL/listDNs"
 echo -e "\n### Query for DNS Records###\n"
 sls invoke -f query_dns_records -p test/200_query_dns.json
-echo -e "\n#### Get DNS Records ###\n"
+echo -e "\n#### Get DNS Records for spr.gov.my ###\n"
 curl "$APIBASEURL/dnsRecords?DN=spr.gov.my"
-echo -e "\n\nCurling History for www.skmm.gov.my"
+echo -e "\n\nGet DNS Records for www.skmm.gov.my"
 curl "$APIBASEURL/dnsRecords?DN=skmm.gov.my"
 
 

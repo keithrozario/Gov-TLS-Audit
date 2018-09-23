@@ -14,9 +14,9 @@ file_extension = '.txt'
 def query_dns_records(event, context):
 
     """
-    Function Makes the Actual Query for the DNS records, and stores them as a file in S3
-    It returns a body, status code & header, but is not actually exposed via API
-    Make sure you call this with just a domain name, and not the FQDN
+    Function Makes the Actual Query for the DNS records, and stores result as a file in S3
+    It returns a body, status code & header, but is **not** exposed via API
+    Does not validate Domain name passed to it
     """
 
     ids = ['SOA', 'TXT', 'MX', 'NS', 'DNSKEY']
@@ -72,9 +72,52 @@ def get_dns_records(event, context):
         status_code = 400  # query parameter not provided
         body = ''
     except ClientError:
-        status_code = 404  # typically a file not found
+        status_code = 404  # typically a file not found, results not available
         body = ''
 
     return {'statusCode': status_code,
             'headers': headers,
             'body': body}
+
+
+def invoke_dns_query(event, context):
+
+    function_name = context.function_name  # the name of 'this' function
+    env = function_name.split('-')[0]  # because of my naming convention, this will provide the env (SIT, Prod..etc)
+    client = boto3.client('lambda')
+
+    # Get list of domain names
+    response = client.invoke(FunctionName=env + '-list_domains',  # invoke list_domain function for this env
+                             InvocationType='RequestResponse'
+                             )
+    raw_data = response['Payload'].read()
+    raw_data.decode('utf-8')
+    http_response = json.loads(raw_data)
+    body = json.loads(http_response ['body'])
+    DNs = body['DNs']
+
+    # Loop through each Domain name and query the dns
+    error_domains = []
+    for DN in DNs:
+        try:
+            payload = {"queryStringParameters": {"DN": DN}}
+            response = client.invoke(FunctionName=env + '-query_dns_records',  # invoke function for this env
+                                     InvocationType='Event',
+                                     Payload=json.dumps(payload).encode()
+                                     )
+        except:
+            error_domains.append(DN)
+
+    # if we reached here, then all is good
+    if len(error_domains) == 0:
+        return {'statusCode': 200,
+                'headers': headers,
+                'body': ''}
+    else:
+        return {'statusCode': 400,
+                'headers': headers,
+                'body': json.dumps({'errors': error_domains})}
+
+
+
+

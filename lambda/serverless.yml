@@ -36,6 +36,11 @@ provider:
         - s3:GetObject
         - s3:PutObject
       Resource: "arn:aws:s3:::files.siteaudit.sayakenahack.com/*"
+    - Effect: Allow
+      Action:
+        - lambda:InvokeFunction
+      Resource: "arn:aws:lambda:us-west-2:820756113164:function:*"  # Need to tighten up the resources when free!
+
 
 versionFunctions: false # don't keep old versions (there's GIT for that)
 
@@ -88,11 +93,20 @@ functions:
           path: /api/v2/listFQDNs
           method: get
           cors: true
+  list_domains:
+    handler: list_scans.list_domains
+    name: ${opt:stage, self:provider.stage}-list_domains
+    description: List registered domains that are scanned
+    events:
+      - http:
+          path: /api/v2/listDNs
+          method: get
+          cors: true
   query_dns_records:
     handler: dns_query.query_dns_records
     name: ${opt:stage, self:provider.stage}-query_dns_records
     description: Queries DNS records and stores results in a file on S3 # No API Calls for this one
-    timeout: 120  # 6 seconds is not enough to query the dns records
+    timeout: 30  # 6 seconds is not enough to query the dns records
   get_dns_records:
     handler: dns_query.get_dns_records
     name: ${opt:stage, self:provider.stage}-get_dns_records
@@ -102,7 +116,12 @@ functions:
           path: /api/v2/DNSRecords
           method: get
           cors: true
-
+  invoke_dns_query:
+    handler: dns_query.invoke_dns_query
+    name: ${opt:stage, self:provider.stage}-invoke_dns_records
+    description: Asycrohonously invoke dns queries
+    timeout: 300  # 6 seconds is not enough to query the dns records
+    schedule: cron(0 14 * * ? *)  # run this job at 10pm (UTC + 8) everyday
 
 ###
 ### Comment all below if you do not wish to create bucket & DynamoDB ###

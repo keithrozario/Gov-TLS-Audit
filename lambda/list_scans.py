@@ -1,7 +1,9 @@
 import boto3
 import decimal
 import json
-import urllib.request,urllib.error
+import tldextract
+import urllib.request
+import urllib.error
 from operator import itemgetter
 
 headers = {'Access-Control-Allow-Origin': '*'}  # allow CORS
@@ -17,7 +19,6 @@ def list_scans(event, context):
 
     client = boto3.client('s3')
     response = client.list_objects_v2(Bucket=bucket_name,
-                                      Delimiter='|',
                                       Prefix=file_prefix)
 
     for content in response['Contents']:
@@ -56,7 +57,7 @@ def list_hostnames(event, context):
         if FQDNs[-1] == '':
             del FQDNs[-1]
 
-        body = json.dumps({"FQDNs": FQDNs})
+        body = json.dumps({"count": len(FQDNs), "FQDNs": FQDNs})
         status_code = 200
     except urllib.error.HTTPError:
         status_code = 500
@@ -68,3 +69,22 @@ def list_hostnames(event, context):
     return {'statusCode': status_code,
             'headers': headers,
             'body': body}
+
+
+def list_domains(event, context):
+    fqdns = list_hostnames(None, None)
+
+    if fqdns['statusCode'] == 200:
+        # Get all unique domains
+        domains = []
+        result = json.loads(fqdns['body'])
+        for FQDN in result['FQDNs']:
+            ext = tldextract.extract(FQDN)
+            domains.append(ext.registered_domain)
+        domains = list(set(domains))  # make unique (does not preserve order)
+        body = json.dumps({'count': len(domains), 'DNs': domains})
+        return {'statusCode': 200,
+                'headers': headers,
+                'body': body}
+    else:
+        return fqdns  # already a well-formed error http response
