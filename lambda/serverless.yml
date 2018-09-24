@@ -121,7 +121,8 @@ functions:
     name: ${opt:stage, self:provider.stage}-invoke_dns_records
     description: Asycrohonously invoke dns queries
     timeout: 300  # 6 seconds is not enough to query the dns records
-    schedule: cron(0 14 * * ? *)  # run this job at 10pm (UTC + 8) everyday
+    events:
+      - schedule: cron(5 13 * * ? *)  # runs at 13:05 UTC @ 9.05pm MYT
 
 ###
 ### Comment all below if you do not wish to create bucket & DynamoDB ###
