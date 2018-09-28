@@ -1,18 +1,15 @@
 import boto3
 import decimal
 import json
-import tldextract
-import urllib.request
-import urllib.error
 from operator import itemgetter
 
 headers = {'Access-Control-Allow-Origin': '*'}  # allow CORS
+bucket_name = 'files.siteaudit.sayakenahack.com'
+file_prefix = 'files/'
 
 
 def list_scans(event, context):
 
-    bucket_name = 'files.siteaudit.sayakenahack.com'
-    file_prefix = 'files/'  # prefix to scan files from
     base_url = 'https://govscan.info/files/'
     keys = []
     status_code = 200
@@ -43,48 +40,3 @@ def list_scans(event, context):
     return {'statusCode': status_code,
             'headers': headers,
             'body': result}
-
-
-def list_hostnames(event, context):
-
-    url_of_hostnames = "https://raw.githubusercontent.com/keithrozario/list_gov.my_websites/master/list.txt"
-
-    try:
-        with urllib.request.urlopen(url_of_hostnames) as response:
-            content = response.read().decode(response.headers.get_content_charset())
-        FQDNs = content.split("\n")
-        # If newline at the end, delete it
-        if FQDNs[-1] == '':
-            del FQDNs[-1]
-
-        body = json.dumps({"count": len(FQDNs), "FQDNs": FQDNs})
-        status_code = 200
-    except urllib.error.HTTPError:
-        status_code = 500
-        body = ""
-    except urllib.error.URLError:
-        status_code = 500
-        body = ""
-
-    return {'statusCode': status_code,
-            'headers': headers,
-            'body': body}
-
-
-def list_domains(event, context):
-    fqdns = list_hostnames(None, None)
-
-    if fqdns['statusCode'] == 200:
-        # Get all unique domains
-        domains = []
-        result = json.loads(fqdns['body'])
-        for FQDN in result['FQDNs']:
-            ext = tldextract.extract(FQDN)
-            domains.append(ext.registered_domain)
-        domains = list(set(domains))  # make unique (does not preserve order)
-        body = json.dumps({'count': len(domains), 'DNs': domains})
-        return {'statusCode': 200,
-                'headers': headers,
-                'body': body}
-    else:
-        return fqdns  # already a well-formed error http response

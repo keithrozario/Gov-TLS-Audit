@@ -28,6 +28,12 @@ provider:
         - dynamodb:BatchWriteItem
       Resource: "arn:aws:dynamodb:us-west-2:820756113164:table/siteAuditGovMy"
     - Effect: Allow
+      Action: # Gives permission to DynamoDB tables in a specific region
+        - dynamodb:Query
+        - dynamodb:PutItem
+        - dynamodb:BatchWriteItem
+      Resource: "arn:aws:dynamodb:us-west-2:820756113164:table/DNSRecords"
+    - Effect: Allow
       Action:
         - s3:ListBucket
       Resource: "arn:aws:s3:::files.siteaudit.sayakenahack.com"
@@ -85,8 +91,8 @@ functions:
           method: get
           cors: true
   list_hostnames:
-    handler: list_scans.list_hostnames
-    name: ${opt:stage, self:provider.stage}-list_hostnames
+    handler: list_domains_fqdn.list_fqdns
+    name: ${opt:stage, self:provider.stage}-list_fqdns
     description: List hostnames that are scanned
     events:
       - http:
@@ -94,7 +100,7 @@ functions:
           method: get
           cors: true
   list_domains:
-    handler: list_scans.list_domains
+    handler: list_domains_fqdn.list_domains
     name: ${opt:stage, self:provider.stage}-list_domains
     description: List registered domains that are scanned
     events:
@@ -102,6 +108,13 @@ functions:
           path: /api/v2/listDNs
           method: get
           cors: true
+  get_hostnames:
+    handler: list_domains_fqdn.get_hostnames
+    name: ${opt:stage, self:provider.stage}-get_hostnames
+    description: List hostnames that are scanned
+    timeout: 120
+    events:
+      - schedule: cron(5 14 * * ? *) # runs at 14:05 UTC @ 10.05pm MYT
   query_dns_records:
     handler: dns_query.query_dns_records
     name: ${opt:stage, self:provider.stage}-query_dns_records
@@ -117,12 +130,13 @@ functions:
           method: get
           cors: true
   invoke_dns_query:
-    handler: dns_query.invoke_dns_query
-    name: ${opt:stage, self:provider.stage}-invoke_dns_records
-    description: Asycrohonously invoke dns queries
-    timeout: 300  # 6 seconds is not enough to query the dns records
+    handler: list_domains_fqdn.invoke_dns_queries
+    name: ${opt:stage, self:provider.stage}-invoke_dns_queries
+    description: Asycrohonously invoke dns queries for every domain name
+    timeout: 300  # maximum time to query all domains
     events:
       - schedule: cron(5 13 * * ? *)  # runs at 13:05 UTC @ 9.05pm MYT
+      - schedule: cron(5 1 * * ? *)  # runs at 01:05 UTC @ 9.05am MYT
 
 ###
 ### Comment all below if you do not wish to create bucket & DynamoDB ###
