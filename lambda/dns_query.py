@@ -3,7 +3,6 @@ import json
 import datetime
 import boto3
 from boto3.dynamodb.conditions import Key
-from botocore.exceptions import ClientError
 
 headers = {'Access-Control-Allow-Origin': '*'}  # allow CORS
 query_parameter = 'DN'
@@ -63,7 +62,7 @@ def query_dns_records(event, context):
 def get_dns_records(event, context):
 
     table_key = 'domain'
-    query_parameter = 'domain'  # API Query parameter
+    query_parameter = 'DN'  # API Query parameter
     scan_date = 'scanDate'  # API Query parameter
     range_key = 'scanDate'  # DynamoDB range key
 
