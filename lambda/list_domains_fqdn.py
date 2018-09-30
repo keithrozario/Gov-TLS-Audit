@@ -100,10 +100,7 @@ def list_domains(event, context):
                                    Key=file_prefix + domain_file)
         body = result['Body'].read().decode('utf-8')
         status_code = 200
-    except urllib.error.HTTPError:
-        status_code = 500
-        body = ""
-    except urllib.error.URLError:
+    except ClientError:
         status_code = 500
         body = ""
 
