@@ -26,6 +26,7 @@ def query_dns_records(event, context):
             'scanRecordTypes': ids,
             'domain': dn,
             'records': {}}
+
     try:
         try:
             for record_type in ids:
@@ -35,7 +36,6 @@ def query_dns_records(event, context):
                     for data in answers:
                         records.append(data.to_text())
                     body['records'][record_type] = records
-
                 except (dns.resolver.NoAnswer, dns.resolver.NoNameservers, dns.exception.Timeout):
                     pass  # might fail per record_type, perfectly fine
 
@@ -59,7 +59,7 @@ def query_dns_records(event, context):
             'body': result}
 
 
-def get_dns_records(event, context):
+def get_dns_history(event, context):
 
     table_key = 'domain'
     query_parameter = 'DN'  # API Query parameter

@@ -118,7 +118,7 @@ functions:
     description: Get hostnames from github repo and stores as a file in S3
     timeout: 120
     events:
-      - schedule: cron(5 14 * * ? *) # runs at 14:05 UTC @ 10.05pm MYT
+      - schedule: cron(0 13 * * ? *) # runs at 13:05 UTC @ 9.00pm MYT
   query_dns_records:
     handler: dns_query.query_dns_records
     name: ${opt:stage, self:provider.stage}-query_dns_records
@@ -126,11 +126,11 @@ functions:
     timeout: 30  # 6 seconds is not enough to query the dns records
   get_dns_records:
     handler: dns_query.get_dns_records
-    name: ${opt:stage, self:provider.stage}-get_dns_records
+    name: ${opt:stage, self:provider.stage}-get_dns_history
     description: Get DNS records from file in dynamoDB
     events:
       - http:
-          path: /api/v2/DNSRecords
+          path: /api/v2/DNSHistory
           method: get
           cors: true
   invoke_dns_queries:
@@ -139,8 +139,7 @@ functions:
     description: Asycrohonously invoke dns queries for every domain name
     timeout: 300  # maximum time to query all domains
     events:
-      - schedule: cron(5 13 * * ? *)  # runs at 13:05 UTC @ 9.05pm MYT
-      - schedule: cron(5 1 * * ? *)  # runs at 01:05 UTC @ 9.05am MYT
+      - schedule: cron(6 13 * * ? *)  # runs at 13:05 UTC @ 9.05pm MYT
 
 ###
 ### Comment all below if you do not wish to create bucket & DynamoDB ###
