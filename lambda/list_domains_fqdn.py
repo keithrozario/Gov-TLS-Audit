@@ -10,6 +10,7 @@ bucket_name = 'files.siteaudit.sayakenahack.com'
 file_prefix = 'hostnames/'  # prefix to store results
 fqdn_file = 'fqdn.txt'
 domain_file = 'domain.txt'
+domain_to_fqdn_file = 'domain_to_fqdn.txt'
 github_link = 'https://raw.githubusercontent.com/keithrozario/list_gov.my_websites/master/list.txt'
 headers = {'Access-Control-Allow-Origin': '*'}  # allow CORS
 
@@ -35,21 +36,35 @@ def get_hostnames(event, context):
 
         # List Domains
         domains = []
+        domain_to_fqdn = {}
+
         for FQDN in FQDNs:
             ext = tldextract.extract(FQDN)
             domains.append(ext.registered_domain)
+
+            # store relationship of domain to FQDN
+            try:
+                domain_to_fqdn[ext.registered_domain].append(FQDN)
+            except KeyError:
+                domain_to_fqdn[ext.registered_domain] = []
+                domain_to_fqdn[ext.registered_domain].append(FQDN)
+
         domains = list(set(domains))  # make unique (does not preserve order)
         body_domain = json.dumps({'count': len(domains), 'DNs': domains})
+        body_relationship = json.dumps(domain_to_fqdn)
 
-        # Upload file to  S3
         client = boto3.client('s3')
+        # Upload FQDN file to  S3
         client.put_object(Body=body_fqdn.encode(), Bucket=bucket_name,
                           Key=file_prefix + fqdn_file)
 
-        # Upload file to  S3
-        client = boto3.client('s3')
+        # Upload Domain file to  S3
         client.put_object(Body=body_domain.encode(), Bucket=bucket_name,
                           Key=file_prefix + domain_file)
+
+        # Upload domain to fqdn file to S3
+        client.put_object(Body=body_relationship.encode(), Bucket=bucket_name,
+                          Key=file_prefix + domain_to_fqdn_file)
 
         status_code = 200
     except urllib.error.HTTPError:
@@ -68,10 +83,7 @@ def list_fqdns(event, context):
                                    Key=file_prefix + fqdn_file)
         body = result['Body'].read().decode('utf-8')
         status_code = 200
-    except urllib.error.HTTPError:
-        status_code = 500
-        body = ""
-    except urllib.error.URLError:
+    except ClientError:
         status_code = 500
         body = ""
 
