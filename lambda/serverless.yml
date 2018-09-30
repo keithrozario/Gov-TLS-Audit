@@ -124,8 +124,8 @@ functions:
     name: ${opt:stage, self:provider.stage}-query_dns_records
     description: Queries DNS records and stores results in DynamoDB # No API Calls for this one, it's invoked
     timeout: 30  # 6 seconds is not enough to query the dns records
-  get_dns_records:
-    handler: dns_query.get_dns_records
+  get_dns_history:
+    handler: dns_query.get_dns_history
     name: ${opt:stage, self:provider.stage}-get_dns_history
     description: Get DNS records from file in dynamoDB
     events:
