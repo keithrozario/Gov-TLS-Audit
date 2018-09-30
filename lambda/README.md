@@ -20,6 +20,10 @@ DB for all scans (ever!). All scans are stored in DynamoDB at maximum verbosity 
 
 All API Gateway calls invoke one(and only one) lambda function. All lambda functions are tied to just one API call. If this changes, I'll update the documentation format, but it's easier to document them in one section fo now.
 
+## Lambda
+
+Lambda functions are written in Python 3.6, and have their own requirements.txt file present here. Do not use the requirements.txt from the main folder, your functions will be massive.
+
 ## Proper Documentation
 
 To use the api, refer to the API docs [here](https://govscan.info/docs/index.html).

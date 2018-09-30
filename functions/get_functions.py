@@ -260,5 +260,13 @@ def get_hostnames(rows=-1):
     if rows < 0: # rows = -1, return entire set
         return FQDNs['FQDNs']
     else:
-        return FQDNs['FQDNs'][:rows] # rows > 0, reserved for testing, return limited rows
+        return FQDNs['FQDNs'][:rows]  # rows > 0, reserved for testing, return limited rows
 
+
+def get_dns_records(fqdn):
+    ext = tldextract.extract(str(fqdn))
+    payload = {"DN": ext.registered_domain}
+    response = requests.get("https://govscan.info/api/v2/api/v2/DNSRecords",
+                            params=payload)
+    data = json.loads(response.text)
+    return data

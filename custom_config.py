@@ -70,3 +70,18 @@ dynamo_table_write_capacity = 50  # write capacity during write (falls back to 0
 aws_region = 'us-west-2'
 endpoint_url = 'https://dynamodb.' + aws_region + '.amazonaws.com'
 s3_upload_dir = "files"  # directory of bucket to upload file into
+
+
+# Archiving policy
+timezone_delta = 8  # timezone (relative to UTC), can be negative
+
+# DynamoDB
+retirement_age = 3  # Only delete backups older than this many days (caveat: max_backups)
+max_backups = 2  # keep at least this many backups present (regardless of age)
+table_name = 'siteAuditGovMy'
+
+# S3 Buckets (full downloads)
+# S3 upload dir is in aws configuration section above
+file_max_backups = 7  # always keep at least these many backups
+file_retirement_age = 7  # Only archive zip files after their this many days old
+archive_directory = 'archives'

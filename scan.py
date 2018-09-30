@@ -10,7 +10,7 @@ from custom_config import shodan_key_file
 
 from functions.get_functions import get_hostname, get_domain
 from functions.get_functions import get_site, get_input_fields, get_site_title, get_meta_redirect
-from functions.get_functions import get_ip, get_ip_asn
+from functions.get_functions import get_ip
 from functions.get_functions import get_cert, get_certificate_status
 from functions.get_functions import get_shodan
 from functions.get_functions import get_links, get_hostnames
