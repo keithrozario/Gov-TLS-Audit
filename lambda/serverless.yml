@@ -1,4 +1,18 @@
-service: Gov-TLS-Audit
+service: govScanInfo
+
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: non-linux
+  variables:
+    siteAuditTable: "arn:aws:dynamodb:us-west-2:820756113164:table/siteAuditGovMy"
+    DNSRecordsTable: "arn:aws:dynamodb:us-west-2:820756113164:table/DNSRecords"
+    s3Bucket: "arn:aws:s3:::files.siteaudit.sayakenahack.com"
+    s3BucketItems: "arn:aws:s3:::files.siteaudit.sayakenahack.com/*"
+    lambda: "arn:aws:lambda:us-west-2:820756113164:function"
+    apiPath: /api/v2
 
 package:
   exclude:
@@ -10,7 +24,7 @@ provider:
   name: aws
   runtime: python3.6
   region: us-west-2
-  stage: Development  
+  stage: ProdNew
   memorySize: 128 # explicitly set to 128
   timeout: 10 # default is 6
   iamRoleStatements: # permissions for all of your functions can be set here
@@ -19,35 +33,44 @@ provider:
         - dynamodb:Query
         - dynamodb:PutItem
         - dynamodb:BatchWriteItem
-      Resource: "arn:aws:dynamodb:us-west-2:820756113164:table/siteAuditGovMy"
+      Resource: ${self:custom.variables.siteAuditTable}
+    - Effect: Allow
+      Action: # Gives permission to DynamoDB tables in a specific region
+        - dynamodb:Query
+        - dynamodb:PutItem
+        - dynamodb:BatchWriteItem
+      Resource: ${self:custom.variables.DNSRecordsTable}
     - Effect: Allow
       Action:
-        s3:ListBucket
-      Resource: "arn:aws:s3:::files.siteaudit.sayakenahack.com"
+        - s3:ListBucket
+      Resource: ${self:custom.variables.s3Bucket}
     - Effect: Allow
       Action:
-        s3:GetObject
-      Resource: "arn:aws:s3:::files.siteaudit.sayakenahack.com/*"
+        - s3:GetObject
+        - s3:PutObject
+      Resource: ${self:custom.variables.s3BucketItems}
+    - Effect: Allow
+      Action:
+        - lambda:InvokeFunction
+      Resource: ${self:custom.variables.lambda}:${opt:stage, self:provider.stage}-*
+
 
 versionFunctions: false # don't keep old versions (there's GIT for that)
 
 functions:
-  get_latest_fqdn: # function Name
-    handler: main.get_latest_fqdn # def within main.py that will handle this
+  get_latest_fqdn:
+    handler: main.get_latest_fqdn
     name: ${opt:stage, self:provider.stage}-get_latest_fqdn
     description: Get Full TLS Record for fqdn
     events:
       - http:
-          path: /api/v2/siteLatest # path of this function
+          path: ${self:custom.variables.apiPath}/siteLatest
           method: get
           cors: true
   get_history_fqdn:
     handler: main.get_history_fqdn
     name: ${opt:stage, self:provider.stage}-get_history_fqdn
-    description: View History of Site
-    timeout: 6 # maximum timeout for the downloads
-    memorySize: 256 # more RAM = more CPU on lambda, need more CPU!
-    reservedConcurrency: 2 # maximum number of concurrent history
+    description: Get Historical records of the sites ScanObjects
     events:
       - http:
           path: /api/v2/siteHistory
@@ -72,16 +95,51 @@ functions:
           method: get
           cors: true
   list_hostnames:
-    handler: list_scans.list_hostnames
-    name: ${opt:stage, self:provider.stage}-list_hostnames
+    handler: list_domains_fqdn.list_fqdns
+    name: ${opt:stage, self:provider.stage}-list_fqdns
     description: List hostnames that are scanned
     events:
       - http:
           path: /api/v2/listFQDNs
           method: get
           cors: true
-
-
+  list_domains:
+    handler: list_domains_fqdn.list_domains
+    name: ${opt:stage, self:provider.stage}-list_domains
+    description: List registered domains that are scanned
+    events:
+      - http:
+          path: /api/v2/listDNs
+          method: get
+          cors: true
+  get_hostnames:
+    handler: list_domains_fqdn.get_hostnames
+    name: ${opt:stage, self:provider.stage}-get_hostnames
+    description: Get hostnames from github repo and stores as a file in S3
+    timeout: 120
+    events:
+      - schedule: cron(0 13 * * ? *) # runs at 13:05 UTC @ 9.00pm MYT
+  query_dns_records:
+    handler: dns_query.query_dns_records
+    name: ${opt:stage, self:provider.stage}-query_dns_records
+    description: Queries DNS records and stores results in DynamoDB # No API Calls for this one, it's invoked
+    timeout: 30  # 6 seconds is not enough to query the dns records
+  get_dns_history:
+    handler: dns_query.get_dns_history
+    name: ${opt:stage, self:provider.stage}-get_dns_history
+    description: Get DNS records from file in dynamoDB
+    events:
+      - http:
+          path: /api/v2/DNSHistory
+          method: get
+          cors: true
+  invoke_dns_queries:
+    handler: list_domains_fqdn.invoke_dns_queries
+    name: ${opt:stage, self:provider.stage}-invoke_dns_queries
+    description: Asycrohonously invoke dns queries for every domain name
+    timeout: 300  # maximum time to query all domains
+    events:
+      - schedule: cron(6 13 * * ? *)  # runs at 13:05 UTC @ 9.05pm MYT
 
 ###
 ### Comment all below if you do not wish to create bucket & DynamoDB ###
