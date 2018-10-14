@@ -12,6 +12,7 @@ custom:
     s3Bucket: "arn:aws:s3:::files.siteaudit.sayakenahack.com"
     s3BucketItems: "arn:aws:s3:::files.siteaudit.sayakenahack.com/*"
     lambda: "arn:aws:lambda:us-west-2:820756113164:function"
+    secret: "arn:aws:secretsmanager:us-west-2:820756113164:secret:prod/govScan/secrets-UAU2Ba"
     apiPath: /api/v2
 
 package:
@@ -24,18 +25,18 @@ provider:
   name: aws
   runtime: python3.6
   region: us-west-2
-  stage: ProdNew
+  stage: SIT # for Prod use 'ProdNew'
   memorySize: 128 # explicitly set to 128
   timeout: 10 # default is 6
-  iamRoleStatements: # permissions for all of your functions can be set here
+  iamRoleStatements:
     - Effect: Allow
-      Action: # Gives permission to DynamoDB tables in a specific region
+      Action:
         - dynamodb:Query
         - dynamodb:PutItem
         - dynamodb:BatchWriteItem
       Resource: ${self:custom.variables.siteAuditTable}
     - Effect: Allow
-      Action: # Gives permission to DynamoDB tables in a specific region
+      Action:
         - dynamodb:Query
         - dynamodb:PutItem
         - dynamodb:BatchWriteItem
@@ -53,6 +54,10 @@ provider:
       Action:
         - lambda:InvokeFunction
       Resource: ${self:custom.variables.lambda}:${opt:stage, self:provider.stage}-*
+    - Effect: Allow
+      Action:
+        - secretsmanager:Get*
+      Resource: ${self:custom.variables.secret}
 
 
 versionFunctions: false # don't keep old versions (there's GIT for that)
@@ -115,10 +120,8 @@ functions:
   get_hostnames:
     handler: list_domains_fqdn.get_hostnames
     name: ${opt:stage, self:provider.stage}-get_hostnames
-    description: Get hostnames from github repo and stores as a file in S3
-    timeout: 120
-    events:
-      - schedule: cron(0 13 * * ? *) # runs at 13:05 UTC @ 9.00pm MYT
+    description: Get hostnames from github repo and stores as a file in S3, no events, invoked only
+    timeout: 300
   query_dns_records:
     handler: dns_query.query_dns_records
     name: ${opt:stage, self:provider.stage}-query_dns_records
@@ -140,34 +143,13 @@ functions:
     timeout: 300  # maximum time to query all domains
     events:
       - schedule: cron(6 13 * * ? *)  # runs at 13:05 UTC @ 9.05pm MYT
-
-###
-### Comment all below if you do not wish to create bucket & DynamoDB ###
-###
-
-# resources:  
-  # Resources:
-    # uploadbucket:
-    #  DeletionPolicy: Retain
-    #  Type: AWS::S3::Bucket
-    #  Properties:
-    #    BucketName: files.siteaudit.sayakenahack.com # Hard Code, change this later
-    # SiteAuditTable:
-      # Type: 'AWS::DynamoDB::Table'
-      # DeletionPolicy: Retain  
-      # Properties:
-        # TableName: siteAuditGovMy # Hard Code, change this later
-        # AttributeDefinitions:
-          # - AttributeName: FQDN # FQDN is an acronym, hence CAPS :)
-          #   AttributeType: S
-          # - AttributeName: scanDate 
-          #   AttributeType: S
-        # KeySchema:
-          # - AttributeName: FQDN
-          #   KeyType: HASH
-          # - AttributeName: scanDate
-          #   KeyType: RANGE
-        # ProvisionedThroughput:
-          # ReadCapacityUnits: 2
-          # WriteCapacityUnits: 1
-
+  github_webhook:
+    handler: github_webhook.receive_github_post
+    name: ${opt:stage, self:provider.stage}-receive_github_post
+    description: Receive Github Post
+    timeout: 30
+    events:
+      - http:
+          path: /api/v2/github
+          method: post
+          cors: true

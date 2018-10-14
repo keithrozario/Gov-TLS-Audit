@@ -23,6 +23,9 @@ def get_hostnames(event, context):
     function is triggered daily -- refer to serverless.yml file
     """
 
+    function_name = context.function_name  # the name of 'this' function
+    env = function_name.split('-')[0]  # because of my naming convention, this will provide the env
+
     try:
         with urllib.request.urlopen(github_link) as response:
             content = response.read().decode(response.headers.get_content_charset())
@@ -56,15 +59,15 @@ def get_hostnames(event, context):
         client = boto3.client('s3')
         # Upload FQDN file to  S3
         client.put_object(Body=body_fqdn.encode(), Bucket=bucket_name,
-                          Key=file_prefix + fqdn_file)
+                          Key=env + file_prefix + fqdn_file)
 
         # Upload Domain file to  S3
         client.put_object(Body=body_domain.encode(), Bucket=bucket_name,
-                          Key=file_prefix + domain_file)
+                          Key=env + file_prefix + domain_file)
 
         # Upload domain to fqdn file to S3
         client.put_object(Body=body_relationship.encode(), Bucket=bucket_name,
-                          Key=file_prefix + domain_to_fqdn_file)
+                          Key=env + file_prefix + domain_to_fqdn_file)
 
         status_code = 200
     except urllib.error.HTTPError:
@@ -77,10 +80,13 @@ def get_hostnames(event, context):
 
 def list_fqdns(event, context):
 
+    function_name = context.function_name  # the name of 'this' function
+    env = function_name.split('-')[0]  # because of my naming convention, this will provide the env
+
     try:
         client = boto3.client('s3')
         result = client.get_object(Bucket=bucket_name,
-                                   Key=file_prefix + fqdn_file)
+                                   Key=env + file_prefix + fqdn_file)
         body = result['Body'].read().decode('utf-8')
         status_code = 200
     except ClientError:
@@ -94,10 +100,13 @@ def list_fqdns(event, context):
 
 def list_domains(event, context):
 
+    function_name = context.function_name  # the name of 'this' function
+    env = function_name.split('-')[0]  # because of my naming convention, this will provide the env
+
     try:
         client = boto3.client('s3')
         result = client.get_object(Bucket=bucket_name,
-                                   Key=file_prefix + domain_file)
+                                   Key=env + file_prefix + domain_file)
         body = result['Body'].read().decode('utf-8')
         status_code = 200
     except ClientError:
@@ -118,7 +127,7 @@ def invoke_dns_queries(event, context):
     try:
         client = boto3.client('s3')
         result = client.get_object(Bucket=bucket_name,
-                                   Key=file_prefix + domain_file)
+                                   Key=env + file_prefix + domain_file)
         body = result['Body'].read().decode('utf-8')
         DNs = json.loads(body)['DNs']
 
