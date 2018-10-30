@@ -16,7 +16,10 @@ pip install wheel
 pip install --upgrade pip
 pip install -r $DIR/requirements.txt
 deactivate
+echo "Setting correct time zone and restarting crontab"
 timedatectl set-timezone Asia/Singapore
+sudo service cron restart
+echo "Installing AWSCLI"
 pip install awscli --upgrade --user
 apt install awscli
 aws configure
