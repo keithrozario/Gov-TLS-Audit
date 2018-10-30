@@ -4,7 +4,7 @@ import hmac
 import hashlib
 from botocore.exceptions import ClientError
 
-headers = {'Access-Control-Allow-Origin': '*'}
+headers = {'Access-Control-Allow-Origin': '*'}  # CORS
 
 
 def get_secret():
@@ -54,13 +54,13 @@ def receive_github_post(event, context):
     sig = event['headers']['X-Hub-Signature']
     result = check_sig(event['body'], sig)
 
-    if not result['status']:  # Digest did not match
+    if not result['status']:  # error
         return {'statusCode': 403,
                 'headers': headers,
                 'body': json.dumps(result)}
     else:
 
-        # only process if it's a push event and the push affected the head of Master
+        # only process if it's a push event
         if github_event == 'push':
             lambda_client = boto3.client('lambda')
             function_name = context.function_name  # the name of 'this' function
