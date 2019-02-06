@@ -8,6 +8,7 @@ custom:
     dockerizePip: non-linux
   variables:
     siteAuditTable: "arn:aws:dynamodb:us-west-2:820756113164:table/siteAuditGovMy"
+    siteAuditBackups: "arn:aws:dynamodb:us-west-2:820756113164:table/siteAuditGovMy/backup/*"
     DNSRecordsTable: "arn:aws:dynamodb:us-west-2:820756113164:table/DNSRecords"
     s3Bucket: "arn:aws:s3:::files.siteaudit.sayakenahack.com"
     s3BucketItems: "arn:aws:s3:::files.siteaudit.sayakenahack.com/*"
@@ -27,7 +28,7 @@ provider:
   region: us-west-2
   stage: SIT # for Prod use 'ProdNew'
   memorySize: 128 # explicitly set to 128
-  timeout: 10 # default is 6
+  timeout: 10 # default is 6sls de
   iamRoleStatements:
     - Effect: Allow
       Action:
@@ -35,6 +36,11 @@ provider:
         - dynamodb:PutItem
         - dynamodb:BatchWriteItem
       Resource: ${self:custom.variables.siteAuditTable}
+    - Effect: Allow
+      Action:
+        - dynamodb:DeleteBackup
+        - dynamodb:ListBackups
+      Resource: ${self:custom.variables.siteAuditBackups}
     - Effect: Allow
       Action:
         - dynamodb:Query
@@ -49,6 +55,7 @@ provider:
       Action:
         - s3:GetObject
         - s3:PutObject
+        - s3:DeleteObject
       Resource: ${self:custom.variables.s3BucketItems}
     - Effect: Allow
       Action:
@@ -153,3 +160,11 @@ functions:
           path: /api/v2/github
           method: post
           cors: true
+  clean_up:
+    handler: house_keeping.clean_up
+    name: ${opt:stage, self:provider.stage}-clean_up
+    description: Archival and clean up of files and DB backups
+    timeout: 30
+    memory: 128
+    events:
+      - schedule: cron(5 2 * * ? *) # runs at 02:05 UTC @ 9.05am MYT
